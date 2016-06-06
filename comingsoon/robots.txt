@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /en/
+Allow: /fr/
+Disallow: /en/code-of-conduct.html
+Disallow: /fr/code-de-conduite.html
