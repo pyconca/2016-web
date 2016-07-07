@@ -28,7 +28,7 @@ html,
 body {
   height: 100%;
   background-color: rgb(51,51,51);
-  background-image: url('pycon-2015-shiroyuki.jpg');
+  background-image: url('pycon-2015-shiroyuki.jpg?hash=894e360d12ef26b6793c5b8a9ac9bf4b');
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 100%;
