@@ -9,5 +9,5 @@ env.use_ssh_config = True
 env.html_dir = '/srv/www/pycon.ca/2016/html/'
 
 @task
-def deploy_coming_soon():
+def deploy():
     rsync_project(remote_dir=env.html_dir, local_dir='./comingsoon/')
