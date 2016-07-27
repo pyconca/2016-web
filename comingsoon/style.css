@@ -10,12 +10,21 @@ a:hover {
 }
 
 /* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus {
   color: #fff;
   text-shadow: none; /* Prevent inheritence from `body` */
   background-color: #249cd7;
+  border: 1px solid #249cd7;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #63bae5;
   border: 1px solid #249cd7;
 }
 
