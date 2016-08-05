@@ -1,3 +1,6 @@
-# 2016-web
+# PyCon Canada 2016 Website
 
-PyCon Canada 2016 website.
+The source code for [PyCon Canada's 2016 conference website](https://2016.pycon.ca/).
+
+## Development
+
