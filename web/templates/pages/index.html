@@ -1,0 +1,43 @@
+{% extends "layouts/base.html" %}
+
+{% block body %}
+<div class="site-wrapper">
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">{{ _('PyCon Canada 2016') }}</h3>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li><a href="https://twitter.com/pyconca">{{ _('Twitter') }}</a></li>
+                            <li><a href="https://www.youtube.com/c/pyconca/">{{ _('YouTube') }}</a></li>
+                            <li><a href="https://github.com/pyconca">{{ _('GitHub') }}</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="inner cover">
+                <h1 class="cover-heading">{{ _('PyCon Canada 2016') }}</h1>
+                <h2 class="cover-heading">{{ _('12-13 November 2016') }}, {{ _('Toronto') }}</h2>
+
+                <p class="lead">{{ _('Join your fellow Pythonistas for the fourth annual PyCon Canada, a weekend of talks, activities, fun and code!') }}</p>
+                        
+                <p class="lead">
+                    <a href="https://cfp.pycon.ca/" class="btn btn-lg  btn-primary">{{ _('Submit a talk/tutorial proposal') }}</a>
+                </p>
+                        
+                <p class="lead">
+                    <a href="http://eepurl.com/bs9mG9" class="btn btn-lg btn-secondary">{{ _('Join our mailing list') }}</a>
+                </p>
+            </div>
+            
+            <div class="mastfoot">
+                <div class="inner">
+                    <p><a href="../fr/" hreflang="fr">Fran&ccedil;ais</a> &bull; <a href="code-of-conduct.html">Code of Conduct</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

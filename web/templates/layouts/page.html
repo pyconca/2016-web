@@ -1,0 +1,21 @@
+{% extends "layouts/base.html" %}
+
+{% block body %}
+<div class="container">
+    <a href="index.html" class="logo center-block text-center">
+        <img src="../logo.svg" alt="{{ _('PyCon Canada') }}">
+    </a>
+    
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="page-header">
+                {% block page_header %}{% endblock %}
+            </div>
+            
+            <div class="page-content">
+                {% block page_content %}{% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
