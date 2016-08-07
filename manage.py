@@ -51,6 +51,13 @@ manager = Manager(app)
 @manager.command
 def freeze():
     freezer = Freezer(app)
+
+    @freezer.register_generator
+    def page_list():
+        for lang_code in ['en', 'fr']:
+            yield 'frontend.index', {'lang_code': lang_code}
+            yield 'frontend.code_of_conduct', {'lang_code': lang_code}
+
     freezer.freeze()
 
 
