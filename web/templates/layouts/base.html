@@ -17,11 +17,11 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         
-        <link rel="canonical" href="https://2016.pycon.ca/en/">
+        <link rel="canonical" href="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint) }}">
         
-        <link rel="alternate" hreflang="en" href="https://2016.pycon.ca/en/">
-        <link rel="alternate" hreflang="fr" href="https://2016.pycon.ca/fr/">
-        <link rel="alternate" hreflang="x-default" href="https://2016.pycon.ca/en/">
+        <link rel="alternate" hreflang="en" href="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint, lang_code='en') }}">
+        <link rel="alternate" hreflang="fr" href="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint, lang_code='fr') }}">
+        <link rel="alternate" hreflang="x-default" href="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint, lang_code='en') }}">
         
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@pyconca">
@@ -33,7 +33,7 @@
         <meta property="og:title" content="{{ _('PyCon Canada 2016') }}">
         <meta property="og:description" content="{{ _('Join your fellow Pythonistas for the forth annual PyCon Canada, a weekend of talks, activities, fun and code!') }}">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://2016.pycon.ca/en/">
+        <meta property="og:url" content="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint) }}">
         <meta property="og:image" content="https://2016.pycon.ca/pycon-2015-mc-paul-by-shiroyuki-facebook.jpg">
         <meta property="og:image:type" content="image/jpeg">
         <meta property="og:image:width" content="1200">
@@ -46,7 +46,7 @@
             "name": "{{ _('PyCon Canada 2016') }}",
             "description": "{{ _('Join your fellow Pythonistas for the forth annual PyCon Canada, a weekend of talks, activities, fun and code!') }}",
             "image": "https://2016.pycon.ca/pycon-2015-mc-paul-by-shiroyuki-facebook.jpg",
-            "url": "https://2016.pycon.ca/en/",
+            "url": "https://2016.pycon.ca{{ url_for(request.url_rule.endpoint) }}",
             "startDate": "2016-11-12",
             "endDate": "2016-11-13",
             "location": {

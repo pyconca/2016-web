@@ -25,8 +25,8 @@ def pybabel_extract():
     local('pybabel extract -F web/babel.cfg -o web/messages.pot web')
 
 @task
-def pybabel_init():
-    local('pybabel init -i web/messages.pot -d web/translations -l fr')
+def pybabel_update():
+    local('pybabel update -i web/messages.pot -d web/translations -l fr')
 
 @task
 def pybabel_compile():

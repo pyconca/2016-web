@@ -8,8 +8,8 @@ def index():
     return render_template('pages/index.html')
 
 
-@frontend.route('/code-of-conduct')
-@frontend.route('/code-de-conduite')
+@frontend.route('/code-of-conduct/')
+@frontend.route('/code-de-conduite/', alias=True)
 def code_of_conduct():
     if g.lang_code == 'fr':
         return render_template('pages/code-of-conduct_fr.html')

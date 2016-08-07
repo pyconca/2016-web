@@ -34,7 +34,7 @@
             
             <div class="mastfoot">
                 <div class="inner">
-                    <p><a href="../fr/" hreflang="fr">Fran&ccedil;ais</a> &bull; <a href="code-of-conduct.html">Code of Conduct</a></p>
+                    <p>{% if g.lang_code=='fr' %}<a href="{{ url_for(request.url_rule.endpoint, lang_code='en') }}" hreflang="en">English</a>{% else %}<a href="{{ url_for(request.url_rule.endpoint, lang_code='fr') }}" hreflang="fr">Fran&ccedil;ais</a>{% endif %} &bull; <a href="{{ url_for('frontend.code_of_conduct') }}">{{ _('Code of Conduct') }}</a></p>
                 </div>
             </div>
         </div>

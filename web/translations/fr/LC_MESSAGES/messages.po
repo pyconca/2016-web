@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-08-07 17:07-0400\n"
-"PO-Revision-Date: 2016-08-07 17:09-0400\n"
+"POT-Creation-Date: 2016-08-07 17:43-0400\n"
+"PO-Revision-Date: 2016-08-07 17:46-0400\n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
-"Last-Translator: \n"
+"Last-Translator: Myles Braithwaite <me@mylesbraithwaite.com>\n"
 "X-Generator: Poedit 1.8.8\n"
 
 #: web/templates/layouts/base.html:8 web/templates/layouts/base.html:30
@@ -33,6 +33,10 @@ msgstr ""
 #: web/templates/layouts/base.html:33 web/templates/layouts/base.html:46
 #: web/templates/pages/index.html:9 web/templates/pages/index.html:21
 msgid "PyCon Canada 2016"
+msgstr ""
+
+#: web/templates/layouts/page.html:6
+msgid "PyCon Canada"
 msgstr ""
 
 #: web/templates/pages/index.html:12
@@ -71,3 +75,7 @@ msgstr "Soumettre un pr&eacute;sentation / un tutoriel"
 #: web/templates/pages/index.html:31
 msgid "Join our mailing list"
 msgstr "Abonnez-vous &agrave; la liste d&#x27;envoi"
+
+#: web/templates/pages/index.html:37
+msgid "Code of Conduct"
+msgstr "Code de conduite"
