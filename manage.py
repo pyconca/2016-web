@@ -3,6 +3,8 @@ import os
 from flask_script import Manager, Server, Command
 from flask_script.commands import ShowUrls, Clean
 
+from flask_frozen import Freezer
+
 from web import create_app
 
 app = create_app()
@@ -45,6 +47,12 @@ class CompileTranslations(Command):
 
 
 manager = Manager(app)
+
+@manager.command
+def freeze():
+    freezer = Freezer(app)
+    freezer.freeze()
+
 
 manager.add_command('tr-init', InitTranslation())
 manager.add_command('tr-update', UpdateTranslations())
