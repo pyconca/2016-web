@@ -30,7 +30,7 @@ class UpdateTranslations(Command):
     def run(self):
         os.system('pybabel extract -F web/babel.cfg -k lazy_gettext -o web/messages.pot web')
         os.system('pybabel update -i web/messages.pot -d web/translations')
-        os.unlink('messages.pot')
+        os.unlink('web/messages.pot')
 
 
 class CompileTranslations(Command):
@@ -46,9 +46,9 @@ class CompileTranslations(Command):
 
 manager = Manager(app)
 
-manager.add_command('trinit', InitTranslation())
-manager.add_command('trupdate', UpdateTranslations())
-manager.add_command('trcompile', CompileTranslations())
+manager.add_command('tr-init', InitTranslation())
+manager.add_command('tr-update', UpdateTranslations())
+manager.add_command('tr-compile', CompileTranslations())
 
 manager.add_command('runserver', Server())
 manager.add_command('show-urls', ShowUrls())
