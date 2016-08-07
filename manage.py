@@ -1,11 +1,55 @@
-from flask_script import Manager, Server
+import os
+
+from flask_script import Manager, Server, Command
 from flask_script.commands import ShowUrls, Clean
 
 from web import create_app
 
 app = create_app()
 
+class InitTranslation(Command):
+    """
+    Initializes a new language translation catalogue.
+
+    From a Gist by iepathos: <https://gist.github.com/iepathos/6678261>
+    """
+
+    def run(self):
+        os.system('pybabel extract -F web/babel.cfg -k lazy_gettext -o web/messages.pot web')
+        os.system('pybabel init -i web/messages.pot -d web/translations -l fr')
+        os.unlink('web/messages.pot')
+
+
+class UpdateTranslations(Command):
+    """
+    Updates the translations with pybabel extract and update commands.
+
+    From a Gist by iepathos: <https://gist.github.com/iepathos/6678261>
+    """
+
+    def run(self):
+        os.system('pybabel extract -F web/babel.cfg -k lazy_gettext -o web/messages.pot web')
+        os.system('pybabel update -i web/messages.pot -d web/translations')
+        os.unlink('messages.pot')
+
+
+class CompileTranslations(Command):
+    """
+    Compiles the translations with the pybabel compile command.
+
+    From a Gist by iepathos: <https://gist.github.com/iepathos/6678261>
+    """
+
+    def run(self):
+        os.system('pybabel compile -d web/translations')
+
+
 manager = Manager(app)
+
+manager.add_command('trinit', InitTranslation())
+manager.add_command('trupdate', UpdateTranslations())
+manager.add_command('trcompile', CompileTranslations())
+
 manager.add_command('runserver', Server())
 manager.add_command('show-urls', ShowUrls())
 manager.add_command('clean', Clean())
