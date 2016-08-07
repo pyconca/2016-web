@@ -70,7 +70,7 @@
             ga('send', 'pageview');
         </script>
     </head>
-    <body>
+    <body class="{% block body_class %}{% endblock %}">
         {% block body %}{% endblock %}
     </body>
 </html>
