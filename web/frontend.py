@@ -1,16 +1,8 @@
-import os
-import json
-
 from flask import Blueprint, render_template, g, current_app
 
+from .utils import get_json_file, get_markdown_file
+
 frontend = Blueprint('frontend', __name__)
-
-
-def get_json_file(filename):
-    filepath = os.path.join(current_app.config['APP_PATH'], 'data', filename)
-
-    with open(filepath, 'r') as f:
-        return json.loads(f.read())
 
 
 @frontend.route('/')
@@ -22,9 +14,11 @@ def index():
 @frontend.route('/code-de-conduite/', alias=True)
 def code_of_conduct():
     if g.lang_code == 'fr':
-        return render_template('pages/code-of-conduct_fr.html')
+        content = get_markdown_file('code-of-conduct_fr.markdown')
     else:
-        return render_template('pages/code-of-conduct.html')
+        content = get_markdown_file('code-of-conduct_en.markdown')
+
+    return render_template('pages/code-of-conduct.html', content=content)
 
 
 @frontend.route('/sponsors/')

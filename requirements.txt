@@ -12,6 +12,7 @@ Flask-Sitemap==0.2.0
 Frozen-Flask==0.12
 itsdangerous==0.24
 Jinja2==2.8
+Markdown==2.6.6
 MarkupSafe==0.23
 paramiko==1.17.2
 pycrypto==2.6.1
