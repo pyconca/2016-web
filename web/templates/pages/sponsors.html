@@ -1,0 +1,28 @@
+{% extends "layouts/page.html" %}
+
+{% block page_header %}
+<h1>{{ _('Sponsors') }}</h1>
+{% endblock %}
+
+{% block page_content %}
+<div class="sponsor-list">
+    <div class="sponsor-level sponsor-level--gold">
+        <h1 class="sponsor-level__header">Gold</h1>
+        {% for sponsor in sponsors['gold'] %}
+        <div class="sponsor">
+            <h2>
+                {% if g.lang_code=='fr' %}
+                <a href="{{ sponsor.url_fr }}">
+                    {{ sponsor.name_fr }}
+                </a>
+                {% else %}
+                <a href="{{ sponsor.url }}">
+                    {{ sponsor.name }}
+                </a>
+                {% endif %}
+            </h2>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

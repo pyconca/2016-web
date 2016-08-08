@@ -31,7 +31,7 @@ def code_of_conduct():
 def sponsors():
     data = get_json_file('sponsors.json')
 
-    return render_template('pages/sponsors.html')
+    return render_template('pages/sponsors.html', sponsors=data)
 
 
 @frontend.route('/venue/')
