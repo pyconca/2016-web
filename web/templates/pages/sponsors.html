@@ -7,22 +7,27 @@
 {% block page_content %}
 <div class="sponsor-list">
     <div class="sponsor-level sponsor-level--gold">
-        <h1 class="sponsor-level__header">Gold</h1>
-        {% for sponsor in sponsors['gold'] %}
-        <div class="sponsor">
-            <h2>
-                {% if g.lang_code=='fr' %}
-                <a href="{{ sponsor.url_fr }}">
-                    {{ sponsor.name_fr }}
-                </a>
-                {% else %}
-                <a href="{{ sponsor.url }}">
-                    {{ sponsor.name }}
-                </a>
-                {% endif %}
-            </h2>
-        </div>
+        <h1 class="sponsor-level__title">Gold</h1>
+        
+        {% for sponsor_data in sponsors['gold'] %}
+            {% if g.lang_code=='fr' %}
+            {% set sponsor = sponsor_data.fr %}
+            {% else %}
+            {% set sponsor = sponsor_data.en %}
+            {% endif %}
+            
+            <div class="sponsor">
+                <h2 class="sponsor__name">{{ sponsor.name }}</h2>
+                
+                <a href="https://twitter.com/{{ sponsor.twitter }}" class="sponsor__twitter twitter-follow-button" data-show-count="false">{{ _('Follow @') }}{{ sponsor.twitter }}</a>
+                
+                <img src="{{ url_for('static', filename=sponsor_data.logo) }}" class="sponsor__logo">
+                
+                <p class="sponsor__description">{{ sponsor.description }}</p>
+            </div>
         {% endfor %}
     </div>
 </div>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 {% endblock %}
