@@ -11,4 +11,6 @@ class Config(object):
     BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
+    SASS_LOAD_PATH = os.path.join(APP_PATH, '../bower_components')
+
     FREEZER_DESTINATION = os.path.join(APP_PATH, '../build/')

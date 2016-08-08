@@ -9,8 +9,9 @@
         
         <title>{{ _('PyCon Canada 2016') }}</title>
         
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
-        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/app.css') }}">
+        {% assets "css_all" %}
+        <link rel="stylesheet" href="{{ ASSET_URL }}">
+        {% endassets %}
         
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -72,5 +73,9 @@
     </head>
     <body class="{% block body_class %}{% endblock %}">
         {% block body %}{% endblock %}
+        
+        {% assets "js_all" %}
+        <script src="{{ ASSET_URL }}"></script>
+        {% endassets %}
     </body>
 </html>

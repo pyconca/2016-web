@@ -4,6 +4,7 @@ click==6.6
 ecdsa==0.13
 Fabric==1.12.0
 Flask==0.11.1
+Flask-Assets==0.11
 Flask-Babel==0.11.1
 Flask-DebugToolbar==0.10.0
 Flask-Script==2.0.5
@@ -15,5 +16,6 @@ MarkupSafe==0.23
 paramiko==1.17.2
 pycrypto==2.6.1
 pytz==2016.6.1
+webassets==0.11.1
 Werkzeug==0.11.10
 wheel==0.26.0

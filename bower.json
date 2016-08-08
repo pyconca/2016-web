@@ -1,0 +1,9 @@
+{
+  "name": "pycon.ca-2016",
+  "homepage": "https://github.com/pyconca/2016-web",
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bourbon": "^4.2.7",
+    "neat": "^1.8.0"
+  }
+}

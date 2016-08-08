@@ -50,7 +50,7 @@ body {
 @media (max-width: 768px) {
   html,
   body {
-    background-image: url('../images/pycon-2015-mc-paul-by-shiroyuki-mobile.jpg');
+    background-image: url('images/pycon-2015-mc-paul-by-shiroyuki-mobile.jpg');
   }
 }
 
@@ -61,14 +61,14 @@ body {
   only screen and (min-resolution: 1.3) {
     html,
     body {
-      background-image: url('../images/pycon-2015-mc-paul-by-shiroyuki-mobile@2x.jpg');
+      background-image: url('images/pycon-2015-mc-paul-by-shiroyuki-mobile@2x.jpg');
     }
 }
 
 @media (min-width: 768px) {
   html,
   body {
-    background-image: url('../images/pycon-2015-mc-paul-by-shiroyuki-desktop.jpg');
+    background-image: url('images/pycon-2015-mc-paul-by-shiroyuki-desktop.jpg');
   }
 }
 
@@ -79,7 +79,7 @@ body {
   only screen and (min-resolution: 1.3) {
     html,
     body {
-      background-image: url('../images/pycon-2015-mc-paul-by-shiroyuki-desktop@2x.jpg');
+      background-image: url('images/pycon-2015-mc-paul-by-shiroyuki-desktop@2x.jpg');
     }
 }
 

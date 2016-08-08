@@ -10,12 +10,20 @@ You will need the following:
 * pip
 * virtualenvwrapper
 * [git-lfs](https://git-lfs.github.com/)
+* sass - `sudo gem install sass`
+* bower - `sudo npm install -g bower`
 
 Start by cloning the repository:
 
 ```
 $ git clone git@github.com:pyconca/2016-web.git
 $ cd ~/2016-web
+```
+
+Install the static asset dependencies:
+
+```
+~/2016-web $ bower install
 ```
 
 Create a python virtual environment:
