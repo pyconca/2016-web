@@ -12,7 +12,7 @@
     <div class="sponsor-level sponsor-level--gold">
         <h1 class="sponsor-level__title">{{ _('Gold') }}</h1>
         
-        {% for sponsor_data in sponsors['gold'] %}
+        {% for sponsor_data in sponsors['gold'].values() %}
             {% if g.lang_code=='fr' %}
             {% set sponsor = sponsor_data.fr %}
             {% else %}
