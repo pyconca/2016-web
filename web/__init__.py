@@ -42,6 +42,7 @@ def create_app(configfile=None):
         assets.Bundle(
             'app.scss',
             filters=(sass,),
+            depends=(os.path.join(static_path, 'scss/**/*.scss')),
             output='app.css'
         )
     )

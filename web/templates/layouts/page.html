@@ -1,21 +1,28 @@
 {% extends "layouts/base.html" %}
 
 {% block body %}
-<div class="container">
-    <a href="{{ url_for('frontend.index') }}" class="logo center-block text-center">
-        <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="{{ _('PyCon Canada') }}">
+<div class="header">
+    <a href="{{ url_for('frontend.index') }}" class="header__logo">
+        <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="{{ _('PyCon Canada') }}" class="header__image">
     </a>
     
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="page-header">
-                {% block page_header %}{% endblock %}
-            </div>
-            
-            <div class="page-content">
-                {% block page_content %}{% endblock %}
-            </div>
-        </div>
+    <ul class="navigation header__navigation">
+        <li class="navigation__item"><a class="navigation__link" href="{{ url_for('frontend.index') }}">{{ _('Home') }}</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="{{ url_for('frontend.about') }}">{{ _('About') }}</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="{{ url_for('frontend.venue') }}">{{ _('Venue') }}</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="{{ url_for('frontend.volunteer') }}">{{ _('Volunteer') }}</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="{{ url_for('frontend.sponsors') }}">{{ _('Sponsors') }}</a></li>
+        <li class="navigation__item">{% if g.lang_code=='fr' %}<a class="navigation__link" href="{{ url_for(request.url_rule.endpoint, lang_code='en') }}" hreflang="en">English</a>{% else %}<a class="navigation__link" href="{{ url_for(request.url_rule.endpoint, lang_code='fr') }}" hreflang="fr">Fran&ccedil;ais</a>{% endif %}</li>
+    </ul>
+</div>
+
+<div class="page">
+    <div class="page__header">
+        {% block page_header %}{% endblock %}
+    </div>
+    
+    <div class="page__content">
+        {% block page_content %}{% endblock %}
     </div>
 </div>
 {% endblock %}

@@ -30,4 +30,29 @@ def sponsors():
 
 @frontend.route('/venue/')
 def venue():
-    return render_template('pages/venue.html')
+    if g.lang_code == 'fr':
+        content = get_markdown_file('venue_fr.markdown')
+    else:
+        content = get_markdown_file('venue_en.markdown')
+
+    return render_template('pages/venue.html', content=content)
+
+
+@frontend.route('/about/')
+def about():
+    if g.lang_code == 'fr':
+        content = get_markdown_file('about_fr.markdown')
+    else:
+        content = get_markdown_file('about_en.markdown')
+
+    return render_template('pages/about.html', content=content)
+
+
+@frontend.route('/volunteer/')
+def volunteer():
+    if g.lang_code == 'fr':
+        content = get_markdown_file('volunteer_fr.markdown')
+    else:
+        content = get_markdown_file('volunteer_en.markdown')
+
+    return render_template('pages/volunteer.html', content=content)
