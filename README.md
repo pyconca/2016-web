@@ -15,6 +15,29 @@ The source code for [PyCon Canada's 2016 conference website](https://2016.pycon.
 * Page data (i.e. Sponsors, Organizers, etc.) are located in [./web/data/](./web/data)
 * The French translation is in [./web/translations/fr/LC_MESSAGES/messages.po](./web/translations/fr/LC_MESSAGES/messages.po)
 
+## Stages
+
+### Stage One
+
+* Get a basic two page website built.
+
+### Stage Two
+
+* Design
+* Develop a basic CMS for multiple pages.
+
+### Stage Three
+
+* Website should magically build when a change is made on the [GitHub](https://github.com/pyconca/2016-web) repo or the [PyConCA CfP](https://cfp.pycon.ca/)
+
+### Stage Four
+
+* Schedule and individual talk pages.
+
+### Stage Five
+
+* Individual talk pages should have links to the YouTube Videos.
+
 ## Development Environment Setup
 
 You will need the following:
@@ -22,9 +45,9 @@ You will need the following:
 * Python 2.7
 * pip
 * virtualenvwrapper
-* [git-lfs](https://git-lfs.github.com/)
 * sass - `sudo gem install sass`
 * bower - `sudo npm install -g bower`
+* [git-lfs](https://git-lfs.github.com/) (this is used to store the large image files).
 
 Start by cloning the repository:
 
