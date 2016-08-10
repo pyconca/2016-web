@@ -17,24 +17,24 @@ The source code for [PyCon Canada's 2016 conference website](https://2016.pycon.
 
 ## Stages
 
-### Stage One
+### Stage One ([Open Issues](https://github.com/pyconca/2016-web/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Stage+One%22))
 
 * Get a basic two page website built.
 
-### Stage Two
+### Stage Two ([Open Issues](https://github.com/pyconca/2016-web/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Stage+Two%22))
 
 * Design
 * Develop a basic CMS for multiple pages.
 
-### Stage Three
+### Stage Three ([Open Issues](https://github.com/pyconca/2016-web/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Stage+Three%22))
 
 * Website should magically build when a change is made on the [GitHub](https://github.com/pyconca/2016-web) repo or the [PyConCA CfP](https://cfp.pycon.ca/)
 
-### Stage Four
+### Stage Four ([Open Issues](https://github.com/pyconca/2016-web/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Stage+Four%22))
 
 * Schedule and individual talk pages.
 
-### Stage Five
+### Stage Five ([Open Issues](https://github.com/pyconca/2016-web/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Stage+Five%22))
 
 * Individual talk pages should have links to the YouTube Videos.
 
