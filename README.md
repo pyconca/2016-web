@@ -2,6 +2,19 @@
 
 The source code for [PyCon Canada's 2016 conference website](https://2016.pycon.ca/).
 
+## Objectives
+
+* Have a concise and helpful website to help promote the conference and give attendees the best possible experience
+* Regularly updated with relevant content
+* Highlight all the volunteers, speakers, and sponsors who make this event possible
+* Be easy for organizers to maintain
+
+## Updating the Website Contents
+
+* Page content files (i.e. About, Venue, Code of Conduct, Volunteer, etc.) are located in [./web/markdown/](./web/markdown)
+* Page data (i.e. Sponsors, Organizers, etc.) are located in [./web/data/](./web/data)
+* The French translation is in [./web/translations/fr/LC_MESSAGES/messages.po](./web/translations/fr/LC_MESSAGES/messages.po)
+
 ## Development Environment Setup
 
 You will need the following:
