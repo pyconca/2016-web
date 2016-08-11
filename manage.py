@@ -5,9 +5,10 @@ from flask_script.commands import ShowUrls, Clean
 
 from flask_frozen import Freezer
 
-from web import create_app
+from web.app import create_app
 
 app = create_app()
+
 
 class InitTranslation(Command):
     """
