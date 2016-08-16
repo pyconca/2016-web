@@ -1,0 +1,29 @@
+.footer {
+  background-color: $action-color;
+  margin-top: 2em;
+  
+  @at-root #{&}__container {
+    @include outer-container;
+    
+    margin: 0 auto;
+    padding: 1em 0;
+    text-align: center;
+    max-width: 50em;
+  }
+  
+  @at-root #{&}__links {
+    @include span-columns(3);
+  }
+  
+  @at-root #{&}__link {
+    color: #fff;
+    
+    &:hover {
+      color: #fff;
+    }
+  }
+  
+  @at-root #{&}__buttons {
+    @include span-columns(6);
+  }
+}

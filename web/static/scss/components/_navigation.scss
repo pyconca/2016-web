@@ -1,6 +1,9 @@
 .navigation {
   @at-root #{&}__item {
     display: inline;
-    margin: 1rem .5rem;
+  }
+  
+  @at-root #{&}__link {
+    margin: 2rem .5rem;
   }
 }

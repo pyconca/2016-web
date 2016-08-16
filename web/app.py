@@ -68,11 +68,13 @@ def create_app(configfile=None):
     def get_timezone():
         return app.config['BABEL_DEFAULT_TIMEZONE']
 
-    @app.route('/')
-    def lang_switch():
-        langs = app.config['LANGUAGES'].keys()
-        req_lang = request.accept_languages.best_match(langs)
-        return redirect("/{0}/".format(req_lang), code=302)
+    # Disabling this route as it causes issues with freezing.
+    # TODO Figure out a way to make sure you can freeze with this include.
+    # @app.route('/')
+    # def lang_switch():
+    #     langs = app.config['LANGUAGES'].keys()
+    #     req_lang = request.accept_languages.best_match(langs)
+    #     return redirect("/{0}/".format(req_lang), code=302)
 
     app.register_blueprint(frontend, url_prefix='/<lang_code>')
 

@@ -45,7 +45,11 @@ def about():
     else:
         content = get_markdown_file('about_en.markdown')
 
-    return render_template('pages/about.html', content=content)
+    team = get_json_file('team.json')
+    sponsors = get_json_file('sponsors.json')
+
+    return render_template('pages/about.html', content=content, team=team,
+                           sponsors=sponsors)
 
 
 @frontend.route('/volunteer/')
