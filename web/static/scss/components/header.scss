@@ -1,0 +1,20 @@
+.header {
+  padding: 2rem 0;
+  
+  @at-root #{&}__logo {
+    float: left;
+    margin-left: 2rem;
+  }
+  
+  @at-root #{&}__image {
+    display: block;
+    height: 4.125rem;
+    margin-bottom: 2rem;
+  }
+  
+  @at-root #{&}__navigation {
+    float: right;
+    margin-top: (4.125rem / 2);
+    margin-right: 2rem;
+  }
+}

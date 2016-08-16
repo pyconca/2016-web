@@ -7,11 +7,13 @@
 
 // Biters
 @import 'bitters/core/base';
+@import 'base';
 
 // Pages
 @import 'pages/index';
 @import 'pages/pages';
 
 // Components
+@import 'components/header';
 @import 'components/button';
 @import 'components/navigation';
