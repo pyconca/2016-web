@@ -28,6 +28,14 @@
   background-color: rgba(51,51,51,.5);
   box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 
+  a {
+    color: #fff;
+    
+    &:hover {
+      color: #ccc;
+    }
+  }
+
   @at-root #{&}__wrapper {
     @include align-items(stretch);
     @include align-content(center);
@@ -45,11 +53,7 @@
     margin: 0 auto;
   }
   
-  @at-root #{&}__navigation {
-    .navigation__link {
-      color: #fff;
-    }
-  }
+  // @at-root #{&}__navigation {}
   
   @at-root #{&}__heading {
     @at-root #{&}--primary {
@@ -64,4 +68,6 @@
   @at-root #{&}__copy {
     font-size: 1.5rem;
   }
+  
+  // @at-root #{&}__button {}
 }

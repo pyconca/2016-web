@@ -18,7 +18,8 @@ class InitTranslation(Command):
     """
 
     def run(self):
-        os.system('pybabel extract -F web/babel.cfg -k lazy_gettext -o web/messages.pot web')
+        os.system('pybabel extract -F web/babel.cfg -k lazy_gettext -o '
+                  'web/messages.pot web')
         os.system('pybabel init -i web/messages.pot -d web/translations -l fr')
         os.unlink('web/messages.pot')
 
@@ -31,7 +32,8 @@ class UpdateTranslations(Command):
     """
 
     def run(self):
-        os.system('pybabel extract -F web/babel.cfg -k lazy_gettext -o web/messages.pot web')
+        os.system('pybabel extract -F web/babel.cfg -k lazy_gettext -o '
+                  'web/messages.pot web')
         os.system('pybabel update -i web/messages.pot -d web/translations')
         os.unlink('web/messages.pot')
 
@@ -48,6 +50,7 @@ class CompileTranslations(Command):
 
 
 manager = Manager(app)
+
 
 @manager.command
 def freeze():

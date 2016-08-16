@@ -26,26 +26,19 @@ def create_app(configfile=None):
     ]
 
     env.register('js_all',
-        assets.Bundle(
-            'jquery/dist/jquery.min.js',
-            assets.Bundle(
-                'app.js'
-            ),
-            output='app.js'
-        )
-    )
+                 assets.Bundle('jquery/dist/jquery.min.js',
+                               assets.Bundle('app.js'),
+                               output='app.js'))
 
     sass = get_filter('scss')
     sass.load_paths = env.load_path
 
     env.register('css_all',
-        assets.Bundle(
-            'app.scss',
-            filters=(sass,),
-            depends=(os.path.join(static_path, 'scss/**/*.scss')),
-            output='app.css'
-        )
-    )
+                 assets.Bundle('app.scss',
+                               filters=(sass,),
+                               depends=(os.path.join(static_path,
+                                        'scss/**/*.scss')),
+                               output='app.css'))
 
     babel = Babel(app)
 

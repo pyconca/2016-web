@@ -16,12 +16,12 @@
     </ul>
 </div>
 
-<div class="page">
-    <div class="page__header">
+<div class="page {% block page_class %}{% endblock %}">
+    <div class="page__header {% block page_header_class %}{% endblock %}">
         {% block page_header %}{% endblock %}
     </div>
     
-    <div class="page__content">
+    <div class="page__content {% block page_content_class %}{% endblock %}">
         {% block page_content %}{% endblock %}
     </div>
 </div>

@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, g, current_app
+from flask import Blueprint, render_template, g
 
 from .utils import get_json_file, get_markdown_file
 

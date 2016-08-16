@@ -8,9 +8,10 @@
 // Biters
 @import 'bitters/core/base';
 
-// Components
-@import 'components/navigation';
-
 // Pages
 @import 'pages/index';
 @import 'pages/pages';
+
+// Components
+@import 'components/button';
+@import 'components/navigation';

@@ -1,0 +1,46 @@
+@mixin button-variant($colour, $background, $border) {
+  color: $colour;
+  background-color: $background;
+  border-color: $border;
+  text-shadow: none;
+
+  &:focus {
+    color: $colour;
+    background-color: darken($background, 1%);
+    border-color: darken($border, 25%);
+    text-shadow: none;
+  }
+
+  &:hover {
+    color: $colour;
+    background-color: darken($background, 1%);
+    border-color: darken($border, 12%);
+    text-shadow: none;
+  }
+
+  &:active {
+    background-image: none;
+  }
+}
+
+.button {
+  @include padding(.5rem 1rem);
+
+  display: inline-block;
+  margin-botton: 0;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  border-radius: 5px;
+  
+  @at-root #{&}--primary {
+    @include button-variant(#fff, #249cd7, #249cd7);
+  }
+
+  @at-root #{&}--secondary {
+    @include button-variant(#fff, #63bae5, #249cd7);
+  }
+}
