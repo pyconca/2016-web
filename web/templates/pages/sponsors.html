@@ -1,5 +1,7 @@
 {% extends "layouts/page.html" %}
 
+{% block title %}{{ _('Sponsors') }} | {{ super() }}{% endblock %}
+
 {% block page_class %}page--sponsors{% endblock %}
 {% block page_header_class %}page__header--sponsors{% endblock %}
 {% block page_content_class %}page__content--sponsors{% endblock %}
@@ -25,7 +27,9 @@
             
             <div class="page__row">
                 <div class="page__col">
-                    <img src="{{ url_for('static', filename=sponsor_data.logo) }}" class="sponsor__logo">
+                    <a href="{{ sponsor.url }}" class="sponsor__link">
+                        <img src="{{ url_for('static', filename=sponsor_data.logo) }}" class="sponsor__logo">
+                    </a>
                     
                     <ul>
                         <li><a href="https://twitter.com/{{ sponsor.twitter }}" class="sponsor__twitter twitter-follow-button" data-show-count="false">{{ _('Follow @') }}{{ sponsor.twitter }}</a></li>
