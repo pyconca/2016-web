@@ -23,11 +23,19 @@
         <div class="sponsor">
             <h2 class="sponsor__name">{{ sponsor.name }}</h2>
             
-            <a href="https://twitter.com/{{ sponsor.twitter }}" class="sponsor__twitter twitter-follow-button" data-show-count="false">{{ _('Follow @') }}{{ sponsor.twitter }}</a>
-            
-            <img src="{{ url_for('static', filename=sponsor_data.logo) }}" class="sponsor__logo">
-            
-            <p class="sponsor__description">{{ sponsor.description }}</p>
+            <div class="page__row">
+                <div class="page__col">
+                    <img src="{{ url_for('static', filename=sponsor_data.logo) }}" class="sponsor__logo">
+                    
+                    <ul>
+                        <li><a href="https://twitter.com/{{ sponsor.twitter }}" class="sponsor__twitter twitter-follow-button" data-show-count="false">{{ _('Follow @') }}{{ sponsor.twitter }}</a></li>
+                    </ul>
+                </div>
+                
+                <div class="page__col">
+                    <p class="sponsor__description">{{ sponsor.description }}</p>
+                </div>
+            </div>
         </div>
     {% endfor %}
 </div>

@@ -10,8 +10,9 @@
 @import 'base';
 
 // Pages
+@import 'pages/pages'; // This First
 @import 'pages/index';
-@import 'pages/pages';
+@import 'pages/about';
 
 // Components
 @import 'components/button';
