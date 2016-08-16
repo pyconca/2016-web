@@ -24,6 +24,9 @@
         <link rel="alternate" hreflang="fr" href="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint, lang_code='fr') }}">
         <link rel="alternate" hreflang="x-default" href="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint, lang_code='en') }}">
         
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}" />
+        <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/apple-touch-icon-precomposed.png') }}">
+        
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@pyconca">
         <meta name="twitter:creator" content="@pyconca">
