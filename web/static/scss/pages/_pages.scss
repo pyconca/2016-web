@@ -1,5 +1,6 @@
 .page {
   clear: both;
+  padding-bottom: 1em;
   
   @at-root #{&}__header {
     align-items: center;
@@ -26,6 +27,15 @@
     
     @include media(min-width $breakpoint-mobile) {
       text-align: left;
+    }
+    
+    a {
+      color: #fff;
+      text-decoration: underline;
+      
+      &:hover {
+        color: darken(#fff, 15%);
+      }
     }
   }
   

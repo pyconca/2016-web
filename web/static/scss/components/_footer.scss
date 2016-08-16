@@ -1,6 +1,5 @@
 .footer {
   background-color: $action-color;
-  margin-top: 2em;
   
   @at-root #{&}__container {
     @include outer-container;

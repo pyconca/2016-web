@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-08-11 18:56-0400\n"
-"PO-Revision-Date: 2016-08-09 16:38-0400\n"
+"POT-Creation-Date: 2016-08-16 16:28-0400\n"
+"PO-Revision-Date: 2016-08-16 16:26-0400\n"
 "Last-Translator: Myles Braithwaite <me@mylesbraithwaite.com>\n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -18,31 +18,93 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 
-#: web/templates/layouts/page.html:6 web/templates/pages/index.html:19
-msgid "PyCon Canada"
-msgstr ""
-
-#: web/templates/layouts/page.html:10 web/templates/pages/index.html:10
+#: web/templates/includes/footer.html:5 web/templates/includes/header.html:7
+#: web/templates/pages/index.html:10
 msgid "Home"
 msgstr ""
 
-#: web/templates/layouts/page.html:11 web/templates/pages/index.html:11
+#: web/templates/includes/footer.html:7 web/templates/includes/header.html:9
+#: web/templates/pages/about.html:3 web/templates/pages/index.html:11
 msgid "About"
 msgstr "À propos"
 
-#: web/templates/layouts/page.html:12 web/templates/pages/index.html:12
+#: web/templates/includes/footer.html:9 web/templates/includes/header.html:11
+#: web/templates/pages/index.html:12 web/templates/pages/venue.html:3
+#: web/templates/pages/venue.html:10
 msgid "Venue"
 msgstr "Lieu"
 
-#: web/templates/layouts/page.html:13 web/templates/pages/index.html:13
+#: web/templates/includes/footer.html:11 web/templates/includes/header.html:13
+#: web/templates/pages/index.html:13 web/templates/pages/volunteer.html:3
+#: web/templates/pages/volunteer.html:10
 msgid "Volunteer"
 msgstr ""
 
-#: web/templates/layouts/page.html:14 web/templates/pages/index.html:14
+#: web/templates/includes/footer.html:13 web/templates/includes/header.html:15
+#: web/templates/pages/about.html:59 web/templates/pages/index.html:14
+#: web/templates/pages/sponsors.html:3
 msgid "Sponsors"
 msgstr "Commanditaires"
 
-#: web/templates/pages/code-of-conduct.html:4
+#: web/templates/includes/footer.html:19 web/templates/pages/index.html:33
+msgid "Join our mailing list"
+msgstr "Abonnez-vous &agrave; la liste d&#x27;envoi"
+
+#: web/templates/includes/header.html:3 web/templates/pages/index.html:19
+msgid "PyCon Canada"
+msgstr ""
+
+#: web/templates/pages/about.html:10
+msgid "PyCon Canada is an initiative to strengthen the Canadian Python community."
+msgstr ""
+
+#: web/templates/pages/about.html:18
+msgid "Join the Conversation"
+msgstr ""
+
+#: web/templates/pages/about.html:20
+msgid ""
+"Be sure to use <a "
+"href=\"https://twitter.com/intent/tweet?button_hashtag=PyConCA2016\">#PyConCA2016</a>."
+" We love hearing from our community members!"
+msgstr ""
+
+#: web/templates/pages/about.html:22
+msgid "Key Contacts"
+msgstr ""
+
+#: web/templates/pages/about.html:25
+msgid ""
+"The organizing committee can be contacted at <a "
+"href=\"mailto:organizers@pycon.ca\">organizers@pycon.ca</a>."
+msgstr ""
+
+#: web/templates/pages/about.html:26
+msgid ""
+"The board can be contacted privately at <a "
+"href=\"mailto:board@pycon.ca\">board@pycon.ca</a>."
+msgstr ""
+
+#: web/templates/pages/about.html:27
+msgid ""
+"You can also find us on: <a "
+"href=\"https://github.com/pyconca/\">github.com/pyconca/</a>."
+msgstr ""
+
+#: web/templates/pages/about.html:32
+msgid "#PyConCA2016 Tweets"
+msgstr ""
+
+#: web/templates/pages/about.html:38
+msgid "Organisers"
+msgstr ""
+
+#: web/templates/pages/about.html:48
+msgid "Volunteers"
+msgstr ""
+
+#: web/templates/pages/code-of-conduct.html:3
+#: web/templates/pages/code-of-conduct.html:11
 msgid "Code of Conduct"
 msgstr "Code de conduite"
 
@@ -64,19 +126,15 @@ msgstr ""
 "pr&eacute;sentations, d&#x27;activit&eacute;s, de programmation et de "
 "plaisir!"
 
-#: web/templates/pages/index.html:25
+#: web/templates/pages/index.html:27
 msgid "Submit a talk/tutorial proposal"
 msgstr "Soumettre un pr&eacute;sentation / un tutoriel"
 
-#: web/templates/pages/index.html:27
-msgid "Join our mailing list"
-msgstr "Abonnez-vous &agrave; la liste d&#x27;envoi"
-
-#: web/templates/pages/sponsors.html:5
+#: web/templates/pages/sponsors.html:10
 msgid "Our Sponsors"
 msgstr "Nos commanditaires"
 
-#: web/templates/pages/sponsors.html:6
+#: web/templates/pages/sponsors.html:11
 msgid ""
 "We thank our fantastic sponsors who help make this event possible. <a "
 "href=\"mailto:sponsorship@pycon.ca\">Get in touch</a> if your "
@@ -86,14 +144,11 @@ msgstr ""
 "possible. <a href=\"mailto:sponsorship@pycon.ca\">Contactez-nous</a> si "
 "votre organisation aimerait aider PyCon Canada 2016."
 
-#: web/templates/pages/sponsors.html:13
+#: web/templates/pages/sponsors.html:16
 msgid "Gold"
 msgstr "Or"
 
-#: web/templates/pages/sponsors.html:25
+#: web/templates/pages/sponsors.html:35
 msgid "Follow @"
 msgstr "Suivre @"
-
-#~ msgid "PyCon Canada 2016"
-#~ msgstr ""
 

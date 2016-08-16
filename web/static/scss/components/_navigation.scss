@@ -4,6 +4,7 @@
   }
   
   @at-root #{&}__link {
-    margin: 2rem .5rem;
+    @include padding(.5rem 1rem);
+    @include button-variant(#fff, $action-color, $action-color);
   }
 }
