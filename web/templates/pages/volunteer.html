@@ -1,0 +1,13 @@
+{% extends "layouts/page.html" %}
+
+{% block page_class %}page--volunteer{% endblock %}
+{% block page_header_class %}page__header--volunteer{% endblock %}
+{% block page_content_class %}page__content--volunteer{% endblock %}
+
+{% block page_header %}
+<h1>{{ _('Volunteer') }}</h1>
+{% endblock %}
+
+{% block page_content %}
+{{ content|safe }}
+{% endblock %}
