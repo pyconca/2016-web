@@ -37,10 +37,10 @@
   border-radius: 5px;
   
   @at-root #{&}--primary {
-    @include button-variant(#fff, #249cd7, #249cd7);
+    @include button-variant(#fff, $action-color, $action-color);
   }
 
   @at-root #{&}--secondary {
-    @include button-variant(#fff, #63bae5, #249cd7);
+    @include button-variant(#fff, lighten($action-color, 25%), $action-color);
   }
 }
