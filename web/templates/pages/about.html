@@ -33,6 +33,15 @@
         </div>
     </div>
     
+    <h2>{{ _('Organisers') }}</h2>
+
+    {% for person in team['organisers'] %}
+    <ul>
+        <li><a href="{{ person.link }}">{{ person.name }}</a></li>
+    </ul>
+    {% endfor %}
+    
+    {#
     <div class="page__row">
         <div class="page__col page__col--left">
             <h2>{{ _('Organisers') }}</h2>
@@ -54,6 +63,7 @@
             {% endfor %}
         </div>
     </div>
+    #}
     
     <div class="about-page__sponsors">
         <h2>{{ _('Sponsors') }}</h2>
