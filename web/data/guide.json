@@ -1,0 +1,95 @@
+[
+    {
+      "slug": "coffee",
+      "name": "Coffee",
+      "places": [
+        {
+          "name": "Black Canary Espresso&nbsp;Bar",
+          "notes": "A small coffeehouse located in on the upper floor of Silver Snail comic book store.",
+          "address": "329 Yonge Street",
+          "links": {
+            "yelp": "https://www.yelp.ca/biz/black-canary-espresso-bar-toronto",
+            "map": "https://www.google.ca/maps/place/The+Black+Canary+Espresso+Bar+(Yonge)/@43.6544546,-79.3833721,15z/data=!4m8!1m2!2m1!1sBlack+Canary+Espresso+Bar!3m4!1s0x882b34cac622f7fd:0x5a23a8dfd7077b2c!8m2!3d43.6569909!4d-79.3809546?hl=en"
+          },
+          "tags": [
+            "superheroes", "wifi"
+          ]
+        },
+        {
+          "name": "Infuse Cafe",
+          "address": "354 Yonge St",
+          "links": {
+            "yelp": "https://www.yelp.ca/biz/infuse-cafe-toronto",
+            "map": "https://www.google.ca/maps/place/Infuse+Cafe/@43.6580847,-79.3841382,17z/data=!3m1!4b1!4m5!3m4!1s0x882b34ca99cc2973:0xf3e029e6d5f56385!8m2!3d43.6580847!4d-79.3819495?hl=en"
+          },
+          "tags": [
+            "tea", "wifi", "deserts"
+          ]
+        },
+        {
+          "name": "Bulldog Coffee",
+          "address": "86 Gerrard Street East",
+          "links": {
+            "yelp": "https://www.yelp.ca/biz/bulldog-coffee-toronto",
+            "map": "https://www.google.ca/maps/place/Bull+Dog+Coffee/@43.6601142,-79.380016,17z/data=!3m1!4b1!4m5!3m4!1s0x89d4cb4af9922c4d:0x2d72b18b14296b0e!8m2!3d43.6601142!4d-79.3778273?hl=en"
+          },
+          "tags": [
+            "latte art"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "food",
+      "name": "Food",
+      "places": [
+        {
+          "name": "Banh Mi Boys",
+          "address": "399 Yonge Street",
+          "links": {
+            "yelp": "https://www.yelp.ca/biz/banh-mi-boys-toronto-2"
+          },
+          "tags": [
+            "banh mi", "vietnamese"
+          ]
+        },
+        {
+          "name": "Bareburger",
+          "address": "111 Dundas Street West",
+          "links": {
+            "yelp": "https://www.yelp.ca/biz/bareburger-toronto-2"
+          },
+          "tags": [
+            "burger"
+          ]
+        },
+        {
+          "name": "Blaze Fast-Frie'd Pizza",
+          "address": "10 Dundas Street",
+          "link": {
+            "yelp": "https://www.yelp.ca/biz/blaze-fast-fired-pizza-toronto"
+          },
+          "tags": [
+            "pizza"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "booze",
+      "name": "Booze",
+      "places": [
+        {
+          "name": "Imperial Pub",
+          "address": "54 Dundas Street East",
+          "notes": "Make sure you go upstairs to The Library.",
+          "links": {
+            "yelp": "https://www.yelp.ca/biz/imperial-pub-toronto"
+          },
+          "tags": [
+            "dive"
+          ]
+        }
+      ]
+    }
+]

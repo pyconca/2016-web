@@ -9,15 +9,21 @@
 @import 'bitters/core/base';
 @import 'base';
 
-// Pages
-@import 'pages/pages'; // This First
-@import 'pages/index';
-@import 'pages/about';
-@import 'pages/venue';
-
 // Components
 @import 'components/button';
 @import 'components/navigation';
 @import 'components/footer';
 @import 'components/header';
 @import 'components/leaflet';
+
+// Pages
+@import 'pages/pages'; // This First
+@import 'pages/index';
+
+@import 'pages/about';
+@import 'pages/code-of-conduct';
+@import 'pages/guide';
+@import 'pages/schedule';
+@import 'pages/sponsors';
+@import 'pages/venue';
+@import 'pages/volunteer';

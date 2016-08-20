@@ -1,0 +1,48 @@
+{% extends "layouts/page.html" %}
+
+{% block title %}{{ _('Guide') }} | {{ super() }}{% endblock %}
+
+{% block page_class %}page--guide{% endblock %}
+{% block page_header_class %}page__header--guide{% endblock %}
+{% block page_content_class %}page__content--guide{% endblock %}
+
+{% block page_header %}
+<h1>{{ _('Welcome to Toronto') }}</h1>
+<p>Here are some of our favorite spots around <strong>Ryerson University</strong>.</p>
+{% endblock %}
+
+{% block page_content %}
+    {% for section in guide %}
+    <div class="page__section guide-page__section guide-page__section--{{ section.slug }}">
+        <h2>{{ section.name }}</h2>
+        
+        <div class="guide-page__place-list">
+            {% for place in section.places %}
+            <div class="guide-page__place">
+                <h3 class="guide-page__place-name">{{ place.name|safe }}</h3>
+                
+                <p class="guide-page__place-address">{{ place.address }}</p>
+                
+                <p class="guide-page__place-notes">{{ place.notes }}</p>
+                
+                {% if place.tags %}
+                <p class="guide-page__place-tag-list">
+                    {% for tag in place.tags %}
+                    <span class="guide-page__place-tag">{{ tag }}</span>
+                    {% endfor %}
+                </p>
+                {% endif %}
+                
+                {% if place.links %}
+                <p class="guide-page__place-link-list">
+                    {% for slug, link in place.links.items() %}
+                    <a href="{{ link }}" class="guide-page__place-link guide-page__place-link--{{ slug }}">{{ slug }}</a>
+                    {% endfor %}
+                </p>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}

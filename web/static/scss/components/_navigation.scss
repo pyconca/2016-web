@@ -5,6 +5,10 @@
   
   @at-root #{&}__link {
     @include padding(.5rem 1rem);
-    @include button-variant(#fff, $action-color, $action-color);
+    color: $action-color;
+    
+    &:hover {
+      color: darken($action-color, 25%);
+    }
   }
 }

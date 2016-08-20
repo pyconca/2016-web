@@ -1,0 +1,46 @@
+.guide-page {
+  @at-root #{&}__place-list {
+    @include outer-container;
+  }
+  
+  @at-root #{&}__place {
+    @include media($breakpoint-mobile) {
+      @include span-columns(4);
+    }
+    
+    @include span-columns(12);
+  }
+  
+  @at-root #{&}__place-name,
+           #{&}__place-address,
+           #{&}__place-notes,
+           #{&}__place-link-list,
+           #{&}__place-tag-list {
+    margin-top: 0;
+    margin-bottom: .25em;
+  }
+  
+  @at-root #{&}__place-link-list,
+           #{&}__place-tag-list {
+    margin: 0;
+  }
+  
+  @at-root #{&}__place-tag,
+           #{&}__place-link {
+    border-radius: 1px;
+    padding: .1em .5em;
+    font-size: .8em;
+  }
+  
+  @at-root #{&}__place-tag {
+    @include button-variant(#fff, $medium-gray, $medium-gray);
+  }
+  
+  @at-root #{&}__place-link {
+    @include button-variant(#fff, $action-color, $action-color);
+    
+    &:hover {
+      @include button-variant(#fff, darken($action-color, 25%), $action-color);
+    }
+  }
+}

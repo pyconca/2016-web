@@ -11,19 +11,21 @@
 {% endblock %}
 
 {% block page_content %}
-<div class="page__row page__section">
-    <div class="page__col">
-        <h2>{{ _('Location') }}</h2>
+<div class="page__section">
+    <div class="page__row">
+        <div class="page__col">
+            <h2>{{ _('Location') }}</h2>
         
-        <p>
-            {% trans %}
-            This year PyCon Canada is taking place 12-13 November 2016 in Toronto, Ontario, Canada at the <strong>Bahen Centre for Information Technology</strong> on the University of Toronto St. George campus.
-            {% endtrans %}
-        </p>
-    </div>
+            <p>
+                {% trans %}
+                This year PyCon Canada is taking place 12-13 November 2016 in Toronto, Ontario, Canada at the <strong>The Ted Rogers School of Management</strong> at Ryerson University.
+                {% endtrans %}
+            </p>
+        </div>
     
-    <div class="page__col">
-        <div class="venue-page__map" id="js-venue-map"></div>
+        <div class="page__col">
+            <div class="venue-page__map" id="js-venue-map"></div>
+        </div>
     </div>
 </div>
 

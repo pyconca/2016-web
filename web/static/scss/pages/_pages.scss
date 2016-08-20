@@ -18,6 +18,12 @@
       backgroud-size: cover;
       justify-content: flex-end;
     }
+    
+    h1,
+    h2,
+    h3 {
+      font-size: modular-scale(2);
+    }
   }
   
   @at-root #{&}__header-content {

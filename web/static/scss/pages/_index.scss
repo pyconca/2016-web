@@ -10,6 +10,7 @@
   
   @include media(max-width $breakpoint-mobile) {
     background-image: url('images/pycon-2015-mc-paul-by-shiroyuki-mobile.jpg');
+    background-position: top right;
   }
   
   @include media(min-width $breakpoint-mobile) {
@@ -53,20 +54,12 @@
     margin: 0 auto;
   }
   
-  // @at-root #{&}__navigation {}
-  
   @at-root #{&}__heading {
-    @at-root #{&}--primary {
-      font-size: 2.5rem;
-    }
-    
-    @at-root #{&}--secondary {
-      font-size: 1.8rem;
-    }
+    font-size: modular-scale(2);
   }
   
   @at-root #{&}__copy {
-    font-size: 1.5rem;
+    font-size: modular-scale(1);
   }
   
   // @at-root #{&}__button {}

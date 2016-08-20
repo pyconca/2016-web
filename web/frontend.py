@@ -72,3 +72,10 @@ def volunteer():
         content = get_markdown_file('volunteer_en.markdown')
 
     return render_template('pages/volunteer.html', content=content)
+
+
+@frontend.route('/guide/')
+def guide():
+    guide = get_json_file('guide.json')
+
+    return render_template('pages/guide.html', guide=guide)
