@@ -2,6 +2,7 @@ import os
 
 from fabric import api
 from fabric import utils
+from fabric.contrib.files import exists
 from fabric.contrib.project import rsync_project
 
 from web.config import Config
@@ -60,19 +61,19 @@ def setup():
                                              api.env.venv_dir,
                                              api.env.app_dir])))
 
-    if not exists(os.path.join(api.env.app_dir, '.git')):
-        # Clone the GitHub Repo
-        with api.cd(api.env.app_dir):
-            api.run('git clone {0} .'.format(api.env.repo))
-
     # Make sure the directories are writeable by me.
     api.sudo('chown {0}:{0} {1}'.format(api.env.user,
                                         ' '.join([api.env.html_dir,
                                                   api.env.venv_dir,
                                                   api.env.app_dir])))
 
+    if not exists(os.path.join(api.env.app_dir, '.git')):
+        # Clone the GitHub Repo
+        with api.cd(api.env.app_dir):
+            api.run('git clone {0} .'.format(api.env.repo))
+
     # Createh virtual environment.
-    if not exists(api.env.venv_dir):
+    if not exists(os.path.join(api.env.venv_dir, 'bin')):
         api.run('virtualenv {0}'.format(api.env.venv_dir))
 
     # Install the dependencies.
