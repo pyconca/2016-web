@@ -7,7 +7,7 @@ import flask_assets as assets
 
 from webassets.filter import get_filter
 
-from .frontend import frontend
+from web.views import *
 
 
 def create_app(configfile=None):
@@ -77,6 +77,7 @@ def create_app(configfile=None):
     #     req_lang = request.accept_languages.best_match(langs)
     #     return redirect("/{0}/".format(req_lang), code=302)
 
-    app.register_blueprint(frontend, url_prefix='/<lang_code>')
+    app.register_blueprint(view_pages, url_prefix='/<lang_code>')
+    app.register_blueprint(view_schedule, url_prefix='/<lang_code>/schedule')
 
     return app
