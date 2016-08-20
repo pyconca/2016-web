@@ -90,6 +90,8 @@ Run the project:
 (pycon_web) ~/2016-web $ python manage.py runserver
 ```
 
+This should start a webserver @ [127.0.0.1:5000](http://127.0.0.1:5000/en/).
+
 ## Deployment
 
 ```

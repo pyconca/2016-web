@@ -15,10 +15,25 @@
   }
   
   @at-root #{&}__link {
-    color: #fff;
+    color: $colour-white;
     
     &:hover {
-      color: #fff;
+      color: darken($colour-white, 25%);
+    }
+    
+    @at-root #{&}--icon {
+      margin-left: .5em;
+      margin-right: .5em;
+      
+      svg * {
+        fill: $colour-white;
+      }
+      
+      &:hover {
+        svg * {
+          fill: darken($colour-white, 25%);
+        }
+      }
     }
   }
   

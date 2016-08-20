@@ -15,6 +15,10 @@
         </div>
     
         <div class="footer__buttons">
+            <a href="https://cfp.pycon.ca/" class="footer__button button button--secondary">
+                {{ _('Submit a talk/tutorial proposal') }}
+            </a>
+            
             <a href="http://eepurl.com/bs9mG9" class="footer__button button button--secondary">
                 {{ _('Join our mailing list') }}
             </a>
@@ -22,12 +26,22 @@
     
         <div class="footer__links">
             <ul class="footer__list">
-                <li class="footer__item">
-                    <a href="https://twitter.com/pyconca" class="footer__link">Twitter</a>
+                <li class="footer__item footer__item--icons">
+                    <a href="https://twitter.com/pyconca" class="footer__link footer__link--icon">
+                        {% include "includes/icon-social-twitter.svg" %}
+                    </a>
+                    
+                    <a href="https://www.facebook.com/pyconca" class="footer__link footer__link--icon">
+                        {% include "includes/icon-social-facebook.svg" %}
+                    </a>
+                    
+                    <a href="https://www.youtube.com/channel/UCclkPrurwUP_ajqi3vDTNDg" class="footer__link footer__link--icon">
+                        {% include "includes/icon-social-youtube.svg" %}
+                    </a>
                 </li>
-            
+                
                 <li class="footer__item">
-                    <a href="https://www.facebook.com/pyconca" class="footer__link">Facebook</a>
+                    <a href="{{ url_for('frontend.code_of_conduct') }}" class="footer__link">{{ _('Code of Conduct') }}</a>
                 </li>
             </ul>
         </div>

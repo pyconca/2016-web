@@ -1,15 +1,16 @@
 .about-page {
   // @at-root #{&}__sponsors {}
-  
+
   @at-root #{&}__sponsor-link,
            #{&}__sponsor-logo {
     height: 6rem;
     width: 6rem;
   }
-  
+
   @at-root #{&}__sponsor-logo {
     @include filter(grayscale(75%));
-    
+    cursor: pointer;
+
     &:hover {
       @include filter(none);
     }
