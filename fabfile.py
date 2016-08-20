@@ -1,41 +1,59 @@
 import os
 
-from fabric.api import task, env, local, require
+from fabric import api
+from fabric import utils
 from fabric.contrib.project import rsync_project
 
 from web.config import Config
 
-env.user = 'deploy'
-env.hosts = ['portland.pynorth.org']
-env.use_ssh_config = True
+api.env.user = 'deploy'
+api.env.hosts = ['portland.pynorth.org']
+api.env.use_ssh_config = True
 
-env.build_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+api.env.build_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                              'build/')
 
 
-@task
+@api.task
 def stag():
-    env.environment = 'staging'
-    env.html_dir = '/srv/www/pycon.ca/staging.2016/html/'
+    api.env.environment = 'staging'
+    api.env.html_dir = '/srv/www/pycon.ca/staging.2016/html/'
 
 
-@task
+@api.task
 def prod():
-    env.environment = 'production'
-    env.html_dir = '/srv/www/pycon.ca/2016/html/'
+    api.env.environment = 'production'
+    api.env.html_dir = '/srv/www/pycon.ca/2016/html/'
 
 
-@task
+@api.task
 def deploy():
-    require('environment')
+    api.require('environment')
+
+    # Check to make sure that there isn't any unchecked files
+    git_status = api.local('git status --porcelain', capture=True)
+
+    if git_status:
+        utils.abort('There are unchecked files.')
 
     # Build the static website.
-    local('python manage.py freeze')
+    api.local('python manage.py freeze')
 
     # rsync the website to the server.
-    rsync_project(remote_dir=env.html_dir,
-                  local_dir=env.build_dir,
+    rsync_project(remote_dir=api.env.html_dir,
+                  local_dir=api.env.build_dir,
                   delete=True,
                   exclude=['static/scss/',
                            'static/bower/',
                            'static/.webassets-cache/'])
+
+    # Draw a ship
+    utils.puts("                           |    |    |               ")
+    utils.puts("                          )_)  )_)  )_)              ")
+    utils.puts("                         )___))___))___)\            ")
+    utils.puts("                        )____)____)_____)\\          ")
+    utils.puts("                      _____|____|____|____\\\__      ")
+    utils.puts("             ---------\                   /--------- ")
+    utils.puts("               ^^^^^ ^^^^^^^^^^^^^^^^^^^^^           ")
+    utils.puts("                 ^^^^      ^^^^     ^^^    ^^        ")
+    utils.puts("                      ^^^^      ^^^                  ")
