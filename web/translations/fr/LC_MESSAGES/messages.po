@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2016-08-20 19:06-0400\n"
-"PO-Revision-Date: 2016-08-20 19:04-0400\n"
+"PO-Revision-Date: 2016-08-20 19:08-0400\n"
 "Last-Translator: Myles Braithwaite <me@mylesbraithwaite.com>\n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"X-Generator: Poedit 1.8.8\n"
 
 #: web/templates/includes/footer.html:5 web/templates/includes/header.html:7
 #: web/templates/pages/index.html:10
@@ -74,13 +75,13 @@ msgstr "Joignez-vous à la conversation"
 
 #: web/templates/pages/about.html:27
 msgid ""
-"Be sure to use <a "
-"href=\"https://twitter.com/intent/tweet?button_hashtag=PyConCA2016\">#PyConCA2016</a>."
-" We love hearing from our community members!"
+"Be sure to use <a href=\"https://twitter.com/intent/tweet?"
+"button_hashtag=PyConCA2016\">#PyConCA2016</a>. We love hearing from our "
+"community members!"
 msgstr ""
-"Assurez-vous d'utiliser <a "
-"href=\"https://twitter.com/intent/tweet?button_hashtag=PyConCA2016”>#pyconca2016</a>."
-" Nous aimons recevoir des nouvelles de la communauté!"
+"Assurez-vous d'utiliser <a href=\"https://twitter.com/intent/tweet?"
+"button_hashtag=PyConCA2016”>#pyconca2016</a>. Nous aimons recevoir des "
+"nouvelles de la communauté!"
 
 #: web/templates/pages/about.html:29
 msgid "Key Contacts"
@@ -88,27 +89,27 @@ msgstr "Contacts clés"
 
 #: web/templates/pages/about.html:32
 msgid ""
-"The organizing committee can be contacted at <a "
-"href=\"mailto:organizers@pycon.ca\">organizers@pycon.ca</a>."
+"The organizing committee can be contacted at <a href=\"mailto:organizers@pycon."
+"ca\">organizers@pycon.ca</a>."
 msgstr ""
-"Le comité organisateur peut être rejoint à <a "
-"href=\"mailto:organizers@pycon.ca\">organizers@pycon.ca</a>."
+"Le comité organisateur peut être rejoint à <a href=\"mailto:organizers@pycon.ca"
+"\">organizers@pycon.ca</a>."
 
 #: web/templates/pages/about.html:33
 msgid ""
-"The board can be contacted privately at <a "
-"href=\"mailto:board@pycon.ca\">board@pycon.ca</a>."
+"The board can be contacted privately at <a href=\"mailto:board@pycon.ca"
+"\">board@pycon.ca</a>."
 msgstr ""
-"Le conseil d'administration peut être rejoint à <a "
-"href=\"mailto:board@pycon.ca\">board@pycon.ca</a>."
+"Le conseil d'administration peut être rejoint à <a href=\"mailto:board@pycon.ca"
+"\">board@pycon.ca</a>."
 
 #: web/templates/pages/about.html:34
 msgid ""
-"You can also find us on: <a "
-"href=\"https://github.com/pyconca/\">github.com/pyconca/</a>."
+"You can also find us on: <a href=\"https://github.com/pyconca/\">github.com/"
+"pyconca/</a>."
 msgstr ""
-"Vous pouvez également nous trouver: <a "
-"href=\"https://github.com/pyconca/\">github.com/pyconca/</a>."
+"Vous pouvez également nous trouver: <a href=\"https://github.com/pyconca/"
+"\">github.com/pyconca/</a>."
 
 #: web/templates/pages/about.html:39
 msgid "#PyConCA2016 Tweets"
@@ -116,12 +117,12 @@ msgstr ""
 
 #: web/templates/pages/about.html:49
 msgid "Organisers"
-msgstr ""
+msgstr "L'équipe"
 
 #: web/templates/pages/code-of-conduct.html:11
 msgid ""
-"PyCon Canada is committed to providing a safe and welcoming atmosphere "
-"for all attendees."
+"PyCon Canada is committed to providing a safe and welcoming atmosphere for all "
+"attendees."
 msgstr ""
 
 #: web/templates/pages/guide.html:3
@@ -134,8 +135,7 @@ msgstr ""
 
 #: web/templates/pages/guide.html:11
 msgid ""
-"Here are some of our favorite spots around <strong>Ryerson "
-"University</strong>."
+"Here are some of our favorite spots around <strong>Ryerson University</strong>."
 msgstr ""
 
 #: web/templates/pages/index.html:21
@@ -148,13 +148,12 @@ msgstr ""
 
 #: web/templates/pages/index.html:23
 msgid ""
-"Join your fellow Pythonistas for the fourth annual PyCon Canada, a "
-"weekend of talks, activities, fun and code!"
+"Join your fellow Pythonistas for the fourth annual PyCon Canada, a weekend of "
+"talks, activities, fun and code!"
 msgstr ""
-"Joignez-vous &agrave; la communaut&eacute; Python lors du "
-"quatri&egrave;me PyCon Canada, pour une fin de semaine de "
-"pr&eacute;sentations, d&#x27;activit&eacute;s, de programmation et de "
-"plaisir!"
+"Joignez-vous &agrave; la communaut&eacute; Python lors du quatri&egrave;me "
+"PyCon Canada, pour une fin de semaine de pr&eacute;sentations, d&#x27;"
+"activit&eacute;s, de programmation et de plaisir!"
 
 #: web/templates/pages/sponsors.html:10
 msgid "Our Sponsors"
@@ -162,13 +161,13 @@ msgstr "Nos commanditaires"
 
 #: web/templates/pages/sponsors.html:11
 msgid ""
-"We thank our fantastic sponsors who help make this event possible. <a "
-"href=\"mailto:sponsorship@pycon.ca\">Get in touch</a> if your "
-"organization would like to support PyCon Canada 2016."
+"We thank our fantastic sponsors who help make this event possible. <a href="
+"\"mailto:sponsorship@pycon.ca\">Get in touch</a> if your organization would "
+"like to support PyCon Canada 2016."
 msgstr ""
 "Nous remercions nos merveilleux commanditaires qui rendre cet événement "
-"possible. <a href=\"mailto:sponsorship@pycon.ca\">Contactez-nous</a> si "
-"votre organisation aimerait aider PyCon Canada 2016."
+"possible. <a href=\"mailto:sponsorship@pycon.ca\">Contactez-nous</a> si votre "
+"organisation aimerait aider PyCon Canada 2016."
 
 #: web/templates/pages/sponsors.html:16
 msgid "Gold"
@@ -184,8 +183,7 @@ msgstr ""
 
 #: web/templates/pages/venue.html:19
 msgid ""
-"This year PyCon Canada is taking place 12-13 November 2016 in Toronto, "
-"Ontario, Canada at the <strong>The Ted Rogers School of "
-"Management</strong> at Ryerson University."
+"This year PyCon Canada is taking place 12-13 November 2016 in Toronto, Ontario, "
+"Canada at the <strong>The Ted Rogers School of Management</strong> at Ryerson "
+"University."
 msgstr ""
-
