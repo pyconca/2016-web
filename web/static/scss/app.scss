@@ -13,9 +13,11 @@
 @import 'pages/pages'; // This First
 @import 'pages/index';
 @import 'pages/about';
+@import 'pages/venue';
 
 // Components
 @import 'components/button';
 @import 'components/navigation';
 @import 'components/footer';
 @import 'components/header';
+@import 'components/leaflet';

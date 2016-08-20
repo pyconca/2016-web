@@ -31,9 +31,13 @@ def sponsors():
 @frontend.route('/venue/')
 def venue():
     if g.lang_code == 'fr':
-        content = get_markdown_file('venue_fr.markdown')
+        content = {
+            'travel': get_markdown_file('venue-travel_fr.markdown')
+        }
     else:
-        content = get_markdown_file('venue_en.markdown')
+        content = {
+            'travel': get_markdown_file('venue-travel_en.markdown')
+        }
 
     return render_template('pages/venue.html', content=content)
 

@@ -1,0 +1,7 @@
+.venue-page {
+  @at-root #{&}__map {
+    border: 5px solid $action-color;
+    height: 25em;
+    max-width: 100%;
+  }
+}

@@ -2,14 +2,32 @@
 
 {% block title %}{{ _('Venue') }} | {{ super() }}{% endblock %}
 
-{% block page_class %}page--code-of-venue{% endblock %}
-{% block page_header_class %}page__header--code-of-venue{% endblock %}
-{% block page_content_class %}page__content--code-of-venue{% endblock %}
+{% block page_class %}page--venue{% endblock %}
+{% block page_header_class %}page__header--venue{% endblock %}
+{% block page_content_class %}page__content--venue{% endblock %}
 
 {% block page_header %}
 <h1>{{ _('Venue') }}</h1>
 {% endblock %}
 
 {% block page_content %}
-{{ content|safe }}
+<div class="page__row page__section">
+    <div class="page__col">
+        <h2>{{ _('Location') }}</h2>
+        
+        <p>
+            {% trans %}
+            This year PyCon Canada is taking place 12-13 November 2016 in Toronto, Ontario, Canada at the <strong>Bahen Centre for Information Technology</strong> on the University of Toronto St. George campus.
+            {% endtrans %}
+        </p>
+    </div>
+    
+    <div class="page__col">
+        <div class="venue-page__map" id="js-venue-map"></div>
+    </div>
+</div>
+
+<div class="page__section">
+    {{ content.travel|safe }}
+</div>
 {% endblock %}

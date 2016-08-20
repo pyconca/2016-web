@@ -27,6 +27,7 @@ def create_app(configfile=None):
 
     env.register('js_all',
                  assets.Bundle('jquery/dist/jquery.min.js',
+                               'leaflet/dist/leaflet.js',
                                assets.Bundle('app.js'),
                                output='app.js'))
 
