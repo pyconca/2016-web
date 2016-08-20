@@ -40,16 +40,21 @@
   }
   
   @at-root #{&}__content {
-    margin: 0 auto;
-    max-width: 50em;
+    
   }
   
   @at-root #{&}__section {
     margin-top: 1em;
     margin-bottom: 1em;
+    margin: 0 auto;
+    max-width: 50em;
     
     @at-root #{&}--border-bottom {
       border-bottom: $base-border;
+    }
+    
+    @at-root #{&}--full-width {
+      max-width: 100%;
     }
   }
   

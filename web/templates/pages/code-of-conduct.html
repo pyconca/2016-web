@@ -8,9 +8,11 @@
 
 
 {% block page_header %}
-<h1>{{ _('Code of Conduct') }}</h1>
+<h1>{{ _('PyCon Canada is committed to providing a safe and welcoming atmosphere for all attendees.') }}</h1>
 {% endblock %}
 
 {% block page_content %}
-{{ content|safe }}
+<div class="page__section">
+    {{ content|safe }}
+</div>
 {% endblock %}

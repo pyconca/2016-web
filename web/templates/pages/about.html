@@ -11,31 +11,37 @@
 {% endblock %}
 
 {% block page_content %}
-    <div class="page__section page__section--border-bottom">
+    <div class="page__section">
         {{ content|safe }}
     </div>
     
-    <div class="page__row page__section page__section--border-bottom">
-        <div class="page__col page__col--left">
-            <h2>{{ _("Join the Conversation") }}</h2>
+    <div class="page__section page__section--full-width">
+        <img src="https://placekitten.com/g/1200/400">
+    </div>
+    
+    <div class="page__section">
+        <div class="page__row">
+            <div class="page__col page__col--left">
+                <h2>{{ _("Join the Conversation") }}</h2>
             
-            <p>{{ _('Be sure to use <a href="https://twitter.com/intent/tweet?button_hashtag=PyConCA2016">#PyConCA2016</a>. We love hearing from our community members!') }}</p>
+                <p>{{ _('Be sure to use <a href="https://twitter.com/intent/tweet?button_hashtag=PyConCA2016">#PyConCA2016</a>. We love hearing from our community members!') }}</p>
             
-            <h2>{{ _('Key Contacts') }}</h2>
+                <h2>{{ _('Key Contacts') }}</h2>
             
-            <ul>
-                <li>{{ _('The organizing committee can be contacted at <a href="mailto:organizers@pycon.ca">organizers@pycon.ca</a>.') }}</li>
-                <li>{{ _('The board can be contacted privately at <a href="mailto:board@pycon.ca">board@pycon.ca</a>.') }}</li>
-                <li>{{ _('You can also find us on: <a href="https://github.com/pyconca/">github.com/pyconca/</a>.') }}</li>
-            </ul>
-        </div>
+                <ul>
+                    <li>{{ _('The organizing committee can be contacted at <a href="mailto:organizers@pycon.ca">organizers@pycon.ca</a>.') }}</li>
+                    <li>{{ _('The board can be contacted privately at <a href="mailto:board@pycon.ca">board@pycon.ca</a>.') }}</li>
+                    <li>{{ _('You can also find us on: <a href="https://github.com/pyconca/">github.com/pyconca/</a>.') }}</li>
+                </ul>
+            </div>
         
-        <div class="page__col page__col--right">
-            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/hashtag/PyConCA2016" data-widget-id="765372112991358978">{{ _('#PyConCA2016 Tweets') }}</a>
+            <div class="page__col page__col--right">
+                <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/hashtag/PyConCA2016" data-widget-id="765372112991358978">{{ _('#PyConCA2016 Tweets') }}</a>
+            </div>
         </div>
     </div>
     
-    <div class="page__section page__section--border-bottom">
+    <div class="page__section">
         <h2>{{ _('Organisers') }}</h2>
 
         <p>
@@ -46,25 +52,27 @@
     </div>
     
     {#
-    <div class="page__row page__section page__section--border-bottom">
-        <div class="page__col page__col--left">
-            <h2>{{ _('Organisers') }}</h2>
+    <div class="page__section">
+        <div class="page__row">
+            <div class="page__col page__col--left">
+                <h2>{{ _('Organisers') }}</h2>
             
-            <p>
-                {% for person in team['organisers'] %}
-                <a href="{{ person.link }}">{{ person.name }}</a> {% if not loop.last %}<span class="separator">&bull;</span>{% endif %}
-                {% endfor %}
-            </p>
-        </div>
+                <p>
+                    {% for person in team['organisers'] %}
+                    <a href="{{ person.link }}">{{ person.name }}</a> {% if not loop.last %}<span class="separator">&bull;</span>{% endif %}
+                    {% endfor %}
+                </p>
+            </div>
         
-        <div class="page__col page__col--right">
-            <h2>{{ _('Volunteers') }}</h2>
+            <div class="page__col page__col--right">
+                <h2>{{ _('Volunteers') }}</h2>
             
-            <p>
-                {% for person in team['volunteers'] %}
-                <a href="{{ person.link }}">{{ person.name }}</a> {% if not loop.last %}<span class="separator">&bull;</span>{% endif %}
-                {% endfor %}
-            </p>
+                <p>
+                    {% for person in team['volunteers'] %}
+                    <a href="{{ person.link }}">{{ person.name }}</a> {% if not loop.last %}<span class="separator">&bull;</span>{% endif %}
+                    {% endfor %}
+                </p>
+            </div>
         </div>
     </div>
     #}

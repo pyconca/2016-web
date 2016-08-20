@@ -1,3 +1,5 @@
+## Code de conduite
+
 PyCon Canada s'engage à fournir à tous une conférence sans harcèlement, sans égard au genre, l'orientation sexuelle, les handicaps, l'apparence physique, la taille, la race, ou la religion. Nous ne tolérons aucune forme d'harcèlement envers les participants à la conférence.
 
 Toute communication devrait être appropriée pour une audience de professionnels incluant des personnes de différents horizons. Le langage et les images à caractère sexuel n'est pas approprié en aucun lieu de la conférence incluant les présentations. 
