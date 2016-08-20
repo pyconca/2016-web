@@ -125,12 +125,14 @@ def local_deploy():
     update_code()
     pip_upgrade()
 
+    # Make the build directory.
+    build_dir = os.path.join(api.env.app_dir, 'build')
+
+    api.run('mkdir {0}'.format(build_dir))
+
     # Build the static website.
     with api.cd(api.env.app_dir):
         api.run('{0} manage.py freeze'.format(api.env.venv_python))
-
-    # Copy the files.
-    build_dir = os.path.join(api.env.app_dir, 'build')
 
     # Remove some of the auto generate folders
     remove_dir = [os.path.join(build_dir, 'static/scss/'),
@@ -139,6 +141,7 @@ def local_deploy():
 
     api.run('rm -r {0}'.format(' '.join(remove_dir)))
 
+    # Copy the files.
     api.run('cp -a {0}/. {1}/'.format(build_dir, api.env.html_dir))
 
     # Draw a ship
