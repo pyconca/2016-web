@@ -32,11 +32,19 @@ def sponsors():
 def venue():
     if g.lang_code == 'fr':
         content = {
-            'travel': get_markdown_file('venue-travel_fr.markdown')
+            'travel': get_markdown_file('venue-travel_fr.markdown'),
+            'hotel': get_markdown_file('venue-hotel_fr.markdown'),
+            'public_transit': get_markdown_file('venue-public-transit_fr'
+                                                '.markdown'),
+            'toronto': get_markdown_file('venue-toronto_fr.markdown')
         }
     else:
         content = {
-            'travel': get_markdown_file('venue-travel_en.markdown')
+            'travel': get_markdown_file('venue-travel_en.markdown'),
+            'hotel': get_markdown_file('venue-hotel_en.markdown'),
+            'public_transit': get_markdown_file('venue-public-transit_en'
+                                                '.markdown'),
+            'toronto': get_markdown_file('venue-toronto_en.markdown')
         }
 
     return render_template('pages/venue.html', content=content)
