@@ -60,7 +60,7 @@ def freeze():
     def page_list():
         for lang_code in ['en', 'fr']:
             yield 'frontend.index', {'lang_code': lang_code}
-            yield 'frontend.code_of_conduct', {'lang_code': lang_code}
+            yield 'frontend.guide', {'lang_code': lang_code}
 
     freezer.freeze()
 
