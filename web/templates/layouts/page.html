@@ -1,19 +1,19 @@
 {% extends "layouts/base.html" %}
 
 {% block body %}
-{% include "includes/header.html" %}
-
-<div class="page {% block page_class %}{% endblock %}">
-    <div class="page__header {% block page_header_class %}{% endblock %}">
-        <div class="page__header-content">
-            {% block page_header %}{% endblock %}
+    {% include "includes/header.html" %}
+    
+    <div class="page {% block page_class %}{% endblock %}">
+        <div class="page__header {% block page_header_class %}{% endblock %}">
+            <div class="page__header-content">
+                {% block page_header %}{% endblock %}
+            </div>
+        </div>
+        
+        <div class="page__content {% block page_content_class %}{% endblock %}">
+            {% block page_content %}{% endblock %}
         </div>
     </div>
     
-    <div class="page__content {% block page_content_class %}{% endblock %}">
-        {% block page_content %}{% endblock %}
-    </div>
-</div>
-
-{% include "includes/footer.html" %}
+    {% include "includes/footer.html" %}
 {% endblock %}

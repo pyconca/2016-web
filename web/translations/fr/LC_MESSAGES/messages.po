@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-08-16 16:28-0400\n"
-"PO-Revision-Date: 2016-08-16 16:26-0400\n"
+"POT-Creation-Date: 2016-08-20 19:06-0400\n"
+"PO-Revision-Date: 2016-08-20 19:04-0400\n"
 "Last-Translator: Myles Braithwaite <me@mylesbraithwaite.com>\n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 #: web/templates/includes/footer.html:5 web/templates/includes/header.html:7
 #: web/templates/pages/index.html:10
 msgid "Home"
-msgstr ""
+msgstr "Accueil"
 
 #: web/templates/includes/footer.html:7 web/templates/includes/header.html:9
 #: web/templates/pages/about.html:3 web/templates/pages/index.html:11
@@ -34,23 +34,33 @@ msgstr "À propos"
 msgid "Venue"
 msgstr "Lieu"
 
-#: web/templates/includes/footer.html:11 web/templates/includes/header.html:13
+#: web/templates/includes/footer.html:11 web/templates/includes/header.html:15
+#: web/templates/pages/about.html:85 web/templates/pages/index.html:14
+#: web/templates/pages/sponsors.html:3
+msgid "Sponsors"
+msgstr "Commanditaires"
+
+#: web/templates/includes/footer.html:19 web/templates/pages/index.html:27
+msgid "Submit a talk/tutorial proposal"
+msgstr "Soumettre un pr&eacute;sentation / un tutoriel"
+
+#: web/templates/includes/footer.html:23 web/templates/includes/footer.html:45
+#: web/templates/pages/index.html:33
+msgid "Join our mailing list"
+msgstr "Abonnez-vous &agrave; la liste d&#x27;envoi"
+
+#: web/templates/includes/footer.html:50
+#: web/templates/pages/code-of-conduct.html:3
+msgid "Code of Conduct"
+msgstr "Code de conduite"
+
+#: web/templates/includes/footer.html:53 web/templates/includes/header.html:13
 #: web/templates/pages/index.html:13 web/templates/pages/volunteer.html:3
 #: web/templates/pages/volunteer.html:10
 msgid "Volunteer"
 msgstr ""
 
-#: web/templates/includes/footer.html:13 web/templates/includes/header.html:15
-#: web/templates/pages/about.html:59 web/templates/pages/index.html:14
-#: web/templates/pages/sponsors.html:3
-msgid "Sponsors"
-msgstr "Commanditaires"
-
-#: web/templates/includes/footer.html:19 web/templates/pages/index.html:33
-msgid "Join our mailing list"
-msgstr "Abonnez-vous &agrave; la liste d&#x27;envoi"
-
-#: web/templates/includes/header.html:3 web/templates/pages/index.html:19
+#: web/templates/includes/header.html:3
 msgid "PyCon Canada"
 msgstr ""
 
@@ -58,55 +68,75 @@ msgstr ""
 msgid "PyCon Canada is an initiative to strengthen the Canadian Python community."
 msgstr ""
 
-#: web/templates/pages/about.html:18
+#: web/templates/pages/about.html:25
 msgid "Join the Conversation"
-msgstr ""
+msgstr "Joignez-vous à la conversation"
 
-#: web/templates/pages/about.html:20
+#: web/templates/pages/about.html:27
 msgid ""
 "Be sure to use <a "
 "href=\"https://twitter.com/intent/tweet?button_hashtag=PyConCA2016\">#PyConCA2016</a>."
 " We love hearing from our community members!"
 msgstr ""
+"Assurez-vous d'utiliser <a "
+"href=\"https://twitter.com/intent/tweet?button_hashtag=PyConCA2016”>#pyconca2016</a>."
+" Nous aimons recevoir des nouvelles de la communauté!"
 
-#: web/templates/pages/about.html:22
+#: web/templates/pages/about.html:29
 msgid "Key Contacts"
-msgstr ""
+msgstr "Contacts clés"
 
-#: web/templates/pages/about.html:25
+#: web/templates/pages/about.html:32
 msgid ""
 "The organizing committee can be contacted at <a "
 "href=\"mailto:organizers@pycon.ca\">organizers@pycon.ca</a>."
 msgstr ""
+"Le comité organisateur peut être rejoint à <a "
+"href=\"mailto:organizers@pycon.ca\">organizers@pycon.ca</a>."
 
-#: web/templates/pages/about.html:26
+#: web/templates/pages/about.html:33
 msgid ""
 "The board can be contacted privately at <a "
 "href=\"mailto:board@pycon.ca\">board@pycon.ca</a>."
 msgstr ""
+"Le conseil d'administration peut être rejoint à <a "
+"href=\"mailto:board@pycon.ca\">board@pycon.ca</a>."
 
-#: web/templates/pages/about.html:27
+#: web/templates/pages/about.html:34
 msgid ""
 "You can also find us on: <a "
 "href=\"https://github.com/pyconca/\">github.com/pyconca/</a>."
 msgstr ""
+"Vous pouvez également nous trouver: <a "
+"href=\"https://github.com/pyconca/\">github.com/pyconca/</a>."
 
-#: web/templates/pages/about.html:32
+#: web/templates/pages/about.html:39
 msgid "#PyConCA2016 Tweets"
 msgstr ""
 
-#: web/templates/pages/about.html:38
+#: web/templates/pages/about.html:49
 msgid "Organisers"
 msgstr ""
 
-#: web/templates/pages/about.html:48
-msgid "Volunteers"
+#: web/templates/pages/code-of-conduct.html:11
+msgid ""
+"PyCon Canada is committed to providing a safe and welcoming atmosphere "
+"for all attendees."
 msgstr ""
 
-#: web/templates/pages/code-of-conduct.html:3
-#: web/templates/pages/code-of-conduct.html:11
-msgid "Code of Conduct"
-msgstr "Code de conduite"
+#: web/templates/pages/guide.html:3
+msgid "Guide"
+msgstr ""
+
+#: web/templates/pages/guide.html:10
+msgid "Welcome to Toronto"
+msgstr ""
+
+#: web/templates/pages/guide.html:11
+msgid ""
+"Here are some of our favorite spots around <strong>Ryerson "
+"University</strong>."
+msgstr ""
 
 #: web/templates/pages/index.html:21
 msgid "12-13 November 2016"
@@ -125,10 +155,6 @@ msgstr ""
 "quatri&egrave;me PyCon Canada, pour une fin de semaine de "
 "pr&eacute;sentations, d&#x27;activit&eacute;s, de programmation et de "
 "plaisir!"
-
-#: web/templates/pages/index.html:27
-msgid "Submit a talk/tutorial proposal"
-msgstr "Soumettre un pr&eacute;sentation / un tutoriel"
 
 #: web/templates/pages/sponsors.html:10
 msgid "Our Sponsors"
@@ -151,4 +177,15 @@ msgstr "Or"
 #: web/templates/pages/sponsors.html:35
 msgid "Follow @"
 msgstr "Suivre @"
+
+#: web/templates/pages/venue.html:17
+msgid "Location"
+msgstr ""
+
+#: web/templates/pages/venue.html:19
+msgid ""
+"This year PyCon Canada is taking place 12-13 November 2016 in Toronto, "
+"Ontario, Canada at the <strong>The Ted Rogers School of "
+"Management</strong> at Ryerson University."
+msgstr ""
 
