@@ -111,24 +111,29 @@ def pip_upgrade():
 
 
 @api.task
+def bower_upgrade():
+    with api.cd(api.env.app_dir):
+        api.run('bower install')
+
+
+@api.task
 def local_deploy():
-    # Check to make sure that there isn't any unchecked files
-    git_status = api.local('git status --porcelain', capture=True)
-
-    if git_status:
-        utils.abort('There are unchecked files.')
-
-    # Push the repo to the remote
-    api.local('git push {0} {1}'.format(api.env.remote, api.env.branch))
+    ## Check to make sure that there isn't any unchecked files
+    #git_status = api.local('git status --porcelain', capture=True)
+    #
+    #if git_status:
+    #    utils.abort('There are unchecked files.')
+    #
+    ## Push the repo to the remote
+    #api.local('git push {0} {1}'.format(api.env.remote, api.env.branch))
 
     # The deploy tasks
     update_code()
     pip_upgrade()
+    bower_upgrade()
 
     # Make the build directory.
     build_dir = os.path.join(api.env.app_dir, 'build')
-
-    api.run('mkdir {0}'.format(build_dir))
 
     # Build the static website.
     with api.cd(api.env.app_dir):
