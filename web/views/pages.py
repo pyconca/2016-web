@@ -14,9 +14,9 @@ def index():
 @pages.route('/code-de-conduite/', alias=True)
 def code_of_conduct():
     if g.lang_code == 'fr':
-        content = get_markdown_file('code-of-conduct_fr.markdown')
+        content = get_markdown_file('code-of-conduct', 'fr')
     else:
-        content = get_markdown_file('code-of-conduct_en.markdown')
+        content = get_markdown_file('code-of-conduct', 'en')
 
     return render_template('pages/code-of-conduct.html', content=content)
 
@@ -32,19 +32,17 @@ def sponsors():
 def venue():
     if g.lang_code == 'fr':
         content = {
-            'travel': get_markdown_file('venue-travel_fr.markdown'),
-            'hotel': get_markdown_file('venue-hotel_fr.markdown'),
-            'public_transit': get_markdown_file('venue-public-transit_fr'
-                                                '.markdown'),
-            'toronto': get_markdown_file('venue-toronto_fr.markdown')
+            'travel': get_markdown_file('venue-travel', 'fr'),
+            'hotel': get_markdown_file('venue-hotel', 'fr'),
+            'public_transit': get_markdown_file('venue-public-transit', 'fr'),
+            'toronto': get_markdown_file('venue-toronto', 'fr')
         }
     else:
         content = {
-            'travel': get_markdown_file('venue-travel_en.markdown'),
-            'hotel': get_markdown_file('venue-hotel_en.markdown'),
-            'public_transit': get_markdown_file('venue-public-transit_en'
-                                                '.markdown'),
-            'toronto': get_markdown_file('venue-toronto_en.markdown')
+            'travel': get_markdown_file('venue-travel'),
+            'hotel': get_markdown_file('venue-hotel'),
+            'public_transit': get_markdown_file('venue-public-transit'),
+            'toronto': get_markdown_file('venue-toronto')
         }
 
     return render_template('pages/venue.html', content=content)
@@ -53,9 +51,9 @@ def venue():
 @pages.route('/about/')
 def about():
     if g.lang_code == 'fr':
-        content = get_markdown_file('about_fr.markdown')
+        content = get_markdown_file('about', 'fr')
     else:
-        content = get_markdown_file('about_en.markdown')
+        content = get_markdown_file('about')
 
     team = get_json_file('team.json')
     sponsors = get_json_file('sponsors.json')
@@ -67,9 +65,9 @@ def about():
 @pages.route('/volunteer/')
 def volunteer():
     if g.lang_code == 'fr':
-        content = get_markdown_file('volunteer_fr.markdown')
+        content = get_markdown_file('volunteer', 'fr')
     else:
-        content = get_markdown_file('volunteer_en.markdown')
+        content = get_markdown_file('volunteer')
 
     return render_template('pages/volunteer.html', content=content)
 
