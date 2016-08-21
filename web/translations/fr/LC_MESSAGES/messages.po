@@ -58,7 +58,7 @@ msgstr "Code de conduite"
 #: web/templates/pages/index.html:13 web/templates/pages/volunteer.html:3
 #: web/templates/pages/volunteer.html:10
 msgid "Volunteer"
-msgstr ""
+msgstr "Bénévole"
 
 #: web/templates/includes/header.html:3
 msgid "PyCon Canada"
