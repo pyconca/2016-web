@@ -3,7 +3,7 @@
     display: block;
     
     @include media(min-width $breakpoint-mobile) {
-      display: hidden;
+      display: none;
     }
   }
   

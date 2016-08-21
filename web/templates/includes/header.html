@@ -4,9 +4,9 @@
     </a>
     
     <nav class="navigation header__navigation">
-        <a href="#" class="navigation__menu header__navigation-menu">MENU</a>
+        <a href="#" class="navigation__menu header__navigation-menu" id="js-navigation-button">MENU</a>
         
-        <ul class="navigation__list header__navigation-list">
+        <ul class="navigation__list header__navigation-list" id="js-navigation-menu">
             <li class="navigation__item"><a class="navigation__link" href="{{ url_for('pages.index') }}">{{ _('Home') }}</a></li>
         
             <li class="navigation__item"><a class="navigation__link {% if request.url_rule.endpoint == 'pages.about' %}navigation__link--active{% endif %}" href="{{ url_for('pages.about') }}">{{ _('About') }}</a></li>
