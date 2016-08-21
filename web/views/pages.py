@@ -32,6 +32,7 @@ def sponsors():
 def venue():
     if g.lang_code == 'fr':
         content = {
+            'location': get_markdown_file('venue-location', 'fr'),
             'travel': get_markdown_file('venue-travel', 'fr'),
             'hotel': get_markdown_file('venue-hotel', 'fr'),
             'public_transit': get_markdown_file('venue-public-transit', 'fr'),
@@ -39,6 +40,7 @@ def venue():
         }
     else:
         content = {
+            'location': get_markdown_file('venue-location'),
             'travel': get_markdown_file('venue-travel'),
             'hotel': get_markdown_file('venue-hotel'),
             'public_transit': get_markdown_file('venue-public-transit'),
