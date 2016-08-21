@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-08-20 19:10-0400\n"
+"POT-Creation-Date: 2016-08-21 17:55-0400\n"
 "PO-Revision-Date: 2016-08-20 19:08-0400\n"
 "Last-Translator: Myles Braithwaite <me@mylesbraithwaite.com>\n"
 "Language: fr\n"
@@ -18,23 +18,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 
-#: web/templates/includes/footer.html:5 web/templates/includes/header.html:7
+#: web/templates/includes/footer.html:5 web/templates/includes/header.html:10
 #: web/templates/pages/index.html:10
 msgid "Home"
 msgstr "Accueil"
 
-#: web/templates/includes/footer.html:7 web/templates/includes/header.html:9
+#: web/templates/includes/footer.html:7 web/templates/includes/header.html:12
 #: web/templates/pages/about.html:3 web/templates/pages/index.html:11
 msgid "About"
 msgstr "À propos"
 
-#: web/templates/includes/footer.html:9 web/templates/includes/header.html:11
+#: web/templates/includes/footer.html:9 web/templates/includes/header.html:14
 #: web/templates/pages/index.html:12 web/templates/pages/venue.html:3
 #: web/templates/pages/venue.html:10
 msgid "Venue"
 msgstr "Lieu"
 
-#: web/templates/includes/footer.html:11 web/templates/includes/header.html:15
+#: web/templates/includes/footer.html:11 web/templates/includes/header.html:18
 #: web/templates/pages/about.html:85 web/templates/pages/index.html:14
 #: web/templates/pages/sponsors.html:3
 msgid "Sponsors"
@@ -54,7 +54,7 @@ msgstr "Abonnez-vous &agrave; la liste d&#x27;envoi"
 msgid "Code of Conduct"
 msgstr "Code de conduite"
 
-#: web/templates/includes/footer.html:53 web/templates/includes/header.html:13
+#: web/templates/includes/footer.html:53 web/templates/includes/header.html:16
 #: web/templates/pages/index.html:13 web/templates/pages/volunteer.html:3
 #: web/templates/pages/volunteer.html:10
 msgid "Volunteer"
@@ -138,10 +138,6 @@ msgid ""
 "University</strong>."
 msgstr ""
 
-#: web/templates/pages/index.html:15
-msgid "Schedule"
-msgstr ""
-
 #: web/templates/pages/index.html:22
 msgid "12-13 November 2016"
 msgstr "12-13 Novembre 2016"
@@ -182,14 +178,17 @@ msgstr "Or"
 msgid "Follow @"
 msgstr "Suivre @"
 
-#: web/templates/pages/venue.html:17
-msgid "Location"
-msgstr ""
+#~ msgid "Schedule"
+#~ msgstr ""
 
-#: web/templates/pages/venue.html:19
-msgid ""
-"This year PyCon Canada is taking place 12-13 November 2016 in Toronto, "
-"Ontario, Canada at the <strong>The Ted Rogers School of "
-"Management</strong> at Ryerson University."
-msgstr ""
+#~ msgid "Location"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This year PyCon Canada is taking "
+#~ "place 12-13 November 2016 in Toronto,"
+#~ " Ontario, Canada at the <strong>The "
+#~ "Ted Rogers School of Management</strong> "
+#~ "at Ryerson University."
+#~ msgstr ""
 
