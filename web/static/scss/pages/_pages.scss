@@ -77,10 +77,16 @@
   }
   
   @at-root #{&}__col {
-    @include span-columns(6);
+    @include span-columns(12);
     
     @at-root #{&}--left {
       @include omega();
+    }
+  }
+  
+  @include media(min-width $breakpoint-mobile) {
+    @at-root #{&}__col {
+      @include span-columns(6);
     }
   }
   

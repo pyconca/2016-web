@@ -10,8 +10,24 @@
     max-width: 50em;
   }
   
+  @at-root #{&}__buttons {
+    display: none;
+  }
+  
   @at-root #{&}__links {
-    @include span-columns(3);
+    @include span-columns(6);
+  }
+  
+  @include media(min-width $breakpoint-mobile) {
+    @at-root #{&}__buttons {
+      @include span-columns(6);
+      
+      display: block;
+    }
+    
+    @at-root #{&}__links {
+      @include span-columns(3);
+    }
   }
   
   @at-root #{&}__link {
@@ -35,9 +51,5 @@
         }
       }
     }
-  }
-  
-  @at-root #{&}__buttons {
-    @include span-columns(6);
   }
 }

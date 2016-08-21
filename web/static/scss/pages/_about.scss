@@ -15,4 +15,12 @@
       @include filter(none);
     }
   }
+  
+  @at-root #{&}__twitter-timeline {
+    display: none;
+    
+    @include media(min-width $breakpoint-mobile) {
+      display: block;
+    }
+  }
 }
