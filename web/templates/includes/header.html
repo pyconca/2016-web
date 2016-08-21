@@ -3,19 +3,23 @@
         <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="{{ _('PyCon Canada') }}" class="header__image">
     </a>
     
-    <ul class="navigation header__navigation">
-        <li class="navigation__item"><a class="navigation__link" href="{{ url_for('pages.index') }}">{{ _('Home') }}</a></li>
+    <nav class="navigation header__navigation">
+        <a href="#" class="navigation__menu header__navigation-menu">MENU</a>
         
-        <li class="navigation__item"><a class="navigation__link {% if request.url_rule.endpoint == 'pages.about' %}navigation__link--active{% endif %}" href="{{ url_for('pages.about') }}">{{ _('About') }}</a></li>
+        <ul class="navigation__list header__navigation-list">
+            <li class="navigation__item"><a class="navigation__link" href="{{ url_for('pages.index') }}">{{ _('Home') }}</a></li>
         
-        <li class="navigation__item"><a class="navigation__link {% if request.url_rule.endpoint == 'pages.venue' %}navigation__link--active{% endif %}" href="{{ url_for('pages.venue') }}">{{ _('Venue') }}</a></li>
+            <li class="navigation__item"><a class="navigation__link {% if request.url_rule.endpoint == 'pages.about' %}navigation__link--active{% endif %}" href="{{ url_for('pages.about') }}">{{ _('About') }}</a></li>
         
-        <li class="navigation__item"><a class="navigation__link {% if request.url_rule.endpoint == 'pages.volunteer' %}navigation__link--active{% endif %}" href="{{ url_for('pages.volunteer') }}">{{ _('Volunteer') }}</a></li>
+            <li class="navigation__item"><a class="navigation__link {% if request.url_rule.endpoint == 'pages.venue' %}navigation__link--active{% endif %}" href="{{ url_for('pages.venue') }}">{{ _('Venue') }}</a></li>
         
-        <li class="navigation__item"><a class="navigation__link {% if request.url_rule.endpoint == 'pages.sponsors' %}navigation__link--active{% endif %}" href="{{ url_for('pages.sponsors') }}">{{ _('Sponsors') }}</a></li>
+            <li class="navigation__item"><a class="navigation__link {% if request.url_rule.endpoint == 'pages.volunteer' %}navigation__link--active{% endif %}" href="{{ url_for('pages.volunteer') }}">{{ _('Volunteer') }}</a></li>
         
-        {# <li class="navigation__item"><a class="navigation__link {% if request.url_rule.endpoint == 'schedule.index' %}navigation__link--active{% endif %}" href="{{ url_for('schedule.index') }}">{{ _('Schedule') }}</a></li> #}
+            <li class="navigation__item"><a class="navigation__link {% if request.url_rule.endpoint == 'pages.sponsors' %}navigation__link--active{% endif %}" href="{{ url_for('pages.sponsors') }}">{{ _('Sponsors') }}</a></li>
         
-        <li class="navigation__item">{% if g.lang_code=='fr' %}<a class="navigation__link" href="{{ url_for(request.url_rule.endpoint, lang_code='en') }}" hreflang="en">English</a>{% else %}<a class="navigation__link" href="{{ url_for(request.url_rule.endpoint, lang_code='fr') }}" hreflang="fr">Fran&ccedil;ais</a>{% endif %}</li>
-    </ul>
+            {# <li class="navigation__item"><a class="navigation__link {% if request.url_rule.endpoint == 'schedule.index' %}navigation__link--active{% endif %}" href="{{ url_for('schedule.index') }}">{{ _('Schedule') }}</a></li> #}
+        
+            <li class="navigation__item">{% if g.lang_code=='fr' %}<a class="navigation__link" href="{{ url_for(request.url_rule.endpoint, lang_code='en') }}" hreflang="en">English</a>{% else %}<a class="navigation__link" href="{{ url_for(request.url_rule.endpoint, lang_code='fr') }}" hreflang="fr">Fran&ccedil;ais</a>{% endif %}</li>
+        </ul>
+    </nav>
 </div>

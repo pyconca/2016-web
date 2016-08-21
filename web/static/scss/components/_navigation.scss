@@ -1,4 +1,20 @@
 .navigation {
+  @at-root #{&}__menu {
+    display: block;
+    
+    @include media(min-width $breakpoint-mobile) {
+      display: hidden;
+    }
+  }
+  
+  @at-root #{&}__list {
+    display: none;
+    
+    @include media(min-width $breakpoint-mobile) {
+      display: block;
+    }
+  }
+  
   @at-root #{&}__item {
     display: inline;
   }
