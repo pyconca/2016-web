@@ -6,7 +6,6 @@
     align-items: center;
     background: url('https://placekitten.com/g/1200/400');
     background-position: right;
-    background-size: none;
     display: flex;
     justify-content: center;
     min-height: 15rem;
@@ -15,7 +14,7 @@
     
     @include media(min-width $breakpoint-mobile) {
       background-position: left;
-      backgroud-size: cover;
+      background-size: cover;
       justify-content: flex-end;
     }
     
@@ -24,12 +23,19 @@
     h3 {
       font-size: modular-scale(2);
     }
+    
+    @at-root #{&}--about {
+      background: url('images/pycon-2015-crowd-by-shiroyuki-orig.jpg'); // TODO Make sure this has both Desktop and Mobile.
+      background-size: cover;
+      background-position: center;
+    }
   }
   
   @at-root #{&}__header-content {
     color: #fff;
     max-width: 20em;
     text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
     
     @include media(min-width $breakpoint-mobile) {
       text-align: left;
