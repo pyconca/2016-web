@@ -8,7 +8,7 @@
 
 
 {% block page_header %}
-<h1>{{ _('PyCon Canada is committed to providing a safe and welcoming atmosphere for all attendees.') }}</h1>
+<h1>{{ _('PyCon Canada is committed to providing a safe and welcoming atmosphere for all attendees.')|typogrify|safe }}</h1>
 {% endblock %}
 
 {% block page_content %}

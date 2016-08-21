@@ -4,6 +4,7 @@ from flask import Flask, g, abort, request, redirect
 
 from flask_babel import Babel
 import flask_assets as assets
+from typogrify.templatetags import jinja_filters as typogrify_filters
 
 from webassets.filter import get_filter
 
@@ -14,6 +15,8 @@ def create_app(configfile=None):
     app = Flask(__name__)
 
     app.config.from_object('web.config.Config')
+
+    app.jinja_env.filters['typogrify'] = typogrify_filters.typogrify
 
     env = assets.Environment(app)
 

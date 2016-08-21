@@ -7,7 +7,7 @@
 {% block page_content_class %}page__content--guide{% endblock %}
 
 {% block page_header %}
-<h1>{{ _('Welcome to Toronto') }}</h1>
+<h1>{{ _('Welcome to Toronto')|typogrify|safe }}</h1>
 <p>{% trans %}Here are some of our favorite spots around <strong>Ryerson University</strong>.{% endtrans %}</p>
 {% endblock %}
 

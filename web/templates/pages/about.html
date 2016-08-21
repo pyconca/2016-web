@@ -7,7 +7,7 @@
 {% block page_content_class %}page__content--about{% endblock %}
 
 {% block page_header %}
-    <h2>{{ _("PyCon Canada is an initiative to strengthen the Canadian Python community.") }}</h2>
+    <h2>{{ _("PyCon Canada is an initiative to strengthen the Canadian Python community.")|typogrify|safe }}</h2>
 {% endblock %}
 
 {% block page_content %}
@@ -50,7 +50,7 @@
 
         <p>
             {% for person in team['organisers'] %}
-            <a href="{{ person.link }}">{{ person.name }}</a> {% if not loop.last %}<span class="separator">&bull;</span>{% endif %}
+            <a href="{{ person.link }}">{{ person.name|typogrify|safe }}</a> {% if not loop.last %}<span class="separator">&bull;</span>{% endif %}
             {% endfor %}
         </p>
     </div>
@@ -63,7 +63,7 @@
             
                 <p>
                     {% for person in team['organisers'] %}
-                    <a href="{{ person.link }}">{{ person.name }}</a> {% if not loop.last %}<span class="separator">&bull;</span>{% endif %}
+                    <a href="{{ person.link }}">{{ person.name|typogrify|safe }}</a> {% if not loop.last %}<span class="separator">&bull;</span>{% endif %}
                     {% endfor %}
                 </p>
             </div>
@@ -73,7 +73,7 @@
             
                 <p>
                     {% for person in team['volunteers'] %}
-                    <a href="{{ person.link }}">{{ person.name }}</a> {% if not loop.last %}<span class="separator">&bull;</span>{% endif %}
+                    <a href="{{ person.link }}">{{ person.name|typogrify|safe }}</a> {% if not loop.last %}<span class="separator">&bull;</span>{% endif %}
                     {% endfor %}
                 </p>
             </div>
