@@ -11,7 +11,6 @@ def index():
 
 
 @pages.route('/code-of-conduct/')
-@pages.route('/code-de-conduite/', alias=True)
 def code_of_conduct():
     if g.lang_code == 'fr':
         content = get_markdown_file('code-of-conduct', 'fr')
