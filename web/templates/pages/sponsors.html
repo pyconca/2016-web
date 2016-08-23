@@ -86,9 +86,9 @@
 
 {% if sponsors.brozen %}
 <div class="page__section sponsor-level sponsor-level--silver">
-    <h1 class="sponsor-level__title">{{ _('Brozen') }}</h1>
+    <h1 class="sponsor-level__title">{{ _('Bronze') }}</h1>
     
-    {% for sponsor_data in sponsors['brozen'].values() %}
+    {% for sponsor_data in sponsors['bronze'].values() %}
         {% if g.lang_code=='fr' %}
         {% set sponsor = sponsor_data.fr %}
         {% else %}

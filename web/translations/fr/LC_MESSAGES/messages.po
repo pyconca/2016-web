@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-08-23 19:36-0400\n"
-"PO-Revision-Date: 2016-08-20 19:08-0400\n"
+"POT-Creation-Date: 2016-08-23 19:43-0400\n"
+"PO-Revision-Date: 2016-08-23 19:41-0400\n"
 "Last-Translator: Myles Braithwaite <me@mylesbraithwaite.com>\n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgid "Venue"
 msgstr "Lieu"
 
 #: web/templates/includes/footer.html:11 web/templates/includes/header.html:18
-#: web/templates/pages/about.html:77 web/templates/pages/index.html:14
+#: web/templates/pages/about.html:78 web/templates/pages/index.html:14
 #: web/templates/pages/sponsors.html:3
 msgid "Sponsors"
 msgstr "Commanditaires"
@@ -122,6 +122,8 @@ msgid ""
 "PyCon Canada is committed to providing a safe and welcoming atmosphere "
 "for all attendees."
 msgstr ""
+"PyCon Canada s'engage à offrir une ambiance sécuritaire et accueillante "
+"pour tous les participants."
 
 #: web/templates/pages/guide.html:3
 msgid "Guide"
@@ -183,7 +185,7 @@ msgid "Silver"
 msgstr ""
 
 #: web/templates/pages/sponsors.html:89
-msgid "Brozen"
+msgid "Bronze"
 msgstr ""
 
 #~ msgid "Schedule"
@@ -193,5 +195,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ""
+#~ msgstr ""
+
+#~ msgid "Brozen"
 #~ msgstr ""
 
