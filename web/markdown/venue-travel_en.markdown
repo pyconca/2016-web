@@ -8,4 +8,4 @@ VIA Rail is a good alternative to the airlines if you are coming from somewhere 
 
 Make sure that you've got a valid passport and don't forget to bring it with you.
 
-Porter Airlines has frequent, reasonably-priced flights for trips from several US cities to Toronto, including Boston, Burlington (VT), Chicago, Myrtle Beach, New York, and Washington.
+Porter Airlines has frequent, reasonably priced flights for trips from several US cities to Toronto, including Boston, Burlington (VT), Chicago, Myrtle Beach, New York, and Washington.

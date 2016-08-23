@@ -12,6 +12,11 @@
 {% endblock %}
 
 {% block page_content %}
+<div class="page__section">
+    {{ content|safe }}
+</div>
+
+{% if sponsors.gold %}
 <div class="page__section sponsor-level sponsor-level--gold">
     <h1 class="sponsor-level__title">{{ _('Gold') }}</h1>
     
@@ -43,4 +48,73 @@
         </div>
     {% endfor %}
 </div>
+{% endif %}
+
+{% if sponsors.silver %}
+<div class="page__section sponsor-level sponsor-level--silver">
+    <h1 class="sponsor-level__title">{{ _('Silver') }}</h1>
+    
+    {% for sponsor_data in sponsors['silver'].values() %}
+        {% if g.lang_code=='fr' %}
+        {% set sponsor = sponsor_data.fr %}
+        {% else %}
+        {% set sponsor = sponsor_data.en %}
+        {% endif %}
+        
+        <div class="sponsor">
+            <h2 class="sponsor__name">{{ sponsor.name }}</h2>
+            
+            <div class="page__row">
+                <div class="page__col">
+                    <a href="{{ sponsor.url }}" class="sponsor__link">
+                        <img src="{{ url_for('static', filename=sponsor_data.logo) }}" class="sponsor__logo">
+                    </a>
+                    
+                    <ul>
+                        <li><a href="https://twitter.com/{{ sponsor.twitter }}" class="sponsor__twitter twitter-follow-button" data-show-count="false">{{ _('Follow @') }}{{ sponsor.twitter }}</a></li>
+                    </ul>
+                </div>
+                
+                <div class="page__col">
+                    <p class="sponsor__description">{{ sponsor.description }}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+{% if sponsors.brozen %}
+<div class="page__section sponsor-level sponsor-level--silver">
+    <h1 class="sponsor-level__title">{{ _('Brozen') }}</h1>
+    
+    {% for sponsor_data in sponsors['brozen'].values() %}
+        {% if g.lang_code=='fr' %}
+        {% set sponsor = sponsor_data.fr %}
+        {% else %}
+        {% set sponsor = sponsor_data.en %}
+        {% endif %}
+        
+        <div class="sponsor">
+            <h2 class="sponsor__name">{{ sponsor.name }}</h2>
+            
+            <div class="page__row">
+                <div class="page__col">
+                    <a href="{{ sponsor.url }}" class="sponsor__link">
+                        <img src="{{ url_for('static', filename=sponsor_data.logo) }}" class="sponsor__logo">
+                    </a>
+                    
+                    <ul>
+                        <li><a href="https://twitter.com/{{ sponsor.twitter }}" class="sponsor__twitter twitter-follow-button" data-show-count="false">{{ _('Follow @') }}{{ sponsor.twitter }}</a></li>
+                    </ul>
+                </div>
+                
+                <div class="page__col">
+                    <p class="sponsor__description">{{ sponsor.description }}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endif %}
 {% endblock %}
