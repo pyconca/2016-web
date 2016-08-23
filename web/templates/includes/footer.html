@@ -41,12 +41,6 @@
                 </li>
                 
                 <li class="footer__item">
-                    <a href="http://eepurl.com/bs9mG9" class="footer__link">
-                        {{ _('Join our mailing list') }}
-                    </a>
-                </li>
-                
-                <li class="footer__item">
                     <a href="{{ url_for('pages.code_of_conduct') }}" class="footer__link {% if request.url_rule.endpoint == 'pages.code_of_conduct' %}footer__link--active{% endif %}">{{ _('Code of Conduct') }}</a>
                 </li>
                 
