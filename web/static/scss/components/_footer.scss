@@ -1,5 +1,5 @@
 .footer {
-  background-color: $action-color;
+  background-color: darken($action-color, 5%);
   
   @at-root #{&}__container {
     @include outer-container;
@@ -12,6 +12,10 @@
   
   @at-root #{&}__buttons {
     display: none;
+  }
+  
+  @at-root #{&}__button {
+    margin-bottom: .5em;
   }
   
   @at-root #{&}__links {
@@ -43,7 +47,7 @@
       
       svg * {
         fill: $colour-white;
-      }
+      } 
       
       &:hover {
         svg * {

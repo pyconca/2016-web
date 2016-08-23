@@ -20,7 +20,7 @@
   }
   
   @at-root #{&}__link {
-    @include padding(.5rem 1rem);
+    @include padding(3rem 1rem);
     color: $action-color;
     
     &:hover {

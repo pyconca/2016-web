@@ -41,6 +41,6 @@
   }
 
   @at-root #{&}--secondary {
-    @include button-variant(#fff, lighten($action-color, 25%), $action-color);
+    @include button-variant(#fff, lighten($action-color, 10%), $action-color);
   }
 }

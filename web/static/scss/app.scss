@@ -6,7 +6,13 @@
 @import 'variables';
 
 // Biters
-@import 'bitters/core/base';
+@import "bitters/core/buttons";
+@import "bitters/core/forms";
+@import "bitters/core/layout";
+@import "bitters/core/lists";
+@import "bitters/core/media";
+@import "bitters/core/tables";
+@import "bitters/core/typography";
 @import 'base';
 
 // Components
