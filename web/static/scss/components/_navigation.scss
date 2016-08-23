@@ -26,5 +26,9 @@
     &:hover {
       color: darken($action-color, 25%);
     }
+    
+    @at-root #{&}--active {
+      color: darken($action-color, 25%);
+    }
   }
 }
