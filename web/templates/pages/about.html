@@ -73,6 +73,7 @@
     </div>
     #}
     
+    {% if sponsosrs %}
     <div class="page__section about-page__sponsors">
         <h2>{{ _('Sponsors') }}</h2>
         
@@ -84,4 +85,5 @@
         {% endfor %}
         {% endfor %}
     </div>
+    {% endif %}
 {% endblock %}
