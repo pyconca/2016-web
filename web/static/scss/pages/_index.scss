@@ -54,8 +54,12 @@
     margin: 0 auto;
   }
   
+  @at-root #{&}__logo {
+    width: 250px;
+  }
+  
   @at-root #{&}__heading {
-    font-size: modular-scale(2);
+    font-size: modular-scale(1);
   }
   
   @at-root #{&}__copy {

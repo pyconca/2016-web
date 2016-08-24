@@ -5,6 +5,12 @@ html {
 body {
   background-color: $base-background-color;
   margin: 0;
+  
+  // @each $breakpoint, $font-size in $font-size-responsive {
+  //   @include media($breakpoint) {
+  //     font-size: $font-size;
+  //   }
+  // }
 }
 
 h1,

@@ -3,6 +3,18 @@
 
 $font-stack-system: $helvetica;
 
+$font-size-base: 16px;
+
+$font-size-responsive: (
+  544px: 17px,
+  768px: 18px,
+  992px: 19px,
+  1200px: 20px
+);
+
+$ms-base: 1rem;
+$ms-ratio: 1.2;
+
 // Colours
 // -------
 
