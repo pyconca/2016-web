@@ -1,53 +1,53 @@
 {
     "organisers": [
         {
-            "name": "Myles Braithwaite",
+            "name": "Myles Braithwaite", 
             "link": "https://mylesb.ca/"
-        },
+        }, 
         {
-            "name": "Francis Deslauriers",
+            "name": "Francis Deslauriers", 
             "link": "https://twitter.com/francisDeslaur"
-        },
+        }, 
         {
-            "name": "Julia Duimovich",
+            "name": "Julia Duimovich", 
             "link": "https://twitter.com/jduims"
-        },
+        }, 
         {
-            "name": "David Hoffman",
+            "name": "David Hoffman", 
             "link": "https://ca.linkedin.com/in/david-hoffman-073b905a"
-        },
+        }, 
         {
-            "name": "Peter McCormick",
+            "name": "Peter McCormick", 
             "link": "https://twitter.com/pdmccormick"
-        },
+        }, 
         {
-            "name": "Juti Noppornpitak",
+            "name": "Juti Noppornpitak", 
             "link": "https://www.shiroyuki.com"
-        },
+        }, 
         {
-            "name": "Anarosa Paredes",
+            "name": "Anarosa Paredes", 
             "link": "http://aarose.red"
-        },
+        }, 
         {
-            "name": "Brandon Sandrowicz",
+            "name": "Brandon Sandrowicz", 
             "link": "https://github.com/bsandrow"
-        },
+        }, 
         {
-            "name": "Anna Vassilovski",
-            "link": "https://www.linkedin.com/in/anna-vassilovski-84829725"
-        },
-        {
-            "name": "Elaine Wong",
-            "link": "https://twitter.com/elthenerd"
-        },
-        {
-            "name": "Terry Yanchynskyy",
-            "link": "https://github.com/onebit0fme"
-        },
-        {
-            "name": "Ke Sun",
+            "name": "Ke Sun", 
             "link": "http://kesun.ca"
+        }, 
+        {
+            "name": "Anna Vassilovski", 
+            "link": "https://www.linkedin.com/in/anna-vassilovski-84829725"
+        }, 
+        {
+            "name": "Elaine Wong", 
+            "link": "https://twitter.com/elthenerd"
+        }, 
+        {
+            "name": "Terry Yanchynskyy", 
+            "link": "https://github.com/onebit0fme"
         }
-    ],
+    ], 
     "volunteers": []
 }

@@ -1,4 +1,6 @@
 import os
+import json
+from collections import OrderedDict
 
 from flask_script import Manager, Server, Command
 from flask_script.commands import ShowUrls, Clean
@@ -49,6 +51,30 @@ class CompileTranslations(Command):
         os.system('pybabel compile -d web/translations')
 
 
+class AlphabetizeTeam(Command):
+    """
+    Alphabetize the team.json file.
+    """
+
+    def name_last_first_sortkey(self, v):
+        full_name = v['name'].split()
+        first = full_name[0]
+        last = full_name[-1]
+        middle = ' '.join(full_name[1:-1])
+        return (last, first, middle)
+
+    def run(self):
+        with open('web/data/team.json', 'r') as fobj:
+            data = json.loads(fobj.read(), object_pairs_hook=OrderedDict)
+
+        for k in ['organisers', 'volunteers']:
+            data[k].sort(key=self.name_last_first_sortkey)
+
+        with open('web/data/team.json', 'w') as fobj:
+            json.dump(data, fobj, indent=4)
+            fobj.write('\n')
+
+
 manager = Manager(app)
 
 
@@ -68,6 +94,8 @@ def freeze():
 manager.add_command('tr-init', InitTranslation())
 manager.add_command('tr-update', UpdateTranslations())
 manager.add_command('tr-compile', CompileTranslations())
+
+manager.add_command('alphabetize-team', AlphabetizeTeam())
 
 manager.add_command('runserver', Server())
 manager.add_command('show-urls', ShowUrls())
