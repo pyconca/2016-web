@@ -2,7 +2,7 @@
 
 Toronto has 2 major airports. Toronto Pearson is the international airport and is the location for almost all the major domestic and international airlines. It's about a 35 minute drive from Toronto Pearson to the University of Toronto, but be aware that downtown Toronto traffic is busy all day and is particularly busy during peak rush hour. Allow at least an hour for travel time from the airport. The Union Pearson Express train is also an good option to get downtown from Pearson.
 
-VIA Rail is a good alternative to the airlines if you are coming from somewhere like Montreal or Ottawa. Advance pricing is often available at a discount.
+VIA Rail is offering a 10% discount for PyCon Canada 2016 attendees travelling to Toronto between November 8th to 17th. Use the conference discount code: 13389.
 
 ### If you're coming from the US:
 
