@@ -7,114 +7,49 @@
 {% block page_content_class %}page__content--sponsors{% endblock %}
 
 {% block page_header %}
-<h1 class="page__title">{{ _('Our Sponsors') }}</h1>
-<p class="page__subtitle">{{ _('We thank our fantastic sponsors who help make this event possible. <a href="mailto:sponsorship@pycon.ca">Get in touch</a> if your organization would like to support PyCon Canada 2016.') }}</p>
+    <h1 class="page__title">{{ _('Our Sponsors') }}</h1>
+    <p class="page__subtitle">{{ _('We thank our fantastic sponsors who help make this event possible. <a href="mailto:sponsorship@pycon.ca">Get in touch</a> if your organization would like to support PyCon Canada 2016.') }}</p>
 {% endblock %}
 
 {% block page_content %}
-<div class="page__section">
-    {{ content|safe }}
-</div>
-
-{% if sponsors.gold %}
-<div class="page__section sponsor-level sponsor-level--gold">
-    <h1 class="sponsor-level__title">{{ _('Gold') }}</h1>
+    <div class="page__section">
+        {{ content|safe }}
+    </div>
     
-    {% for sponsor_data in sponsors['gold'].values() %}
-        {% if g.lang_code=='fr' %}
-        {% set sponsor = sponsor_data.fr %}
-        {% else %}
-        {% set sponsor = sponsor_data.en %}
-        {% endif %}
+    {% for level in sponsors %}
+    <div class="page__section sponsor-level sponsor-level--{{ level.level['en'].lower() }}">
+        <div class="sponsor-level__header">
+            <h1 class="sponsor-level__title">
+                {% if g.lang_code=='fr' %}
+                {{ level.level['fr'] }}
+                {% else %}
+                {{ level.level['en'] }}
+                {% endif %}
+            </h1>
+        </div>
         
-        <div class="sponsor">
-            <h2 class="sponsor__name">{{ sponsor.name }}</h2>
-            
-            <div class="page__row">
-                <div class="page__col">
-                    <a href="{{ sponsor.url }}" class="sponsor__link">
-                        <img src="{{ url_for('static', filename=sponsor_data.logo) }}" class="sponsor__logo">
-                    </a>
-                    
-                    <ul>
-                        <li><a href="https://twitter.com/{{ sponsor.twitter }}" class="sponsor__twitter twitter-follow-button" data-show-count="false">{{ _('Follow @') }}{{ sponsor.twitter }}</a></li>
-                    </ul>
-                </div>
+        {% for sponsor_data in level.entries %}
+            {% if g.lang_code=='fr' %}{% set sponsor = sponsor_data.fr %}{% else %}{% set sponsor = sponsor_data.en %}{% endif %}
+            <div class="sponsor">
+                <h2 class="sponsor__name">{{ sponsor.name }}</h2>
                 
-                <div class="page__col">
-                    <p class="sponsor__description">{{ sponsor.description }}</p>
+                <div class="page__row">
+                    <div class="page__col">
+                        <a href="{{ sponsor.url }}" class="sponsor__link">
+                            <img src="{{ url_for('static', filename=sponsor_data.logo) }}" class="sponsor__logo">
+                        </a>
+                        
+                        <ul>
+                            <li><a href="https://twitter.com/{{ sponsor.twitter }}" class="sponsor__twitter twitter-follow-button" data-show-count="false">{{ _('Follow @') }}{{ sponsor.twitter }}</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="page__col">
+                        <p class="sponsor__description">{{ sponsor.description }}</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        {% endfor %}
+    </div>
     {% endfor %}
-</div>
-{% endif %}
-
-{% if sponsors.silver %}
-<div class="page__section sponsor-level sponsor-level--silver">
-    <h1 class="sponsor-level__title">{{ _('Silver') }}</h1>
-    
-    {% for sponsor_data in sponsors['silver'].values() %}
-        {% if g.lang_code=='fr' %}
-        {% set sponsor = sponsor_data.fr %}
-        {% else %}
-        {% set sponsor = sponsor_data.en %}
-        {% endif %}
-        
-        <div class="sponsor">
-            <h2 class="sponsor__name">{{ sponsor.name }}</h2>
-            
-            <div class="page__row">
-                <div class="page__col">
-                    <a href="{{ sponsor.url }}" class="sponsor__link">
-                        <img src="{{ url_for('static', filename=sponsor_data.logo) }}" class="sponsor__logo">
-                    </a>
-                    
-                    <ul>
-                        <li><a href="https://twitter.com/{{ sponsor.twitter }}" class="sponsor__twitter twitter-follow-button" data-show-count="false">{{ _('Follow @') }}{{ sponsor.twitter }}</a></li>
-                    </ul>
-                </div>
-                
-                <div class="page__col">
-                    <p class="sponsor__description">{{ sponsor.description }}</p>
-                </div>
-            </div>
-        </div>
-    {% endfor %}
-</div>
-{% endif %}
-
-{% if sponsors.brozen %}
-<div class="page__section sponsor-level sponsor-level--silver">
-    <h1 class="sponsor-level__title">{{ _('Bronze') }}</h1>
-    
-    {% for sponsor_data in sponsors['bronze'].values() %}
-        {% if g.lang_code=='fr' %}
-        {% set sponsor = sponsor_data.fr %}
-        {% else %}
-        {% set sponsor = sponsor_data.en %}
-        {% endif %}
-        
-        <div class="sponsor">
-            <h2 class="sponsor__name">{{ sponsor.name }}</h2>
-            
-            <div class="page__row">
-                <div class="page__col">
-                    <a href="{{ sponsor.url }}" class="sponsor__link">
-                        <img src="{{ url_for('static', filename=sponsor_data.logo) }}" class="sponsor__logo">
-                    </a>
-                    
-                    <ul>
-                        <li><a href="https://twitter.com/{{ sponsor.twitter }}" class="sponsor__twitter twitter-follow-button" data-show-count="false">{{ _('Follow @') }}{{ sponsor.twitter }}</a></li>
-                    </ul>
-                </div>
-                
-                <div class="page__col">
-                    <p class="sponsor__description">{{ sponsor.description }}</p>
-                </div>
-            </div>
-        </div>
-    {% endfor %}
-</div>
-{% endif %}
 {% endblock %}

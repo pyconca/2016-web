@@ -20,7 +20,7 @@ def code_of_conduct():
 @pages.route('/sponsors/')
 def sponsors():
     data = get_json_file('sponsors.json')
-    content = content = get_markdown_file('sponsors', g.lang_code)
+    content = get_markdown_file('sponsors', g.lang_code)
 
     return render_template('pages/sponsors.html', content=content,
                            sponsors=data)
