@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-08-23 19:43-0400\n"
+"POT-Creation-Date: 2016-08-25 12:38-0400\n"
 "PO-Revision-Date: 2016-08-23 19:41-0400\n"
 "Last-Translator: Myles Braithwaite <me@mylesbraithwaite.com>\n"
 "Language: fr\n"
@@ -171,22 +171,9 @@ msgstr ""
 "possible. <a href=\"mailto:sponsorship@pycon.ca\">Contactez-nous</a> si "
 "votre organisation aimerait aider PyCon Canada 2016."
 
-#: web/templates/pages/sponsors.html:21
-msgid "Gold"
-msgstr "Or"
-
-#: web/templates/pages/sponsors.html:40 web/templates/pages/sponsors.html:74
-#: web/templates/pages/sponsors.html:108
+#: web/templates/pages/sponsors.html:43
 msgid "Follow @"
 msgstr "Suivre @"
-
-#: web/templates/pages/sponsors.html:55
-msgid "Silver"
-msgstr ""
-
-#: web/templates/pages/sponsors.html:89
-msgid "Bronze"
-msgstr ""
 
 #~ msgid "Schedule"
 #~ msgstr ""
@@ -198,5 +185,14 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Brozen"
+#~ msgstr ""
+
+#~ msgid "Gold"
+#~ msgstr "Or"
+
+#~ msgid "Silver"
+#~ msgstr ""
+
+#~ msgid "Bronze"
 #~ msgstr ""
 
