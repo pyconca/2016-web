@@ -19,8 +19,6 @@ def create_app(configfile=None):
 
     app.jinja_env.filters['typogrify'] = typogrify_filters.typogrify
 
-    sitemap = Sitemap(app)
-
     env = assets.Environment(app)
 
     static_path = os.path.join(app.config['APP_PATH'], 'static')
@@ -74,17 +72,6 @@ def create_app(configfile=None):
     @babel.timezoneselector
     def get_timezone():
         return app.config['BABEL_DEFAULT_TIMEZONE']
-
-    @sitemap.register_generator
-    def register_generator():
-        for lang_code in app.config['LANGUAGES'].keys():
-            yield 'pages.index', { 'lang_code': lang_code }
-            yield 'pages.code_of_conduct', { 'lang_code': lang_code }
-            yield 'pages.sponsors', { 'lang_code': lang_code }
-            yield 'pages.venue', { 'lang_code': lang_code }
-            yield 'pages.about', { 'lang_code': lang_code }
-            yield 'pages.volunteer', { 'lang_code': lang_code }
-            yield 'pages.guide', { 'lang_code': lang_code }
 
     # Disabling this route as it causes issues with freezing.
     # TODO Figure out a way to make sure you can freeze with this include.
