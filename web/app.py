@@ -40,7 +40,7 @@ def create_app(configfile=None):
     env.register('css_all',
                  assets.Bundle('app.scss',
                                filters=(sass,),
-                               depends=(os.path.join(static_path,
+                               depends=(os.path.join(app.config['STATIC_PATH'],
                                         'scss/**/*.scss')),
                                output='app.css'))
 
