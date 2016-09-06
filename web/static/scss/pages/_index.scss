@@ -68,3 +68,28 @@
   
   // @at-root #{&}__button {}
 }
+
+.homepage-sponsors {
+  background-color: $action-color;
+
+  @at-root #{&}__title {
+    margin: 0;
+    padding-top: .75em;
+    padding-bottom: .75em;
+  }
+
+  @at-root #{&}__link,
+           #{&}__logo {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  @at-root #{&}__logo {
+    @include filter(grayscale(75%));
+    cursor: pointer;
+
+    &:hover {
+      @include filter(none);
+    }
+  }
+}

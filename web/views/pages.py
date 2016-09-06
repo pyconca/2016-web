@@ -7,7 +7,9 @@ pages = Blueprint('pages', __name__)
 
 @pages.route('/')
 def index():
-    return render_template('pages/index.html')
+    sponsors = get_json_file('sponsors.json')
+
+    return render_template('pages/index.html', sponsors=sponsors)
 
 
 @pages.route('/code-of-conduct/')
