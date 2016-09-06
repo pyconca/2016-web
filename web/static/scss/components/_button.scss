@@ -44,6 +44,10 @@
     @include button-variant(#fff, lighten($action-color, 10%), $action-color);
   }
 
+  @at-root #{&}--red {
+    @include button-variant(#fff, darken($colour-red, 10%), $colour-red);
+  }
+
   @at-root #{&}--big {
     font-size: 1.5em;
   }

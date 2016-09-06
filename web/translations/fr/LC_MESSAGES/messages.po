@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-09-06 12:37-0400\n"
+"POT-Creation-Date: 2016-09-06 12:44-0400\n"
 "PO-Revision-Date: 2016-08-23 19:41-0400\n"
 "Last-Translator: Myles Braithwaite <me@mylesbraithwaite.com>\n"
 "Language: fr\n"
@@ -18,29 +18,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 
-#: web/templates/includes/footer.html:5 web/templates/includes/header.html:10
+#: web/templates/includes/footer.html:5 web/templates/includes/header.html:12
 #: web/templates/pages/index.html:10
 msgid "Home"
 msgstr "Accueil"
 
-#: web/templates/includes/footer.html:7 web/templates/includes/header.html:12
+#: web/templates/includes/footer.html:7 web/templates/includes/header.html:14
 #: web/templates/pages/about.html:3 web/templates/pages/index.html:11
 msgid "About"
 msgstr "À propos"
 
-#: web/templates/includes/footer.html:9 web/templates/includes/header.html:14
+#: web/templates/includes/footer.html:9 web/templates/includes/header.html:16
 #: web/templates/pages/index.html:12 web/templates/pages/venue.html:3
 #: web/templates/pages/venue.html:10
 msgid "Venue"
 msgstr "Lieu"
 
-#: web/templates/includes/footer.html:11 web/templates/includes/header.html:18
+#: web/templates/includes/footer.html:11 web/templates/includes/header.html:20
 #: web/templates/pages/about.html:78 web/templates/pages/index.html:14
 #: web/templates/pages/sponsors.html:3
 msgid "Sponsors"
 msgstr "Commanditaires"
 
-#: web/templates/includes/footer.html:19
+#: web/templates/includes/footer.html:19 web/templates/includes/header.html:10
+#: web/templates/pages/index.html:28
 msgid "Buy a ticket"
 msgstr "Acheter un billet"
 
@@ -53,7 +54,7 @@ msgstr "Abonnez-vous &agrave; la liste d&#x27;envoi"
 msgid "Code of Conduct"
 msgstr "Code de conduite"
 
-#: web/templates/includes/footer.html:47 web/templates/includes/header.html:16
+#: web/templates/includes/footer.html:47 web/templates/includes/header.html:18
 #: web/templates/pages/index.html:13 web/templates/pages/volunteer.html:3
 #: web/templates/pages/volunteer.html:10
 msgid "Volunteer"
@@ -156,10 +157,6 @@ msgstr ""
 "quatri&egrave;me PyCon Canada, pour une fin de semaine de "
 "pr&eacute;sentations, d&#x27;activit&eacute;s, de programmation et de "
 "plaisir!"
-
-#: web/templates/pages/index.html:28
-msgid "But a ticket"
-msgstr ""
 
 #: web/templates/pages/sponsors.html:10
 msgid "Our Sponsors"
