@@ -29,6 +29,12 @@
       background-size: cover;
       background-position: center;
     }
+    
+    @at-root #{&}--venue {
+      background: url('images/ryerson-university-ted-rogers-school-of-management-desktop.jpg');
+      background-size: cover;
+      background-position: center;
+    }
   }
   
   @at-root #{&}__header-content {
