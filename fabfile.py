@@ -117,51 +117,6 @@ def bower_upgrade():
 
 
 @api.task
-def local_deploy():
-    # Check to make sure that there isn't any unchecked files
-    git_status = api.local('git status --porcelain', capture=True)
-    
-    if git_status:
-        utils.abort('There are unchecked files.')
-    
-    # Push the repo to the remote
-    api.local('git push {0} {1}'.format(api.env.remote, api.env.branch))
-
-    # The deploy tasks
-    update_code()
-    pip_upgrade()
-    bower_upgrade()
-
-    # Make the build directory.
-    build_dir = os.path.join(api.env.app_dir, 'build')
-
-    # Build the static website.
-    with api.cd(api.env.app_dir):
-        api.run('{0} manage.py freeze'.format(api.env.venv_python))
-
-    # Remove some of the auto generate folders
-    remove_dir = [os.path.join(build_dir, 'static/scss/'),
-                  os.path.join(build_dir, 'static/bower/'),
-                  os.path.join(build_dir, 'static/.webassets-cache/')]
-
-    api.run('rm -r {0}'.format(' '.join(remove_dir)))
-
-    # Copy the files.
-    api.run('cp -a {0}/. {1}/'.format(build_dir, api.env.html_dir))
-
-    # Draw a ship
-    utils.puts("               |    |    |               ")
-    utils.puts("              )_)  )_)  )_)              ")
-    utils.puts("             )___))___))___)\            ")
-    utils.puts("            )____)____)_____)\\          ")
-    utils.puts("          _____|____|____|____\\\__      ")
-    utils.puts(" ---------\                   /--------- ")
-    utils.puts("   ^^^^^ ^^^^^^^^^^^^^^^^^^^^^           ")
-    utils.puts("     ^^^^      ^^^^     ^^^    ^^        ")
-    utils.puts("          ^^^^      ^^^                  ")
-
-
-@api.task
 def deploy():
     api.require('environment')
 
