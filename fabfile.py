@@ -5,8 +5,6 @@ from fabric import utils
 from fabric.contrib.files import exists
 from fabric.contrib.project import rsync_project
 
-from web.config import Config
-
 # Deploy Config
 api.env.user = 'deploy'
 api.env.hosts = ['portland.pynorth.org']
@@ -36,6 +34,7 @@ def stag():
     # Python Helpers
     api.env.venv_python = os.path.join(api.env.venv_dir, 'bin/python')
     api.env.venv_pip = os.path.join(api.env.venv_dir, 'bin/pip')
+
 
 @api.task
 def prod():

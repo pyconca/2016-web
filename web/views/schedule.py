@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, g
+from flask import Blueprint, render_template
 
 schedule = Blueprint('schedule', __name__)
 

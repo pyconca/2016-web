@@ -3,9 +3,11 @@
 import json
 from collections import OrderedDict
 
+
 def name_last_first_sortkey(v):
     first, *middle, last = v['name'].split()
     return (last, first, middle)
+
 
 if __name__ == '__main__':
     with open('team.json', 'r') as fobj:

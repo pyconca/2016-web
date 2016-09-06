@@ -1,10 +1,9 @@
 import os
 
-from flask import Flask, g, abort, request, redirect
+from flask import Flask, g, abort
 
 from flask_babel import Babel
 import flask_assets as assets
-from flask_sitemap import Sitemap
 from typogrify.templatetags import jinja_filters as typogrify_filters
 
 from webassets.filter import get_filter
@@ -72,14 +71,6 @@ def create_app(configfile=None):
     @babel.timezoneselector
     def get_timezone():
         return app.config['BABEL_DEFAULT_TIMEZONE']
-
-    # Disabling this route as it causes issues with freezing.
-    # TODO Figure out a way to make sure you can freeze with this include.
-    # @app.route('/')
-    # def lang_switch():
-    #     langs = app.config['LANGUAGES'].keys()
-    #     req_lang = request.accept_languages.best_match(langs)
-    #     return redirect("/{0}/".format(req_lang), code=302)
 
     app.register_blueprint(view_pages, url_prefix='/<lang_code>')
     app.register_blueprint(view_schedule, url_prefix='/<lang_code>/schedule')
