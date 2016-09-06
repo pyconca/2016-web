@@ -4,8 +4,11 @@ import os
 class Config(object):
     DEBUG = True
 
+    # Paths
     APP_PATH = os.path.dirname(os.path.abspath(__file__))
+    STATIC_PATH = os.path.join(APP_PATH, 'static')
 
+    # i18n Config
     LANGUAGES = {
         'en': 'English',
         'fr': 'Francais'
@@ -14,10 +17,7 @@ class Config(object):
     BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
-    SITEMAP_INCLUDE_RULES_WITHOUT_PARAMS = True
-
-    SASS_LOAD_PATH = os.path.join(APP_PATH, '../bower_components')
-
+    # Destination of the build directory
     FREEZER_DESTINATION = os.path.join(APP_PATH, '../build/')
 
     MARKDOWN_EXTENSION_CONFIG = {}

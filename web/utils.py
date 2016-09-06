@@ -8,6 +8,10 @@ from flask import current_app
 
 
 def get_json_file(filename, lang='en'):
+    """
+    Get the contents of a JSON file.
+    """
+
     filepath = os.path.join(current_app.config['APP_PATH'], 'data', filename)
 
     with open(filepath, 'r') as f:
@@ -15,6 +19,10 @@ def get_json_file(filename, lang='en'):
 
 
 def get_markdown_file(name, lang='en'):
+    """
+    Get the contents of a markdown file.
+    """
+
     filename_temp = "{0}_{1}.markdown"
 
     md_dir = os.path.join(current_app.config['APP_PATH'], 'markdown')

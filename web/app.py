@@ -16,16 +16,16 @@ def create_app(configfile=None):
 
     app.config.from_object('web.config.Config')
 
+    # Typography Jinja2 Filter
     app.jinja_env.filters['typogrify'] = typogrify_filters.typogrify
 
+    # Static Assets Config (Javascript and SCSS)
     env = assets.Environment(app)
 
-    static_path = os.path.join(app.config['APP_PATH'], 'static')
-
     env.load_path = [
-        os.path.join(static_path, 'bower'),
-        os.path.join(static_path, 'scss'),
-        os.path.join(static_path, 'javascript')
+        os.path.join(app.config['STATIC_PATH'], 'bower'),
+        os.path.join(app.config['STATIC_PATH'], 'scss'),
+        os.path.join(app.config['STATIC_PATH'], 'javascript')
     ]
 
     env.register('js_all',
@@ -44,6 +44,7 @@ def create_app(configfile=None):
                                         'scss/**/*.scss')),
                                output='app.css'))
 
+    # i18n Config
     babel = Babel(app)
 
     @app.url_defaults
@@ -72,6 +73,7 @@ def create_app(configfile=None):
     def get_timezone():
         return app.config['BABEL_DEFAULT_TIMEZONE']
 
+    # Register the Blueprints
     app.register_blueprint(view_pages, url_prefix='/<lang_code>')
     app.register_blueprint(view_schedule, url_prefix='/<lang_code>/schedule')
 

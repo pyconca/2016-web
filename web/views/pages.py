@@ -7,6 +7,10 @@ pages = Blueprint('pages', __name__)
 
 @pages.route('/')
 def index():
+    """
+    Landing page.
+    """
+
     sponsors = get_json_file('sponsors.json')
 
     return render_template('pages/index.html', sponsors=sponsors)
@@ -14,6 +18,9 @@ def index():
 
 @pages.route('/code-of-conduct/')
 def code_of_conduct():
+    """
+    Code of Conduct page.
+    """
     content = get_markdown_file('code-of-conduct', g.lang_code)
 
     return render_template('pages/code-of-conduct.html', content=content)
@@ -21,6 +28,9 @@ def code_of_conduct():
 
 @pages.route('/sponsors/')
 def sponsors():
+    """
+    Sponsors page.
+    """
     data = get_json_file('sponsors.json')
     content = get_markdown_file('sponsors', g.lang_code)
 
@@ -30,6 +40,9 @@ def sponsors():
 
 @pages.route('/venue/')
 def venue():
+    """
+    Venue page.
+    """
     content = {
         'location': get_markdown_file('venue-location', g.lang_code),
         'travel': get_markdown_file('venue-travel', g.lang_code),
@@ -44,6 +57,9 @@ def venue():
 
 @pages.route('/about/')
 def about():
+    """
+    About page.
+    """
     content = get_markdown_file('about', g.lang_code)
     team = get_json_file('team.json')
     sponsors = get_json_file('sponsors.json')
@@ -54,6 +70,9 @@ def about():
 
 @pages.route('/volunteer/')
 def volunteer():
+    """
+    Volunteer at PyCon Canada page.
+    """
     content = get_markdown_file('volunteer', g.lang_code)
 
     return render_template('pages/volunteer.html', content=content)
@@ -61,6 +80,9 @@ def volunteer():
 
 @pages.route('/guide/')
 def guide():
+    """
+    Guide to things around the venue area page.
+    """
     guide = get_json_file('guide.json')
 
     return render_template('pages/guide.html', guide=guide)
