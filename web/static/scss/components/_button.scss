@@ -43,4 +43,8 @@
   @at-root #{&}--secondary {
     @include button-variant(#fff, lighten($action-color, 10%), $action-color);
   }
+
+  @at-root #{&}--big {
+    font-size: 1.5em;
+  }
 }
