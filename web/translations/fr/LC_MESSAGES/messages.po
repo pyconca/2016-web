@@ -66,7 +66,7 @@ msgstr ""
 
 #: web/templates/pages/about.html:10
 msgid "PyCon Canada is an initiative to strengthen the Canadian Python community."
-msgstr ""
+msgstr "PyCon Canada a pour but de renforcer la communauté Python canadienne."
 
 #: web/templates/pages/about.html:21
 msgid "Join the Conversation"
