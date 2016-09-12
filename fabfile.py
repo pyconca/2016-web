@@ -99,7 +99,7 @@ def git_auto_deploy():
 
     with api.lcd(api.env.app_dir):
         # Install some dependencies
-        api.local('{} install -U -r requirements.txt'.foramt(api.env.venv_pip))
+        api.local('{} install -U -r requirements.txt'.format(api.env.venv_pip))
         api.local('bower install --upgrade')
 
         # Generate the website
