@@ -13,7 +13,6 @@ api.env.use_ssh_config = True
 # Git
 api.env.repo = 'git://github.com/pyconca/2016-web.git'
 api.env.remote = 'origin'
-api.env.branch = 'master'
 
 # Local
 api.env.local_root_dir = os.path.dirname(os.path.abspath(__file__))
@@ -35,6 +34,9 @@ def stag():
     api.env.venv_python = os.path.join(api.env.venv_dir, 'bin/python')
     api.env.venv_pip = os.path.join(api.env.venv_dir, 'bin/pip')
 
+    # Git
+    api.env.branch = 'develop'
+
 
 @api.task
 def prod():
@@ -49,6 +51,9 @@ def prod():
     # Python Helpers
     api.env.venv_python = os.path.join(api.env.venv_dir, 'bin/python')
     api.env.venv_pip = os.path.join(api.env.venv_dir, 'bin/pip')
+
+    # Git
+    api.env.branch = 'master'
 
 
 @api.task
@@ -98,6 +103,6 @@ def git_auto_deploy():
         api.local('{} manage.py freeze'.format(api.env.venv_python))
 
         # Copy the generated website
-        api.local('cp -r {0}/ {1}'.format(os.path.join(api.env.app_dir,
-                                                       'build'),
+        api.local('cp -r {0} {1}'.format(os.path.join(api.env.app_dir,
+                                                      'build'),
                                       api.env.html_dir))
