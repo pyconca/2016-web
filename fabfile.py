@@ -85,3 +85,26 @@ def deploy():
     utils.puts("   ^^^^^ ^^^^^^^^^^^^^^^^^^^^^           ")
     utils.puts("     ^^^^      ^^^^     ^^^    ^^        ")
     utils.puts("          ^^^^      ^^^                  ")
+
+
+@api.task
+def git_auto_deploy():
+    api.env.root_dir = '/srv/www/pycon.ca/2016/'
+    api.env.html_dir = os.path.join(api.env.root_dir, 'html')
+    api.env.venv_dir = os.path.join(api.env.root_dir, 'venv')
+    api.env.app_dir = os.path.join(api.env.root_dir, 'app')
+
+    api.env.venv_python = os.path.join(api.env.venv_dir, 'bin/python')
+    api.env.venv_pip = os.path.join(api.env.venv_dir, 'bin/pip')
+
+    with api.lcd(api.env.app_dir):
+        # Install some dependencies
+        api.local('{} install -U -r requirements.txt'.foramt(api.env.venv_pip))
+        api.local('bower install --upgrade')
+
+        # Generate the website
+        api.local('{} manage.py freeze'.format(api.env.venv_python))
+
+        # Copy the generated website
+        api.local('cp {0} {1}'.format(os.path.join(api.env.app_dir, 'build'),
+                                      api.env.html_dir))
