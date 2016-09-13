@@ -1,0 +1,24 @@
+{
+  "rooms": {
+    "room-one": {
+      "title": "Room One"
+    },
+    "room-two": {
+      "title": "Room Two"
+    }
+  },
+  "slots": {
+    "2016-11-12": {
+      "09:00": {
+        "date": "2016-11-12",
+        "start_time": "09:00",
+        "end_time": "09:45"
+      },
+      "10:00": {
+        "date": "2016-11-12",
+        "start_time": "10:00",
+        "end_time": "10:45"
+      }
+    }
+  }
+}
