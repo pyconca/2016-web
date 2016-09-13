@@ -35,5 +35,9 @@ def get_markdown_file(name, lang='en'):
     if not os.path.isfile(filepath):
         return None
 
+    md = markdown.Markdown(['markdown.extensions.meta'])
+
     with codecs.open(filepath, mode='r', encoding="utf-8") as f:
-        return markdown.markdown(f.read())
+        html = md.convert(f.read())
+
+    return html, md.Meta
