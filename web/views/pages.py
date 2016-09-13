@@ -31,6 +31,7 @@ def sponsors():
     """
     Sponsors page.
     """
+
     data = get_data_file('sponsors.yml')
     content, meta = get_markdown_file('sponsors', g.lang_code)
 
