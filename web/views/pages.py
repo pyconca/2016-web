@@ -31,15 +31,9 @@ def sponsors():
     """
     Sponsors page.
     """
-
     data = get_data_file('sponsors.yml')
     content, meta = get_markdown_file('sponsors', g.lang_code)
 
-<<<<<<< HEAD
-=======
-    content, meta = get_markdown_file('sponsors', g.lang_code)
-
->>>>>>> Started working on some of the scheudle stuff.
     return render_template('pages/sponsors.html', content=content, meta=meta,
                            sponsors=data)
 
@@ -66,12 +60,7 @@ def about():
     """
     About page.
     """
-<<<<<<< HEAD
     content, meta = get_markdown_file('about', g.lang_code)
-=======
-
-    content = get_markdown_file('about', g.lang_code)
->>>>>>> Started working on some of the scheudle stuff.
     team = get_data_file('team.json')
     sponsors = get_data_file('sponsors.yml')
 
