@@ -45,7 +45,9 @@
                     </div>
                     
                     <div class="page__col">
-                        <p class="sponsor__description">{{ sponsor.description }}</p>
+                        <div class="sponsor__description">
+                            {{ sponsor.description|markdown }}
+                        </div>
                     </div>
                 </div>
             </div>
