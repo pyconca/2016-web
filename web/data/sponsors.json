@@ -10,21 +10,13 @@
           "name": "EventMobi",
           "url": "http://eventmobi.com/careers/#video",
           "twitter": "eventmobi",
-          "description": "EventMobi is changing the way event planners utilize technology for running events & conferences like Pycon! We develop a platform of tools that help planners build apps, sell tickets, and overall enhance the attendee experience!
-
-We develop EventMobi using Python based micro-services exposed through APIs to feed our AngularJS & React based applications – from our mobile apps, to the app-building services, real-time chat / gamification / mapping services and tons more.
-
-In the past year we’ve more than tripled our growth & our software now services 10,000+ events and millions of users worldwide in 50+ countries. This growth is only getting started (while still being bootstrapped and without funding) and if you are interested in helping us scale and meet the next set of challenges, let’s chat!"
+          "description": "EventMobi is changing the way event planners utilize technology for running events & conferences like Pycon! We develop a platform of tools that help planners build apps, sell tickets, and overall enhance the attendee experience!\n\nWe develop EventMobi using Python based micro-services exposed through APIs to feed our AngularJS & React based applications – from our mobile apps, to the app-building services, real-time chat / gamification / mapping services and tons more\n\nIn the past year we’ve more than tripled our growth & our software now services 10,000+ events and millions of users worldwide in 50+ countries. This growth is only getting started (while still being bootstrapped and without funding) and if you are interested in helping us scale and meet the next set of challenges, let’s chat!"
         },
         "en": {
           "name": "EventMobi",
           "url": "http://eventmobi.com/careers/#video",
           "twitter": "eventmobi",
-          "description": "EventMobi is changing the way event planners utilize technology for running events & conferences like Pycon! We develop a platform of tools that help planners build apps, sell tickets, and overall enhance the attendee experience!
-          
-We develop EventMobi using Python based micro-services exposed through APIs to feed our AngularJS & React based applications – from our mobile apps, to the app-building services, real-time chat / gamification / mapping services and tons more.
-
-In the past year we’ve more than tripled our growth & our software now services 10,000+ events and millions of users worldwide in 50+ countries. This growth is only getting started (while still being bootstrapped and without funding) and if you are interested in helping us scale and meet the next set of challenges, let’s chat!"
+          "description": "EventMobi is changing the way event planners utilize technology for running events & conferences like Pycon! We develop a platform of tools that help planners build apps, sell tickets, and overall enhance the attendee experience!\n\nWe develop EventMobi using Python based micro-services exposed through APIs to feed our AngularJS & React based applications – from our mobile apps, to the app-building services, real-time chat / gamification / mapping services and tons more.\n\nIn the past year we’ve more than tripled our growth & our software now services 10,000+ events and millions of users worldwide in 50+ countries. This growth is only getting started (while still being bootstrapped and without funding) and if you are interested in helping us scale and meet the next set of challenges, let’s chat!"
         },
         "logo": "images/sponsors/eventmobi.svg"
       }
