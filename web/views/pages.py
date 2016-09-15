@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, g
 
-from web.utils import get_json_file, get_markdown_file
+from web.utils import get_data_file, get_markdown_file
 
 pages = Blueprint('pages', __name__)
 
@@ -11,7 +11,7 @@ def index():
     Landing page.
     """
 
-    sponsors = get_json_file('sponsors.json')
+    sponsors = get_data_file('sponsors.yml')
 
     return render_template('pages/index.html', sponsors=sponsors)
 
@@ -31,7 +31,7 @@ def sponsors():
     """
     Sponsors page.
     """
-    data = get_json_file('sponsors.json')
+    data = get_data_file('sponsors.yml')
     content = get_markdown_file('sponsors', g.lang_code)
 
     return render_template('pages/sponsors.html', content=content,
@@ -61,8 +61,8 @@ def about():
     About page.
     """
     content = get_markdown_file('about', g.lang_code)
-    team = get_json_file('team.json')
-    sponsors = get_json_file('sponsors.json')
+    team = get_data_file('team.json')
+    sponsors = get_data_file('sponsors.yml')
 
     return render_template('pages/about.html', content=content, team=team,
                            sponsors=sponsors)
@@ -83,6 +83,6 @@ def guide():
     """
     Guide to things around the venue area page.
     """
-    guide = get_json_file('guide.json')
+    guide = get_data_file('guide.json')
 
     return render_template('pages/guide.html', guide=guide)

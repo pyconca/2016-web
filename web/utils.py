@@ -2,20 +2,25 @@ import os
 import json
 import codecs
 
+import yaml
 import markdown
 
 from flask import current_app
 
 
-def get_json_file(filename, lang='en'):
+def get_data_file(filename):
     """
-    Get the contents of a JSON file.
+    Get the contents of a data file.
     """
 
     filepath = os.path.join(current_app.config['APP_PATH'], 'data', filename)
 
     with open(filepath, 'r') as f:
-        return json.loads(f.read())
+        if filename.endswith('.json'):
+            return json.loads(f.read())
+
+        elif filename.endswith('.yaml') or filename.endswith('.yml'):
+            return yaml.load(f.read())
 
 
 def get_markdown_file(name, lang='en'):

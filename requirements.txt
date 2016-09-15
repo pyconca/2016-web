@@ -18,6 +18,7 @@ MarkupSafe==0.23
 paramiko==1.17.2
 pycrypto==2.6.1
 pytz==2016.6.1
+PyYAML==3.12
 smartypants==1.8.6
 typogrify==2.0.7
 webassets==0.11.1
