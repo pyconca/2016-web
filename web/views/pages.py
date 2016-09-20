@@ -10,7 +10,6 @@ def index():
     """
     Landing page.
     """
-
     sponsors = get_data_file('sponsors.yml')
 
     return render_template('pages/index.html', sponsors=sponsors)
