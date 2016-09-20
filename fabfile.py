@@ -108,6 +108,5 @@ def git_auto_deploy():
         # Copy the generated website
         api.local('rsync --delete --exclude "static/scss/" --exclude '
                   '"static/bower/" --exclude "static/.webassets-cache/" '
-                  '-pthrvz {0} {1}'.format(os.path.join(api.env.app_dir,
-                                                        'build/'),
-                                           api.env.html_dir))
+                  '-pthrvz {0} {1}'.format(api.env.local_build_dir),
+                                           api.env.html_dir)
