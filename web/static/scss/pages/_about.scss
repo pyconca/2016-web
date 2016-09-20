@@ -10,6 +10,8 @@
   @at-root #{&}__sponsor-logo {
     @include filter(grayscale(75%));
     cursor: pointer;
+    padding-left: 1em;
+    padding-right: 1em;
 
     &:hover {
       @include filter(none);
