@@ -141,8 +141,8 @@ msgid ""
 msgstr ""
 
 #: web/templates/pages/index.html:22
-msgid "12-13 November 2016"
-msgstr "12-13 Novembre 2016"
+msgid "12-15 November 2016"
+msgstr "12-15 Novembre 2016"
 
 #: web/templates/pages/index.html:22
 msgid "Toronto"
