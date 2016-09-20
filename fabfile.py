@@ -109,5 +109,5 @@ def git_auto_deploy():
         api.local('rsync --delete --exclude "static/scss/" --exclude '
                   '"static/bower/" --exclude "static/.webassets-cache/" '
                   '-pthrvz {0} {1}'.format(os.path.join(api.env.app_dir,
-                                                        'build/')),
+                                                        'build/'),
                                            api.env.html_dir))
