@@ -25,6 +25,23 @@
 
         In the past year we’ve more than tripled our growth & our software now services 10,000+ events and millions of users worldwide in 50+ countries. This growth is only getting started (while still being bootstrapped and without funding) and if you are interested in helping us scale and meet the next set of challenges, let’s chat!
 - level:
+    en: Diversity
+    fr: Diversité
+    entries:
+  - logo: images/sponsors/hover.svg
+    fr:
+      name: Hover
+      url: https://www.hover.com/ 
+      twitter: hover
+      description: |-
+        Every great idea deserves a great domain name. With hundreds of domain extensions, no heavy-handed upselling and best-in-class support, Hover makes it easy to spend less time on your domains and more time on your big idea.
+    en:
+      name: Hover
+      url: https://www.hover.com/ 
+      twitter: hover
+      description: |-
+        Every great idea deserves a great domain name. With hundreds of domain extensions, no heavy-handed upselling and best-in-class support, Hover makes it easy to spend less time on your domains and more time on your big idea.
+- level:
     en: Child Care
     fr: Gardinage
     entries:
@@ -49,20 +66,3 @@ SurveyMonkey is trusted by millions of customers, including 99% of the Fortune 5
 We're also proud to admit that despite our incredible growth over the past 16 years, we refuse to grow up. We stay curious. We believe in good ol’ roll-up-your-sleeves scrappiness. Everyone plays an impactful role, because we’re here to make a difference. And when we say good ideas can come from anyone, we mean it.
  
 SurveyMonkey is trusted by millions of customers, including 99% of the Fortune 500, as well as other businesses, academic institutions and organizations of all shapes and sizes. We collect 3 million survey responses daily from people in all countries around the world.
-- level:
-    en: Diversity
-    fr: Diversité
-    entries:
-  - logo: images/sponsors/hover.svg
-    fr:
-      name: Hover
-      url: https://www.hover.com/ 
-      twitter: hover
-      description: |-
-        Every great idea deserves a great domain name. With hundreds of domain extensions, no heavy-handed upselling and best-in-class support, Hover makes it easy to spend less time on your domains and more time on your big idea.
-    en:
-      name: Hover
-      url: https://www.hover.com/ 
-      twitter: hover
-      description: |-
-        Every great idea deserves a great domain name. With hundreds of domain extensions, no heavy-handed upselling and best-in-class support, Hover makes it easy to spend less time on your domains and more time on your big idea.
