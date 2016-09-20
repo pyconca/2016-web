@@ -32,10 +32,16 @@ def sponsors():
     """
     Sponsors page.
     """
+<<<<<<< HEAD
 
     data = get_data_file('sponsors.yml')
     content, meta = get_markdown_file('sponsors', g.lang_code)
 
+=======
+    data = get_json_file('sponsors.json')
+    content, meta = get_markdown_file('sponsors', g.lang_code)
+
+>>>>>>> 9095fdc1953ce7ba8c06d75f95efb8c31935af74
     return render_template('pages/sponsors.html', content=content, meta=meta,
                            sponsors=data)
 
@@ -62,10 +68,16 @@ def about():
     """
     About page.
     """
+<<<<<<< HEAD
 
     content = get_markdown_file('about', g.lang_code)
     team = get_data_file('team.json')
     sponsors = get_data_file('sponsors.yml')
+=======
+    team = get_json_file('team.json')
+    sponsors = get_json_file('sponsors.json')
+    content, meta = get_markdown_file('about', g.lang_code)
+>>>>>>> 9095fdc1953ce7ba8c06d75f95efb8c31935af74
 
     return render_template('pages/about.html', content=content, meta=meta,
                            team=team, sponsors=sponsors)
