@@ -63,6 +63,7 @@ def about():
     content, meta = get_markdown_file('about', g.lang_code)
     team = get_data_file('team.json')
     sponsors = get_data_file('sponsors.yml')
+    content, meta = get_markdown_file('about', g.lang_code)
 
     return render_template('pages/about.html', content=content, meta=meta,
                            team=team, sponsors=sponsors)
