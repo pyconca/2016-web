@@ -67,30 +67,35 @@
   }
   
   // @at-root #{&}__button {}
-}
-
-.homepage-sponsors {
-  background-color: $action-color;
-  padding-bottom: 2.5em;
-
-  @at-root #{&}__title {
-    margin: 0;
-    padding-top: .75em;
-    padding-bottom: .75em;
+  
+  @at-root #{&}__sponsors {
+    background-color: rgba(51, 51, 51, .5);
+    padding-top: .5em;
+    padding-bottom: .5em;
   }
-
-  @at-root #{&}__link,
-           #{&}__logo {
+  
+  @at-root #{&}__sponsor-title {
+    margin: 0;
+  }
+  
+  @at-root #{&}__sponsor-link,
+           #{&}__sponsor-logo {
     max-height: 10em;
     width: 10em;
     vertical-align: middle;
   }
+  
+  @at-root #{&}__sponsor-logo {
+    @include filter(none);
 
+<<<<<<< HEAD
   @at-root #{&}__logo {
     @include filter(none);
 
     background-color: #fff;
     border-radius: 5px;
+=======
+>>>>>>> Play around with the landing page.
     padding: .5em .25em;
     cursor: pointer;
 
