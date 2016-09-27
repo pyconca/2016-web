@@ -13,6 +13,7 @@
                 <li class="navigation__item"><a class="navigation__link" href="{{ url_for('pages.volunteer') }}">{{ _('Volunteer') }}</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="{{ url_for('pages.sponsors') }}">{{ _('Sponsors') }}</a></li>
                 {# <li class="navigation__item"><a class="navigation__link" href="{{ url_for('schedule.index') }}">{{ _('Schedule') }}</a></li> #}
+                <li class="navigation__item"><a class="navigation__link" href="https://docs.google.com/forms/d/e/1FAIpQLSdutYNTEAXxpee4_t8DwKtB1JmWMcd3eeSczcIj-GgZAYBHuA/viewform">{{ _('Financial Aid') }}</a></li>
             </ul>
         </div>
         
@@ -27,17 +28,21 @@
                 <a href="http://www.eventbrite.com/e/pycon-canada-2016-tickets-27545680873?aff=web" class="button button--red button--big">
                     {{ _('Buy a ticket') }}
                 </a>
-                
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdutYNTEAXxpee4_t8DwKtB1JmWMcd3eeSczcIj-GgZAYBHuA/viewform" class="homepage__button button button--primary">
-                    {{ _('Apply for Financial Aid') }}
-                </a>
             </p>
             
-            <p class="homepage__button">
-                <a href="http://eepurl.com/bs9mG9" class="homepage__button button button--secondary">
-                    {{ _('Join our mailing list') }}
+            {% if sponsors %}
+            <div class="homepage__sponsors">
+                <h1 class="homepage__sponsor-title">Sponsors</h1>
+                
+                {% for level in sponsors %}
+                {% for sponsor in level.entries %}
+                <a href="{{ sponsor[g.lang_code].url }}" title="{{ sponsor[g.lang_code].name }}" class="homepage__sponsor-link">
+                    <img src="{{ url_for('static', filename=sponsor.logo) }}" class="homepage__sponsor-logo" alt="{{ sponsor[g.lang_code].name }}">
                 </a>
-            </p>
+                {% endfor %}
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
         
         <div class="homepage__footer">
@@ -45,18 +50,4 @@
         </div>
     </div>
 </div>
-
-{% if sponsors %}
-<div class="homepage-sponsors">
-    <h1 class="homepage-sponsors__title">Sponsors</h1>
-    
-    {% for level in sponsors %}
-    {% for sponsor in level.entries %}
-    <a href="{{ sponsor[g.lang_code].url }}" title="{{ sponsor[g.lang_code].name }}" class="homepage-sponsors__link">
-        <img src="{{ url_for('static', filename=sponsor.logo) }}" class="homepage-sponsors__logo" alt="{{ sponsor[g.lang_code].name }}">
-    </a>
-    {% endfor %}
-    {% endfor %}
-</div>
-{% endif %}
 {% endblock %}
