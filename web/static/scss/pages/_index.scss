@@ -89,11 +89,6 @@
   @at-root #{&}__sponsor-logo {
     @include filter(none);
 
-  @at-root #{&}__logo {
-    @include filter(none);
-
-    background-color: #fff;
-    border-radius: 5px;
     padding: .5em .25em;
     cursor: pointer;
 
