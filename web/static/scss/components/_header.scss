@@ -1,5 +1,5 @@
 .header {
-  padding: 2em 0;
+  padding: 1em 0;
   
   @at-root #{&}__logo {
     float: left;
@@ -8,8 +8,8 @@
   
   @at-root #{&}__image {
     display: block;
-    height: 4.125em;
-    margin-bottom: 2em;
+    height: 5em;
+    margin-bottom: 1em;
   }
   
   @at-root #{&}__navigation-menu {
