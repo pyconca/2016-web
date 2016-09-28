@@ -31,12 +31,10 @@
         {% for sponsor_data in level.entries %}
             {% if g.lang_code=='fr' %}{% set sponsor = sponsor_data.fr %}{% else %}{% set sponsor = sponsor_data.en %}{% endif %}
             <div class="sponsor">
-                <h2 class="sponsor__name">{{ sponsor.name }}</h2>
-                
                 <div class="page__row">
                     <div class="page__col">
-                        <a href="{{ sponsor.url }}" class="sponsor__link">
-                            <img src="{{ url_for('static', filename=sponsor_data.logo) }}" class="sponsor__logo">
+                        <a href="{{ sponsor.url }}" class="sponsor__link" title="{{ sponsor.name }}">
+                            <img src="{{ url_for('static', filename=sponsor_data.logo) }}" class="sponsor__logo" alt="{{ sponsor.name }}">
                         </a>
                         
                         <ul>
