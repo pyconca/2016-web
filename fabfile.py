@@ -106,8 +106,6 @@ def git_auto_deploy():
         api.local('{} manage.py freeze'.format(api.env.venv_python))
 
         # Copy the generated website
-        api.local('rsync --delete --exclude "static/scss/" --exclude '
-                  '"static/bower/" --exclude "static/.webassets-cache/" '
-                  '-pthrvz {0} {1}'.format(os.path.join(api.env.app_dir,
-                                                        'build/'),
-                                           api.env.html_dir))
+        api.local('cp -r {0} {1}'.format(os.path.join(api.env.app_dir,
+                                                              'build'),
+                                              api.env.html_dir))
