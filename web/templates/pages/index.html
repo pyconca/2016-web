@@ -29,6 +29,20 @@
                     {{ _('Buy a ticket') }}
                 </a>
             </p>
+            
+            {% if sponsors %}
+            <div class="homepage__sponsors">
+                <h1 class="homepage__sponsor-title">Sponsors</h1>
+                
+                {% for level in sponsors %}
+                {% for sponsor in level.entries %}
+                <a href="{{ sponsor[g.lang_code].url }}" title="{{ sponsor[g.lang_code].name }}" class="homepage__sponsor-link">
+                    <img src="{% if sponsor.logo_dark %}{{ url_for('static', filename=sponsor.logo_dark) }}{% else %}{{ url_for('static', filename=sponsor.logo) }}{% endif %}" class="homepage__sponsor-logo" alt="{{ sponsor[g.lang_code].name }}">
+                </a>
+                {% endfor %}
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
         
         {% if sponsors %}
