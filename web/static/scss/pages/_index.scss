@@ -71,14 +71,13 @@
   
   @at-root #{&}__sponsors {
     background-color: rgba(51, 51, 51, .5);
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding: .5em;
   }
   
   @at-root #{&}__sponsor-title {
     margin: 0;
   }
-  
+
   @at-root #{&}__sponsor-link,
            #{&}__sponsor-logo {
     max-height: 10em;
@@ -89,8 +88,10 @@
   @at-root #{&}__sponsor-logo {
     @include filter(none);
 
+    vertical-align: center;
     padding: .5em .25em;
     cursor: pointer;
+    height: 2.5rem;
 
     &:hover {
       @include filter(grayscale(75%));
