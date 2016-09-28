@@ -72,7 +72,7 @@
     en: Bronze
     fr: Bronze
   entries:
-  - logo: image/sponsors/firefox-developer.svg
+  - logo: images/sponsors/firefox-developer.svg
     fr:
       name: Mozilla
       url: https://firefox.com/developer
