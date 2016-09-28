@@ -48,6 +48,7 @@
     fr: Gardiennage
   entries:
   - logo: images/sponsors/survey-monkey.svg
+    logo_dark: images/sponsors/survey-monkey-dark.svg
     fr:
       name: Survey Monkey
       url: https://www.surveymonkey.com/ 
