@@ -83,10 +83,11 @@
            #{&}__logo {
     max-height: 10em;
     width: 10em;
+    vertical-align: middle;
   }
 
   @at-root #{&}__logo {
-    @include filter(grayscale(75%));
+    @include filter(none);
 
     background-color: #fff;
     border-radius: 5px;
@@ -94,7 +95,7 @@
     cursor: pointer;
 
     &:hover {
-      @include filter(none);
+      @include filter(grayscale(75%));
     }
   }
 }
