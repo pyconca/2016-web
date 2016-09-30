@@ -85,5 +85,20 @@
       twitter: firefox
       description: |-
         Firefox Developer Edition brings your core dev tools together with some powerful new ones that will extend your ability to work across multiple platforms from one place. It’s everything you’re used to, only better. And only from Firefox.
-
-
+- level:
+    en: Contributor
+    fr: Contributeur
+  entries:
+  - logo: images/sponsors/microsoft.svg
+    fr:
+      name: Microsoft
+      url: https://aka.ms/python 
+      twitter: azure
+      description: |-
+        Microsoft is proud to support the Python community through sponsored development of Python Tools for Visual Studio, Jupyter, CPython, and Azure Machine Learning and organizations such as the PSF and NumFocus.
+    en:
+      name: Microsoft
+      url: https://aka.ms/python 
+      twitter: azure
+      description: |-
+        Microsoft is proud to support the Python community through sponsored development of Python Tools for Visual Studio, Jupyter, CPython, and Azure Machine Learning and organizations such as the PSF and NumFocus.
