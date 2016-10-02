@@ -84,7 +84,7 @@
     width: 10em;
     vertical-align: middle;
   }
-  
+
   @at-root #{&}__sponsor-logo {
     @include filter(none);
 

@@ -63,6 +63,8 @@ def get_markdown_file(name, lang='en'):
 
     md = markdown.Markdown(['markdown.extensions.meta'])
 
+    md = markdown.Markdown(['markdown.extensions.meta'])
+
     with codecs.open(filepath, mode='r', encoding="utf-8") as f:
         html = md.convert(f.read())
 
