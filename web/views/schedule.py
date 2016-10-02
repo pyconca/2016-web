@@ -15,7 +15,7 @@ def index():
     return render_template('pages/schedule/index.html', schedule=schedule)
 
 
-@schedule.route('/<slug>/')
+@schedule.route('/<path:slug>/')
 def talk(slug):
     """
     Talk details page.

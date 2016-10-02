@@ -19,5 +19,6 @@ class Config(object):
 
     # Destination of the build directory
     FREEZER_DESTINATION = os.path.join(APP_PATH, '../build/')
+    FREEZER_IGNORE_404_NOT_FOUND = True
 
     MARKDOWN_EXTENSION_CONFIG = {}
