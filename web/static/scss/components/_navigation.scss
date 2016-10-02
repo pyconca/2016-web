@@ -17,6 +17,16 @@
   
   @at-root #{&}__item {
     display: inline;
+
+    @include media(max-width $breakpoint-mobile) {
+      display: block;
+    }
+  }
+  
+  @at-root #{&}__item--hide-small {
+    @include media(max-width 975px) {
+      display: none;
+    }
   }
   
   @at-root #{&}__link {

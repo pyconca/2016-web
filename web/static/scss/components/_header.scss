@@ -16,9 +16,12 @@
     float: right;
     margin-top: (4.125em / 2.5);
     margin-right: 2em;
+
   }
   
   @at-root #{&}__navigation-list {
+    float: left;
+    
     @include media(min-width $breakpoint-mobile) {
       float: right;
       margin-top: (4.125em / 2.5);

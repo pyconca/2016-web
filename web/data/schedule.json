@@ -1,24 +1,205 @@
 {
-  "rooms": {
-    "room-one": {
-      "title": "Room One"
+  "rooms": [
+    {
+      "name": "TRS 1-067",
+      "slug": "1-067"
     },
-    "room-two": {
-      "title": "Room Two"
+    {
+      "name": "TRS 2-166",
+      "slug": "2-166"
+    },
+    {
+      "name": "TRS 3-176",
+      "slug": "3-176"
     }
-  },
-  "slots": {
-    "2016-11-12": {
-      "09:00": {
-        "date": "2016-11-12",
-        "start_time": "09:00",
-        "end_time": "09:45"
-      },
-      "10:00": {
-        "date": "2016-11-12",
-        "start_time": "10:00",
-        "end_time": "10:45"
-      }
+  ],
+  "days": [
+    {
+      "date": "2016-11-12",
+      "entries": [
+        {
+          "start_time": "10:30:00",
+          "end_time": "11:00:00",
+          "talks": {
+            "3-176": "016-albert-oconnor",
+            "1-067": "018-andrey-petrov",
+            "2-166": "077-jay-parlar_en"
+          }
+        },
+        {
+          "start_time": "11:10:00",
+          "end_time": "11:40:00",
+          "talks": {
+            "1-067": "066-yury-selivanov",
+            "2-166": "061-sachin-agarwal",
+            "3-176": "060-heather-shapiro"
+          }
+        },
+        {
+          "start_time": "11:50:00",
+          "end_time": "12:20:00",
+          "talks": {
+            "1-067": "064-steven-seguin",
+            "2-166": "107-david-kua",
+            "3-176": "010-anna-ossowski"
+          }
+        },
+      
+        {
+          "start_time": "13:35:00",
+          "end_time": "13:45:00",
+          "talks": {
+            "1-067": "105-paul-logston",
+            "2-166": "",
+            "3-176": "088-andre-r-erler"
+          }
+        },
+        {
+          "start_time": "13:50:00",
+          "end_time": "14:00:00",
+          "talks": {
+            "1-067": "098-james-powell",
+            "2-166": "",
+            "3-176": "076-stephen-childs"
+          }
+        },
+        {
+          "start_time": "14:05:00",
+          "end_time": "14:15:00",
+          "talks": {
+            "1-067": "",
+            "2-166": "",
+            "3-176": "024-shivkumar-v-iyer"
+          }
+        },
+      
+        {
+          "start_time": "14:20:00",
+          "end_time": "14:50:00",
+          "talks": {
+            "1-067": "101-en-zyme",
+            "2-166": "",
+            "3-176": "073-dorian-pula"
+          }
+        },
+        {
+          "start_time": "15:00:00",
+          "end_time": "15:30:00",
+          "talks": {
+            "1-067": "063-greg-ward",
+            "3-176": "095-elissa-shevinsky",
+            "2-166": "055-juti-noppornpitak"
+          }
+        },
+      
+        {
+          "start_time": "16:00:00",
+          "end_time": "16:30:00",
+          "talks": {
+            "1-067": "059-brett-cannon",
+            "2-166": "072-piero-ferrante",
+            "3-176": "026-david-wolever"
+          }
+        },
+        {
+          "start_time": "16:40:00",
+          "end_time": "17:10:00",
+          "talks": {
+            "1-067": "065-samuel-cormier-iijima",
+            "2-166": "091-michael-mchugh",
+            "3-176": "089-jean-philippe-caissy"
+          }
+        }
+      ]
+    },
+    {
+      "date": "2016-11-13",
+      "entries": [
+        {
+          "start_time": "11:10:00",
+          "end_time": "11:40:00",
+          "talks": {
+            "1-067": "109-stephane-wirtel",
+            "3-176": "067-christopher-ing_en",
+            "2-166": "046-nick-anderegg"
+          }
+        },
+        {
+          "start_time": "11:50:00",
+          "end_time": "12:20:00",
+          "talks": {
+            "1-067": "054-greg-wilson",
+            "2-166": "056-mike-c-fletcher",
+            "3-176": "113-allaa-hilal"
+          }
+        },
+        {
+          "start_time": "12:30:00",
+          "end_time": "13:00:00",
+          "talks": {
+            "1-067": "116-stephen-j-turnbull",
+            "2-166": "058-sa-friend",
+            "3-176": "094-ryan-easterbrook"
+          }
+        },
+        
+        {
+          "start_time": "13:55:00",
+          "end_time": "14:05:00",
+          "talks": {
+            "1-067": "115-sye-van-der-veen",
+            "2-166": "",
+            "3-176": "087-marc-andre-giroux"
+          }
+        },
+        {
+          "start_time": "14:10:00",
+          "end_time": "14:20:00",
+          "talks": {
+            "1-067": "086-brett-cannon",
+            "2-166": "083-wesley-george",
+            "3-176": "052-joshua-weissbock_en"
+          }
+        },
+        {
+          "start_time": "14:25:00",
+          "end_time":  "14:35:00",
+          "talks": {
+            "1-067": "106-matt-mcgraw",
+            "2-166": "",
+            "3-176": "037-chaitasee-pandya"
+          }
+        },
+      
+        {
+          "start_time": "14:40:00",
+          "end_time": "15:10:00",
+          "talks": {
+            "1-067": "027-hany-fahim",
+            "2-166": "104-paul-logston",
+            "3-176": "074-anoop-thomas-mathew"
+          }
+        },
+      
+        {
+          "start_time": "15:40:00",
+          "end_time": "16:10:00",
+          "talks": {
+            "1-067": "039-ankita-mukherjee-k-utham-kumar",
+            "2-166": "100-brandon-rhodes",
+            "3-176": "068-anthony-barker"
+          }
+        },
+        {
+          "start_time": "16:20:00",
+          "end_time": "16:50:00",
+          "talks": {
+            "1-067": "079-hadrien-david",
+            "2-166": "099-james-powell",
+            "3-176": "069-elissa-shevinsky"
+          }
+        }
+      ]
     }
-  }
+  ]
 }

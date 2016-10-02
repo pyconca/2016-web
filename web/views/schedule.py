@@ -1,4 +1,6 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, g
+
+from web.utils import get_data_file, get_markdown_file
 
 schedule = Blueprint('schedule', __name__)
 
@@ -8,12 +10,17 @@ def index():
     """
     Schedule index page.
     """
-    return render_template('pages/schedule/index.html')
+    schedule = get_data_file('schedule.json')
+
+    return render_template('pages/schedule/index.html', schedule=schedule)
 
 
-@schedule.route('/<path:slug>/')
-def talk():
+@schedule.route('/<slug>/')
+def talk(slug):
     """
     Talk details page.
     """
-    return render_template('pages/schedule/talk.html')
+    content, meta = get_markdown_file('talks/{}'.format(slug), 'en')
+
+    return render_template('pages/schedule/talk.html', content=content,
+                           meta=meta)

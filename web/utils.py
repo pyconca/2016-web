@@ -4,8 +4,29 @@ import codecs
 
 import yaml
 import markdown
+import datetime
 
 from flask import current_app
+
+
+class CustomJSONDecoder(json.JSONDecoder):
+
+    def __init__(self, *args, **kwargs):
+        json.JSONDecoder.__init__(self, object_hook=self.object_hook,
+                                  *args, **kwargs)
+
+    def object_hook(self, obj):
+        if isinstance(obj, dict):
+            for key in obj:
+                if key.endswith('time'):
+                    obj[key] = datetime.datetime.strptime(obj[key],
+                                                          '%H:%M:%S').time()
+
+                if key.endswith('date'):
+                    obj[key] = datetime.datetime.strptime(obj[key],
+                                                          '%Y-%m-%d').date()
+
+        return obj
 
 
 def get_data_file(filename):
@@ -17,7 +38,7 @@ def get_data_file(filename):
 
     with open(filepath, 'r') as f:
         if filename.endswith('.json'):
-            return json.loads(f.read())
+            return json.loads(f.read(), cls=CustomJSONDecoder)
 
         elif filename.endswith('.yaml') or filename.endswith('.yml'):
             return yaml.load(f.read())
@@ -38,7 +59,7 @@ def get_markdown_file(name, lang='en'):
         filepath = os.path.join(md_dir, filename_temp.format(name, 'en'))
 
     if not os.path.isfile(filepath):
-        return None
+        return None, {}
 
     md = markdown.Markdown(['markdown.extensions.meta'])
 

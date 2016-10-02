@@ -1,1 +1,60 @@
-// .schedule-page {}
+.schedule {
+  table-layout: fixed;
+  width: 100%;
+  
+  @at-root #{&}__day {
+    @extend h1;
+    text-align: center;
+  }
+
+  @at-root #{&}__time {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: right;
+    width: 10%;
+  }
+
+  @at-root #{&}__room-name,
+           #{&}__slot {
+    text-align: center;
+    width: 30%;
+  }
+
+  @at-root #{&}__row {
+    &:hover {
+      background-color: $colour-blue;
+      color: $colour-white;
+      
+      a {
+        color: $colour-yellow;
+      }
+      
+      .schedule__slot-presenter {
+        color: $colour-white;
+      }
+    }
+  }
+
+  @at-root #{&}__slot {
+    padding: .5em 1em;
+    
+    &:hover {
+      background-color: darken($colour-blue, 5);
+    }
+    
+    @at-root #{&}-link {
+      padding: 0.75em 0;
+      height: 100%;
+      width: 100%;
+    }
+    
+    @at-root #{&}-title,
+             #{&}-presenter {
+      display: block;
+    }
+    
+    @at-root #{&}-presenter {
+      color: #000;
+    }
+  }
+}

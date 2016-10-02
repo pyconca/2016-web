@@ -18,11 +18,11 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         
-        <link rel="canonical" href="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint) }}">
+        <link rel="canonical" href="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint, **request.view_args) }}">
         
-        <link rel="alternate" hreflang="en" href="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint, lang_code='en') }}">
-        <link rel="alternate" hreflang="fr" href="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint, lang_code='fr') }}">
-        <link rel="alternate" hreflang="x-default" href="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint, lang_code='en') }}">
+        <link rel="alternate" hreflang="en" href="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint, lang_code='en', **request.view_args) }}">
+        <link rel="alternate" hreflang="fr" href="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint, lang_code='fr', **request.view_args) }}">
+        <link rel="alternate" hreflang="x-default" href="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint, lang_code='en', **request.view_args) }}">
         
         <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}" />
         <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/apple-touch-icon-precomposed.png') }}">
@@ -37,7 +37,7 @@
         <meta property="og:title" content="{{ _('PyCon Canada 2016') }}">
         <meta property="og:description" content="{{ _('Join your fellow Pythonistas for the fourth annual PyCon Canada, a weekend of talks, activities, fun and code!') }}">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint) }}">
+        <meta property="og:url" content="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint, **request.view_args) }}">
         <meta property="og:image" content="https://2016.pycon.ca{{ url_for('static', filename='images/pycon-2015-mc-paul-by-shiroyuki-facebook.jpg') }}">
         <meta property="og:image:type" content="image/jpeg">
         <meta property="og:image:width" content="1200">
@@ -50,7 +50,7 @@
             "name": "{{ _('PyCon Canada 2016') }}",
             "description": "{{ _('Join your fellow Pythonistas for the fourth annual PyCon Canada, a weekend of talks, activities, fun and code!') }}",
             "image": "https://2016.pycon.ca{{ url_for('static', filename='images/pycon-2015-mc-paul-by-shiroyuki-facebook.jpg') }}",
-            "url": "https://2016.pycon.ca{{ url_for(request.url_rule.endpoint) }}",
+            "url": "https://2016.pycon.ca{{ url_for(request.url_rule.endpoint, **request.view_args) }}",
             "startDate": "2016-11-12",
             "endDate": "2016-11-13",
             "location": {
