@@ -31,6 +31,7 @@
                     {{ entry.start_time|format_time('short') }}
                 </th>
                 
+                {% if entry.talks %}
                 {% for room in schedule.rooms %}
                 <td class="schedule__slot">
                     {% set talk = get_talk(entry.talks[room.slug]) %}
@@ -44,6 +45,20 @@
                     </a>
                 </td>
                 {% endfor %}
+                {% else %}
+                <td class="schedule__slot" rowspan="3">
+                    <span class="schedule__slot-link">
+                        <span class="schedule__slot-title">
+                            {{ entry.title }}
+                        </span>
+                        {% if entry.content %}
+                        <span class="schedule__slot-content">
+                            {{ entry.content }}
+                        </span>
+                        {% endif}
+                    </span>
+                </td>
+                {% endif %}
             </tr>
             {% endfor %}
         </tbody>
