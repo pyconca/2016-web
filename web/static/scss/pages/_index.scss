@@ -91,7 +91,7 @@
     vertical-align: center;
     padding: .5em .25em;
     cursor: pointer;
-    height: 2.5rem;
+    // height: 2.5rem;
 
     &:hover {
       @include filter(grayscale(75%));
