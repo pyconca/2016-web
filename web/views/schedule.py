@@ -31,14 +31,14 @@ def talk(slug):
                            meta=meta, slug=slug)
 
 
-@schedule.route('/<string:slug>/json/')
+@schedule.route('/<string:slug>.json')
 def talk_json(slug):
     description, content = get_markdown_file('talks/{}'.format(slug), 'en')
     content['description'] = description
     return jsonify(content)
 
 
-@schedule.route('/<string:slug>/ics/')
+@schedule.route('/<string:slug>.ics')
 def talk_ics(slug):
     description, content = get_markdown_file('talks/{}'.format(slug), 'en')
 
@@ -57,8 +57,8 @@ def talk_ics(slug):
     cal.add('version', '2.0')
 
     event = Event()
-    event.add('summary', "{0} with {1}".format(content['title'][0],
-                                               content['speakers'][0]))
+    event.add('summary', u"{0} with {1}".format(content['title'][0],
+                                                content['speakers'][0]))
     event.add('dtstart', tz.localize(start_time))
     event.add('dtend', tz.localize(end_time))
     event.add('dtstamp', tz.localize(start_time))
