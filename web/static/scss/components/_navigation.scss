@@ -40,5 +40,10 @@
     @at-root #{&}--active {
       color: darken($action-color, 25%);
     }
+    
+    @include media(max-width $breakpoint-mobile) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 }

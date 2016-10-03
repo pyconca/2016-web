@@ -1,6 +1,8 @@
 .schedule {
   table-layout: fixed;
   width: 100%;
+  min-width: 750px;
+  background-color: $colour-white;
   
   @at-root #{&}__day {
     @extend h1;
