@@ -18,6 +18,18 @@
       "date": "2016-11-12",
       "entries": [
         {
+          "start_time": "08:00:00",
+          "end_time": "09:00:00",
+          "title": "Registration & Breakfast"
+        },
+        {
+          "start_time": "09:00:00",
+          "end_time": "10:15:00",
+          "title": "Welcome & Morning Keynote",
+          "content": "Tracy Osborne",
+          "__comment": "Maybe should be converted to talk, as we'll eventually post a video?"
+        },
+        {
           "start_time": "10:30:00",
           "end_time": "11:00:00",
           "talks": {
@@ -44,7 +56,12 @@
             "3-176": "010-anna-ossowski"
           }
         },
-      
+        {
+            "start_time": "12:20:00",
+            "end_time": "13:35:00",
+            "all": "true",
+            "title": "Lunch"
+        },
         {
           "start_time": "13:35:00",
           "end_time": "13:45:00",
@@ -91,7 +108,12 @@
             "2-166": "055-juti-noppornpitak"
           }
         },
-      
+        {
+          "start_time": "15:30:00",
+          "end_time": "16:00:00",
+          "all": "true",
+          "title": "Break"
+        },
         {
           "start_time": "16:00:00",
           "end_time": "16:30:00",
@@ -109,12 +131,30 @@
             "2-166": "091-michael-mchugh",
             "3-176": "089-jean-philippe-caissy"
           }
+        },
+        {
+          "start_time": "17:30:00",
+          "end_time": "18:30:00",
+          "all": "true",
+          "title": "Afternoon keynote",
+          "content": "Raymond Hettinger"
         }
       ]
     },
     {
       "date": "2016-11-13",
       "entries": [
+        {
+          "start_time": "08:00:00",
+          "end_time": "09:00:00",
+          "title": "Breakfast"
+        },
+        {
+          "start_time": "10:00:00",
+          "end_time": "11:00:00",
+          "title": "Morning keynote",
+          "content": ""
+        },
         {
           "start_time": "11:10:00",
           "end_time": "11:40:00",
@@ -142,7 +182,11 @@
             "3-176": "094-ryan-easterbrook"
           }
         },
-        
+        {
+          "start_time": "13:00:00",
+          "end_time": "13:55:00",
+          "title": "Lunch"
+        },
         {
           "start_time": "13:55:00",
           "end_time": "14:05:00",
@@ -180,7 +224,11 @@
             "3-176": "074-anoop-thomas-mathew"
           }
         },
-      
+        {
+          "start_time": "15:10:00",
+          "end_time": "15:40:00",
+          "title": "Break"
+        },
         {
           "start_time": "15:40:00",
           "end_time": "16:10:00",
@@ -198,6 +246,12 @@
             "2-166": "099-james-powell",
             "3-176": "069-elissa-shevinsky"
           }
+        },
+        {
+          "start_time": "17:00:00",
+          "end_time": "18:00:00",
+          "title": "Afternoon Keynote & Closing Messages",
+          "content": "Gary Bernhardt"
         }
       ]
     }

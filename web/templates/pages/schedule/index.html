@@ -46,7 +46,7 @@
                 </td>
                 {% endfor %}
                 {% else %}
-                <td class="schedule__slot" rowspan="3">
+                <td class="schedule__slot" colspan="3">
                     <span class="schedule__slot-link">
                         <span class="schedule__slot-title">
                             {{ entry.title }}
@@ -55,7 +55,7 @@
                         <span class="schedule__slot-content">
                             {{ entry.content }}
                         </span>
-                        {% endif}
+                        {% endif %}
                     </span>
                 </td>
                 {% endif %}

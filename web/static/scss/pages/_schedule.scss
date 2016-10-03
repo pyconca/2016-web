@@ -25,12 +25,14 @@
       background-color: $colour-blue;
       color: $colour-white;
       
-      a {
-        color: $colour-yellow;
+      .schedule__slot-presenter,
+      .schedule__slot-title,
+      .schedule__slot-content {
+        color: $colour-white;
       }
       
-      .schedule__slot-presenter {
-        color: $colour-white;
+      .schedule__slot-title {
+        color: $colour-yellow;
       }
     }
   }
