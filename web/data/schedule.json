@@ -23,7 +23,7 @@
           "talks": {
             "3-176": "016-albert-oconnor",
             "1-067": "018-andrey-petrov",
-            "2-166": "077-jay-parlar_en"
+            "2-166": "077-jay-parlar"
           }
         },
         {
@@ -78,7 +78,7 @@
           "end_time": "14:50:00",
           "talks": {
             "1-067": "101-en-zyme",
-            "2-166": "",
+            "2-166": "083-wesley-george",
             "3-176": "073-dorian-pula"
           }
         },
@@ -120,7 +120,7 @@
           "end_time": "11:40:00",
           "talks": {
             "1-067": "109-stephane-wirtel",
-            "3-176": "067-christopher-ing_en",
+            "3-176": "067-christopher-ing",
             "2-166": "046-nick-anderegg"
           }
         },
@@ -157,8 +157,8 @@
           "end_time": "14:20:00",
           "talks": {
             "1-067": "086-brett-cannon",
-            "2-166": "083-wesley-george",
-            "3-176": "052-joshua-weissbock_en"
+            "2-166": "",
+            "3-176": "052-joshua-weissbock"
           }
         },
         {
