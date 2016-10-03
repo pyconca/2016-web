@@ -17,8 +17,9 @@ class Config(object):
     BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
+    FREEZER_RELATIVE_URLS = True
+    FREEZER_STATIC_IGNORE = ('*.scss', '*.scssc')
     # Destination of the build directory
     FREEZER_DESTINATION = os.path.join(APP_PATH, '../build/')
-    FREEZER_IGNORE_404_NOT_FOUND = True
 
     MARKDOWN_EXTENSION_CONFIG = {}

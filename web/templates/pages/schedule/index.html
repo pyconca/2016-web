@@ -34,7 +34,7 @@
                 {% for room in schedule.rooms %}
                 <td class="schedule__slot">
                     {% set talk = get_talk(entry.talks[room.slug]) %}
-                    <a href="{{ talk.link }}" class="schedule__slot-link">
+                    <a href="{% if talk.link %}{{ talk.link }}{% else %}#{% endif %}" class="schedule__slot-link">
                         <span class="schedule__slot-title">
                             {% for t in talk.title %}{{ t }}{% endfor %}
                         </span>

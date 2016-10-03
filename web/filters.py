@@ -19,6 +19,9 @@ def format_time(value, format='full'):
 def get_talk(slug):
     content, meta = get_markdown_file('talks/{}'.format(slug), g.lang_code)
 
-    meta['link'] = url_for('schedule.talk', slug=slug)
+    if slug:
+        meta['link'] = url_for('schedule.talk', slug=slug)
+    else:
+        meta['link'] = None
 
     return meta
