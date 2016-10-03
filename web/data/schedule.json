@@ -11,6 +11,10 @@
     {
       "name": "TRS 3-176",
       "slug": "3-176"
+    },
+    {
+      "name": "Tutorial",
+      "slug": "tutorial"
     }
   ],
   "days": [
@@ -44,7 +48,8 @@
           "talks": {
             "1-067": "066-yury-selivanov",
             "2-166": "061-sachin-agarwal",
-            "3-176": "060-heather-shapiro"
+            "3-176": "060-heather-shapiro",
+            "tutorial": "019-roberto-rocha"
           }
         },
         {
@@ -96,7 +101,8 @@
           "talks": {
             "1-067": "101-en-zyme",
             "2-166": "083-wesley-george",
-            "3-176": "073-dorian-pula"
+            "3-176": "073-dorian-pula",
+            "tutorial": "093-stuart-williams"
           }
         },
         {
@@ -120,7 +126,8 @@
           "talks": {
             "1-067": "059-brett-cannon",
             "2-166": "072-piero-ferrante",
-            "3-176": "026-david-wolever"
+            "3-176": "026-david-wolever",
+            "tutorial": "038-piper-thunstrom"
           }
         },
         {
@@ -170,7 +177,8 @@
           "talks": {
             "1-067": "054-greg-wilson",
             "2-166": "056-mike-c-fletcher",
-            "3-176": "113-allaa-hilal"
+            "3-176": "113-allaa-hilal",
+            "tutorial": "096-mike-sukmanowsky"
           }
         },
         {
@@ -235,7 +243,8 @@
           "talks": {
             "1-067": "039-ankita-mukherjee-k-utham-kumar",
             "2-166": "100-brandon-rhodes",
-            "3-176": "068-anthony-barker"
+            "3-176": "068-anthony-barker",
+            "tutorial": "096-mike-sukmanowsky"
           }
         },
         {

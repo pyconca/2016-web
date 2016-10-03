@@ -11,13 +11,13 @@
     padding-left: 1em;
     padding-right: 1em;
     text-align: right;
-    width: 10%;
+    width: 15%;
   }
 
   @at-root #{&}__room-name,
            #{&}__slot {
     text-align: center;
-    width: 30%;
+    width: 21.25%;
   }
 
   @at-root #{&}__row {
