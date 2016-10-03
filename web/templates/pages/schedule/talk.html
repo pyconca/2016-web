@@ -15,4 +15,12 @@
 <div class="page__section">
     {{ content|safe }}
 </div>
+
+<div class="page__section">
+    <p>
+        <a href="{{ url_for('schedule.talk_ics', slug=slug) }}" title="iCalender File"><img data-file-extension="ics" data-src="{{ url_for('static', filename='images/icon-file.svg') }}" class="iconic iconic-md" alt="iCalendar File" /></a>
+        
+        <a href="{{ url_for('schedule.talk_json', slug=slug) }}" title="JSON File"><img data-file-extension="json" data-src="{{ url_for('static', filename='images/icon-file.svg') }}" class="iconic iconic-md" alt="JSON File" /></a>
+    </p>
+</div>
 {% endblock %}

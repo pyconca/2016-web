@@ -28,7 +28,7 @@ def talk(slug):
     content, meta = get_markdown_file('talks/{}'.format(slug), 'en')
 
     return render_template('pages/schedule/talk.html', content=content,
-                           meta=meta)
+                           meta=meta, slug=slug)
 
 
 @schedule.route('/<string:slug>/json/')
