@@ -1,0 +1,52 @@
+{% extends "layouts/page.html" %}
+
+{% block title %}{{ _('Schedule') }} | {{ super() }}{% endblock %}
+
+{% block page_class %}page--schedule{% endblock %}
+{% block page_header_class %}page__header--schedule{% endblock %}
+{% block page_content_class %}page__content--schedule{% endblock %}
+
+{% block page_header %}
+    <h1>{{ _('Schedule')|typogrify|safe }}</h1>
+{% endblock %}
+
+{% block page_content %}
+    {% for day in schedule.days %}
+    <h1 class="schedule__day">{{ day.date|format_date('full') }}</h1>
+    
+    <table class="schedule">
+        <thead class="schedule__head">
+            
+            <tr>
+                <th class="schedule__time">&nbsp;</th>
+                {% for room in schedule.rooms %}
+                <th class="schedule__room-name">{{ room.name }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody class="schedule__body">
+            {% for entry in day.entries %}
+            <tr class="schedule__row">
+                <th class="schedule__time">
+                    {{ entry.start_time|format_time('short') }}
+                </th>
+                
+                {% for room in schedule.rooms %}
+                <td class="schedule__slot">
+                    {% set talk = get_talk(entry.talks[room.slug]) %}
+                    <a href="{{ talk.link }}" class="schedule__slot-link">
+                        <span class="schedule__slot-title">
+                            {% for t in talk.title %}{{ t }}{% endfor %}
+                        </span>
+                        <span class="schedule__slot-presenter">
+                            {% for a in talk.speakers %}{% for b in a %}{% for c in b %}{{ c }}{% endfor %}{% endfor %}{% endfor %}
+                        </span>
+                    </a>
+                </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endfor %}
+{% endblock %}

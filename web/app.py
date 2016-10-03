@@ -9,6 +9,7 @@ from typogrify.templatetags import jinja_filters as typogrify_filters
 
 from webassets.filter import get_filter
 
+from web import filters
 from web.views import *
 
 
@@ -76,8 +77,19 @@ def create_app(configfile=None):
     def get_timezone():
         return app.config['BABEL_DEFAULT_TIMEZONE']
 
+    @app.context_processor
+    def utility_processor():
+        def get_talk(slug):
+            return filters.get_talk(slug)
+        return dict(get_talk=get_talk)
+
     # Register the Blueprints
     app.register_blueprint(view_pages, url_prefix='/<lang_code>')
     app.register_blueprint(view_schedule, url_prefix='/<lang_code>/schedule')
+
+    # Register the filters
+    app.jinja_env.filters['format_datetime'] = filters.format_datetime
+    app.jinja_env.filters['format_date'] = filters.format_date
+    app.jinja_env.filters['format_time'] = filters.format_time
 
     return app

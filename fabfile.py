@@ -95,6 +95,9 @@ def deploy():
 @api.task
 def git_auto_deploy():
     with api.lcd(api.env.app_dir):
+        api.local('git reset --hard HEAD')
+        api.local('git pull {0} {1}'.format(api.env.remote, api.env.branch))
+
         # Install some dependencies
         api.local('{} install -U -r requirements.txt'.format(api.env.venv_pip))
         api.local('bower install --upgrade')
@@ -103,6 +106,7 @@ def git_auto_deploy():
         api.local('{} manage.py freeze'.format(api.env.venv_python))
 
         # Copy the generated website
-        api.local('cp -r {0} {1}'.format(os.path.join(api.env.app_dir,
-                                                      'build'),
-                                      api.env.html_dir))
+        api.local('rsync --delete --exclude "static/scss/" --exclude '
+                  '"static/bower/" --exclude "static/.webassets-cache/" '
+                  '-pthrvz {0} {1}'.format(api.env.local_build_dir),
+                                           api.env.html_dir)

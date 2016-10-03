@@ -10,7 +10,6 @@ def index():
     """
     Landing page.
     """
-
     sponsors = get_data_file('sponsors.yml')
 
     return render_template('pages/index.html', sponsors=sponsors)
@@ -21,9 +20,10 @@ def code_of_conduct():
     """
     Code of Conduct page.
     """
-    content = get_markdown_file('code-of-conduct', g.lang_code)
+    content, meta = get_markdown_file('code-of-conduct', g.lang_code)
 
-    return render_template('pages/code-of-conduct.html', content=content)
+    return render_template('pages/code-of-conduct.html', content=content,
+                           meta=meta)
 
 
 @pages.route('/sponsors/')
@@ -32,9 +32,9 @@ def sponsors():
     Sponsors page.
     """
     data = get_data_file('sponsors.yml')
-    content = get_markdown_file('sponsors', g.lang_code)
+    content, meta = get_markdown_file('sponsors', g.lang_code)
 
-    return render_template('pages/sponsors.html', content=content,
+    return render_template('pages/sponsors.html', content=content, meta=meta,
                            sponsors=data)
 
 
@@ -44,12 +44,12 @@ def venue():
     Venue page.
     """
     content = {
-        'location': get_markdown_file('venue-location', g.lang_code),
-        'travel': get_markdown_file('venue-travel', g.lang_code),
-        'hotel': get_markdown_file('venue-hotel', g.lang_code),
+        'location': get_markdown_file('venue-location', g.lang_code)[0],
+        'travel': get_markdown_file('venue-travel', g.lang_code)[0],
+        'hotel': get_markdown_file('venue-hotel', g.lang_code)[0],
         'public_transit': get_markdown_file('venue-public-transit',
-                                            g.lang_code),
-        'toronto': get_markdown_file('venue-toronto', g.lang_code)
+                                            g.lang_code)[0],
+        'toronto': get_markdown_file('venue-toronto', g.lang_code)[0]
     }
 
     return render_template('pages/venue.html', content=content)
@@ -60,12 +60,13 @@ def about():
     """
     About page.
     """
-    content = get_markdown_file('about', g.lang_code)
+    content, meta = get_markdown_file('about', g.lang_code)
     team = get_data_file('team.json')
     sponsors = get_data_file('sponsors.yml')
+    content, meta = get_markdown_file('about', g.lang_code)
 
-    return render_template('pages/about.html', content=content, team=team,
-                           sponsors=sponsors)
+    return render_template('pages/about.html', content=content, meta=meta,
+                           team=team, sponsors=sponsors)
 
 
 @pages.route('/volunteer/')
@@ -73,9 +74,9 @@ def volunteer():
     """
     Volunteer at PyCon Canada page.
     """
-    content = get_markdown_file('volunteer', g.lang_code)
+    content, meta = get_markdown_file('volunteer', g.lang_code)
 
-    return render_template('pages/volunteer.html', content=content)
+    return render_template('pages/volunteer.html', content=content, meta=meta)
 
 
 @pages.route('/guide/')

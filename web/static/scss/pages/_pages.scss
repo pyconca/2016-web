@@ -1,10 +1,11 @@
 .page {
+  background-color: #fff;
   clear: both;
   padding-bottom: 1em;
   
   @at-root #{&}__header {
     align-items: center;
-    background: url('images/pycon-2015-crowd-by-shiroyuki-orig.jpg');
+    background-color: $colour-blue;
     background-position: right;
     display: flex;
     justify-content: center;
@@ -15,7 +16,6 @@
     @include media(min-width $breakpoint-mobile) {
       background-position: left;
       background-size: cover;
-      justify-content: flex-end;
     }
     
     h1,
@@ -23,18 +23,32 @@
     h3 {
       font-size: modular-scale(2);
     }
-    
-    @at-root #{&}--about {
-      background: url('images/pycon-2015-crowd-by-shiroyuki-orig.jpg'); // TODO Make sure this has both Desktop and Mobile.
-      background-size: cover;
-      background-position: center;
+  }
+  
+  @at-root #{&}__header--sponsors,
+           #{&}__header--about,
+           #{&}__header--venue {
+    @include media(min-width $breakpoint-mobile) {
+      justify-content: flex-end;
     }
-    
-    @at-root #{&}--venue {
-      background: url('images/ryerson-university-ted-rogers-school-of-management-desktop.jpg');
-      background-size: cover;
-      background-position: center;
-    }
+  }
+  
+  @at-root #{&}__header--sponsors {
+    background: url('images/pycon-2015-crowd-by-shiroyuki-orig.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @at-root #{&}__header--about {
+    background: url('images/pycon-2015-crowd-by-shiroyuki-orig.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @at-root #{&}__header--venue {
+    background: url('images/ryerson-university-ted-rogers-school-of-management-desktop.jpg');
+    background-size: cover;
+    background-position: center;
   }
   
   @at-root #{&}__header-content {

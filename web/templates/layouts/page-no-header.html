@@ -1,0 +1,15 @@
+{% extends "layouts/base.html" %}
+
+{% block body %}
+    {% include "includes/header.html" %}
+    
+    <div class="page {% block page_class %}{% endblock %}">
+        {% block page_header %}{% endblock %}
+        
+        <div class="page__content {% block page_content_class %}{% endblock %}">
+            {% block page_content %}{% endblock %}
+        </div>
+    </div>
+    
+    {% include "includes/footer.html" %}
+{% endblock %}

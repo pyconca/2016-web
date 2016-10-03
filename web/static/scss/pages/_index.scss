@@ -49,6 +49,7 @@
   
   @at-root #{&}__header,
            #{&}__content,
+           #{&}__sponsors,
            #{&}__footer {
     max-width: 700px;
     margin: 0 auto;
@@ -67,32 +68,31 @@
   }
   
   // @at-root #{&}__button {}
-}
-
-.homepage-sponsors {
-  background-color: $action-color;
-  padding-bottom: 2.5em;
-
-  @at-root #{&}__title {
+  
+  @at-root #{&}__sponsors {
+    background-color: rgba(51, 51, 51, .5);
+    padding: .5em;
+    display: none;
+  }
+  
+  @at-root #{&}__sponsor-title {
     margin: 0;
-    padding-top: .75em;
-    padding-bottom: .75em;
   }
 
-  @at-root #{&}__link,
-           #{&}__logo {
+  @at-root #{&}__sponsor-link,
+           #{&}__sponsor-logo {
     max-height: 10em;
     width: 10em;
     vertical-align: middle;
   }
 
-  @at-root #{&}__logo {
+  @at-root #{&}__sponsor-logo {
     @include filter(none);
 
-    background-color: #fff;
-    border-radius: 5px;
+    vertical-align: center;
     padding: .5em .25em;
     cursor: pointer;
+    height: 2.5rem;
 
     &:hover {
       @include filter(grayscale(75%));

@@ -1,5 +1,5 @@
 .header {
-  padding: 2em 0;
+  padding: 1em 0;
   
   @at-root #{&}__logo {
     float: left;
@@ -8,17 +8,20 @@
   
   @at-root #{&}__image {
     display: block;
-    height: 4.125em;
-    margin-bottom: 2em;
+    height: 5em;
+    margin-bottom: 1em;
   }
   
   @at-root #{&}__navigation-menu {
     float: right;
     margin-top: (4.125em / 2.5);
     margin-right: 2em;
+
   }
   
   @at-root #{&}__navigation-list {
+    float: left;
+    
     @include media(min-width $breakpoint-mobile) {
       float: right;
       margin-top: (4.125em / 2.5);

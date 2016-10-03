@@ -28,4 +28,16 @@ class TestSyntax(unittest.TestCase):
 
         for data_file in data_files:
             with self.app.app_context():
-                get_data_file(os.path.basename(data_file))
+                self.assertTrue(get_data_file(os.path.basename(data_file)))
+
+    def test_sponsors_yml_file(self):
+        with self.app.app_context():
+            sponsors = get_data_file('sponsors.yml')
+
+        for level in sponsors:
+            self.assertTrue(level['level']['en'])
+
+            for sponsor in level['entries']:
+                self.assertTrue(sponsor['logo'])
+                self.assertEqual(sponsor['en'].keys(), ['url', 'twitter',
+                                                        'name', 'description'])
