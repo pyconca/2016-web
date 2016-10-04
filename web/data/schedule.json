@@ -1,19 +1,19 @@
 {
   "rooms": [
     {
-      "name": "TRS 1-067",
+      "name": "Room TRS 1-067",
       "slug": "1-067"
     },
     {
-      "name": "TRS 2-166",
+      "name": "Room TRS 2-166",
       "slug": "2-166"
     },
     {
-      "name": "TRS 3-176",
+      "name": "Room TRS 3-176",
       "slug": "3-176"
     },
     {
-      "name": "Tutorial",
+      "name": "Tutorial Room",
       "slug": "tutorial"
     }
   ],
