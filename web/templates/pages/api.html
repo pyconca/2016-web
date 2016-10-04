@@ -1,0 +1,17 @@
+{% extends "layouts/page.html" %}
+
+{% block title %}{{ _('API') }} | {{ super() }}{% endblock %}
+
+{% block page_class %}page--api{% endblock %}
+{% block page_header_class %}page__header--api{% endblock %}
+{% block page_content_class %}page__content--api{% endblock %}
+
+{% block page_header %}
+<h1>{{ _('API') }}</h1>
+{% endblock %}
+
+{% block page_content %}
+<div class="page__section">
+    {{ content|safe }}
+</div>
+{% endblock %}
