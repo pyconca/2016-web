@@ -39,6 +39,9 @@ def index():
 @api.route('/schedule.json')
 def schedule():
     schedule = get_data_file('schedule.json')
+
+    
+
     return jsonify(schedule)
 
 
