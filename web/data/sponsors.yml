@@ -91,6 +91,7 @@
     fr: Contributeur
   entries:
   - logo: images/sponsors/microsoft.svg
+    logo_dark: images/sponsors/microsoft-dark.svg
     fr:
       name: Microsoft
       url: https://aka.ms/python 
