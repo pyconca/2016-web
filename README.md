@@ -36,6 +36,10 @@ The source code for [PyCon Canada's 2016 conference website](https://2016.pycon.
 
 ### Stage Five ([Open Issues](https://github.com/pyconca/2016-web/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Stage+Five%22))
 
+* Task that need to be completed before the conference starts.
+
+### Stage Six ([Open Issues](https://github.com/pyconca/2016-web/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Stage+Six%22))
+
 * Individual talk pages should have links to the YouTube Videos.
 
 ## Development Environment Setup
