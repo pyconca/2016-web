@@ -43,6 +43,7 @@
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
         
+        {% block schema_org %}
         <script type="application/ld+json">
         {
             "@context": "http://schema.org/",
@@ -52,7 +53,7 @@
             "image": "https://2016.pycon.ca{{ url_for('static', filename='images/pycon-2015-mc-paul-by-shiroyuki-facebook.jpg') }}",
             "url": "https://2016.pycon.ca{{ url_for(request.url_rule.endpoint, **request.view_args) }}",
             "startDate": "2016-11-12",
-            "endDate": "2016-11-13",
+            "endDate": "2016-11-15",
             "location": {
                 "@type": "Place",
                 "name": "Toronto",
@@ -64,6 +65,7 @@
             }
         }
         </script>
+        {% endblock %}
         
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
