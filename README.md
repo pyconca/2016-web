@@ -96,6 +96,8 @@ Run the project:
 
 This should start a webserver @ [127.0.0.1:5000](http://127.0.0.1:5000/en/).
 
+The root directory will return a 404 error. You have to specify a language code (e.x. [127.0.0.1:5000/en/](http://127.0.0.1:5000/en/) or [127.0.0.1:5000/fr/](http://127.0.0.1:5000/fr/)).
+
 ## Deployment
 
 ```
