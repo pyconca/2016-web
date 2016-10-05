@@ -12,9 +12,9 @@
 
 {% block page_content %}
     {% for day in schedule.days %}
-    <h1 class="schedule__day">{{ day.date|format_date('full') }}</h1>
+    <h1 class="schedule__day schedule__day--{{ day.date.isoformat() }}">{{ day.date|format_date('full') }}</h1>
     
-    <table class="schedule">
+    <table class="schedule schedule--{{ day.date.isoformat() }}">
         <thead class="schedule__head">
             
             <tr>
@@ -27,14 +27,14 @@
         <tbody class="schedule__body">
             {% for entry in day.entries %}
             <tr class="schedule__row">
-                <th class="schedule__time">
+                <th class="schedule__time schedule__time--{{ day.date.isoformat() }}-{{ entry.start_time.strftime('%H-%M-%S') }}">
                     {{ entry.start_time|format_time('short') }}
                 </th>
                 
                 {% if entry.talks %}
                 {% for room in schedule.rooms %}
                 {% set talk = get_talk(entry.talks[room.slug]) %}
-                <td class="schedule__slot schedule__slot--room-{{ room.slug }}" {% if talk.title and room.slug == 'tutorial' %}rowspan="2"{% endif %}>
+                <td class="schedule__slot schedule__slot--room-{{ room.slug }} schedule__slot--time-{{ day.date.isoformat() }}-{{ entry.start_time.strftime('%H-%M-%S') }}" {% if talk.title and room.slug == 'tutorial' %}rowspan="2"{% endif %}>
                     <a href="{% if talk.link %}{{ talk.link }}{% else %}#{% endif %}" class="schedule__slot-link">
                         <span class="schedule__slot-title">
                             {% for t in talk.title %}{{ t }}{% endfor %}
@@ -46,7 +46,7 @@
                 </td>
                 {% endfor %}
                 {% else %}
-                <td class="schedule__slot" colspan="4">
+                <td class="schedule__slot schedule__slot--time-{{ day.date.isoformat() }}-{{ entry.start_time.strftime('%H-%M-%S') }}" colspan="4">
                     <span class="schedule__slot-link">
                         <span class="schedule__slot-title">
                             {{ entry.title }}
@@ -66,7 +66,7 @@
     {% endfor %}
     
     <div class="page__section">
-        <h1 class="schedule__day">{{ _('14 & 15 November, 2016') }}</h1>
+        <h1 class="schedule__day schedule__day--2016-11-14 schedule__day--2016-11-15">{{ _('14 & 15 November, 2016') }}</h1>
         
         <h2>PyCon Canada Sprints</h2>
         
