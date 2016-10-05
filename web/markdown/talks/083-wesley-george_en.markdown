@@ -1,6 +1,6 @@
 ---
 pk: 83
-title: Databases 201: the power of the relational algebra powers and limits of the ORM
+title: Databases 201: the power of the relational algebra and limits of the ORM
 kind: talk
 speakers: Wesley George
 date: 2016-11-12
