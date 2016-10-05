@@ -103,7 +103,7 @@ def git_auto_deploy():
         api.local('bower install --upgrade')
 
         # Generate the website
-        api.local('{} manage.py tr-compile').format(api.env.venv_python))
+        api.local('{} manage.py tr-compile'.format(api.env.venv_python))
         api.local('{} manage.py freeze'.format(api.env.venv_python))
 
         # Copy the generated website
