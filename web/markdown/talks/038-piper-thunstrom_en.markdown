@@ -13,4 +13,4 @@ A high level overview of the concepts you need to build your first 2D games: fro
 
 ## Piper Thunstrom Bio
 
-Curious hacker building with a passion for games using Python. An API and server developer by day, games enthusiast and general geek by night.
+Curious hacker with a passion for games using Python. An API and server developer by day, games enthusiast and general geek by night.
