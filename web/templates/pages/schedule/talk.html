@@ -13,6 +13,10 @@
 
 {% block page_content %}
 <div class="page__section">
+    {% if meta.rooms[0] == 'Tutorial' %}
+    <p style="text-align:center"><a href="https://github.com/pyconca/2016-wiki/wiki/Tutorials" class="button button--red">Sign Up for {% for speaker in meta.speakers %}{{ speaker }}{% endfor %}'s Tutorial</a></p>
+    {% endif %}
+    
     {{ content|safe }}
 </div>
 
