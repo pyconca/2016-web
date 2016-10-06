@@ -13,4 +13,4 @@ Most of the time we hear buzzwords like Recurrent Neural Nets, LSTM etc. But don
 
 ## Anoop Thomas Mathew Bio
 
-Anoop a.k.a ATM is the Co-Founder and CTO of Profoundis ([Vibe](https://www.vibeapp.co)), a successfully bootstrapped company, got *acquired by [FullContact](www.fullcontact.com)*. Leading the development effort for the entire product handling millions of requests every month. Vibe internally uses machine learning for the product to work as intended. Now he works as the Head of Technology, India at __fullcontact.com__.
+Anoop a.k.a ATM is the Co-Founder and CTO of Profoundis ([Vibe](https://www.vibeapp.co)), a successfully bootstrapped company, got *acquired by [FullContact](http://www.fullcontact.com)*. Leading the development effort for the entire product handling millions of requests every month. Vibe internally uses machine learning for the product to work as intended. Now he works as the Head of Technology, India at __fullcontact.com__.

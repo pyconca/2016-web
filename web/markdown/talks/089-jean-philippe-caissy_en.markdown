@@ -9,7 +9,7 @@ end_time: 17:10:00
 rooms: TRS 3-176
 ---
 
-Shopify strives to be an ever moving company. With a strong force of hundreds in the R&D team, the challenges to keep delivering and shipping scaled accordingly. 
+Shopify strives to be an ever moving company. With a strong force of hundreds in the R&D team, the challenges to keep delivering and shipping scaled accordingly.
 
 From a manual CLI that only ops could execute just a few years back, to today’s automatic 180+ deploys a day, this talk will highlight the different tools, processes and integrations used throughout the team that fuels today's scale. 
 

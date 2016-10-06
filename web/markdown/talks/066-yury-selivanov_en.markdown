@@ -9,10 +9,10 @@ end_time: 11:40:00
 rooms: TRS 1-067
 ---
 
-Overview of async/await.
-asyncio and uvloop.
-Sockets, Protocols or Streams?
-Learn by example: high-performance PostgreSQL driver.
+* Overview of async/await.
+* asyncio and uvloop.
+* Sockets, Protocols or Streams?
+* Learn by example: high-performance PostgreSQL driver.
 
 ## Yury Selivanov Bio
 

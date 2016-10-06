@@ -14,5 +14,7 @@ In many scientific applications it is necessary to run a large number of similar
 ## Andre R. Erler Bio
 
 Andre is an early-career researcher in climate modeling and hydrology; that means he runs climate models and hydrological models on high performance computing facilities and analyses their output. He uses primarily uses the scientific software stack in Python for data analysis  and visualization, but also uses Python to manage experiments with large volumes of data (or "data plumbing").
+
 Andre is also interested in machine learning and the use of data science techniques in and outside of climate science, and he is somewhat concerned about the state of software development in science.
+
 Open source software, open science, the environment and sustainable global development are the causes he cares most about.

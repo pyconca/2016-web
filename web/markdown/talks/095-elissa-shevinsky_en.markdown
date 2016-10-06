@@ -13,9 +13,4 @@ Whether it's to serve a diverse customer base or to cultivate a more inclusive o
 
 ## Elissa Shevinsky Bio
 
-Elissa Shevinsky is a serial entrepreneur, author, and privacy activist. 
-She joined her first startup (Geekcorps) in 1999, and most recently worked
-on the Brave browser.  Shevinsky is currently Managing Director at 
-Kearney Boyle & Associates, where she focusing on fixing one of the 
-most broken parts of technology - recruiting. Shevinsky is also the 
-editor of the critically acclaimed book, "Lean Out."
+Elissa Shevinsky is a serial entrepreneur, author, and privacy activist. She joined her first startup (Geekcorps) in 1999, and most recently worked on the Brave browser.  Shevinsky is currently Managing Director at Kearney Boyle & Associates, where she focusing on fixing one of the most broken parts of technology - recruiting. Shevinsky is also the editor of the critically acclaimed book, "Lean Out."

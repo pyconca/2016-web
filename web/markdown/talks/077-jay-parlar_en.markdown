@@ -11,8 +11,6 @@ rooms: TRS 2-166
 
 Github's Deployments API allows Github itself to sit in the middle of your deployment pipeline, acting as the glue needed to pull together loosely-coupled deployment tooling. This talk will discuss how the author used Github's Deployments API to connect a chatbot to a custom CI server, allowing for chat-based deploys to a custom Docker-based infrastructure.
 
-
-
 ## Jay Parlar Bio
 
 Jay is a Hamilton-based software developer at Rackspace, working on internal tools to improve the quality of life of his coworkers. He spends his days writing JavaScript and Python, contributing both to front-end and back-end systems.

@@ -9,9 +9,6 @@ end_time: 14:50:00
 rooms: TRS 3-176
 ---
 
-Many of us got our start in programming, by building games and simple apps.  However creating interesting games and UIs
-in Python was not a simple task especially for multiple platforms.  Kivy, a cross-platform Python UI app framework 
-changes all that.  This talk discusses the journey of working with Kivy to develop a moderately complex strategy game.
-It also contrasts to using other platforms
+Many of us got our start in programming, by building games and simple apps.  However creating interesting games and UIs in Python was not a simple task especially for multiple platforms.  Kivy, a cross-platform Python UI app framework changes all that.  This talk discusses the journey of working with Kivy to develop a moderately complex strategy game. It also contrasts to using other platforms
 
 ## Dorian Pula Bio

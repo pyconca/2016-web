@@ -9,12 +9,9 @@ end_time: 16:10:00
 rooms: TRS 3-176
 ---
 
-A high level presentation which will cover working with the popular public blockchains: Bitcoin, Ethereum and Stellar with python. 
+A high level presentation which will cover working with the popular public blockchains: Bitcoin, Ethereum and Stellar with python.
 
 The goal of the presentation is that attendees will understand high level the various popular public blockchains using python and how potentially they could use these in their next application.
-
-
-
 
 ## Anthony Barker Bio
 

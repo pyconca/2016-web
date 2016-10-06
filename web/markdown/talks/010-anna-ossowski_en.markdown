@@ -9,7 +9,7 @@ end_time: 12:20:00
 rooms: TRS 3-176
 ---
 
-The scenario: You run into a bug, break your code-then you have to figure out how to fix it. Do you want to learn what to do when your code doesn’t work? How a rubber duck can help? This talk is for you! I’ll present debugging strategies, how to prevent frustration, how to become a more confident debugger, and where/how to get help. Breaking things is the first step to learning how to fix them! 
+The scenario: You run into a bug, break your code-then you have to figure out how to fix it. Do you want to learn what to do when your code doesn’t work? How a rubber duck can help? This talk is for you! I’ll present debugging strategies, how to prevent frustration, how to become a more confident debugger, and where/how to get help. Breaking things is the first step to learning how to fix them!
 
 ## Anna Ossowski Bio
 
