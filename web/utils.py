@@ -66,4 +66,7 @@ def get_markdown_file(name, lang='en'):
     with codecs.open(filepath, mode='r', encoding="utf-8") as f:
         html = md.convert(f.read())
 
+    md.Meta['github_link'] = ('https://github.com/pyconca/2016-web/blob/'
+                              'master/web/markdown/{0}').format(filename_temp)
+
     return html, md.Meta
