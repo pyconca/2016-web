@@ -1,10 +1,12 @@
 import os
 import json
 import codecs
+import StringIO
 
 import yaml
 import markdown
 import datetime
+import xlsxwriter
 
 from flask import current_app
 
@@ -67,3 +69,25 @@ def get_markdown_file(name, lang='en'):
         html = md.convert(f.read())
 
     return html, md.Meta
+
+
+def schedule_to_xlsx(data):
+    output = StringIO.StringIO()
+
+    workbook = xlsxwriter.Workbook(output, {'in_memory': True})
+    worksheet = workbook.add_worksheet()
+    for row, item in enumerate(data):
+        worksheet.write(row, 0, item['id'])
+        worksheet.write(row, 1, item['topic'])
+        worksheet.write(row, 2, item['description'])
+        worksheet.write(row, 3, item['tracks'])
+        worksheet.write(row, 4, item['date'])
+        worksheet.write(row, 5, item['start_time'])
+        worksheet.write(row, 6, item['end_time'])
+        worksheet.write(row, 7, item['location'])
+        worksheet.write(row, 8, item['speakers'])
+        worksheet.write(row, 9, item['attendees'])
+    workbook.close()
+
+    output.seek(0)
+    return output

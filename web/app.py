@@ -85,6 +85,7 @@ def create_app(configfile=None):
         return dict(get_talk=get_talk)
 
     # Register the Blueprints
+    app.register_blueprint(api_views, url_prefix='/api')
     app.register_blueprint(view_pages, url_prefix='/<lang_code>')
     app.register_blueprint(view_schedule, url_prefix='/<lang_code>/schedule')
 

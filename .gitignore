@@ -93,3 +93,6 @@ ENV/
 
 # bower components
 web/static/bower/
+
+# PyCharm IDE
+.idea
