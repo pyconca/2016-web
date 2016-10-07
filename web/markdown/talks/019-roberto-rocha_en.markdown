@@ -11,6 +11,8 @@ rooms: Tutorial
 
 pandas is a powerful data analysis library that can quickly churn insights from datasets, even massive ones. Learn how to get started quickly and see statistical summaries and pivot tables. We'll also see how easy it is to group data by categories and whip up quick exploratory charts so you can see what your data looks like.
 
+To follow along, attendees will require a laptop with pandas, numpy, matplotlib and Jupyter packages pre-installed. Roberto recommends the [Anaconda data science platform](https://www.continuum.io/downloads) which provides an easy, cross-platform installation of all of these tools.
+
 ## Roberto Rocha Bio
 
 Roberto has been a professional journalist for 11 years, and a specialist in data-driven reporting for the last six. He currently practices his craft at the CBC.
