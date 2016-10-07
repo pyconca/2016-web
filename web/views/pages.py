@@ -46,7 +46,7 @@ def venue():
     content = {
         'location': get_markdown_file('venue-location', g.lang_code)[0],
         'travel': get_markdown_file('venue-travel', g.lang_code)[0],
-        # 'hotel': get_markdown_file('venue-hotel', g.lang_code)[0],
+        'hotel': get_markdown_file('venue-hotel', g.lang_code)[0],
         'public_transit': get_markdown_file('venue-public-transit',
                                             g.lang_code)[0],
         'toronto': get_markdown_file('venue-toronto', g.lang_code)[0]
