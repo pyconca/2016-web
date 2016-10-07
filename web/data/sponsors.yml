@@ -1,5 +1,34 @@
 ---
 - level:
+    en: Silver
+    fr: Argent
+  entries:
+  - logo: images/sponsors/mackenzie-investments.svg
+    fr:
+      name: Mackenzie Investments
+      url: https://www.mackenzieinvestments.com/ 
+      twitter: mackenzieinvest
+      description: |-
+        Mackenzie Investments was founded in 1967 and is a leading investment management firm providing investment advisory and related services to retail and institutional clients. The company has $61.3 billion in assets under management, and as part of IGM (a subsidiary of the Power Financial Group of Companies), is the largest independent asset manager in Canada, with $142 billion.
+        
+        Our vision
+        
+        Everything we do starts with the needs of investors, whether they are saving for a child’s postsecondary education, setting money aside for the future needs of a family member with a disability, or funding their own retirement. In fact, our focus is summed up in our Vision statement:
+        
+        We are committed to the financial success of investors, through their eyes.
+    en:
+      name: Mackenzie Investments
+      url: https://www.mackenzieinvestments.com/ 
+      twitter: mackenzieinvest
+      description: |-
+        Mackenzie Investments was founded in 1967 and is a leading investment management firm providing investment advisory and related services to retail and institutional clients. The company has $61.3 billion in assets under management, and as part of IGM (a subsidiary of the Power Financial Group of Companies), is the largest independent asset manager in Canada, with $142 billion.
+        
+        Our vision
+        
+        Everything we do starts with the needs of investors, whether they are saving for a child’s postsecondary education, setting money aside for the future needs of a family member with a disability, or funding their own retirement. In fact, our focus is summed up in our Vision statement:
+        
+        We are committed to the financial success of investors, through their eyes.
+- level:
     en: Diversity
     fr: Diversité
   entries:
