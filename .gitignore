@@ -96,3 +96,6 @@ web/static/bower/
 
 # PyCharm IDE
 .idea
+
+# Export files
+web/data/images
