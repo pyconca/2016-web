@@ -22,3 +22,5 @@ class Config(object):
     FREEZER_DESTINATION = os.path.join(APP_PATH, '../build/')
 
     MARKDOWN_EXTENSION_CONFIG = {}
+
+    SPEAKER_IMG_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'data', 'images')

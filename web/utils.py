@@ -9,9 +9,11 @@ import yaml
 import markdown
 import datetime
 import xlsxwriter
+from bs4 import BeautifulSoup
+from markdown import markdown
 
 from flask import current_app
-from .parsers import SpeakerPictureParser
+from .config import Config
 
 
 class CustomJSONDecoder(json.JSONDecoder):
@@ -72,6 +74,13 @@ def get_markdown_file(name, lang='en'):
         html = md.convert(f.read())
 
     return html, md.Meta
+
+
+def markdown_to_text(markdown_text):
+    html = markdown(markdown_text)
+    text = ''.join(BeautifulSoup(html, "html.parser").findAll(text=True))
+
+    return text
 
 
 def clean_xlsx_value(value):
@@ -158,7 +167,7 @@ def get_speaker_pictures_archive():
                 ziph.write(os.path.join(root, file), os.path.relpath(os.path.join(root, file), os.path.join(path, '..')))
 
     zipf = zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED)
-    zipdir(SpeakerPictureParser.IMG_DIR, zipf)
+    zipdir(Config.SPEAKER_IMG_DIR, zipf)
     zipf.close()
     output.seek(0)
 

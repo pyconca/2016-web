@@ -6,13 +6,16 @@ from collections import namedtuple
 
 import requests
 
+from .config import Config
+from .utils import markdown_to_text
+
 
 class SymposionProposalsApi(object):
     URL = 'https://cfp.pycon.ca'
     RESOURCE = 'proposals'
 
     def __init__(self):
-        self.token = os.environ.get('CFP_TOKEN')
+        self.token = os.environ.get('CFP_TOKEN', '')
 
     def get_url(self):
         return '{}/api/{}'.format(self.URL, self.RESOURCE)
@@ -46,9 +49,6 @@ class ProposalsInterface(object):
             proposal = self.proposals[id]
         except KeyError:
             return None
-        self._add_speaker(proposal['speaker'])
-        for additional_speaker in proposal['additional_speakers']:
-            self._add_speaker(additional_speaker)
 
         return proposal
 
@@ -208,7 +208,7 @@ class ScheduleParser(object):
 
 
 class SpeakerPictureParser(object):
-    IMG_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'data', 'images')
+    IMG_DIR = Config.SPEAKER_IMG_DIR
 
     def __init__(self, speaker, no_cache=False):
         self.speaker = speaker
@@ -263,7 +263,7 @@ class SpeakerParser(object):
             'name': speaker['name'] or 'UNKNOWN',
             'title': '',
             'company_name': '',
-            'description': speaker['biography'],
+            'description': markdown_to_text(speaker['biography']),
             'email': speaker['invite_email'] or speaker['email'],
             'website': '',
             'facebook': '',
