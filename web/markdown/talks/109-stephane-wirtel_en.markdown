@@ -7,6 +7,8 @@ date: 2016-11-13
 start_time: 11:10:00
 end_time: 11:40:00
 rooms: TRS 1-067
+twitter: matrixise
+github: matrixise
 ---
 
 Contribution to CPython is really funny, you can learn how the language is designed, but you want to know where you should start when you have a patch to provide. In this talk, I will explain the several components of CPython and the architecture, how is the code designed.

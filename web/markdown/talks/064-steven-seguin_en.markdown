@@ -7,6 +7,8 @@ date: 2016-11-12
 start_time: 11:50:00
 end_time: 12:20:00
 rooms: TRS 1-067
+photo: steven-seguin.jpg
+github: sseg
 ---
 
 What's the real-time web? Can I build it myself? In Python? Of course you can! This talk will help Python web developers learn how to integrate real-time components with their existing web applications using `asyncio` and `aiohttp`.

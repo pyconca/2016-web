@@ -7,6 +7,8 @@ date: 2016-11-12
 start_time: 11:10:00
 end_time: 11:40:00
 rooms: TRS 1-067
+twitter: 1st1
+github: 1st1
 ---
 
 * Overview of async/await.

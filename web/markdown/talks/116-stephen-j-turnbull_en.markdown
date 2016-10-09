@@ -7,6 +7,9 @@ date: 2016-11-13
 start_time: 12:30:00
 end_time: 13:00:00
 rooms: TRS 1-067
+twitter: yasegumi
+github: yaseppochi
+photo: stephen-j-turnbull.jpg
 ---
 
 Based on interviews with leading developers of Python and with Python, we take a look at how the Python language specification and the reference implementation are developed.   The subcommunity of core developers not only produces a great programming language that's fun to use, but sets the tone for a vibrant, productive, and inclusive community of user-developers.

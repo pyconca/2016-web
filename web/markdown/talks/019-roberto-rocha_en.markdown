@@ -7,6 +7,9 @@ date: 2016-11-12
 start_time: 10:30:00
 end_time: 11:40:00
 rooms: Tutorial
+photo: roberto-rocha.jpg
+twitter: robroc
+github: robroc
 ---
 
 pandas is a powerful data analysis library that can quickly churn insights from datasets, even massive ones. Learn how to get started quickly and see statistical summaries and pivot tables. We'll also see how easy it is to group data by categories and whip up quick exploratory charts so you can see what your data looks like.

@@ -7,6 +7,9 @@ date: 2016-11-13
 start_time: 15:40:00
 end_time: 16:50:00
 rooms: Tutorial
+photo: francois-maillet.jpg
+twitter: mailletf
+github: mailletf
 ---
 
 In this tutorial, we will build a real-time machine learning web app using Python and MLDB.ai. We will use MLDB's Tensorflow integration to use a deep learning model to embed images in a high dimensional conceptual space, and use that representation as features to do transfer learning. This will allow us to build a real-time image classification endpoint.
