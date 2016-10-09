@@ -2,8 +2,8 @@ from datetime import date
 
 from flask import Blueprint, jsonify, send_file
 
-from web.utils import get_data_file, get_markdown_file, schedule_to_xlsx, speakers_to_xlsx
-from web.parsers import ScheduleParser
+from web.utils import get_data_file, get_markdown_file, schedule_to_xlsx, speakers_to_xlsx, get_speaker_pictures_archive
+from web.parsers import ScheduleParser, ScheduleInterface, SpeakerParser
 
 api = Blueprint('api', __name__)
 
@@ -55,20 +55,19 @@ def talk_json(slug):
 
 @api.route('/exports/agenda.json')
 def agenda_json():
-    schedule = get_data_file('schedule.json')
-    # print(schedule)
-    print(type(schedule))
-    serializer = ScheduleParser(schedule)
+    schedule_json = get_data_file('schedule.json')
+    interface = ScheduleInterface(schedule_json)
+    serializer = ScheduleParser(interface)
     data = serializer.agenda_data
-    print(data)
 
     return jsonify(data)
 
 
 @api.route('/exports/agenda')  # for some mysterious reason 'agenda.xlsx' screws up the download and return empty file!
 def agenda_xlsx():
-    schedule = get_data_file('schedule.json')
-    serializer = ScheduleParser(schedule)
+    schedule_json = get_data_file('schedule.json')
+    interface = ScheduleInterface(schedule_json)
+    serializer = ScheduleParser(interface)
     data = serializer.agenda_data
     xlsx_file = schedule_to_xlsx(data)
 
@@ -79,11 +78,21 @@ def agenda_xlsx():
                      )
 
 
+@api.route('/exports/speakers.json')
+def speakers_json():
+    schedule_json = get_data_file('schedule.json')
+    interface = ScheduleInterface(schedule_json)
+    serializer = SpeakerParser(interface)
+    data = serializer.speaker_data
 
-@api.route('/exports/speakers')  # for some mysterious reason 'agenda.xlsx' screws up the download and return empty file!
+    return jsonify(data)
+
+
+@api.route('/exports/speakers')
 def speakers_xlsx():
-    schedule = get_data_file('schedule.json')
-    serializer = ScheduleParser(schedule)
+    schedule_json = get_data_file('schedule.json')
+    interface = ScheduleInterface(schedule_json)
+    serializer = SpeakerParser(interface)
     data = serializer.speaker_data
     xlsx_file = speakers_to_xlsx(data)
 
@@ -91,4 +100,15 @@ def speakers_xlsx():
                      as_attachment=True,
                      attachment_filename='speakers.xlsx',
                      mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+                     )
+
+
+@api.route('/exports/speaker_pictures')
+def speakers_pictures_zip():
+    archive = get_speaker_pictures_archive()
+
+    return send_file(archive,
+                     as_attachment=True,
+                     attachment_filename='speakers_pictures.zip',
+                     mimetype='application/zip'
                      )
