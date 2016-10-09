@@ -14,30 +14,32 @@
 {% block page_content %}
 <div class="page__section talk">
     <div class="page__row">
-        <div class="page__col page__col--left">
+        <div class="{% if meta.photo %}page__col-8{% else %}page__col-12{% endif %} page__col--left">
             {% if meta.rooms[0] == 'Tutorial' %}
-            <p style="text-align:center"><a href="https://github.com/pyconca/2016-wiki/wiki/Tutorials" class="button button--red">Sign Up for {% for speaker in meta.speakers %}{{ speaker }}{% endfor %}'s Tutorial</a></p>
+            <p style="text-align:center"><a href="https://github.com/pyconca/2016-wiki/wiki/Tutorials" class="button button--red">Sign Up for {% for speaker in meta.speakers %}{{ speaker }}'s{% endfor %} Tutorial</a></p>
             {% endif %}
     
             {{ content|safe }}
         </div>
         
-        <div class="page__col page__col--right">
+        {% if meta.photo %}
+        <div class="page__col-4 page__col--right">
             {% if meta.photo %}
             <img src="/static/images/speaker_photos/{{ meta.photo|join('') }}" class="talk__image">
             {% endif %}
             
             {% if meta.twitter or meta.github %}
-            <ul>
+            <p>
                 {% if meta.twitter %}
-                <li>Twitter: <a href="https://twitter.com/{{ meta.twitter|join('') }}">{{ meta.twitter|join('') }}</a></li>
+                <a href="https://twitter.com/{{ meta.twitter|join('') }}" title="{% for speaker in meta.speakers %}{{ speaker }}{% endfor %} Twitter Profile">Twitter</a>
                 {% endif %}
                 {% if meta.github %}
-                <li>GitHub: <a href="https://twitter.com/{{ meta.github|join('') }}">{{ meta.github|join('') }}</a></li>
+                <a href="https://twitter.com/{{ meta.github|join('') }}" title="{% for speaker in meta.speakers %}{{ speaker }}{% endfor %} GitHub Profile">GitHub</a>
                 {% endif %}
-            </ul>
+            </p>
             {% endif %}
         </div>
+        {% endif %}
     </div>
 </div>
 
