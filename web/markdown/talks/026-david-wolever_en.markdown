@@ -7,6 +7,8 @@ date: 2016-11-12
 start_time: 16:00:00
 end_time: 16:30:00
 rooms: TRS 3-176
+twitter: wolever
+github: wolever
 ---
 
 Python's fantastic until it isn't.  This talk dives into some of the surprising implementation details of CPython, then explains exactly how they could be discovered from first principles.

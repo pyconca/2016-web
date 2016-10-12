@@ -7,6 +7,9 @@ date: 2016-11-13
 start_time: 13:55:00
 end_time: 14:05:00
 rooms: TRS 1-067
+photo: sye-van-der-veen.jpg
+twitter: syeberman
+github: syeberman
 ---
 
 A thought experiment exploring what a symmetrical type system would look like in Python.  Mutable ints, floats, and strs?  Immutable dicts?  What would they be called, how would they behave, and would they even be useful?

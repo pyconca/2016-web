@@ -7,6 +7,8 @@ date: 2016-11-13
 start_time: 11:10:00
 end_time: 12:20:00
 rooms: Tutorial
+twitter: msukmanowsky
+github: msukmanowsky
 ---
 
 Imagine writing a Python program that could just as easily process a few gigabytes of data locally or hundreds of petabytes in a distributed cluster without changing a single line of code? Too good to be true? It isn't, it's PySpark! In this tutorial we'll learn how to write PySpark that perform basic analysis and fancy machine learning and can run on your computer or thousands of servers.

@@ -7,6 +7,8 @@ date: 2016-11-13
 start_time: 11:50:00
 end_time: 12:20:00
 rooms: TRS 3-176
+twitter: AWomanInTechBl
+photo: allaa-hilal.jpg
 ---
 
 Predictive analytics uses statistical and machine learning techniques to provide a best assessment of what will happen in the future. Understanding the future can guide current decisions. This talk will provide a quick guide on using deep learning approaches in building predictive models in python. It will give a brief introduction to predictive models, deep learning, Tensorflow and Thenao.

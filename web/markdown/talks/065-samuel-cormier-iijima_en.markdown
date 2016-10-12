@@ -7,6 +7,8 @@ date: 2016-11-12
 start_time: 16:40:00
 end_time: 17:10:00
 rooms: TRS 1-067
+twitter: sciyoshi
+github: sciyoshi
 ---
 
 Have you ever wanted lightning-fast code, without the segfaults and tedious boilerplate of C? Then come learn why so many Pythonistas are excited about Rust, a new language from Mozilla. After a short introduction to the language, we'll see how the Rust Python bindings let us easily write elegant, safe, and high-performance extension modules, hassle-free.

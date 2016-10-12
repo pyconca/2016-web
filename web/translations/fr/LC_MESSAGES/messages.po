@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-09-20 08:11-0400\n"
+"POT-Creation-Date: 2016-10-12 19:10-0400\n"
 "PO-Revision-Date: 2016-08-23 19:41-0400\n"
 "Last-Translator: Myles Braithwaite <me@mylesbraithwaite.com>\n"
 "Language: fr\n"
@@ -41,11 +41,11 @@ msgid "Sponsors"
 msgstr "Commanditaires"
 
 #: web/templates/includes/footer.html:19 web/templates/includes/header.html:10
-#: web/templates/pages/index.html:28
+#: web/templates/pages/index.html:29
 msgid "Buy a ticket"
 msgstr "Acheter un billet"
 
-#: web/templates/includes/footer.html:23 web/templates/pages/index.html:38
+#: web/templates/includes/footer.html:23
 msgid "Join our mailing list"
 msgstr "Abonnez-vous &agrave; la liste d&#x27;envoi"
 
@@ -62,6 +62,12 @@ msgstr "Bénévole"
 
 #: web/templates/includes/header.html:3
 msgid "PyCon Canada"
+msgstr ""
+
+#: web/templates/includes/header.html:22 web/templates/pages/index.html:15
+#: web/templates/pages/schedule/index.html:3
+#: web/templates/pages/schedule/index.html:10
+msgid "Schedule"
 msgstr ""
 
 #: web/templates/pages/about.html:10
@@ -118,6 +124,10 @@ msgstr ""
 msgid "Organisers"
 msgstr "L'équipe"
 
+#: web/templates/pages/api.html:3 web/templates/pages/api.html:10
+msgid "API"
+msgstr ""
+
 #: web/templates/pages/code-of-conduct.html:11
 msgid ""
 "PyCon Canada is committed to providing a safe and welcoming atmosphere "
@@ -140,15 +150,19 @@ msgid ""
 "University</strong>."
 msgstr ""
 
-#: web/templates/pages/index.html:22
+#: web/templates/pages/index.html:16
+msgid "Childcare"
+msgstr ""
+
+#: web/templates/pages/index.html:23
 msgid "12-15 November 2016"
 msgstr "12-15 Novembre 2016"
 
-#: web/templates/pages/index.html:22
+#: web/templates/pages/index.html:23
 msgid "Toronto"
 msgstr ""
 
-#: web/templates/pages/index.html:24
+#: web/templates/pages/index.html:25
 msgid ""
 "Join your fellow Pythonistas for the fourth annual PyCon Canada, a "
 "weekend of talks, activities, fun and code!"
@@ -157,10 +171,6 @@ msgstr ""
 "quatri&egrave;me PyCon Canada, pour une fin de semaine de "
 "pr&eacute;sentations, d&#x27;activit&eacute;s, de programmation et de "
 "plaisir!"
-
-#: web/templates/pages/index.html:32
-msgid "Apply for Financial Aid"
-msgstr "Appliquez pour l'aide financière"
 
 #: web/templates/pages/sponsors.html:10
 msgid "Our Sponsors"
@@ -176,9 +186,13 @@ msgstr ""
 "possible. <a href=\"mailto:sponsorship@pycon.ca\">Contactez-nous</a> si "
 "votre organisation aimerait aider PyCon Canada 2016."
 
-#: web/templates/pages/sponsors.html:43
+#: web/templates/pages/sponsors.html:41
 msgid "Follow @"
 msgstr "Suivre @"
+
+#: web/templates/pages/schedule/index.html:69
+msgid "14 & 15 November, 2016"
+msgstr ""
 
 #~ msgid "Schedule"
 #~ msgstr ""
@@ -203,4 +217,7 @@ msgstr "Suivre @"
 
 #~ msgid "Submit a talk/tutorial proposal"
 #~ msgstr "Soumettre un pr&eacute;sentation / un tutoriel"
+
+#~ msgid "Apply for Financial Aid"
+#~ msgstr "Appliquez pour l'aide financière"
 

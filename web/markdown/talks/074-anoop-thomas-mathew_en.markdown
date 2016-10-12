@@ -7,6 +7,9 @@ date: 2016-11-13
 start_time: 14:40:00
 end_time: 15:10:00
 rooms: TRS 3-176
+photo: anoop-thomas-mathew.jpg
+twitter: atmb4u
+github: atmb4u
 ---
 
 Most of the time we hear buzzwords like Recurrent Neural Nets, LSTM etc. But don't know what is all that jargon and how or why these things work, This talk will give you a decent introduction to Neural Networks (No boring history lessons or the typical "neurons in brain" talk), and will give introduction for a hacker to get started with neural networks.

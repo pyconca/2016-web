@@ -7,6 +7,9 @@ date: 2016-11-13
 start_time: 14:40:00
 end_time: 15:10:00
 rooms: TRS 1-067
+photo: hany-fahim.png
+twitter: iHandroid
+github: hany
 ---
 
 Continuing a series of talks called Tales from the Ops Side, this talk tells the tale of troubleshooting an elusive Celery related bug. During the course of processing tasks, Celery would halt processing and appear to be "hung". Troubleshooting required taking a first principles approach as normal diagnostic tools were not proving fruitful.
