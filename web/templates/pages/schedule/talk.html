@@ -7,7 +7,7 @@
 {% block page_content_class %}page__content--talk{% endblock %}
 
 {% block page_header %}
-<h1>{% for t in meta.title %}{{ meta.title|join(' ') }}{% endfor %}</h1>
+<h1>{{ meta.title|join(' ') }}</h1>
 <p class="lead">{% for speaker in meta.speakers %}{{ speaker }}{% endfor %}</p>
 {% endblock %}
 
@@ -18,16 +18,16 @@
             {% if meta.rooms[0] == 'Tutorial' %}
             <p style="text-align:center"><a href="https://github.com/pyconca/2016-wiki/wiki/Tutorials" class="button button--red">Sign Up for {% for speaker in meta.speakers %}{{ speaker }}'s{% endfor %} Tutorial</a></p>
             {% endif %}
-    
+
             {{ content|safe }}
         </div>
-        
+
         {% if meta.photo %}
         <div class="page__col-4 page__col--right">
             {% if meta.photo %}
             <img src="/static/images/speaker_photos/{{ meta.photo|join('') }}" class="talk__image">
             {% endif %}
-            
+
             {% if meta.twitter or meta.github %}
             <p>
                 {% if meta.twitter %}
@@ -46,8 +46,63 @@
 <div class="page__section">
     <p>
         <a href="{{ url_for('schedule.talk_ics', slug=slug) }}" title="iCalender File"><img data-file-extension="ics" data-src="{{ url_for('static', filename='images/icon-file.svg') }}" class="iconic iconic-md" alt="iCalendar File" /></a>
-        
+
         <a href="{{ url_for('schedule.talk_json', slug=slug) }}" title="JSON File"><img data-file-extension="json" data-src="{{ url_for('static', filename='images/icon-file.svg') }}" class="iconic iconic-md" alt="JSON File" /></a>
     </p>
 </div>
+{% endblock %}
+
+{% block schema_org %}
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org/",
+    "@type": "Event",
+    "name": "{{ meta.title[0] }} at {{ _('PyCon Canada 2016') }}",
+    "description": "{{ _('Join your fellow Pythonistas for the fourth annual PyCon Canada, a weekend of talks, activities, fun and code!') }}",
+    "image": "https://2016.pycon.ca{{ url_for('static', filename='images/pycon-2015-mc-paul-by-shiroyuki-facebook.jpg') }}",
+    "url": "https://2016.pycon.ca{{ url_for(request.url_rule.endpoint, **request.view_args) }}",
+    "startDate": "{{ meta.date[0] }}T{{ meta.start_time[0] }}",
+    "endDate": "{{ meta.date[0] }}T{{ meta.end_time[0] }}",
+    "location": {
+        "@type": "Place",
+        "name": "Ted Rogers School of Management",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "55 Dundas Street West",
+            "postalCode": "M5G 2C3",
+            "addressLocality": "Toronto",
+            "addressRegion": "Ontario",
+            "addressCountry": "Canada"
+        }
+    },
+    "performer": {
+        "@type": "Person",
+        "name": "{{ meta.speakers[0] }}"
+    },
+    "offers": {
+        "@type": "Offer",
+        "url": "https://www.eventbrite.com/e/pycon-canada-2016-tickets-27545680873"
+    }
+}
+</script>
+{% endblock %}
+
+{% block twitter_card %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@pyconca">
+<meta name="twitter:creator" content="@pyconca">
+<meta name="twitter:title" content="{{ meta.title[0] }} with {{ meta.speakers[0] }} at {{ _('PyCon Canada 2016') }}">
+<meta name="twitter:description" content="{{ _('Join your fellow Pythonistas for the fourth annual PyCon Canada, a weekend of talks, activities, fun and code!') }}">
+<meta name="twitter:image" content="https://2016.pycon.ca{{ url_for('static', filename='images/pycon-2015-mc-paul-by-shiroyuki-twitter-card.jpg') }}">
+{% endblock %}
+
+{% block opengraph %}
+<meta property="og:title" content="{{ meta.title[0] }} with {{ meta.speakers[0] }} at {{ _('PyCon Canada 2016') }}">
+<meta property="og:description" content="{{ _('Join your fellow Pythonistas for the fourth annual PyCon Canada, a weekend of talks, activities, fun and code!') }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint, **request.view_args) }}">
+<meta property="og:image" content="https://2016.pycon.ca{{ url_for('static', filename='images/pycon-2015-mc-paul-by-shiroyuki-facebook.jpg') }}">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 {% endblock %}
