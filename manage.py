@@ -30,6 +30,8 @@ manager.add_command('tr-init', InitTranslation())
 manager.add_command('tr-update', UpdateTranslations())
 manager.add_command('tr-compile', CompileTranslations())
 
+manager.add_command('talk-cards', TalkCards())
+
 manager.add_command('alphabetize-team', AlphabetizeTeam())
 
 manager.add_command('runserver', Server())
