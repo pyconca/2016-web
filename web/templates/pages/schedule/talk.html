@@ -1,13 +1,13 @@
 {% extends "layouts/page.html" %}
 
-{% block title %}{{ meta.title|join(' ') }} with {% for speaker in meta.speakers %}{{ speaker }}{% endfor %} | {{ super() }}{% endblock %}
+{% block title %}{{ meta.title[0] }} with {% for speaker in meta.speakers %}{{ speaker }}{% endfor %} | {{ super() }}{% endblock %}
 
 {% block page_class %}page--talk{% endblock %}
 {% block page_header_class %}page__header--talk{% endblock %}
 {% block page_content_class %}page__content--talk{% endblock %}
 
 {% block page_header %}
-<h1>{{ meta.title|join(' ') }}</h1>
+<h1>{{ meta.title[0] }}</h1>
 <p class="lead">{% for speaker in meta.speakers %}{{ speaker }}{% endfor %}</p>
 {% endblock %}
 
@@ -25,16 +25,16 @@
         {% if meta.photo %}
         <div class="page__col-4 page__col--right">
             {% if meta.photo %}
-            <img src="/static/images/speaker_photos/{{ meta.photo|join('') }}" class="talk__image">
+            <img src="/static/images/speaker_photos/{{ meta.photo[0] }}" class="talk__image">
             {% endif %}
 
             {% if meta.twitter or meta.github %}
             <p>
                 {% if meta.twitter %}
-                <a href="https://twitter.com/{{ meta.twitter|join('') }}" title="{% for speaker in meta.speakers %}{{ speaker }}{% endfor %} Twitter Profile">Twitter</a>
+                <a href="https://twitter.com/{{ meta.twitter[0] }}" title="{% for speaker in meta.speakers %}{{ speaker }}{% endfor %} Twitter Profile">Twitter</a>
                 {% endif %}
                 {% if meta.github %}
-                <a href="https://twitter.com/{{ meta.github|join('') }}" title="{% for speaker in meta.speakers %}{{ speaker }}{% endfor %} GitHub Profile">GitHub</a>
+                <a href="https://twitter.com/{{ meta.github[0] }}" title="{% for speaker in meta.speakers %}{{ speaker }}{% endfor %} GitHub Profile">GitHub</a>
                 {% endif %}
             </p>
             {% endif %}
