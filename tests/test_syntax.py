@@ -22,9 +22,9 @@ class TestSyntax(unittest.TestCase):
     def test_data_files(self):
         data_files = []
         data_files += glob.glob(os.path.join(self.app.config['APP_PATH'],
-                                                 'data', '*.json'))
+                                             'data', '*.json'))
         data_files += glob.glob(os.path.join(self.app.config['APP_PATH'],
-                                                 'data', '*.yml'))
+                                             'data', '*.yml'))
 
         for data_file in data_files:
             with self.app.app_context():
