@@ -2,8 +2,6 @@ from datetime import date
 
 from flask import Blueprint, jsonify, url_for
 
-from web.utils import get_data_file, get_markdown_file
-
 api = Blueprint('api', __name__)
 
 

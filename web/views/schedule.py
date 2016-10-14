@@ -3,7 +3,7 @@ from datetime import datetime
 import pytz
 from icalendar import Calendar, Event
 
-from flask import Blueprint, render_template, jsonify, Response, url_for, g
+from flask import Blueprint, render_template, jsonify, Response, url_for
 
 from web.utils import get_data_file, get_markdown_file
 

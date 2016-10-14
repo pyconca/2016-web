@@ -2,11 +2,6 @@ import os
 import glob
 import unittest
 
-import yaml
-import json
-
-from flask import Flask
-
 from web.app import create_app
 from web.utils import get_data_file
 

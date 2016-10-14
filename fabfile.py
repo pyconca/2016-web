@@ -2,7 +2,6 @@ import os
 
 from fabric import api
 from fabric import utils
-from fabric.contrib.files import exists
 from fabric.contrib.project import rsync_project
 
 # Deploy Config
