@@ -11,6 +11,7 @@ from webassets.filter import get_filter
 
 from web import filters
 from web.views import *
+from web.utils import CustomJSONDecoder, CustomJSONEncoder
 
 
 def create_app(configfile=None):
@@ -19,6 +20,10 @@ def create_app(configfile=None):
     app.config.from_object('web.config.Config')
 
     markdown = Markdown(app)
+
+    # JSON
+    app.json_encoder = CustomJSONEncoder
+    app.json_decoder = CustomJSONDecoder
 
     # Typography Jinja2 Filter
     app.jinja_env.filters['typogrify'] = typogrify_filters.typogrify

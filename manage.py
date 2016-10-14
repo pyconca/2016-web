@@ -86,7 +86,10 @@ def freeze():
     def page_list():
         for lang_code in ['en', 'fr']:
             yield 'pages.index', {'lang_code': lang_code}
+            yield 'pages.guide', {'lang_code': lang_code}
             yield 'schedule.index', {'lang_code': lang_code}
+            yield '/{}/schedule/schedule.json'.format(lang_code)
+            yield '/{}/schedule/schedule.ics'.format(lang_code)
 
     freezer.freeze()
 

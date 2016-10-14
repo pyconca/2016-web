@@ -31,16 +31,30 @@ def talk(slug):
                            meta=meta, slug=slug)
 
 
+@schedule.route('/schedule.json')
+def schedule_json():
+    schedule = get_data_file('schedule.json')
+
+    return jsonify(schedule)
+
+
 @schedule.route('/<string:slug>.json')
 def talk_json(slug):
-    description, content = get_markdown_file('talks/{}'.format(slug), 'en')
-    content['description'] = description
+
+    if slug == 'schedule':
+        content = get_data_file('schedule.json')
+    else:
+        description, content = get_markdown_file('talks/{}'.format(slug), 'en')
+        content['description'] = description
+
     return jsonify(content)
 
 
-@schedule.route('/<string:slug>.ics')
-def talk_ics(slug):
+def event_ics(slug):
     description, content = get_markdown_file('talks/{}'.format(slug), 'en')
+
+    if not content:
+        return None
 
     tz = pytz.timezone('Canada/Eastern')
 
@@ -51,10 +65,6 @@ def talk_ics(slug):
     end_time = datetime.strptime('{0} {1}'.format(content['date'][0],
                                                   content['end_time'][0]),
                                  '%Y-%m-%d %H:%M:%S')
-
-    cal = Calendar()
-    cal.add('prodid', '-//PyCon Canada 2016//2016.pycon.ca')
-    cal.add('version', '2.0')
 
     event = Event()
     event.add('summary', u"{0} with {1}".format(content['title'][0],
@@ -68,7 +78,27 @@ def talk_ics(slug):
     tpl_url = 'https://2016.pycon.ca{0}'
     event.add('url', tpl_url.format(url_for('schedule.talk', slug=slug)))
 
-    cal.add_component(event)
+    return event
+
+
+@schedule.route('/<string:slug>.ics')
+def talk_ics(slug):
+    cal = Calendar()
+    cal.add('prodid', '-//PyCon Canada 2016//2016.pycon.ca')
+    cal.add('version', '2.0')
+
+    if slug == 'schedule':
+        schedule = get_data_file('schedule.json')
+
+        # TODO: This should be refactored.
+        for day in schedule.get('days'):
+            for slot in day.get('entries'):
+                if slot.get('talks'):
+                    for room, talk in slot.get('talks').iteritems():
+                        if talk:
+                            cal.add_component(event_ics(talk))
+    else:
+        cal.add_component(event_ics(slug))
 
     headers = {
         'Content-Disposition': 'attachment;filename={0}.ics'.format(slug)
@@ -76,5 +106,5 @@ def talk_ics(slug):
 
     return Response(response=cal.to_ical(),
                     status=200,
-                    mimetype='text/x-calendar',
+                    mimetype='text/calendar',
                     headers=headers)

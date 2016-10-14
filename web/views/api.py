@@ -1,6 +1,6 @@
 from datetime import date
 
-from flask import Blueprint, jsonify
+from flask import Blueprint, jsonify, url_for
 
 from web.utils import get_data_file, get_markdown_file
 
@@ -32,21 +32,11 @@ def index():
                     'longitude': '-79.38310'
                 }
             }
-        }
+        },
+        'routes': [
+            url_for('schedule.talk_json', slug='schedule.json', lang='en'),
+            url_for('schedule.talk_json', slug='schedule.json', lang='fr'),
+            '/en/schedule/<talk-slug>.json',
+            '/fr/schedule/<talk-slug>.json',
+        ]
     })
-
-
-@api.route('/schedule.json')
-def schedule():
-    schedule = get_data_file('schedule.json')
-
-    
-
-    return jsonify(schedule)
-
-
-@api.route('/schedule/<string:slug>.json')
-def talk_json(slug):
-    description, content = get_markdown_file('talks/{}'.format(slug), 'en')
-    content['description'] = description
-    return jsonify(content)

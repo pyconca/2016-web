@@ -1,10 +1,10 @@
 import os
 import json
 import codecs
+import datetime
 
 import yaml
 import markdown
-import datetime
 
 from flask import current_app
 
@@ -27,6 +27,14 @@ class CustomJSONDecoder(json.JSONDecoder):
                                                           '%Y-%m-%d').date()
 
         return obj
+
+
+class CustomJSONEncoder(json.JSONEncoder):
+
+    def default(self, obj):
+
+        if isinstance(obj, datetime.time):
+            return obj.isoformat()
 
 
 def get_data_file(filename):
