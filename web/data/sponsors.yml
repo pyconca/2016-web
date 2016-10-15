@@ -4,29 +4,30 @@
     fr: Argent
   entries:
   - logo: images/sponsors/mackenzie-investments.svg
+    logo_dark: images/sponsors/mackenzie-investments-dark.svg
     fr:
       name: Mackenzie Investments
-      url: https://www.mackenzieinvestments.com/ 
+      url: https://www.mackenzieinvestments.com/
       twitter: mackenzieinvest
       description: |-
         Mackenzie Investments was founded in 1967 and is a leading investment management firm providing investment advisory and related services to retail and institutional clients. The company has $61.3 billion in assets under management, and as part of IGM (a subsidiary of the Power Financial Group of Companies), is the largest independent asset manager in Canada, with $142 billion.
-        
+
         Our vision
-        
+
         Everything we do starts with the needs of investors, whether they are saving for a child’s postsecondary education, setting money aside for the future needs of a family member with a disability, or funding their own retirement. In fact, our focus is summed up in our Vision statement:
-        
+
         We are committed to the financial success of investors, through their eyes.
     en:
       name: Mackenzie Investments
-      url: https://www.mackenzieinvestments.com/ 
+      url: https://www.mackenzieinvestments.com/
       twitter: mackenzieinvest
       description: |-
         Mackenzie Investments was founded in 1967 and is a leading investment management firm providing investment advisory and related services to retail and institutional clients. The company has $61.3 billion in assets under management, and as part of IGM (a subsidiary of the Power Financial Group of Companies), is the largest independent asset manager in Canada, with $142 billion.
-        
+
         Our vision
-        
+
         Everything we do starts with the needs of investors, whether they are saving for a child’s postsecondary education, setting money aside for the future needs of a family member with a disability, or funding their own retirement. In fact, our focus is summed up in our Vision statement:
-        
+
         We are committed to the financial success of investors, through their eyes.
 - level:
     en: Diversity
@@ -35,13 +36,13 @@
   - logo: images/sponsors/hover.svg
     fr:
       name: Hover
-      url: https://www.hover.com/ 
+      url: https://www.hover.com/
       twitter: hover
       description: |-
         Every great idea deserves a great domain name. With hundreds of domain extensions, no heavy-handed upselling and best-in-class support, Hover makes it easy to spend less time on your domains and more time on your big idea.
     en:
       name: Hover
-      url: https://www.hover.com/ 
+      url: https://www.hover.com/
       twitter: hover
       description: |-
         Every great idea deserves a great domain name. With hundreds of domain extensions, no heavy-handed upselling and best-in-class support, Hover makes it easy to spend less time on your domains and more time on your big idea.
@@ -80,7 +81,7 @@
     logo_dark: images/sponsors/survey-monkey-dark.svg
     fr:
       name: Survey Monkey
-      url: https://www.surveymonkey.com/ 
+      url: https://www.surveymonkey.com/
       twitter: SurveyMonkey
       description: |-
         SurveyMonkey is the world's leading provider of web-based survey solutions, and we’re looking to transform the way people make decisions. We're a smart, passionate group of people who work hard to deliver the best survey experiences on the planet, period. We believe everyone deserves easy access to the information and insights they need to make better, more informed decisions.
@@ -90,7 +91,7 @@
         SurveyMonkey is trusted by millions of customers, including 99% of the Fortune 500, as well as other businesses, academic institutions and organizations of all shapes and sizes. We collect 3 million survey responses daily from people in all countries around the world.
     en:
       name: Survey Monkey
-      url: https://www.surveymonkey.com/ 
+      url: https://www.surveymonkey.com/
       twitter: SurveyMonkey
       description: |-
         SurveyMonkey is the world's leading provider of web-based survey solutions, and we’re looking to transform the way people make decisions. We're a smart, passionate group of people who work hard to deliver the best survey experiences on the planet, period. We believe everyone deserves easy access to the information and insights they need to make better, more informed decisions.
@@ -123,13 +124,13 @@
     logo_dark: images/sponsors/microsoft-dark.svg
     fr:
       name: Microsoft
-      url: https://aka.ms/python 
+      url: https://aka.ms/python
       twitter: azure
       description: |-
         Microsoft is proud to support the Python community through sponsored development of Python Tools for Visual Studio, Jupyter, CPython, and Azure Machine Learning and organizations such as the PSF and NumFocus.
     en:
       name: Microsoft
-      url: https://aka.ms/python 
+      url: https://aka.ms/python
       twitter: azure
       description: |-
         Microsoft is proud to support the Python community through sponsored development of Python Tools for Visual Studio, Jupyter, CPython, and Azure Machine Learning and organizations such as the PSF and NumFocus.
