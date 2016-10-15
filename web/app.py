@@ -4,6 +4,7 @@ from flask import Flask, g, abort
 
 from flask_babel import Babel
 import flask_assets as assets
+from flaskext.markdown import Markdown
 from typogrify.templatetags import jinja_filters as typogrify_filters
 
 from webassets.filter import get_filter
@@ -17,6 +18,8 @@ def create_app(configfile=None):
     app = Flask(__name__)
 
     app.config.from_object('web.config.Config')
+
+    Markdown(app)
 
     # JSON
     app.json_encoder = CustomJSONEncoder
