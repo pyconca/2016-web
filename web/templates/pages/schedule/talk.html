@@ -1,6 +1,6 @@
 {% extends "layouts/page.html" %}
 
-{% block title %}{{ meta.title[0] }} with {% for speaker in meta.speakers %}{{ speaker }}{% endfor %} | {{ super() }}{% endblock %}
+{% block title %}{{ meta.title[0] }} with {{ meta.speakers[0] }} | {{ super() }}{% endblock %}
 
 {% block page_class %}page--talk{% endblock %}
 {% block page_header_class %}page__header--talk{% endblock %}
@@ -8,7 +8,7 @@
 
 {% block page_header %}
 <h1>{{ meta.title[0] }}</h1>
-<p class="lead">{% for speaker in meta.speakers %}{{ speaker }}{% endfor %}</p>
+<p class="lead">{{ meta.speakers[0] }}</p>
 {% endblock %}
 
 {% block page_content %}

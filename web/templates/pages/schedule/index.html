@@ -13,10 +13,10 @@
 {% block page_content %}
     {% for day in schedule.days %}
     <h1 class="schedule__day schedule__day--{{ day.date.isoformat() }}">{{ day.date|format_date('full') }}</h1>
-    
+
     <table class="schedule schedule--{{ day.date.isoformat() }}">
         <thead class="schedule__head">
-            
+
             <tr>
                 <th class="schedule__time">&nbsp;</th>
                 {% for room in schedule.rooms %}
@@ -30,7 +30,7 @@
                 <th class="schedule__time schedule__time--{{ day.date.isoformat() }}-{{ entry.start_time.strftime('%H-%M-%S') }}">
                     {{ entry.start_time|format_time('short') }}
                 </th>
-                
+
                 {% if entry.talks %}
                 {% for room in schedule.rooms %}
                 {% set talk = get_talk(entry.talks[room.slug]) %}
@@ -40,7 +40,7 @@
                             {% for t in talk.title %}{{ t }}{% endfor %}
                         </span>
                         <span class="schedule__slot-presenter">
-                            {% for a in talk.speakers %}{% for b in a %}{% for c in b %}{{ c }}{% endfor %}{% endfor %}{% endfor %}
+                            {% for s in talk.speakers %}{{ s }}{% endfor %}
                         </span>
                     </a>
                 </td>
@@ -64,16 +64,16 @@
         </tbody>
     </table>
     {% endfor %}
-    
+
     <div class="page__section">
         <h1 class="schedule__day schedule__day--2016-11-14 schedule__day--2016-11-15">{{ _('14 & 15 November, 2016') }}</h1>
-        
-        <h2>PyCon Canada Sprints</h2>
-        
-        <p style="text-align:center"><a href="https://github.com/pyconca/2016-wiki/wiki/Sprints" class="button button--red">Find or Add a Project to the Wiki</a></p>
-        
-        <p>PyCon Canada Development Sprints are two days of intensive learning and development on an open source project of your choice, in a team environment. It's a time to come together with colleagues, old and new, to share what you've learned and apply it to an open source project.</p>
-        
-        <p>PyCon provides the space and infrastructure (network, power, tables & chairs); you bring your skills, humanity, and brainpower (oh! and don't forget your computer).</p>
+
+        <h2>{{ _('PyCon Canada Sprints') }}</h2>
+
+        <p style="text-align:center"><a href="https://github.com/pyconca/2016-wiki/wiki/Sprints" class="button button--red">{{ _('Find or Add a Project to the Wiki') }}</a></p>
+
+        <p>{% trans %}PyCon Canada Development Sprints are two days of intensive learning and development on an open source project of your choice, in a team environment. It's a time to come together with colleagues, old and new, to share what you've learned and apply it to an open source project.{% endtrans %}</p>
+
+        <p>{% trans %}PyCon provides the space and infrastructure (network, power, tables & chairs); you bring your skills, humanity, and brainpower (oh! and don't forget your computer).{% endtrans %}</p>
     </div>
 {% endblock %}

@@ -29,7 +29,7 @@ class TalkCards(Command):
 
         for svg_file in svg_files:
             png_file = svg_file.replace('.svg', '.png')
-            svg2png(url=svg_file, write_to=png_file)
+            svg2png(url=svg_file, write_to=png_file, width=2800, height=1500)
 
     def run(self):
         talk_files = glob(join(current_app.config['APP_PATH'], 'markdown',
