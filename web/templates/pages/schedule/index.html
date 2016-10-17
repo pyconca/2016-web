@@ -20,7 +20,7 @@
             <tr>
                 <th class="schedule__time">&nbsp;</th>
                 {% for room in schedule.rooms %}
-                <th class="schedule__room-name">{{ room.name }}</th>
+                <th class="schedule__room-name">{{ room.name|typogrify|safe }}</th>
                 {% endfor %}
             </tr>
         </thead>
@@ -28,7 +28,7 @@
             {% for entry in day.entries %}
             <tr class="schedule__row">
                 <th class="schedule__time schedule__time--{{ day.date.isoformat() }}-{{ entry.start_time.strftime('%H-%M-%S') }}">
-                    {{ entry.start_time|format_time('short') }}
+                    {{ entry.start_time|format_time('short')|typogrify|safe }}
                 </th>
 
                 {% if entry.talks %}
@@ -37,10 +37,10 @@
                 <td class="schedule__slot schedule__slot--room-{{ room.slug }} schedule__slot--time-{{ day.date.isoformat() }}-{{ entry.start_time.strftime('%H-%M-%S') }}" {% if talk.title and room.slug == 'tutorial' %}rowspan="2"{% endif %}>
                     <a href="{% if talk.link %}{{ talk.link }}{% else %}#{% endif %}" class="schedule__slot-link">
                         <span class="schedule__slot-title">
-                            {% for t in talk.title %}{{ t }}{% endfor %}
+                            {% for t in talk.title %}{{ t|typogrify|safe }}{% endfor %}
                         </span>
                         <span class="schedule__slot-presenter">
-                            {% for s in talk.speakers %}{{ s }}{% endfor %}
+                            {% for s in talk.speakers %}{{ s|typogrify|safe }}{% endfor %}
                         </span>
                     </a>
                 </td>
@@ -49,11 +49,11 @@
                 <td class="schedule__slot schedule__slot--time-{{ day.date.isoformat() }}-{{ entry.start_time.strftime('%H-%M-%S') }}" colspan="4">
                     <span class="schedule__slot-link">
                         <span class="schedule__slot-title">
-                            {{ entry.title }}
+                            {{ entry.title|typogrify|safe }}
                         </span>
                         {% if entry.content %}
                         <span class="schedule__slot-content">
-                            {{ entry.content }}
+                            {{ entry.content|typogrify|safe }}
                         </span>
                         {% endif %}
                     </span>
@@ -66,9 +66,9 @@
     {% endfor %}
 
     <div class="page__section">
-        <h1 class="schedule__day schedule__day--2016-11-14 schedule__day--2016-11-15">{{ _('14 & 15 November, 2016') }}</h1>
+        <h1 class="schedule__day schedule__day--2016-11-14 schedule__day--2016-11-15">{{ _('14 & 15 November, 2016')|typogrify|safe }}</h1>
 
-        <h2>{{ _('PyCon Canada Sprints') }}</h2>
+        <h2>{{ _('PyCon Canada Sprints')|typogrify|safe }}</h2>
 
         <p style="text-align:center"><a href="https://github.com/pyconca/2016-wiki/wiki/Sprints" class="button button--red">{{ _('Find or Add a Project to the Wiki') }}</a></p>
 
