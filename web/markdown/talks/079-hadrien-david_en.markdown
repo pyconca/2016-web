@@ -15,4 +15,4 @@ For the last 2 years, serverless architecture has become a huge trend. Amazon La
 
 ## Hadrien David Bio
 
-Hadrien is a software engineer at Diagram.ca, and is currently developing a service for better healthcare for Canadians. Member of Montreal Python user group, passionated about team work and open source culture, he spends a lot of time designing software architecture and riding his bicycle whether it rains or snows.
+Hadrien is a software engineer at Dialogue.co, and is currently developing a service for better healthcare for Canadians. Member of Montreal Python user group, passionated about team work and open source culture, he spends a lot of time designing software architecture and riding his bicycle whether it rains or snows.
