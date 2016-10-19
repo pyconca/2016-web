@@ -7,16 +7,16 @@
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  
+
   @include media(max-width $breakpoint-mobile) {
     background-image: url('images/pycon-2015-mc-paul-by-shiroyuki-mobile.jpg');
     background-position: top right;
   }
-  
+
   @include media(min-width $breakpoint-mobile) {
     background-image: url('images/pycon-2015-mc-paul-by-shiroyuki-desktop.jpg');
   }
-  
+
   // TODO Added media queries for HDPI images.
 }
 
@@ -31,7 +31,7 @@
 
   a {
     color: #fff;
-    
+
     &:hover {
       color: #ccc;
     }
@@ -46,7 +46,7 @@
 
     min-height: 100vh;
   }
-  
+
   @at-root #{&}__header,
            #{&}__content,
            #{&}__sponsors,
@@ -54,34 +54,34 @@
     max-width: 700px;
     margin: 0 auto;
   }
-  
+
   @at-root #{&}__logo {
     width: 250px;
   }
-  
+
   @at-root #{&}__heading {
     font-size: modular-scale(1);
   }
-  
+
   @at-root #{&}__copy {
     font-size: modular-scale(1);
   }
-  
+
   // @at-root #{&}__button {}
-  
+
   @at-root #{&}__sponsors {
     background-color: rgba(51, 51, 51, .5);
     padding: .5em;
   }
-  
+
   @at-root #{&}__sponsor-title {
     margin: 0;
   }
 
   @at-root #{&}__sponsor-link,
            #{&}__sponsor-logo {
-    max-height: 10em;
-    width: 10em;
+    width: 6em;
+    max-height: 5em;
     vertical-align: middle;
   }
 

@@ -16,21 +16,25 @@
                 <li class="navigation__item"><a class="navigation__link" href="https://www.surveymonkey.com/r/BNYY236">{{ _('Childcare') }}</a></li>
             </ul>
         </div>
-        
+
         <div class="homepage__content">
             <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="PyCon Canada" class="homepage__logo">
-            
-            <h2 class="homepage__heading">{{ _('12-15 November 2016') }}, {{ _('Toronto') }}</h2>
-            
+
+            <h2 class="homepage__heading">{{ _('12-17 November 2016') }}, {{ _('Toronto') }}</h2>
+
+            <p class="homepage__copy">{{ _('12-15 November Conference<br/>16-17 November Sprints') }}</p>
+
+            <!--
             <p class="homepage__copy">{{ _('Join your fellow Pythonistas for the fourth annual PyCon Canada, a weekend of talks, activities, fun and code!') }}</p>
-            
+            -->
+
             <p class="homepage__button">
                 <a href="http://www.eventbrite.com/e/pycon-canada-2016-tickets-27545680873?aff=web" class="button button--red button--big">
                     {{ _('Buy a ticket') }}
                 </a>
             </p>
         </div>
-        
+
         {% if sponsors %}
         <div class="homepage__sponsors">
             {% for level in sponsors %}
@@ -42,7 +46,7 @@
             {% endfor %}
         </div>
         {% endif %}
-        
+
         <div class="homepage__footer">
             <p>{% if g.lang_code=='fr' %}<a href="{{ url_for(request.url_rule.endpoint, lang_code='en') }}" hreflang="en">English</a>{% else %}<a href="{{ url_for(request.url_rule.endpoint, lang_code='fr') }}" hreflang="fr">Fran&ccedil;ais</a>{% endif %}</p>
         </div>
