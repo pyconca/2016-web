@@ -76,7 +76,7 @@ jQuery(document).ready(function () {
         trackOutboundLinkClicks(jQuery(this), event);
     });
 
-    if (jQuery('.js-venue-map')) {
+    if (jQuery('#js-venue-map').length) {
         displayMap();
     }
 });
