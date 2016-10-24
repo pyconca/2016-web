@@ -1,0 +1,292 @@
+.widget-schedule {
+    font-family:
+        "Roboto",
+        -apple-system,
+        BlinkMacSystemFont,
+        system,
+        "Helvetica Neue",
+        "Helvetica",
+        "Ubuntu",
+        "Arial",
+        sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+
+    h3 {
+        font-size: 36px;
+        text-align: center;
+        margin: 0;
+        padding: 32px 0;
+        border-top: 5px solid #666;
+    }
+
+    .day {
+        position: relative;
+
+        .start-timestamp {
+            display: none;
+        }
+
+        .time-label {
+            position: absolute;
+            color: #999;
+            left: 0;
+            right: 0;
+            padding: 5px;
+            border-top: 1px dashed #eee;
+
+            &:before {
+                content: attr(data-time);
+            }
+        }
+
+        .sessions {
+            position: absolute;
+            top: 0;
+            left: 72px;
+            right: 0;
+            bottom: 0;
+        }
+
+        .session {
+            position: absolute;
+            border: 1px solid #2196F3;
+            background-color: #E3F2FD;
+            cursor: pointer;
+            overflow: hidden;
+
+            * {
+                cursor: pointer;
+            }
+
+            .title {
+                padding: 8px;
+                font-weight: 700;
+            }
+
+            .room {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 8px;
+                margin: 0;
+                font-size: 14px;
+                background-color: #2196F3;
+                color: #fff;
+            }
+
+            .speakers {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            .period {
+                display: none;
+            }
+
+            &.hover {
+                box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
+                background-color: #1976D2;
+                border: #1976D2;
+                color: #fff;
+
+                .room {
+                    background-color: #1976D2;
+                }
+            }
+
+            &[data-room="general"] {
+                border-color: #689F38;
+                background-color: #DCEDC8;
+
+                .title {
+                    font-size: 36px;
+                    font-weight: 400;
+                }
+
+                .room {
+                    display: none;
+                    background-color: #689F38;
+                }
+
+                .period {
+                    color: #000;
+                    text-align: center;
+                }
+
+                &.hover {
+                    box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
+                    background-color: #558B2F;
+                    border: #558B2F;
+                    color: #fff;
+
+                    .room {
+                        background-color: #558B2F;
+                    }
+                }
+            }
+
+            &[data-room="tutorial"] {
+                border-color: #9C27B0;
+                background-color: #F3E5F5;
+
+                .room {
+                    background-color: #9C27B0;
+                }
+
+                &.hover {
+                    box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
+                    background-color: #4527A0;
+                    border: #4527A0;
+                    color: #fff;
+
+                    .room {
+                        background-color: #4527A0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .widget-schedule {
+        .day {
+            height: auto !important;
+
+            .start-timestamp {
+                display: block;
+                padding: 8px 0;
+                text-align: center;
+                border-top: 1px solid #666;
+                border-bottom: 1px solid #666;
+                font-size: 24px;
+            }
+
+            .time-label {
+                display: none;
+            }
+
+            .sessions {
+                position: static;
+                border-top: 3px solid #666;
+            }
+
+            .session {
+                position: static;
+                width: auto !important;
+                height: auto !important;
+                border: none;
+                background: none;
+                border-bottom: 1px solid #ddd;
+                padding: 0 8px;
+
+                .title {
+                    padding: 2px 0;
+                    color: #2196F3;
+                }
+
+                .room {
+                    background: none;
+                    color: #666;
+                    padding: 8px 0 0 0;
+                }
+
+                .speakers {
+                    font-size: 14px;
+                    padding: 0 0 8px 0;
+                }
+
+                .period {
+                    display: block;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    font-size: 14px;
+
+                    .start {
+                        display: inline-block;
+                        padding: 2px 2px 2px 4px;
+                        background-color: #ccc;
+                        color: #fff;
+
+                        &:after {
+                            content: ' → ';
+                        }
+                    }
+
+                    .end {
+                        display: inline-block;
+                        padding: 2px 4px 2px 4px;
+                        background-color: #999;
+                        color: #fff;
+                        font-weight: 700;
+                    }
+                }
+
+                &.hover {
+                    z-index: 0 !important;
+                    box-shadow: none;
+                    background: none;
+                    color: #000;
+                    border-bottom: 1px solid #ddd;
+
+                    .room {
+                        background: none !important;
+                    }
+                }
+
+                &[data-room="general"] {
+                    border-bottom: 1px solid #ddd;
+                    background: none;
+
+                    .title {
+                        font-size: 24px;
+                        font-weight: 700;
+                        padding: 8px 0;
+                        text-align: center;
+                        color: #689F38;
+                    }
+
+                    .room {
+                        background: none !important;
+                    }
+
+                    &.hover {
+                        box-shadow: none;
+                        background: none;
+                        color: #000;
+
+                        .room {
+                            background: none !important;
+                        }
+                    }
+                }
+
+                &[data-room="tutorial"] {
+                    border-bottom: 1px solid #ddd;
+                    background: none;
+
+                    .title {
+                        color: #673AB7;
+                    }
+
+                    .room {
+                        background: none !important;
+                    }
+
+                    &.hover {
+                        box-shadow: none;
+                        background: none;
+                        color: #000;
+
+                        .room {
+                            background: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
