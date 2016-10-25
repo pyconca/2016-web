@@ -45,11 +45,27 @@ def talk_json(slug):
         content = get_data_file('schedule.json')
     else:
         description, content = get_markdown_file('talks/{}'.format(slug), 'en')
+        for k, v in content.items():
+            content[k] = v[0]
+
         content['description'] = description
 
-    names = content['speakers'][0].rsplit(' ')
-    content['speakers_first_name'] = names[0]
-    content['speakers_last_name'] = names[1]
+    speakers = content['speakers']
+    content['speakers'] = []
+
+    if '&' not in speakers:
+        speakers = speakers.split(' & ')
+        for s in speakers:
+            names = s.rsplit(' ')
+            content['speakers'].append({'first_name': names[0],
+                                        'last_name': names[1]})
+    else:
+        names = speakers.rsplit(' ')
+
+        content['speakers'].append({
+            'first_name': names[0],
+            'last_name': names[1]
+        })
 
     return jsonify(content)
 
