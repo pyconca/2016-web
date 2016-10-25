@@ -47,6 +47,10 @@ def talk_json(slug):
         description, content = get_markdown_file('talks/{}'.format(slug), 'en')
         content['description'] = description
 
+    names = content['speakers'][0].rsplit(' ')
+    content['speakers_first_name'] = names[0]
+    content['speakers_last_name'] = names[1]
+
     return jsonify(content)
 
 
