@@ -4,10 +4,10 @@ title: What kind of sorcery is OpenStack?
 kind: talk
 audience_level: Intermediate
 speakers: Daniel Snider
-date: null
-start_time: null
-end_time: null
-rooms: null
+date: 2016-11-12
+start_time: 13:35:00
+end_time: 13:45:00
+rooms: 2-166
 github: danielsnider
 photo: daniel-snider.jpg
 ---
