@@ -31,7 +31,7 @@
           "end_time": "10:15:00",
           "title": "Welcome & Morning Keynote",
           "content": "Tracy Osborn",
-          "__comment": "Maybe should be converted to talk, as we'll eventually post a video?"
+          "link": "001-tracy-osborn"
         },
         {
           "start_time": "10:30:00",
@@ -143,7 +143,8 @@
           "end_time": "18:30:00",
           "all": "true",
           "title": "Afternoon keynote",
-          "content": "Raymond Hettinger"
+          "content": "Raymond Hettinger",
+          "link": "002-raymond-hettinger"
         }
       ]
     },
@@ -159,7 +160,8 @@
           "start_time": "10:00:00",
           "end_time": "11:00:00",
           "title": "Morning keynote",
-          "content": "Safia Abdalla"
+          "content": "Safia Abdalla",
+          "link": "003-safia-abdalla"
         },
         {
           "start_time": "11:10:00",
@@ -259,7 +261,8 @@
           "start_time": "17:00:00",
           "end_time": "18:00:00",
           "title": "Afternoon Keynote & Closing Messages",
-          "content": "Gary Bernhardt"
+          "content": "Gary Bernhardt",
+          "link": "004-gary-bernhardt"
         }
       ]
     }

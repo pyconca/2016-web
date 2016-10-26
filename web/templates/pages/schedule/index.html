@@ -47,7 +47,11 @@
                 {% endfor %}
                 {% else %}
                 <td class="schedule__slot schedule__slot--time-{{ day.date.isoformat() }}-{{ entry.start_time.strftime('%H-%M-%S') }}" colspan="4">
+                    {% if entry.link %}
+                    <a href="{{ url_for('schedule.talk', slug=entry.link) }}" class="schedule__slot-link">
+                    {% else %}
                     <span class="schedule__slot-link">
+                    {% endif %}
                         <span class="schedule__slot-title">
                             {{ entry.title|typogrify|safe }}
                         </span>
@@ -56,7 +60,11 @@
                             {{ entry.content|typogrify|safe }}
                         </span>
                         {% endif %}
+                    {% if entry.link %}
+                    </a>
+                    {% else %}
                     </span>
+                    {% endif %}
                 </td>
                 {% endif %}
             </tr>
