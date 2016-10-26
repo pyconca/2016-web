@@ -30,6 +30,40 @@
 
         We are committed to the financial success of investors, through their eyes.
 - level:
+    en: Bronze
+    fr: Bronze
+  entries:
+  - logo: images/sponsors/firefox-developer.svg
+    fr:
+      name: Mozilla
+      url: https://firefox.com/developer
+      twitter: firefox
+      description: |-
+        Firefox Developer Edition brings your core dev tools together with some powerful new ones that will extend your ability to work across multiple platforms from one place. It’s everything you’re used to, only better. And only from Firefox.
+    en:
+      name: Mozilla
+      url: https://firefox.com/developer
+      twitter: firefox
+      description: |-
+        Firefox Developer Edition brings your core dev tools together with some powerful new ones that will extend your ability to work across multiple platforms from one place. It’s everything you’re used to, only better. And only from Firefox.
+  - logo: images/sponsors/points.svg
+    fr:
+      name: Points
+      url: http://www.points.com/company
+      twitter: PointsLoyalty
+      description: |-
+        Points (TSX: PTS; NASDAQ: PCOM) help make the world’s loyalty programs more valuable and engaging. Via a state-of-the-art loyalty commerce platform, Points provides loyalty eCommerce and technology solutions to the world's top loyalty brands to enhance their consumer offerings and streamline their back-end operations.
+        Points’ solutions enhance the management and monetization of loyalty currencies ranging from frequent flyer miles and hotel points to retailer and credit card rewards, for more than 45 partners worldwide.
+        For more information on Points, please visit Points.com, follow us on Twitter or read the Points Company blog.
+    en:
+      name: Points
+      url: http://www.points.com/company
+      twitter: PointsLoyalty
+      description: |-
+        Points (TSX: PTS; NASDAQ: PCOM) help make the world’s loyalty programs more valuable and engaging. Via a state-of-the-art loyalty commerce platform, Points provides loyalty eCommerce and technology solutions to the world's top loyalty brands to enhance their consumer offerings and streamline their back-end operations.
+        Points’ solutions enhance the management and monetization of loyalty currencies ranging from frequent flyer miles and hotel points to retailer and credit card rewards, for more than 45 partners worldwide.
+        For more information on Points, please visit Points.com, follow us on Twitter or read the Points Company blog.
+- level:
     en: Diversity
     fr: Diversité
   entries:
@@ -99,23 +133,6 @@
         We're also proud to admit that despite our incredible growth over the past 16 years, we refuse to grow up. We stay curious. We believe in good ol’ roll-up-your-sleeves scrappiness. Everyone plays an impactful role, because we’re here to make a difference. And when we say good ideas can come from anyone, we mean it.
 
         SurveyMonkey is trusted by millions of customers, including 99% of the Fortune 500, as well as other businesses, academic institutions and organizations of all shapes and sizes. We collect 3 million survey responses daily from people in all countries around the world.
-- level:
-    en: Bronze
-    fr: Bronze
-  entries:
-  - logo: images/sponsors/firefox-developer.svg
-    fr:
-      name: Mozilla
-      url: https://firefox.com/developer
-      twitter: firefox
-      description: |-
-        Firefox Developer Edition brings your core dev tools together with some powerful new ones that will extend your ability to work across multiple platforms from one place. It’s everything you’re used to, only better. And only from Firefox.
-    en:
-      name: Mozilla
-      url: https://firefox.com/developer
-      twitter: firefox
-      description: |-
-        Firefox Developer Edition brings your core dev tools together with some powerful new ones that will extend your ability to work across multiple platforms from one place. It’s everything you’re used to, only better. And only from Firefox.
 - level:
     en: Contributor
     fr: Contributeur
