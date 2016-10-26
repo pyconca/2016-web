@@ -1,0 +1,25 @@
+---
+- slug: 1-067
+  name: TRS 1-067
+  location:
+    name: Ted Rogers School of Management
+    street: 55 Dundas St W
+    city: Toronto
+    province: Ontario
+    postal_code: M5G 2C3
+- slug: 2-166
+  name: TRS 2-166
+  location:
+    name: Ted Rogers School of Management
+    street: 55 Dundas St W
+    city: Toronto
+    province: Ontario
+    postal_code: M5G 2C3
+- slug: 3-176
+  name: TRS 3-176
+  location:
+    name: Ted Rogers School of Management
+    street: 55 Dundas St W
+    city: Toronto
+    province: Ontario
+    postal_code: M5G 2C3

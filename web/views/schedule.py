@@ -73,6 +73,8 @@ def event_ics(slug):
     event.add('dtend', tz.localize(end_time))
     event.add('dtstamp', tz.localize(start_time))
 
+    event.add('location', 'Room {}'.format(content['rooms'][0]))
+
     event.add('uid', slug)
 
     tpl_url = 'https://2016.pycon.ca{0}'
