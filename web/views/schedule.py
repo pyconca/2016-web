@@ -50,22 +50,21 @@ def talk_json(slug):
 
         content['description'] = description
 
-    speakers = content['speakers']
-    content['speakers'] = []
+    if content['speakers']:
+        speakers = content['speakers']
+        content['speakers'] = []
 
-    if '&' not in speakers:
-        speakers = speakers.split(' & ')
-        for s in speakers:
-            names = s.rsplit(' ')
+        if '&' not in speakers:
+            speakers = speakers.split(' & ')
+            for s in speakers:
+                names = s.rsplit(' ')
+                content['speakers'].append({'first_name': names[0],
+                                        'last_name': names[1]})
+        else:
+            names = speakers.rsplit(' ')
+
             content['speakers'].append({'first_name': names[0],
                                         'last_name': names[1]})
-    else:
-        names = speakers.rsplit(' ')
-
-        content['speakers'].append({
-            'first_name': names[0],
-            'last_name': names[1]
-        })
 
     return jsonify(content)
 
