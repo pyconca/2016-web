@@ -50,7 +50,7 @@ def talk_json(slug):
 
         content['description'] = description
 
-    if content['speakers']:
+    if content.get('speakers'):
         speakers = content['speakers']
         content['speakers'] = []
 
@@ -59,10 +59,9 @@ def talk_json(slug):
             for s in speakers:
                 names = s.rsplit(' ')
                 content['speakers'].append({'first_name': names[0],
-                                        'last_name': names[1]})
+                                            'last_name': names[1]})
         else:
             names = speakers.rsplit(' ')
-
             content['speakers'].append({'first_name': names[0],
                                         'last_name': names[1]})
 
