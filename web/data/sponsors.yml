@@ -47,6 +47,7 @@
       description: |-
         Firefox Developer Edition brings your core dev tools together with some powerful new ones that will extend your ability to work across multiple platforms from one place. It’s everything you’re used to, only better. And only from Firefox.
   - logo: images/sponsors/points.svg
+    logo_dark: images/sponsors/points-dark.svg
     fr:
       name: Points
       url: http://www.points.com/company
