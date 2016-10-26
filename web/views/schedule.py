@@ -3,11 +3,13 @@ from datetime import datetime
 import pytz
 from icalendar import Calendar, Event
 
-from flask import Blueprint, render_template, jsonify, Response, url_for
+from flask import Blueprint, render_template, jsonify, Response, url_for, abort
 
 from web.utils import get_data_file, get_markdown_file
 
 schedule = Blueprint('schedule', __name__)
+
+tz = pytz.timezone('Canada/Eastern')
 
 
 @schedule.route('/')
@@ -31,13 +33,6 @@ def talk(slug):
                            meta=meta, slug=slug)
 
 
-@schedule.route('/schedule.json')
-def schedule_json():
-    schedule = get_data_file('schedule.json')
-
-    return jsonify(schedule)
-
-
 @schedule.route('/<string:slug>.json')
 def talk_json(slug):
 
@@ -45,25 +40,13 @@ def talk_json(slug):
         content = get_data_file('schedule.json')
     else:
         description, content = get_markdown_file('talks/{}'.format(slug), 'en')
+
+        # The Markdown Meta extension gives us everything in lists.
+        # So this is a simple converter.
         for k, v in content.items():
             content[k] = v[0]
 
         content['description'] = description
-
-    if content.get('speakers'):
-        speakers = content['speakers']
-        content['speakers'] = []
-
-        if '&' not in speakers:
-            speakers = speakers.split(' & ')
-            for s in speakers:
-                names = s.rsplit(' ')
-                content['speakers'].append({'first_name': names[0],
-                                            'last_name': names[1]})
-        else:
-            names = speakers.rsplit(' ')
-            content['speakers'].append({'first_name': names[0],
-                                        'last_name': names[1]})
 
     return jsonify(content)
 
@@ -71,10 +54,9 @@ def talk_json(slug):
 def event_ics(slug):
     description, content = get_markdown_file('talks/{}'.format(slug), 'en')
 
+    # If there is no content just abort and return a 404 error.
     if not content:
-        return None
-
-    tz = pytz.timezone('Canada/Eastern')
+        abort(404)
 
     start_time = datetime.strptime('{0} {1}'.format(content['date'][0],
                                                     content['start_time'][0]),
@@ -108,13 +90,35 @@ def talk_ics(slug):
     if slug == 'schedule':
         schedule = get_data_file('schedule.json')
 
-        # TODO: This should be refactored.
+        # TODO: This should be refactored because it's really ugly.
         for day in schedule.get('days'):
             for slot in day.get('entries'):
-                if slot.get('talks'):
+                if slot.get('link'):
+                    cal.add_component(event_ics(slot.get('link')))
+
+                elif slot.get('talks'):
                     for room, talk in slot.get('talks').iteritems():
                         if talk:
                             cal.add_component(event_ics(talk))
+                else:
+                    start_time_str = '{0} {1}'.format(day['date'],
+                                                      slot['start_time'])
+                    start_time = datetime.strptime(start_time_str,
+                                                   '%Y-%m-%d %H:%M:%S')
+
+                    end_time_str = '{0} {1}'.format(day['date'],
+                                                    slot['end_time'])
+                    end_time = datetime.strptime(end_time_str,
+                                                 '%Y-%m-%d %H:%M:%S')
+
+                    event = Event()
+                    event.add('summary', slot['title'])
+
+                    event.add('dtstart', tz.localize(start_time))
+                    event.add('dtend', tz.localize(end_time))
+                    event.add('dtstamp', tz.localize(start_time))
+
+                    cal.add_component(event)
     else:
         cal.add_component(event_ics(slug))
 
