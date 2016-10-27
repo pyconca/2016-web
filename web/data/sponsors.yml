@@ -139,6 +139,23 @@
 
         SurveyMonkey is trusted by millions of customers, including 99% of the Fortune 500, as well as other businesses, academic institutions and organizations of all shapes and sizes. We collect 3 million survey responses daily from people in all countries around the world.
 - level:
+    en: Workshop
+    fr: Atelier
+  entries:
+  - logo: images/sponsors/capitalone.svg
+    fr:
+      name: Capital One Canada
+      url: http://tech.capitalone.ca/tss/
+      twitter: CapitalOneCA
+      description: |-
+        With offices in Toronto, Kitchener-Waterloo and Montreal, Capital One Canada has been offering Canadian consumers a range of competitive MasterCard credit cards since 1996. We challenge ourselves to see the world through the eyes of our customers, so we can deliver the market leading credit products and exceptional service they’re looking for. Capital One Canada is a division of Capital One Bank, a subsidiary of Capital One Financial Corporation of McLean, Virginia (NYSE: COF).
+    en:
+      name: Capital One Canada
+      url: http://tech.capitalone.ca/tss/
+      twitter: CapitalOneCA
+      description: |-
+        With offices in Toronto, Kitchener-Waterloo and Montreal, Capital One Canada has been offering Canadian consumers a range of competitive MasterCard credit cards since 1996. We challenge ourselves to see the world through the eyes of our customers, so we can deliver the market leading credit products and exceptional service they’re looking for. Capital One Canada is a division of Capital One Bank, a subsidiary of Capital One Financial Corporation of McLean, Virginia (NYSE: COF).
+- level:
     en: Contributor
     fr: Contributeur
   entries:
