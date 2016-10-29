@@ -6,15 +6,18 @@
 <div class="homepage">
     <div class="homepage__wrapper">
         <div class="homepage__header">
-            <ul class="navigation homepage__navigation">
-                <li class="navigation__item"><a class="navigation__link" href="{{ url_for('pages.index') }}">{{ _('Home') }}</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="{{ url_for('pages.about') }}">{{ _('About') }}</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="{{ url_for('pages.venue') }}">{{ _('Venue') }}</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="{{ url_for('pages.volunteer') }}">{{ _('Volunteer') }}</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="{{ url_for('pages.sponsors') }}">{{ _('Sponsors') }}</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="{{ url_for('schedule.index') }}">{{ _('Schedule') }}</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="https://www.surveymonkey.com/r/BNYY236">{{ _('Childcare') }}</a></li>
-            </ul>
+            <a href="#" class="navigation__menu header__navigation-menu homepage__navigation__menu" id="js-navigation-button">MENU</a>
+            <div class="table">
+                <ul class="navigation homepage__navigation" id="js-navigation-menu">
+                    <li class="navigation__item"><a class="navigation__link" href="{{ url_for('pages.index') }}">{{ _('Home') }}</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="{{ url_for('pages.about') }}">{{ _('About') }}</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="{{ url_for('pages.venue') }}">{{ _('Venue') }}</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="{{ url_for('pages.volunteer') }}">{{ _('Volunteer') }}</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="{{ url_for('pages.sponsors') }}">{{ _('Sponsors') }}</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="{{ url_for('schedule.index') }}">{{ _('Schedule') }}</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="https://www.surveymonkey.com/r/BNYY236">{{ _('Childcare') }}</a></li>
+                </ul>
+            </div>
         </div>
 
         <div class="homepage__content">
