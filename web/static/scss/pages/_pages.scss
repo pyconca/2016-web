@@ -72,7 +72,9 @@
   }
   
   @at-root #{&}__content {
-    
+    @include media(max-width $breakpoint-mobile) {
+      padding: 0 10px;
+    }
   }
   
   @at-root #{&}__section {
