@@ -44,7 +44,7 @@ def create_app(configfile=None):
                                assets.Bundle('app.js'),
                                output='app.js'))
 
-    sass = get_filter('scss')
+    sass = get_filter('scss', style='compressed')
     sass.load_paths = env.load_path
 
     env.register('css_all',
