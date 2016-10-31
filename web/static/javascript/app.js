@@ -46,7 +46,7 @@ jQuery(window).resize(function() {
             jQuery("#js-navigation-menu").removeClass("navigation__list--fly-out-right");
             jQuery("#js-navigation-menu").addClass("navigation__list--fly-out-left");
         }
-        
+
         if (moreLeftSideToPageRightSide > 330) {
             jQuery("#js-navigation-menu").removeClass("navigation__list--fly-out-left");
             jQuery("#js-navigation-menu").addClass("navigation__list--fly-out-right");
@@ -57,7 +57,7 @@ jQuery(window).resize(function() {
 jQuery(document).ready(function () {
     'use strict';
 
-    var navToggle = jQuery("#js-navigation-button").unbind()
+    var navToggle = jQuery("#js-navigation-button").unbind();
     jQuery("#js-navigation-menu").removeClass("show");
 
     navToggle.on("click", function (e) {
