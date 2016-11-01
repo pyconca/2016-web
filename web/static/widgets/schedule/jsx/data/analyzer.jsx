@@ -29,7 +29,8 @@ export default class Analyzer {
                             null,
                             null,
                             startTime,
-                            [date, entry.end_time].join(' ')
+                            [date, entry.end_time].join(' '),
+                            null
                         )
                     );
 
@@ -53,7 +54,8 @@ export default class Analyzer {
                             alias,
                             room,
                             startTime,
-                            [date, talk.end_time].join(' ')
+                            [date, talk.end_time].join(' '),
+                            talk.md
                         )
                     );
                 }

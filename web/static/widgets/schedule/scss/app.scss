@@ -1,16 +1,8 @@
+@import 'css3';
+
 .widget-schedule {
-    font-family:
-        "Roboto",
-        -apple-system,
-        BlinkMacSystemFont,
-        system,
-        "Helvetica Neue",
-        "Helvetica",
-        "Ubuntu",
-        "Arial",
-        sans-serif;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0;
     padding: 0;
 
@@ -20,6 +12,117 @@
         margin: 0;
         padding: 32px 0;
         border-top: 5px solid #666;
+    }
+
+    .info {
+        @include transition(all, 250ms);
+
+        position: fixed;
+        z-index: 10;
+        top: 10px;
+        left: 20%;
+        right: 20%;
+        bottom: 10px;
+        overflow: auto;
+        background-color: #fff;
+        padding: 40px;
+        box-shadow: rgba(0, 0, 0, 0.75) 0 0 1px, rgba(0, 0, 0, 0.25) 0 0 10px;
+
+        h1 {
+            font-size: 36px;
+            font-weight: 300;
+            padding: 0;
+            margin: 60px 0 0 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            border-top: 1px dashed #ddd;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+
+        p {
+            line-height: 1.5em;
+        }
+
+        .close {
+            @include transition(all, 250ms);
+
+            position: fixed;
+            top: 10px;
+            right: 20%;
+            display: block;
+            color: #666;
+            font-size: 36px;
+            cursor: pointer;
+            padding: 5px 15px;
+        }
+
+        .metadata {
+            @include flex-container-default();
+            @include flex-justify-content(space-between);
+
+            margin: 0 -8px;
+            border: 1px solid #333;
+            color: #333;
+
+            .room {
+                @include flex-order(1);
+
+                padding: 4px 8px;
+                border-right: 1px solid #333;
+            }
+
+            .timestamp {
+                @include flex-order(2);
+                @include flex-container-default();
+                @include flex-justify-content(space-between);
+
+                padding: 4px 8px;
+                border-left: 1px solid #333;
+
+                .date {
+                    display: block;
+                    margin-right: 5px;
+                }
+
+                .start {
+                    display: block;
+                    margin-right: 5px;
+                    font-weight: 700;
+                }
+
+                .end {
+                    display: block;
+                    font-weight: 700;
+
+                    &:before {
+                        content: " → ";
+                    }
+                }
+            }
+
+            .duration {
+                @include flex-order(1);
+
+                padding: 4px 8px;
+                font-weight: 700;
+
+                &:after {
+                    content: ' minutes';
+                    color: #999;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .speakers {
+            padding: 10px 0 60px 0;
+            font-size: 18px;
+            color: #666;
+        }
     }
 
     .day {
@@ -51,6 +154,9 @@
         }
 
         .session {
+            @include transition(all, 250ms);
+
+            display: block;
             position: absolute;
             border: 1px solid #2196F3;
             background-color: #E3F2FD;
@@ -86,10 +192,15 @@
                 display: none;
             }
 
+            &:link {
+                text-decoration: none;
+                color: #000;
+            }
+
             &.hover {
-                box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
+                box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
                 background-color: #1976D2;
-                border: #1976D2;
+                border-color: #1976D2;
                 color: #fff;
 
                 .room {
@@ -151,8 +262,57 @@
     }
 }
 
+@media (max-width: 1280px) {
+    .widget-schedule {
+        .info {
+            left: 15%;
+            right: 15%;
+
+            .close {
+                right: 15%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .widget-schedule {
+        .info {
+            top: 0;
+            left: 0%;
+            right: 0%;
+            bottom: 0;
+
+            .close {
+                top: 0;
+                right: 0%;
+            }
+        }
+    }
+}
+
 @media (max-width: 720px) {
     .widget-schedule {
+        .info {
+            .metadata {
+                @include flex-direction(column);
+
+                .room {
+                    border-right: none;
+                }
+
+                .duration {
+                    font-size: 36px;
+                }
+
+                .timestamp {
+                    @include flex-justify-content(stretch);
+
+                    border-left: none;
+                }
+            }
+        }
+
         .day {
             height: auto !important;
 
