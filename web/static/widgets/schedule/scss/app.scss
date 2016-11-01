@@ -58,13 +58,30 @@
             font-size: 36px;
             cursor: pointer;
             padding: 5px 15px;
+
+            &:after {
+                content: '✕';
+            }
+
+            &:before {
+                content: 'Close / Ferme';
+                color: transparent;
+                margin-right: 10px;
+                font-weight: 200;
+                font-size: 16px;
+            }
+
+            &:hover:before {
+                color: #999;
+            }
         }
 
         .metadata {
             @include flex-container-default();
             @include flex-justify-content(space-between);
 
-            margin: 0 -8px;
+            margin: 0 -20px;
+            padding: 0 12px;
             border: 1px solid #333;
             color: #333;
 
@@ -286,6 +303,23 @@
             .close {
                 top: 0;
                 right: 0%;
+            }
+
+            .metadata {
+                .timestamp {
+                    @include flex-justify-content(flex-start);
+                }
+            }
+
+            .close {
+                &:after {
+                    content: '→';
+                }
+
+                &:before {
+                    content: 'Back / Retour';
+                    color: #999;
+                }
             }
         }
     }
