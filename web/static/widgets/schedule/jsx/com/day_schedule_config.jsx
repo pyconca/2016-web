@@ -3,6 +3,6 @@ export default {
     extraPadding    : 48, // pixel
     rightMargin     : 1,  // percentage
     bottomMargin    : 8,  // pixel
-    shortSessionHeightBooster : 1.75, // times
+    shortSessionHeightBooster : 2.25, // times
     timeFormat      : 'HH:mm',
 };
