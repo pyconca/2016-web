@@ -50,12 +50,14 @@ export default class Session extends React.Component {
         };
 
         return (
-            <div
+            <a
                 className   = { ['session', this.state.hover ? 'hover' : ''].join(' ') }
+                href        = { session.alias }
                 data-key    = { session.alias }
                 data-time   = { readableTime }
                 data-room   = { roomCode }
                 style       = { forceStyle }
+                onClick     = { this._onClick.bind(this) }
                 onMouseOver = { this._onMouseOver.bind(this) }
                 onMouseOut  = { this._onMouseOut.bind(this) }
             >
@@ -68,8 +70,17 @@ export default class Session extends React.Component {
                         <span className="end">{ session.mEndTime.format(visualConfig.timeFormat) }</span>
                     </div>
                 </div>
-            </div>
+            </a>
         );
+    }
+
+    _onClick(e) {
+        e.preventDefault();
+
+        this.props.onClick({
+            session : this.props.session,
+            room    : this._room(this.props.rooms, this.props.session.room),
+        });
     }
 
     _onMouseOver() {
