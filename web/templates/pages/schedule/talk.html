@@ -8,7 +8,7 @@
 
 {% block page_header %}
 <h1>{{ meta.title[0]|typogrify|safe }} <em>with {{ meta.speakers[0]|typogrify|safe }}</em></h1>
-<p class="lead">{{ meta.date[0]|format_date('EEE')|typogrify|safe }} {{ meta.start_time[0]|format_time('H:mm a')|typogrify|safe }} | Rm. {{ meta.rooms[0] }}</p>
+<p class="lead">{{ meta.date[0]|format_date('EEE')|typogrify|safe }} {{ meta.start_time[0]|format_time('H:mm')|typogrify|safe }} | Rm. {{ meta.rooms[0] }}</p>
 {% endblock %}
 
 {% block page_content %}
