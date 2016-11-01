@@ -112,5 +112,7 @@
         {% assets "js_all" %}
         <script src="{{ ASSET_URL }}"></script>
         {% endassets %}
+
+        {% block extra_code %}{% endblock %}
     </body>
 </html>

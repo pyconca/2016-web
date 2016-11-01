@@ -92,4 +92,9 @@
 
         <p>{% trans %}Sprints will be in room 631, and there will be obvious signage once you get off the elevators.{% endtrans %}</p>
     </div>
+
+    {% block extra_code %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='widgets/schedule/compiled/app.css') }}"/>
+        <script src="{{ url_for('static', filename='widgets/schedule/compiled/app.js') }}"></script>
+    {% endblock %}
 {% endblock %}
