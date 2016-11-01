@@ -24,9 +24,11 @@ export default class Session extends React.Component {
         let durationInMinute = session.durationInMinute;
         let progressInMinute = (timestamp - zeroTimestamp) / 1000 / 60;
         let heightPerMinute  = visualConfig.heightPerMinute;
+        let xPosOffset       = 0;
 
         if (this.state.hover && durationInMinute < 30) {
             heightPerMinute *= visualConfig.shortSessionHeightBooster;
+            xPosOffset       = visualConfig.shortSessionYPosShifter;
         }
 
         let originXOffset    = (100 / rooms.length) * trackIndex;
@@ -46,7 +48,7 @@ export default class Session extends React.Component {
             left   : originXOffset + '%',
             width  : blockWidth    + '%',
             height : blockHeight   + 'px',
-            top    : blockTop      + 'px',
+            top    : (blockTop + xPosOffset) + 'px',
         };
 
         return (
