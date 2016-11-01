@@ -1,7 +1,8 @@
 import Analyzer from './data/analyzer.jsx';
 
-let scheduleData = require('../../../../data/schedule.json').days;
-let roomData     = require('../../../../data/schedule.json').rooms;
+let combinedData = require('../../../../data/schedule.json');
+let scheduleData = combinedData.days;
+let roomData     = combinedData.rooms;
 let talkData     = require('./talks.json');
 let analyzer     = new Analyzer();
 let days         = analyzer.objectifySessions(scheduleData, talkData);

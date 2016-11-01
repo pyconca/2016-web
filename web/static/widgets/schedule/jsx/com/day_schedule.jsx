@@ -1,6 +1,8 @@
+import $      from 'jquery';
 import moment from 'moment';
 import React  from 'react';
 
+import Info         from './info.jsx';
 import Session      from './session.jsx';
 import visualConfig from './day_schedule_config.jsx';
 
@@ -8,6 +10,14 @@ let reDate = /^[^ ] /;
 
 
 export default class DaySchedule extends React.Component {
+    constructor() {
+        super();
+
+        this.state = {
+            opened: null,
+        };
+    }
+
     render() {
         let schedule         = this.props.schedule;
         let rooms            = this.props.rooms;
@@ -15,17 +25,34 @@ export default class DaySchedule extends React.Component {
         let timelineHeight   = (visualConfig.heightPerMinute * durationInMinute) + visualConfig.extraPadding;
 
         let forceStyle = {
-            height: timelineHeight + 'px',
+            height   : timelineHeight + 'px',
         };
+
+        $('body').css({overflow: this.state.opened ? 'hidden' : 'auto'});
 
         return (
             <div className="day" data-date={ schedule.label } style={ forceStyle }>
+                { this._renderOverlayInformation() }
                 { this._renderTimeLabels(schedule) }
 
                 <div className="sessions">
                     { this._renderSessions(schedule, rooms) }
                 </div>
             </div>
+        );
+    }
+
+    _renderOverlayInformation() {
+        if (!this.state.opened) {
+            return '';
+        }
+
+        return (
+            <Info
+                onClick = { this._onClickCloseInfo.bind(this) }
+                room    = { this.state.opened.room }
+                session = { this.state.opened.session }
+            />
         );
     }
 
@@ -60,12 +87,21 @@ export default class DaySchedule extends React.Component {
                         timestamp     = { timestamp }
                         session       = { sessions[roomCode] }
                         rooms         = { rooms }
+                        onClick       = { this._onClickOpenInfo.bind(this) }
                     />
                 );
             }
         }
 
         return renderedSessions;
+    }
+
+    _onClickOpenInfo(session) {
+        this.setState({ opened: session });
+    }
+
+    _onClickCloseInfo(session) {
+        this.setState({ opened: null });
     }
 
     _renderTimeLabels(schedule) {
