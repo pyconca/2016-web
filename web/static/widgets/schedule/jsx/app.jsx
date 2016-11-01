@@ -17,5 +17,12 @@ for (let dom of document.querySelectorAll('.widget-schedule')) {
     ReactDOM.render(<Core timeline={ timeline } rooms={ roomData } />, dom);
 }
 
-document.querySelectorAll('.schedule__day').remove();
-document.querySelectorAll('.schedule').remove();
+for (let targetSelector of ['.schedule__day', '.schedule']) {
+    let targets = document.querySelectorAll(targetSelector);
+
+    if (!targets) {
+        continue;
+    }
+
+    targets.remove();
+}

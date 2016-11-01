@@ -21,7 +21,7 @@ export default class Info extends React.Component {
 
         return (
             <div className="info">
-                <a className="close" onClick={ this.props.onClick }>&times;</a>
+                <a className="close" onClick={ this.props.onClick }></a>
                 <h1>{ session.title }</h1>
                 <div className="speakers">{ session.speakers }</div>
                 <div className="metadata">
