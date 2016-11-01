@@ -7,6 +7,9 @@ date: 2016-11-13
 start_time: 11:10:00
 end_time: 11:40:00
 rooms: TRS 3-176
+photo: christopher-ing.jpg
+twitter: jsci
+github: cing
 ---
 
 Have you ever been surprised by sophisticated vocabulary used by some hip-hop artists? With standard data science tools, I search a large corpus of hip-hop lyrics in order to extract rhyming couplets that include uncommon and interesting words. Using curated output from this code, I demonstrate how to automate the creation of short text-based posts for a hip-hop themed "Word of the Day" blog.

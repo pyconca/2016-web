@@ -96,7 +96,9 @@
     margin-bottom: 1rem;
   }
   
-  @at-root #{&}__col {
+  @at-root #{&}__col,
+           #{&}__col-8,
+           #{&}__col-4 {
     @include span-columns(12);
     
     @at-root #{&}--left {
@@ -107,6 +109,18 @@
   @include media(min-width $breakpoint-mobile) {
     @at-root #{&}__col {
       @include span-columns(6);
+    }
+    
+    @at-root #{&}__col-12 {
+      @include span-columns(12);
+    }
+    
+    @at-root #{&}__col-8 {
+      @include span-columns(8);
+    }
+    
+    @at-root #{&}__col-4 {
+      @include span-columns(4);
     }
   }
   

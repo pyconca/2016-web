@@ -7,6 +7,8 @@ date: 2016-11-12
 start_time: 14:20:00
 end_time: 15:30:00
 rooms: Tutorial
+photo: stuart-williams.jpg
+twitter: ceilous
 ---
 
 Names in Python probably cause more subtle confusion than any other feature. Sometimes it's because people think they work just like variables in other languages. Often it's because people don't understand how exactly they work.

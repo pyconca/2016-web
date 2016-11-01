@@ -7,6 +7,9 @@ date: 2016-11-13
 start_time: 14:25:00
 end_time: 14:35:00
 rooms: TRS 3-176
+photo: chaitasee-pandya.jpg
+twitter: chaitasee
+github: chaitasee
 ---
 
 How to involve more girls and women in computing science, computing is used everywhere, fashion, architecture, medicine, maths and all the majors. Break the stereotypes - Computer Science person is not boring, does coding all the time sitting in a corner. Coding is not necessary, there are things other than coding in computing science.

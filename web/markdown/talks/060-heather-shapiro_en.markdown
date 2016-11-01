@@ -7,6 +7,9 @@ date: 2016-11-12
 start_time: 11:10:00
 end_time: 11:40:00
 rooms: TRS 3-176
+photo: heather-shapiro.jpg
+twitter: microheather
+github: heatherbshapiro
 ---
 
 Put the days of trying to decipher meaning from boring spreadsheets behind you. Visualize data to give greater and immediate meaning to all those numbers with Python. Explore the variety of options available for data visualization in Python using different libraries and understand which ones excel for what type of task. Create maps, statistical graphs and more detailed or interactive visualization

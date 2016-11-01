@@ -7,6 +7,8 @@ date: 2016-11-12
 start_time: 13:50:00
 end_time: 14:00:00
 rooms: TRS 1-067
+twitter: dontusethiscode
+github: dutc
 ---
 
 NumFOCUS is a US 501(c)(3) non-profit that fiscally sponsors almost all of the major tools in the Python data science stack: `jupyter`, `numpy`, `pandas`, `matplotlib`, and more. This short presentation introduces NumFOCUS's mission, how folks can get involved, and how NumFOCUS's major and minor initiatives help support the world of open source scientific computing.

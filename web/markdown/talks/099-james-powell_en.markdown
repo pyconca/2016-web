@@ -7,6 +7,8 @@ date: 2016-11-13
 start_time: 16:20:00
 end_time: 16:50:00
 rooms: TRS 2-166
+twitter: dontusethiscode
+github: dutc
 ---
 
 So you've heard that the Python interpreter you use is called "CPython." It's written in C! But who cares? Why should you even bother to learn more? Could this ever be helpful? Could it help you debug your code or answer questions about how the language works? Thirty minutes is an awful lot of time to spend saying "no, just forget about it"...

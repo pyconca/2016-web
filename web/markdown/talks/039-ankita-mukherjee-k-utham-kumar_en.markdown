@@ -13,9 +13,14 @@ The talk is an introduction about exploit development using Python. It helps to 
 
 ## Ankita Mukherjee Bio
 
+* [Twitter](https://twitter.com/ankita7903)
+* [GitHub](https://github.com/ankita0000)
+
 My name is Ankita Mukherjee, am a full time student and part time infosec researcher. I use python extensively for infosec research and also as an alternative for MATLAB for all my image processing ,data sets projects where my core emphasis is on finding vulnerabilities,bugs in communication networks and also using machine learning techniques for infosec research. Apart from all these activities i am the organizer of Django Girls Delhi and building a community for women where they can share ideas. In my free times i mentor newbies who want to learn code.
 
 ## K. Utham Kumar Bio
+
+* [Twitter](https://twitter.com/UtJA11)
 
 Open Source Enthusiast, Freelancer Working on python for the past 5 years I started coding in matlab and c but during academics I did find python very flexible for all my projects.
 

@@ -7,6 +7,7 @@ date: 2016-11-12
 start_time: 14:05:00
 end_time: 14:15:00
 rooms: TRS 3-176
+photo: shivkumar-v-lyer.jpg
 ---
 
 Simulating large systems with multiple power electronic converters is a challenge due to the non-linear nature of the circuit and the necessity to model the associated control systems with each converter. Python Power Electronics aims to provide a free and open source solution that can be used by both academics and industry professionals.

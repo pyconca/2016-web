@@ -7,6 +7,9 @@ date: 2016-11-13
 start_time: 12:30:00
 end_time: 13:00:00
 rooms: TRS 2-166
+photo: sa-friend.jpg
+twitter: isthisanart_
+github: ana0
 ---
 
 A lot of things in the python universe are named after Month Python references - references that we python programmers may not understand, and may not even be able to spot as jokes.  I have collected some of these and will share them with you, for your edification and amusement.
