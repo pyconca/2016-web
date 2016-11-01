@@ -54,26 +54,28 @@ def talk_json(slug):
 def event_ics(slug):
     description, content = get_markdown_file('talks/{}'.format(slug), 'en')
 
-    # If there is no content just abort and return a 404 error.
     if not content:
         abort(404)
 
-    start_time = datetime.strptime('{0} {1}'.format(content['date'][0],
-                                                    content['start_time'][0]),
+    for k, v in content.items():
+        content[k] = v[0]
+
+    start_time = datetime.strptime('{0} {1}'.format(content['date'],
+                                                    content['start_time']),
                                    '%Y-%m-%d %H:%M:%S')
 
-    end_time = datetime.strptime('{0} {1}'.format(content['date'][0],
-                                                  content['end_time'][0]),
+    end_time = datetime.strptime('{0} {1}'.format(content['date'],
+                                                  content['end_time']),
                                  '%Y-%m-%d %H:%M:%S')
 
     event = Event()
-    event.add('summary', u"{0} with {1}".format(content['title'][0],
-                                                content['speakers'][0]))
+    event.add('summary', u"{0} with {1}".format(content['title'],
+                                                content['speakers']))
     event.add('dtstart', tz.localize(start_time))
     event.add('dtend', tz.localize(end_time))
     event.add('dtstamp', tz.localize(start_time))
 
-    event.add('location', 'Room {}'.format(content['rooms'][0]))
+    event.add('location', 'Room {}'.format(content['rooms']))
 
     event.add('uid', slug)
 
