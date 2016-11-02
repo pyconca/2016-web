@@ -18,14 +18,19 @@
             {% if meta.rooms[0] == 'Tutorial' %}
             <p style="text-align:center"><a href="https://github.com/pyconca/2016-wiki/wiki/Tutorials" class="button button--red">Sign Up for {% for speaker in meta.speakers %}{{ speaker }}'s{% endfor %} Tutorial</a></p>
             {% endif %}
-
+            {% if meta.youtube %}
+            <div class="video">
+                <iframe allowfullscreen id="ytplayer" type="text/html" src="https://www.youtube.com/embed/{{ meta.youtube[0] }}" frameborder="0"></iframe>
+                <p><a href="https://www.youtube.com/watch?v={{ meta.youtube[0] }}">{{ _('Watch on YouTube') }}</a></p>
+            </div>
+            {% endif %}
             {{ content|safe }}
         </div>
 
         {% if meta.photo %}
         <div class="page__col-4 page__col--right">
             {% if meta.photo %}
-            <img src="/static/images/speaker_photos/{{ meta.photo[0] }}" class="talk__image">
+            <img src="https://2016.pycon.ca/static/images/speaker_photos/{{ meta.photo[0] }}" class="talk__image">
             {% endif %}
 
             {% if meta.twitter or meta.github %}
