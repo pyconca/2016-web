@@ -85,6 +85,23 @@
       twitter: hover
       description: |-
         Every great idea deserves a great domain name. With hundreds of domain extensions, no heavy-handed upselling and best-in-class support, Hover makes it easy to spend less time on your domains and more time on your big idea.
+- level:
+    en: Sprints
+    fr: Sprints
+  entries:
+  - logo: images/sponsors/wave.svg
+    fr:
+      name: Wave Accounting
+      url: https://www.waveapps.com/
+      twitter: wavehq
+      description: |-
+        How do you build software that can manage hundreds of millions of financial transactions and exponentially growing data processing requirements, while maintaining bank-level security and startup-speed software delivery? Ask the Wave team! Wave is the world’s fastest-growing financial software for small businesses, with more than 2 million businesses signed up around the world. We’ve broken ground on innovative ways of solving horizontal scaling, multi-service architecture, resilient payments processing and bank transfers just to name a few. Wave has raised over $60 million in funding, and we’re looking for the best developers to join our Toronto-based development teams. Learn more at waveapps.com/careers
+    en:
+      name: Wave Accounting
+      url: https://www.waveapps.com/
+      twitter: wavehq
+      description: |-
+        How do you build software that can manage hundreds of millions of financial transactions and exponentially growing data processing requirements, while maintaining bank-level security and startup-speed software delivery? Ask the Wave team! Wave is the world’s fastest-growing financial software for small businesses, with more than 2 million businesses signed up around the world. We’ve broken ground on innovative ways of solving horizontal scaling, multi-service architecture, resilient payments processing and bank transfers just to name a few. Wave has raised over $60 million in funding, and we’re looking for the best developers to join our Toronto-based development teams. Learn more at waveapps.com/careers
 
 - level:
     en: Lanyard
@@ -173,3 +190,43 @@
       twitter: azure
       description: |-
         Microsoft is proud to support the Python community through sponsored development of Python Tools for Visual Studio, Jupyter, CPython, and Azure Machine Learning and organizations such as the PSF and NumFocus.
+  - logo: images/sponsors/lightsofsoftware.svg
+    fr:
+      name: Lights On Software
+      url: lightsonsoftware.com
+      twitter:
+      description: |-
+        Lights On Software is a tight-knit and talented group of software developers that delivers clean and maintainable code. We specialize in Python/Django development for the back-end APIs, and Angular/React applications on the front-end. 
+
+        We enjoy building long-lasting relationships with our clients through trust and transparency, and have outstanding references from past and current clients.
+
+        We are proud members and supporters of Python community in Canada.
+    en:
+      name: Lights On Software
+      url: lightsonsoftware.com
+      twitter:
+      description: |-
+        Lights On Software is a tight-knit and talented group of software developers that delivers clean and maintainable code. We specialize in Python/Django development for the back-end APIs, and Angular/React applications on the front-end. 
+
+        We enjoy building long-lasting relationships with our clients through trust and transparency, and have outstanding references from past and current clients.
+
+        We are proud members and supporters of Python community in Canada.
+
+
+
+  - logo: images/sponsors/pagecloud.svg
+    logo_dark: images/sponsors/pagecloud_dark.svg
+    fr:
+      name: PageCloud
+      url: https://pagecloud.com/carreers
+      twitter: pagecloud
+      description: |-
+        Launched in November 2015, PageCloud is a magical SaaS-based website creator and hosting service based in Ottawa, Ontario. With over 15,000 customers in more than 130 countries worldwide, PageCloud is on a serious mission to fix the web. As the world’s most innovative website creator, working with the best and most brilliant individuals is what we’re all about. No voice is too small. No idea is too big. And no job is too complicated.
+We brought the experience of desktop publishing to website creation for the first time to democratize the web, because everyone should be empowered to create a website, without restrictions.
+    en:
+      name: PageCloud
+      url: https://pagecloud.com/carreers
+      twitter: pagecloud
+      description: |-
+        Launched in November 2015, PageCloud is a magical SaaS-based website creator and hosting service based in Ottawa, Ontario. With over 15,000 customers in more than 130 countries worldwide, PageCloud is on a serious mission to fix the web. As the world’s most innovative website creator, working with the best and most brilliant individuals is what we’re all about. No voice is too small. No idea is too big. And no job is too complicated.
+We brought the experience of desktop publishing to website creation for the first time to democratize the web, because everyone should be empowered to create a website, without restrictions.
