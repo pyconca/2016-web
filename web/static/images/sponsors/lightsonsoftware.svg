@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="229px" height="65px" viewBox="0 0 229 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>wordmark dark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" letter-spacing="5" font-family="Poppins" font-weight="bold">
+        <g id="wordmark-dark" transform="translate(-2.000000, -14.000000)">
+            <text id="LIGHTSON" font-size="38">
+                <tspan x="3.188" y="42" fill="#222222">LIGHTS</tspan>
+                <tspan x="169.304" y="42" fill="#73D1F8">O</tspan>
+                <tspan x="204.248" y="42" fill="#73D1F8">N</tspan>
+            </text>
+            <text id="SOFTWARE" font-size="35" fill="#222222">
+                <tspan x="0.72" y="78">SOFTWAR</tspan>
+                <tspan x="212.26" y="78">E</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
