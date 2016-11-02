@@ -193,6 +193,7 @@
   - logo: images/sponsors/lightsonsoftware.svg
     fr:
       name: Lights On Software
+      url: http://lightsonsoftware.com
       description: |-
         Lights On Software is a tight-knit and talented group of software developers that delivers clean and maintainable code. We specialize in Python/Django development for the back-end APIs, and Angular/React applications on the front-end.
 
@@ -201,7 +202,7 @@
         We are proud members and supporters of Python community in Canada.
     en:
       name: Lights On Software
-      url: lightsonsoftware.com
+      url: http://lightsonsoftware.com
       description: |-
         Lights On Software is a tight-knit and talented group of software developers that delivers clean and maintainable code. We specialize in Python/Django development for the back-end APIs, and Angular/React applications on the front-end.
 
