@@ -85,6 +85,23 @@
       twitter: hover
       description: |-
         Every great idea deserves a great domain name. With hundreds of domain extensions, no heavy-handed upselling and best-in-class support, Hover makes it easy to spend less time on your domains and more time on your big idea.
+- level:
+    en: Sprints
+    fr: Sprints
+  entries:
+  - logo: images/sponsors/wave.svg
+    fr:
+      name: Wave Accounting
+      url: https://www.waveapps.com/
+      twitter: wavehq
+      description: |-
+        How do you build software that can manage hundreds of millions of financial transactions and exponentially growing data processing requirements, while maintaining bank-level security and startup-speed software delivery? Ask the Wave team! Wave is the world’s fastest-growing financial software for small businesses, with more than 2 million businesses signed up around the world. We’ve broken ground on innovative ways of solving horizontal scaling, multi-service architecture, resilient payments processing and bank transfers just to name a few. Wave has raised over $60 million in funding, and we’re looking for the best developers to join our Toronto-based development teams. Learn more at waveapps.com/careers
+    en:
+      name: Wave Accounting
+      url: https://www.waveapps.com/
+      twitter: wavehq
+      description: |-
+        How do you build software that can manage hundreds of millions of financial transactions and exponentially growing data processing requirements, while maintaining bank-level security and startup-speed software delivery? Ask the Wave team! Wave is the world’s fastest-growing financial software for small businesses, with more than 2 million businesses signed up around the world. We’ve broken ground on innovative ways of solving horizontal scaling, multi-service architecture, resilient payments processing and bank transfers just to name a few. Wave has raised over $60 million in funding, and we’re looking for the best developers to join our Toronto-based development teams. Learn more at waveapps.com/careers
 
 - level:
     en: Lanyard
