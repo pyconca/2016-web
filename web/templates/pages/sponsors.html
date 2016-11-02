@@ -15,7 +15,7 @@
     <div class="page__section">
         {{ content|safe }}
     </div>
-    
+
     {% for level in sponsors %}
     <div class="page__section sponsor-level sponsor-level--{{ level.level['en'].lower() }}">
         <div class="sponsor-level__header">
@@ -27,7 +27,7 @@
                 {% endif %}
             </h1>
         </div>
-        
+
         {% for sponsor_data in level.entries %}
             {% if g.lang_code=='fr' %}{% set sponsor = sponsor_data.fr %}{% else %}{% set sponsor = sponsor_data.en %}{% endif %}
             <div class="sponsor">
@@ -36,12 +36,14 @@
                         <a href="{{ sponsor.url }}" class="sponsor__link" title="{{ sponsor.name }}">
                             <img src="{{ url_for('static', filename=sponsor_data.logo) }}" class="sponsor__logo" alt="{{ sponsor.name }}">
                         </a>
-                        
+
+                        {% if sponsor.twitter %}
                         <ul>
                             <li><a href="https://twitter.com/{{ sponsor.twitter }}" class="sponsor__twitter twitter-follow-button" data-show-count="false">{{ _('Follow @') }}{{ sponsor.twitter }}</a></li>
                         </ul>
+                        {% endif %}
                     </div>
-                    
+
                     <div class="page__col">
                         <div class="sponsor__description">
                             {{ sponsor.description|markdown }}

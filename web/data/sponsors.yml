@@ -190,13 +190,11 @@
       twitter: azure
       description: |-
         Microsoft is proud to support the Python community through sponsored development of Python Tools for Visual Studio, Jupyter, CPython, and Azure Machine Learning and organizations such as the PSF and NumFocus.
-  - logo: images/sponsors/lightsofsoftware.svg
+  - logo: images/sponsors/lightsonsoftware.svg
     fr:
       name: Lights On Software
-      url: lightsonsoftware.com
-      twitter:
       description: |-
-        Lights On Software is a tight-knit and talented group of software developers that delivers clean and maintainable code. We specialize in Python/Django development for the back-end APIs, and Angular/React applications on the front-end. 
+        Lights On Software is a tight-knit and talented group of software developers that delivers clean and maintainable code. We specialize in Python/Django development for the back-end APIs, and Angular/React applications on the front-end.
 
         We enjoy building long-lasting relationships with our clients through trust and transparency, and have outstanding references from past and current clients.
 
@@ -204,15 +202,12 @@
     en:
       name: Lights On Software
       url: lightsonsoftware.com
-      twitter:
       description: |-
-        Lights On Software is a tight-knit and talented group of software developers that delivers clean and maintainable code. We specialize in Python/Django development for the back-end APIs, and Angular/React applications on the front-end. 
+        Lights On Software is a tight-knit and talented group of software developers that delivers clean and maintainable code. We specialize in Python/Django development for the back-end APIs, and Angular/React applications on the front-end.
 
         We enjoy building long-lasting relationships with our clients through trust and transparency, and have outstanding references from past and current clients.
 
         We are proud members and supporters of Python community in Canada.
-
-
 
   - logo: images/sponsors/pagecloud.svg
     logo_dark: images/sponsors/pagecloud_dark.svg
@@ -222,11 +217,13 @@
       twitter: pagecloud
       description: |-
         Launched in November 2015, PageCloud is a magical SaaS-based website creator and hosting service based in Ottawa, Ontario. With over 15,000 customers in more than 130 countries worldwide, PageCloud is on a serious mission to fix the web. As the world’s most innovative website creator, working with the best and most brilliant individuals is what we’re all about. No voice is too small. No idea is too big. And no job is too complicated.
-We brought the experience of desktop publishing to website creation for the first time to democratize the web, because everyone should be empowered to create a website, without restrictions.
+
+        We brought the experience of desktop publishing to website creation for the first time to democratize the web, because everyone should be empowered to create a website, without restrictions.
     en:
       name: PageCloud
       url: https://pagecloud.com/carreers
       twitter: pagecloud
       description: |-
         Launched in November 2015, PageCloud is a magical SaaS-based website creator and hosting service based in Ottawa, Ontario. With over 15,000 customers in more than 130 countries worldwide, PageCloud is on a serious mission to fix the web. As the world’s most innovative website creator, working with the best and most brilliant individuals is what we’re all about. No voice is too small. No idea is too big. And no job is too complicated.
-We brought the experience of desktop publishing to website creation for the first time to democratize the web, because everyone should be empowered to create a website, without restrictions.
+
+        We brought the experience of desktop publishing to website creation for the first time to democratize the web, because everyone should be empowered to create a website, without restrictions.
