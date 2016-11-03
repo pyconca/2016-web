@@ -34,5 +34,3 @@ class TestSyntax(unittest.TestCase):
 
             for sponsor in level['entries']:
                 self.assertTrue(sponsor['logo'])
-                self.assertEqual(sponsor['en'].keys(), ['url', 'twitter',
-                                                        'name', 'description'])
