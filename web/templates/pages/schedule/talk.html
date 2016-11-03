@@ -1,13 +1,13 @@
 {% extends "layouts/page.html" %}
 
-{% block title %}{{ meta.title[0] }} with {{ meta.speakers[0] }} | {{ super() }}{% endblock %}
+{% block title %}{{ meta.title[0] }} {% if meta.speakers %}with {{ meta.speakers[0] }}{% endif %} | {{ super() }}{% endblock %}
 
 {% block page_class %}page--talk{% endblock %}
 {% block page_header_class %}page__header--talk{% endblock %}
 {% block page_content_class %}page__content--talk{% endblock %}
 
 {% block page_header %}
-<h1>{{ meta.title[0]|typogrify|safe }} <em>with {{ meta.speakers[0]|typogrify|safe }}</em></h1>
+<h1>{{ meta.title[0]|typogrify|safe }} {% if meta.speakers %}<em>with {{ meta.speakers[0]|typogrify|safe }}</em>{% endif %}</h1>
 <p class="lead">{{ meta.date[0]|format_date('EEE')|typogrify|safe }} {{ meta.start_time[0]|format_time('H:mm')|typogrify|safe }} | Rm. {{ meta.rooms[0] }}</p>
 {% endblock %}
 
@@ -80,10 +80,12 @@
             "addressCountry": "Canada"
         }
     },
+    {% if meta.speakers %}
     "performer": {
         "@type": "Person",
         "name": "{{ meta.speakers[0] }}"
     },
+    {% endif %}
     "offers": {
         "@type": "Offer",
         "url": "https://www.eventbrite.com/e/pycon-canada-2016-tickets-27545680873"
@@ -96,13 +98,13 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@pyconca">
 <meta name="twitter:creator" content="@pyconca">
-<meta name="twitter:title" content="{{ meta.title[0] }} with {{ meta.speakers[0] }} at {{ _('PyCon Canada 2016') }}">
+<meta name="twitter:title" content="{{ meta.title[0] }} {% if meta.speakers %}with {{ meta.speakers[0] }}{% endif %} at {{ _('PyCon Canada 2016') }}">
 <meta name="twitter:description" content="{{ _('Join your fellow Pythonistas for the fourth annual PyCon Canada, a weekend of talks, activities, fun and code!') }}">
 <meta name="twitter:image" content="https://2016.pycon.ca{{ url_for('static', filename='images/pycon-2015-mc-paul-by-shiroyuki-twitter-card.jpg') }}">
 {% endblock %}
 
 {% block opengraph %}
-<meta property="og:title" content="{{ meta.title[0] }} with {{ meta.speakers[0] }} at {{ _('PyCon Canada 2016') }}">
+<meta property="og:title" content="{{ meta.title[0] }} {% if meta.speakers %}with {{ meta.speakers[0] }}{% endif %} at {{ _('PyCon Canada 2016') }}">
 <meta property="og:description" content="{{ _('Join your fellow Pythonistas for the fourth annual PyCon Canada, a weekend of talks, activities, fun and code!') }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://2016.pycon.ca{{ url_for(request.url_rule.endpoint, **request.view_args) }}">

@@ -69,8 +69,13 @@ def event_ics(slug):
                                  '%Y-%m-%d %H:%M:%S')
 
     event = Event()
-    event.add('summary', u"{0} with {1}".format(content['title'],
-                                                content['speakers']))
+
+    if content.get('speakers'):
+        event.add('summary', u"{0} with {1}".format(content['title'],
+                                                    content['speakers']))
+    else:
+        event.add('summary', u"{}".format(content['title']))
+
     event.add('dtstart', tz.localize(start_time))
     event.add('dtend', tz.localize(end_time))
     event.add('dtstamp', tz.localize(start_time))
