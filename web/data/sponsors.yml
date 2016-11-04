@@ -112,6 +112,7 @@
     fr: Sprints
   entries:
   - logo: images/sponsors/wave.svg
+    logo_dark: images/sponsors/wave_dark.svg
     fr:
       name: Wave Accounting
       url: https://www.waveapps.com/
