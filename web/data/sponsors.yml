@@ -1,7 +1,7 @@
 ---
 - level:
-    en: Silver
-    fr: Argent
+    en: Gold
+    fr: Or
   entries:
   - logo: images/sponsors/mackenzie-investments.svg
     logo_dark: images/sponsors/mackenzie-investments-dark.svg
@@ -29,6 +29,25 @@
         Everything we do starts with the needs of investors, whether they are saving for a child’s postsecondary education, setting money aside for the future needs of a family member with a disability, or funding their own retirement. In fact, our focus is summed up in our Vision statement:
 
         We are committed to the financial success of investors, through their eyes.
+- level:
+    en: Silver
+    fr: Argent
+  entries:
+  - logo: images/sponsors/beanfield.svg
+    fr:
+      name: Beanfield
+      url: https://www.beanfield.com/
+      twitter: beanfield
+      description: |-
+        Beanfield Metroconnect has been servicing the complete telecommunication needs of businesses and consumers since 1988. It is a privately held, Canadian-owned company that owns and operates the largest private fibre optic network throughout downtown Toronto, specializing in Residential Internet, TV and Phone services, as well as Business Phone, Transparent Lan, Dark Fibre and Broadcast Services. For more information, visit beanfield.com.
+        Beanfield uses Python extensively for their internal development and is actively hiring Python Developers. Beanfield is proud to sponsor PyCon Canada.
+    en:
+      name: Beanfield
+      url: https://www.beanfield.com/
+      twitter: beanfield
+      description: |-
+        Beanfield Metroconnect has been servicing the complete telecommunication needs of businesses and consumers since 1988. It is a privately held, Canadian-owned company that owns and operates the largest private fibre optic network throughout downtown Toronto, specializing in Residential Internet, TV and Phone services, as well as Business Phone, Transparent Lan, Dark Fibre and Broadcast Services. For more information, visit beanfield.com.
+        Beanfield uses Python extensively for their internal development and is actively hiring Python Developers. Beanfield is proud to sponsor PyCon Canada.
 - level:
     en: Bronze
     fr: Bronze
