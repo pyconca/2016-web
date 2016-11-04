@@ -34,6 +34,7 @@
     fr: Argent
   entries:
   - logo: images/sponsors/beanfield.svg
+    logo_dark: images/sponsors/beanfield_dark.svg
     fr:
       name: Beanfield
       url: https://www.beanfield.com/
