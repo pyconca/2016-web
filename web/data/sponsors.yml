@@ -41,6 +41,7 @@
       twitter: beanfield
       description: |-
         Beanfield Metroconnect has been servicing the complete telecommunication needs of businesses and consumers since 1988. It is a privately held, Canadian-owned company that owns and operates the largest private fibre optic network throughout downtown Toronto, specializing in Residential Internet, TV and Phone services, as well as Business Phone, Transparent Lan, Dark Fibre and Broadcast Services. For more information, visit beanfield.com.
+
         Beanfield uses Python extensively for their internal development and is actively hiring Python Developers. Beanfield is proud to sponsor PyCon Canada.
     en:
       name: Beanfield
@@ -48,6 +49,7 @@
       twitter: beanfield
       description: |-
         Beanfield Metroconnect has been servicing the complete telecommunication needs of businesses and consumers since 1988. It is a privately held, Canadian-owned company that owns and operates the largest private fibre optic network throughout downtown Toronto, specializing in Residential Internet, TV and Phone services, as well as Business Phone, Transparent Lan, Dark Fibre and Broadcast Services. For more information, visit beanfield.com.
+
         Beanfield uses Python extensively for their internal development and is actively hiring Python Developers. Beanfield is proud to sponsor PyCon Canada.
 - level:
     en: Bronze
