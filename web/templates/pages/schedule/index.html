@@ -27,7 +27,7 @@
         <tbody class="schedule__body">
             {% for entry in day.entries %}
             <tr class="schedule__row">
-                <th class="schedule__time schedule__time--{{ day.date.isoformat() }}-{{ entry.start_time.strftime('%H-%M-%S') }}">
+                <th class="schedule__time schedule__time--start-{{ day.date.isoformat() }}-{{ entry.start_time.strftime('%H-%M-%S') }} schedule__time--end-{{ day.date.isoformat() }}-{{ entry.end_time.strftime('%H-%M-%S') }}">
                     {{ entry.start_time|format_time('short')|typogrify|safe }}
                 </th>
 
