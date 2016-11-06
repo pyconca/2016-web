@@ -1,4 +1,48 @@
 {
+  "001-tracy-osborn_en": {
+    "date": "2016-11-12", 
+    "end_time": "10:15:00", 
+    "kind": "keynote", 
+    "md": "", 
+    "pk": 1, 
+    "rooms": "TRS 1-067", 
+    "speakers": "Tracy Osborn", 
+    "start_time": "09:00:00", 
+    "title": "Saturday Morning Keynote"
+  }, 
+  "002-raymond-hettinger_en": {
+    "date": "2016-11-12", 
+    "end_time": "18:30:00", 
+    "kind": "keynote", 
+    "md": "", 
+    "pk": 2, 
+    "rooms": "TRS 1-067", 
+    "speakers": "Raymond Hettinger", 
+    "start_time": "17:30:00", 
+    "title": "Saturday Afternoon keynote"
+  }, 
+  "003-safia-abdalla_en": {
+    "date": "2016-11-13", 
+    "end_time": "11:00:00", 
+    "kind": "keynote", 
+    "md": "", 
+    "pk": 3, 
+    "rooms": "TRS 1-067", 
+    "speakers": "Safia Abdalla", 
+    "start_time": "10:00:00", 
+    "title": "Sunday Morning keynote"
+  }, 
+  "004-gary-bernhardt_en": {
+    "date": "2016-11-13", 
+    "end_time": "18:00:00", 
+    "kind": "keynote", 
+    "md": "", 
+    "pk": 4, 
+    "rooms": "TRS 1-067", 
+    "speakers": "Gary Bernhardt", 
+    "start_time": "17:00:00", 
+    "title": "Sunday Afternoon Keynote"
+  }, 
   "010-anna-ossowski_en": {
     "date": "2016-11-12", 
     "end_time": "12:20:00", 
@@ -49,6 +93,7 @@
     "photo": "roberto-rocha.jpg", 
     "pk": 19, 
     "rooms": "Tutorial", 
+    "rowspan": "2", 
     "speakers": "Roberto Rocha", 
     "start_time": "10:30:00", 
     "title": "Find the main story in your data with pandas", 
@@ -79,48 +124,6 @@
     "title": "When the abyss gazes back: staring down Python's surprising internals", 
     "twitter": "wolever"
   }, 
-  "027-hany-fahim_en": {
-    "date": "2016-11-13", 
-    "end_time": "15:10:00", 
-    "github": "hany", 
-    "kind": "talk", 
-    "md": "Continuing a series of talks called Tales from the Ops Side, this talk tells the tale of troubleshooting an elusive Celery related bug. During the course of processing tasks, Celery would halt processing and appear to be \"hung\". Troubleshooting required taking a first principles approach as normal diagnostic tools were not proving fruitful.\n\n## Hany Fahim Bio\n\nHany Fahim is the founder and CEO of VM Farms, a 24&#215;7 operations team and cloud hosting provider. With over 15 years of experience in building cloud environments and running scalable applications, Hany runs a team of DevOps focussed System Administrators to provide fully managed DevOps-as-a-Service to high-touch customers.", 
-    "photo": "hany-fahim.png", 
-    "pk": 27, 
-    "rooms": "TRS 1-067", 
-    "speakers": "Hany Fahim", 
-    "start_time": "14:40:00", 
-    "title": "Tales from the Ops side: bad Celery", 
-    "twitter": "iHandroid"
-  }, 
-  "037-chaitasee-pandya_en": {
-    "date": "2016-11-13", 
-    "end_time": "14:35:00", 
-    "github": "chaitasee", 
-    "kind": "talk", 
-    "md": "How to involve more girls and women in computing science, computing is used everywhere, fashion, architecture, medicine, maths and all the majors. Break the stereotypes - Computer Science person is not boring, does coding all the time sitting in a corner. Coding is not necessary, there are things other than coding in computing science.\n\n## Chaitasee Pandya Bio\n\nComputer Science Graduate, Advocate to support and include more women in computing, PyCon 2016 Portland financial aid recipient, Python Beginner, The Presidential Award winner, Google Student Ambassador, Murray Scholarship winner, BRAID project supporter, NCWIT member, GHC 2015 Attendee", 
-    "photo": "chaitasee-pandya.jpg", 
-    "pk": 37, 
-    "rooms": "TRS 3-176", 
-    "speakers": "Chaitasee Pandya", 
-    "start_time": "14:25:00", 
-    "title": "A walk to computing!", 
-    "twitter": "chaitasee"
-  }, 
-  "038-piper-thunstrom_en": {
-    "date": "2016-11-12", 
-    "end_time": "17:10:00", 
-    "github": "pathunstrom", 
-    "kind": "talk", 
-    "md": "A high level overview of the concepts you need to build your first 2D games: from your first `while true:` through deciding on a design pattern for your first engine.\n\n## Piper Thunstrom Bio\n\nCurious hacker with a passion for games using Python. An API and server developer by day, games enthusiast and general geek by night.", 
-    "photo": "piper-thunstrom.jpg", 
-    "pk": 38, 
-    "rooms": "Tutorial", 
-    "speakers": "Piper Thunstrom", 
-    "start_time": "16:00:00", 
-    "title": "Making games", 
-    "twitter": "pathunstrom"
-  }, 
   "039-ankita-mukherjee-k-utham-kumar_en": {
     "date": "2016-11-13", 
     "end_time": "16:10:00", 
@@ -131,6 +134,20 @@
     "speakers": "Ankita Mukherjee & K. Utham Kumar", 
     "start_time": "15:40:00", 
     "title": "Python for exploit development"
+  }, 
+  "042-ben-sapiro_en": {
+    "date": "2016-11-12", 
+    "end_time": "14:15:00", 
+    "github": "bsapiro", 
+    "kind": "talk", 
+    "md": "Security professionals don't have great tools for managing their governance programs (audit, risk, system descriptions, etc.) and typically need to buy very expensive tools or resort to using Excel spreadsheets. G.Tool is an opensource python based framework that uses pyparsing to implement a user DSL and file ORM for building your security governance tools without writing code. \n\n## Ben Sapiro Bio\n\nI am the head of Security at Vision Critical (a SaaS company) and have worked in both infosec consulting and operations since graduated from b-school. I'm a regular contributor on the LiquidMatrix Podcast (whenever we get around to recording it) and helps run BSidesTO.\n\nRecently, I built an internal tool (in Python) at work and it went reasonably well to I decided so I decided to rebuild, from scratch, an open source and generalized version of the tool to help security professionals manage different information processes from audit reporting to risk management and everything in between. \n\nI am not a professional developer but I've dabbled with Python for years. This is my first serious release in Python. Prior to this I released an opensource tool called Binary Risk Analysis.", 
+    "photo": "ben-sapiro.jpg", 
+    "pk": 42, 
+    "rooms": "TRS 1-067", 
+    "speakers": "Ben Sapiro", 
+    "start_time": "14:05:00", 
+    "title": "G.Tool: a Python-based DSL for managing information security governance information", 
+    "twitter": "ironfog"
   }, 
   "046-nick-anderegg_en": {
     "date": "2016-11-13", 
@@ -157,6 +174,18 @@
     "start_time": "14:10:00", 
     "title": "Hockey Night at PyCon", 
     "twitter": "joshweisbock"
+  }, 
+  "053-tanya-janca_en": {
+    "date": "2016-11-12", 
+    "end_time": "17:00:00", 
+    "kind": "talk", 
+    "md": "Everyone knows that the earlier you fix a bug the cheaper and easier it is, this rings true for security bugs as well. This talk will argue that security needs to start in the development phase, and that the power to find most common security issues needs to be put into the developer's hands.\n\nThis talk will include hands on demo of how to find security flaws, how they happen in the first place, and most importantly, how to fix them. If you've written a fast, beautiful application that meets all your requirements but it isn't secure, then it's not the best. This talk will enable you to write the best code possible, by making your code secure.\n\n## Tanya Janca Bio\n\nTanya Janca is an application security evangelist, a web application penetration tester, the Co-Leader of the Ottawa OWASP chapter, and has been developing software since the late 90&#8217;s. She has worn many hats and done many things, including; Custom Apps, Ethical Hacking, COTS, Incident Response and Investigation, Enterprise Architecture, Project and People Management, as well as giving training and doing public speaking. She&#8217;s also the front woman for a cyber-punk band named Zero Day Reapers.", 
+    "pk": 53, 
+    "rooms": "Tutorial", 
+    "rowspan": "2", 
+    "speakers": "Tanya Janca", 
+    "start_time": "16:00:00", 
+    "title": "Introducing security earlier into the SDLC - how to hack your own apps"
   }, 
   "054-greg-wilson_en": {
     "date": "2016-11-13", 
@@ -190,7 +219,7 @@
     "end_time": "12:20:00", 
     "github": "mcfletch", 
     "kind": "talk", 
-    "md": "Without mistakes, there is no knowledge. We must make wrong predictions to learn, and we must try the impossible to break out of our complacency.This talk will explore the key role mistakes play in our own minds, our attempts to build AIs, and our practice as programmers. We are going to argue that mistakes are your best friend and offer some guidance on how to make more of them.\n\n## Mike C. Fletcher Bio\n\nMike Fletcher is a design epistemologist (someone who studies the formation of knowledge or belief) by training, currently running a small programming consultancy in Toronto. He has been programming Python since 1995. He is a PSF Fellow and the maintainer of a number of Open Source projects, including PyOpenGL, RunSnakeRun, and OpenGLContext.", 
+    "md": "Without mistakes, there is no knowledge. We must make wrong predictions to learn, and we must try the impossible to break out of our complacency. This talk will explore the key role mistakes play in our own minds, our attempts to build AIs, and our practice as programmers. We are going to argue that mistakes are your best friend and offer some guidance on how to make more of them.\n\n## Mike C. Fletcher Bio\n\nMike Fletcher is a design epistemologist (someone who studies the formation of knowledge or belief) by training, currently running a small programming consultancy in Toronto. He has been programming Python since 1995. He is a PSF Fellow and the maintainer of a number of Open Source projects, including PyOpenGL, RunSnakeRun, and OpenGLContext.", 
     "photo": "mike-c-fletcher.jpg", 
     "pk": 56, 
     "rooms": "TRS 2-166", 
@@ -353,6 +382,7 @@
     "photo": "francois-maillet.jpg", 
     "pk": 71, 
     "rooms": "Tutorial", 
+    "rowspan": "2", 
     "speakers": "Fran&#231;ois Maillet", 
     "start_time": "15:40:00", 
     "title": "Building a real-time image classification web app with Python and MLDB.ai", 
@@ -432,7 +462,7 @@
     "end_time": "16:50:00", 
     "github": "hadrien", 
     "kind": "talk", 
-    "md": "For the last 2 years, serverless architecture has become a huge trend. Amazon Lambdas is one of the first function as a service solution which I have used since its early beginning. This talk covers the pain it can be to set up a REST API operating AWS API Gateway & Lambdas, the solutions and practices to overcome it.\n\n## Hadrien David Bio\n\nHadrien is a software engineer at Diagram.ca, and is currently developing a service for better healthcare for Canadians. Member of Montreal Python user group, passionated about team work and open source culture, he spends a lot of time designing software architecture and riding his bicycle whether it rains or snows.", 
+    "md": "For the last 2 years, serverless architecture has become a huge trend. Amazon Lambdas is one of the first function as a service solution which I have used since its early beginning. This talk covers the pain it can be to set up a REST API operating AWS API Gateway & Lambdas, the solutions and practices to overcome it.\n\n## Hadrien David Bio\n\nHadrien is a software engineer at Dialogue.co, and is currently developing a service for better healthcare for Canadians. Member of Montreal Python user group, passionated about team work and open source culture, he spends a lot of time designing software architecture and riding his bicycle whether it rains or snows.", 
     "pk": 79, 
     "rooms": "TRS 1-067", 
     "speakers": "Hadrien David", 
@@ -454,6 +484,17 @@
     "title": "Databases 201: the power of the relational algebra and limits of the ORM", 
     "twitter": "wxalistair"
   }, 
+  "085-steve-jackson_en": {
+    "date": "2016-11-13", 
+    "end_time": "14:05:00", 
+    "kind": "talk", 
+    "md": "## Steve Jackson Bio\n\nElectrical Engineering, University of Toronto. Bought the MITS Altair 8800 in January 1975. Designed and built S100 computer systems. Our team of 2 wrote a disc operating system, Assembler, Business Basic compiler. CEO of private company for 30 years. Developed and manufactured Cash Register systems for fast food restaurant chains, Movie ticketing systems 1985 - 2005. Currently developing Data Stream Infrastructure (DSI), a new and improved software paradigm, which implements Object Oriented Programming in a way we can live with.", 
+    "pk": 85, 
+    "rooms": "TRS 3-176", 
+    "speakers": "Steve Jackson", 
+    "start_time": "13:55:00", 
+    "title": "Simple made easy"
+  }, 
   "086-brett-cannon_en": {
     "date": "2016-11-13", 
     "end_time": "14:20:00", 
@@ -466,20 +507,6 @@
     "start_time": "14:10:00", 
     "title": "Jupyter Notebooks in the cloud", 
     "twitter": "brettsky"
-  }, 
-  "087-marc-andre-giroux_en": {
-    "date": "2016-11-13", 
-    "end_time": "14:05:00", 
-    "github": "xuorig", 
-    "kind": "talk", 
-    "md": "You finish what you think is the best REST API anyone has ever seen. Proud of your work, you decide to post it on the internet and collect the appraisal of you peers.  To your surprise, your API receives comments like \"This is not REST! This is simply JSON over HTTP!\" or \"Oh my god, this is only a level 2 REST API!\". It's time to learn how to become a REST elitist and fight back.\n\n## Marc-Andre Giroux Bio\n\nA Jazz guitarist turned developer, Marc-Andr&#233; is currently working at Shopify, trying to make commerce better for everyone. When he's not hacking on Rails or GraphQL, he likes lifting heavy barbells above his head.", 
-    "photo": "marc-andre-giroux.jpg", 
-    "pk": 87, 
-    "rooms": "TRS 3-176", 
-    "speakers": "Marc-Andre Giroux", 
-    "start_time": "13:55:00", 
-    "title": "Becoming a REST elitist in 10 minutes", 
-    "twitter": "__xuorig__"
   }, 
   "088-andre-r-erler_en": {
     "date": "2016-11-12", 
@@ -528,6 +555,7 @@
     "photo": "stuart-williams.jpg", 
     "pk": 93, 
     "rooms": "Tutorial", 
+    "rowspan": "2", 
     "speakers": "Stuart Williams", 
     "start_time": "14:20:00", 
     "title": "They're names, not variables!", 
@@ -568,6 +596,7 @@
     "md": "Imagine writing a Python program that could just as easily process a few gigabytes of data locally or hundreds of petabytes in a distributed cluster without changing a single line of code? Too good to be true? It isn't, it's PySpark! In this tutorial we'll learn how to write PySpark that perform basic analysis and fancy machine learning and can run on your computer or thousands of servers.\n\n## Mike Sukmanowsky Bio\n\nMike is the VP of Product at Parse.ly, a Python-built, analytics company that helps people understand, grow and nurture an audience around digital content.\n\nDon't let the title fool you, in addition to product management, Mike also hacks. In addition to open source contributions, he has spent the last 4.5 years contributing to Parse.ly's front-end API and dashboard products as well as back-end data collection and processing systems. Prior to Parse.ly, Mike led analytics teams at Canadian media companies. He holds a H.BSc in Computer Science from Wilfred Laurier University.", 
     "pk": 96, 
     "rooms": "Tutorial", 
+    "rowspan": "2", 
     "speakers": "Mike Sukmanowsky", 
     "start_time": "11:10:00", 
     "title": "From gigabytes to petabytes and beyond with PySpark", 
@@ -615,7 +644,7 @@
     "date": "2016-11-12", 
     "end_time": "14:50:00", 
     "kind": "talk", 
-    "md": "Exponentiation is the gotcha of math operators.  Be it square or square root, exp, log, tanh, or the complex roots of unity, ** has it's work cut out.  Ints, floats, fractions, and zero don't play nice with **.   Precision, accuracy, and performance aspects of Python can be revealed by following ** thru the interpreter down to the metal.  SciPy, SymPy, and Machine Learners care, shouldn't you?\n\n## en zyme Bio\n\nen zyme has been a coder scientist for decades, traversing meteorology, telecom, biotech, and was into data before it was big.\n\nen zyme is the founder of Ad, Hock & Nimble [ a data consultancy] and of 40th Parallel Python. en zyme can be reached at en.zyme@40thparallelpython.com or enzyme@bu.edu", 
+    "md": "Exponentiation is the gotcha of math operators. Be it square or square root, exp, log, tanh, or the complex roots of unity, \\*\\* has it's work cut out. Ints, floats, fractions, and zero don't play nice with \\*\\*. Precision, accuracy, and performance aspects of Python can be revealed by following \\*\\* thru the interpreter down to the metal.  SciPy, SymPy, and Machine Learners care, shouldn't you?\n\n## en zyme Bio\n\nen zyme has been a coder scientist for decades, traversing meteorology, telecom, biotech, and was into data before it was big.\n\nen zyme is the founder of Ad, Hock & Nimble [ a data consultancy] and of 40th Parallel Python. en zyme can be reached at <en.zyme@40thparallelpython.com> or <enzyme@bu.edu>.", 
     "pk": 101, 
     "rooms": "TRS 1-067", 
     "speakers": "en zyme", 
@@ -729,5 +758,66 @@
     "start_time": "12:30:00", 
     "title": "Where we came from, what's special about now, and where we might go", 
     "twitter": "yasegumi"
+  }, 
+  "117-daniel-snider_en": {
+    "audience_level": "Intermediate", 
+    "date": "2016-11-12", 
+    "end_time": "13:45:00", 
+    "github": "danielsnider", 
+    "kind": "talk", 
+    "md": "Lets clear the air about witchcraft and best practices in data center IT. Come listen to my rants and raves about OpenStack, the software that controls large armies of compute, storage, and networking resources. Why does OpenStack get so much hype and so much hate?\n\n## Daniel Snider Bio\n\nDaniel Snider is a former OpenStack software engineer, UOIT undergraduate in Information Technology, IBM, and Google Summer of Code student. He is currently a bio-tech newbie at SickKids and roboticist at Ryerson University's R3 Robotics club.", 
+    "photo": "daniel-snider.jpg", 
+    "pk": 116, 
+    "rooms": "2-166", 
+    "speakers": "Daniel Snider", 
+    "start_time": "13:35:00", 
+    "title": "What kind of sorcery is OpenStack?"
+  }, 
+  "500-eric-evenchick_en": {
+    "date": "2016-11-12", 
+    "end_time": "14:00:00", 
+    "kind": "talk", 
+    "md": "Modern cars are basically networks of computers, which control everything from the engine to the airbags. We'll briefly cover how vehicle networks work, then demonstrate how to access to the network using Python and open-source hardware. Finally, we'll discuss some attacks that can be performed on these systems.", 
+    "pk": 500, 
+    "rooms": "TRS 2-166", 
+    "speakers": "Eric Evenchick", 
+    "start_time": "13:50:00", 
+    "title": "Hacking Cars with Python"
+  }, 
+  "501-capital-one_en": {
+    "date": "2016-11-13", 
+    "end_time": "15:10:00", 
+    "kind": "tutorial", 
+    "md": "Tesseract is an amazing library for doing Optical Character Recognition on printed text. In this tutorial learn how to get started with (Tesseract and Flask libraries) and integrate them for creating a simple web application. We will also see how easy it is to customize the Tesseract library for different cases.", 
+    "pk": 501, 
+    "rooms": "Tutorial", 
+    "rowspan": "2", 
+    "speakers": "CapitalOne", 
+    "start_time": "13:55:00", 
+    "title": "Building a web application for OCR (Optical Character Recognition)"
+  }, 
+  "502-sarah-wells_en": {
+    "date": "2016-11-13", 
+    "end_time": "15:10:00", 
+    "kind": "talk", 
+    "md": "Believing in your dreams is one of the most important steps you'll take in goal setting. While many of us can come up with things we want to accomplish, it is the emotional connection we make with the dream by believing in its possibility that lead us to action and accomplishments. For Olympian Sarah Wells, this belief was mandatory to fuel her Olympic dream after a devastating stress fracture in her leg threatened her chance of making the team. Sarah's story is one of guts, courage and perseverance. Audiences will leave inspired to dream big, overcome obstacles and of course believe!\n\n## Sarah Wells Bio\n\nSarah Wells is a Canadian Olympian specializing in the 400m hurdles. Recruited by her high school teacher, Sarah fell in love with the sport of track and 15 years old and field and joined the Toronto Track club in 2005. With only 8 months of training under her belt, Sarah qualified for her first national team and travelled to Morocco Marrakesh to represent Canada. Since then Sarah has been a 4-time National Champion and a&#160;7-time National Team member.&#160;In 2012, after winning the Canadian National Championships for the 3rd&#160;time in her career, Sarah represented Canada in the London Olympics and finished as an Olympic Semi Finalist. Following the Olympics, Sarah continued progressing and came home a double-medallist from the 2015 Pan-American games held in her home city of Toronto. Sarah has overcome many obstacles in her career and has set her sights on becoming a 2-time Olympian at the 2020 Olympics in Tokyo.", 
+    "photo": "sarah-wells.jpg", 
+    "pk": 502, 
+    "rooms": "TRS 1-067", 
+    "speakers": "Sarah Wells", 
+    "start_time": "14:40:00", 
+    "title": "Overcoming life's hurdles", 
+    "twitter": "SarahWells400mh"
+  }, 
+  "503-lightning-talks_en": {
+    "date": "2016-11-13", 
+    "end_time": "14:40:00", 
+    "kind": "lightning", 
+    "md": "", 
+    "pk": 503, 
+    "rooms": "TRS 2-166", 
+    "rowspan": "3", 
+    "start_time": "13:55:00", 
+    "title": "Lightning Talks"
   }
 }

@@ -11,6 +11,8 @@
 {% endblock %}
 
 {% block page_content %}
+    <div class="widget-schedule"></div>
+
     {% for day in schedule.days %}
     <h1 class="schedule__day schedule__day--{{ day.date.isoformat() }}">{{ day.date|format_date('full') }}</h1>
 
