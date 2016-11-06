@@ -3,7 +3,7 @@ import ReactDOM, {render} from 'react-dom';
 
 import Analyzer from './data/analyzer.jsx';
 
-let combinedData = require('../../../../data/schedule.json');
+let combinedData = require('../../../web/data/schedule.json');
 let scheduleData = combinedData.days;
 let roomData     = combinedData.rooms;
 let talkData     = require('./talks.json');
