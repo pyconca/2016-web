@@ -1,11 +1,12 @@
 ---
 pk: 53
-title: Introducing security earlier into the SDLC - how to hack your own apps 
+title: Introducing security earlier into the SDLC - how to hack your own apps
 kind: talk
 speakers: Tanya Janca
 date: 2016-11-12
 start_time: 16:00:00
 end_time: 17:00:00
+rowspan: 2
 rooms: Tutorial
 ---
 

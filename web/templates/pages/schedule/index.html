@@ -34,7 +34,7 @@
                 {% if entry.talks %}
                 {% for room in schedule.rooms %}
                 {% set talk = get_talk(entry.talks[room.slug]) %}
-                <td class="schedule__slot schedule__slot--room-{{ room.slug }} schedule__slot--time-{{ day.date.isoformat() }}-{{ entry.start_time.strftime('%H-%M-%S') }}" {% if talk.title and room.slug == 'tutorial' %}rowspan="2"{% endif %}>
+                <td class="schedule__slot schedule__slot--room-{{ room.slug }} schedule__slot--time-{{ day.date.isoformat() }}-{{ entry.start_time.strftime('%H-%M-%S') }}" {% if talk.rowspan %}rowspan="{{ talk.rowspan[0] }}"{% endif %}>
                     <a href="{% if talk.link %}{{ talk.link }}{% else %}#{% endif %}" class="schedule__slot-link">
                         <span class="schedule__slot-title">
                             {% for t in talk.title %}{{ t|typogrify|safe }}{% endfor %}

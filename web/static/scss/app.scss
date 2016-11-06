@@ -6,13 +6,13 @@
 @import 'variables';
 
 // Biters
-@import "bitters/core/buttons";
-@import "bitters/core/forms";
-@import "bitters/core/layout";
-@import "bitters/core/lists";
-@import "bitters/core/media";
-@import "bitters/core/tables";
-@import "bitters/core/typography";
+@import 'bitters/core/buttons';
+@import 'bitters/core/forms';
+@import 'bitters/core/layout';
+@import 'bitters/core/lists';
+@import 'bitters/core/media';
+@import 'bitters/core/tables';
+@import 'bitters/core/typography';
 @import 'base';
 
 // Components
@@ -21,6 +21,7 @@
 @import 'components/footer';
 @import 'components/header';
 @import 'components/leaflet';
+@import 'components/not-smart-enough';
 
 // Pages
 @import 'pages/pages'; // This First

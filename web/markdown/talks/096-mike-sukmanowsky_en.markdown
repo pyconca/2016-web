@@ -6,6 +6,7 @@ speakers: Mike Sukmanowsky
 date: 2016-11-13
 start_time: 11:10:00
 end_time: 12:20:00
+rowspan: 2
 rooms: Tutorial
 twitter: msukmanowsky
 github: msukmanowsky

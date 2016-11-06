@@ -6,6 +6,7 @@ speakers: Stuart Williams
 date: 2016-11-12
 start_time: 14:20:00
 end_time: 15:30:00
+rowspan: 2
 rooms: Tutorial
 photo: stuart-williams.jpg
 twitter: ceilous

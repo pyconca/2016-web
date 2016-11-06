@@ -6,6 +6,7 @@ speakers: François Maillet
 date: 2016-11-13
 start_time: 15:40:00
 end_time: 16:50:00
+rowspan: 2
 rooms: Tutorial
 photo: francois-maillet.jpg
 twitter: mailletf

@@ -6,6 +6,7 @@ speakers: Roberto Rocha
 date: 2016-11-12
 start_time: 10:30:00
 end_time: 11:40:00
+rowspan: 2
 rooms: Tutorial
 photo: roberto-rocha.jpg
 twitter: robroc
