@@ -24,5 +24,7 @@ for (let targetSelector of ['.schedule__day', '.schedule']) {
         continue;
     }
 
-    targets.remove();
+    for (var i = 0; i < targets.length; i++) {
+      targets[i].style.display = 'none';
+    }
 }
