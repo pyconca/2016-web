@@ -105,6 +105,8 @@
                 return t;
             }(document, "script", "twitter-wjs"));
         </script>
+
+        {% block extra_code %}{% endblock %}
     </head>
     <body class="{% block body_class %}{% endblock %}">
         {% block body %}{% endblock %}
@@ -112,7 +114,5 @@
         {% assets "js_all" %}
         <script src="{{ ASSET_URL }}"></script>
         {% endassets %}
-
-        {% block extra_code %}{% endblock %}
     </body>
 </html>
