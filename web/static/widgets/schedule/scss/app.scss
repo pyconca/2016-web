@@ -1,0 +1,486 @@
+@import 'css3';
+
+.widget-schedule {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+
+    h3 {
+        font-size: 36px;
+        text-align: center;
+        margin: 0;
+        padding: 32px 0;
+        border-top: 5px solid #666;
+    }
+
+    .info {
+        @include transition(all, 250ms);
+
+        position: fixed;
+        z-index: 10;
+        top: 10px;
+        left: 20%;
+        right: 20%;
+        bottom: 10px;
+        overflow: auto;
+        background-color: #fff;
+        padding: 40px;
+        box-shadow: rgba(0, 0, 0, 0.75) 0 0 1px, rgba(0, 0, 0, 0.25) 0 0 10px;
+
+        h1 {
+            font-size: 36px;
+            font-weight: 300;
+            padding: 0;
+            margin: 60px 0 0 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            border-top: 1px dashed #ddd;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+
+        p {
+            line-height: 1.5em;
+        }
+
+        .close {
+            @include transition(all, 250ms);
+
+            position: fixed;
+            top: 10px;
+            right: 20%;
+            display: block;
+            color: #666;
+            font-size: 36px;
+            cursor: pointer;
+            padding: 5px 15px;
+
+            &:after {
+                content: '✕';
+            }
+
+            &:before {
+                content: 'Close / Ferme';
+                color: transparent;
+                margin-right: 10px;
+                font-weight: 200;
+                font-size: 16px;
+            }
+
+            &:hover:before {
+                color: #999;
+            }
+        }
+
+        .metadata {
+            @include flex-container-default();
+            @include flex-justify-content(space-between);
+
+            margin: 0 -20px;
+            padding: 0 12px;
+            border: 1px solid #333;
+            color: #333;
+
+            .room {
+                @include flex-order(1);
+
+                padding: 4px 8px;
+                border-right: 1px solid #333;
+            }
+
+            .timestamp {
+                @include flex-order(2);
+                @include flex-container-default();
+                @include flex-justify-content(space-between);
+
+                padding: 4px 8px;
+                border-left: 1px solid #333;
+
+                .date {
+                    display: block;
+                    margin-right: 5px;
+                }
+
+                .start {
+                    display: block;
+                    margin-right: 5px;
+                    font-weight: 700;
+                }
+
+                .end {
+                    display: block;
+                    font-weight: 700;
+
+                    &:before {
+                        content: " → ";
+                    }
+                }
+            }
+
+            .duration {
+                @include flex-order(1);
+
+                padding: 4px 8px;
+                font-weight: 700;
+
+                &:after {
+                    content: ' minutes';
+                    color: #999;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .speakers {
+            padding: 10px 0 60px 0;
+            font-size: 18px;
+            color: #666;
+        }
+    }
+
+    .day {
+        position: relative;
+
+        .start-timestamp {
+            display: none;
+        }
+
+        .time-label {
+            position: absolute;
+            color: #999;
+            left: 0;
+            right: 0;
+            padding: 5px;
+            border-top: 1px dashed #eee;
+
+            &:before {
+                content: attr(data-time);
+            }
+        }
+
+        .sessions {
+            position: absolute;
+            top: 0;
+            left: 72px;
+            right: 0;
+            bottom: 0;
+        }
+
+        .session {
+            @include transition(all, 250ms);
+
+            display: block;
+            position: absolute;
+            border: 1px solid #2196F3;
+            background-color: #E3F2FD;
+            cursor: pointer;
+            overflow: hidden;
+
+            * {
+                cursor: pointer;
+            }
+
+            .title {
+                padding: 8px;
+                font-weight: 700;
+            }
+
+            .room {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 8px;
+                margin: 0;
+                font-size: 14px;
+                background-color: #2196F3;
+                color: #fff;
+            }
+
+            .speakers {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            .period {
+                display: none;
+            }
+
+            &:link {
+                text-decoration: none;
+                color: #000;
+            }
+
+            &.hover {
+                box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+                background-color: #1976D2;
+                border-color: #1976D2;
+                color: #fff;
+
+                .room {
+                    background-color: #1976D2;
+                }
+            }
+
+            &[data-room="general"] {
+                border-color: #689F38;
+                background-color: #DCEDC8;
+
+                .title {
+                    font-size: 36px;
+                    font-weight: 400;
+                }
+
+                .room {
+                    display: none;
+                    background-color: #689F38;
+                }
+
+                .period {
+                    color: #000;
+                    text-align: center;
+                }
+
+                &.hover {
+                    box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
+                    background-color: #558B2F;
+                    border: #558B2F;
+                    color: #fff;
+
+                    .room {
+                        background-color: #558B2F;
+                    }
+                }
+            }
+
+            &[data-room="tutorial"] {
+                border-color: #9C27B0;
+                background-color: #F3E5F5;
+
+                .room {
+                    background-color: #9C27B0;
+                }
+
+                &.hover {
+                    box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
+                    background-color: #4527A0;
+                    border: #4527A0;
+                    color: #fff;
+
+                    .room {
+                        background-color: #4527A0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .widget-schedule {
+        .info {
+            left: 15%;
+            right: 15%;
+
+            .close {
+                right: 15%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .widget-schedule {
+        .info {
+            top: 0;
+            left: 0%;
+            right: 0%;
+            bottom: 0;
+
+            .close {
+                top: 0;
+                right: 0%;
+            }
+
+            .metadata {
+                .timestamp {
+                    @include flex-justify-content(flex-start);
+                }
+            }
+
+            .close {
+                &:after {
+                    content: '→';
+                }
+
+                &:before {
+                    content: 'Back / Retour';
+                    color: #999;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .widget-schedule {
+        .info {
+            .metadata {
+                @include flex-direction(column);
+
+                .room {
+                    border-right: none;
+                }
+
+                .duration {
+                    font-size: 36px;
+                }
+
+                .timestamp {
+                    @include flex-justify-content(stretch);
+
+                    border-left: none;
+                }
+            }
+        }
+
+        .day {
+            height: auto !important;
+
+            .start-timestamp {
+                display: block;
+                padding: 8px 0;
+                text-align: center;
+                border-top: 1px solid #666;
+                border-bottom: 1px solid #666;
+                font-size: 24px;
+            }
+
+            .time-label {
+                display: none;
+            }
+
+            .sessions {
+                position: static;
+                border-top: 3px solid #666;
+            }
+
+            .session {
+                position: static;
+                width: auto !important;
+                height: auto !important;
+                border: none;
+                background: none;
+                border-bottom: 1px solid #ddd;
+                padding: 0 8px;
+
+                .title {
+                    padding: 2px 0;
+                    color: #2196F3;
+                }
+
+                .room {
+                    background: none;
+                    color: #666;
+                    padding: 8px 0 0 0;
+                }
+
+                .speakers {
+                    font-size: 14px;
+                    padding: 0 0 8px 0;
+                }
+
+                .period {
+                    display: block;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    font-size: 14px;
+
+                    .start {
+                        display: inline-block;
+                        padding: 2px 2px 2px 4px;
+                        background-color: #ccc;
+                        color: #fff;
+
+                        &:after {
+                            content: ' → ';
+                        }
+                    }
+
+                    .end {
+                        display: inline-block;
+                        padding: 2px 4px 2px 4px;
+                        background-color: #999;
+                        color: #fff;
+                        font-weight: 700;
+                    }
+                }
+
+                &.hover {
+                    z-index: 0 !important;
+                    box-shadow: none;
+                    background: none;
+                    color: #000;
+                    border-bottom: 1px solid #ddd;
+
+                    .room {
+                        background: none !important;
+                    }
+                }
+
+                &[data-room="general"] {
+                    border-bottom: 1px solid #ddd;
+                    background: none;
+
+                    .title {
+                        font-size: 24px;
+                        font-weight: 700;
+                        padding: 8px 0;
+                        text-align: center;
+                        color: #689F38;
+                    }
+
+                    .room {
+                        background: none !important;
+                    }
+
+                    &.hover {
+                        box-shadow: none;
+                        background: none;
+                        color: #000;
+
+                        .room {
+                            background: none !important;
+                        }
+                    }
+                }
+
+                &[data-room="tutorial"] {
+                    border-bottom: 1px solid #ddd;
+                    background: none;
+
+                    .title {
+                        color: #673AB7;
+                    }
+
+                    .room {
+                        background: none !important;
+                    }
+
+                    &.hover {
+                        box-shadow: none;
+                        background: none;
+                        color: #000;
+
+                        .room {
+                            background: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
