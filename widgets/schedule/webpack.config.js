@@ -5,7 +5,7 @@ module.exports = {
         app: './jsx/app.jsx'
     },
     output: {
-        path:     './compiled',
+        path:     '../../web/static/widgets/schedule/',
         filename: '[name].js',
     },
     module: {
