@@ -3,7 +3,7 @@ css:
 		$(CSS_OPT) \
 		--recursive \
 		--source-map true \
-		--output compiled \
+		--output ../../web/static/widgets/schedule/ \
 		scss
 
 js: md-2-json
@@ -12,7 +12,7 @@ js: md-2-json
 		--progress
 
 md-2-json:
-	python bin/md2session.py ../../../markdown/talks/
+	python bin/md2session.py ../../web/markdown/talks/
 
 run:
 	python3 -m http.server 8000
