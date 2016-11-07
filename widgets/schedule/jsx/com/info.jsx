@@ -16,8 +16,16 @@ export default class Info extends React.Component {
 
         let summary = { __html: html };
 
-        // console.log('ORIGINAL:  [' + session.html + ']');
-        // console.log('PROCESSED: [' + html + ']');
+        let roomLabel = room ? room.name : null;
+        
+        if (roomLabel === null) {
+            roomLabel = 'General Area / Salle de Conférence';
+            try {
+                roomLabel = utf8.decode(roomLabel);
+            } catch (e) {
+                // Bypass due to Unicode handling issue in JavaScript.
+            }
+        }
 
         return (
             <div className="info">
@@ -25,13 +33,7 @@ export default class Info extends React.Component {
                 <h1>{ session.title }</h1>
                 <div className="speakers">{ session.speakers }</div>
                 <div className="metadata">
-                    <div className="room">
-                        {
-                            room
-                                ? room.name
-                                : utf8.decode('General Area / Salle de Conférence')
-                        }
-                    </div>
+                    <div className="room">{ roomLabel }</div>
                     <div className="timestamp">
                         <span className="date">{ session.mStartTime.format('YYYY-MM-DD') }</span>
                         <span className="start">{ session.mStartTime.format('HH:mm') }</span>
