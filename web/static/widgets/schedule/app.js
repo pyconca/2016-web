@@ -48581,8 +48581,16 @@
 	
 	            var summary = { __html: html };
 	
-	            // console.log('ORIGINAL:  [' + session.html + ']');
-	            // console.log('PROCESSED: [' + html + ']');
+	            var roomLabel = room ? room.name : null;
+	
+	            if (roomLabel === null) {
+	                roomLabel = 'General Area / Salle de Conférence';
+	                try {
+	                    roomLabel = _utf2.default.decode(roomLabel);
+	                } catch (e) {
+	                    // Bypass due to Unicode handling issue in JavaScript.
+	                }
+	            }
 	
 	            return _react2.default.createElement(
 	                'div',
@@ -48604,7 +48612,7 @@
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'room' },
-	                        room ? room.name : _utf2.default.decode('General Area / Salle de Conférence')
+	                        roomLabel
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
