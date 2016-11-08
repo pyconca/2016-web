@@ -1,6 +1,6 @@
 ---
 pk: 65
-title: Polish your Python with Rust
+title: Extending Python with Rust
 kind: talk
 speakers: Samuel Cormier-Iijima
 date: 2016-11-12
