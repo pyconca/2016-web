@@ -10,7 +10,7 @@ rooms: TRS 2-166
 github: onebit0fme
 ---
 
-Abstractions make things appear simple. This is one of the main concepts behind OPP. So what is it?! This talk provides some guidelines on how to achieve scalable abstractions and demystify some of the confusion around it. One could say, I'll try to abstract the abstraction itself :) 
+Abstractions make things appear simple. This is one of the main concepts behind OOP. So what is it?! This talk provides some guidelines on how to achieve scalable abstractions and demystify some of the confusion around it. One could say, I'll try to abstract the abstraction itself :) 
 
 ## Terry Yanchynskyy Bio
 
