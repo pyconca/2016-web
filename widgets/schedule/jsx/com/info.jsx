@@ -31,7 +31,10 @@ export default class Info extends React.Component {
             <div className="info">
                 <a className="close" onClick={ this.props.onClick }></a>
                 <h1>{ session.title }</h1>
-                <div className="speakers">{ session.speakers }</div>
+                <div
+                    className               = "speakers"
+                    dangerouslySetInnerHTML = { { __html: session.speakers } }
+                />
                 <div className="metadata">
                     <div className="room">{ roomLabel }</div>
                     <div className="timestamp">
