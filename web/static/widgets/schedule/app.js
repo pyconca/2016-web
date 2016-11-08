@@ -48601,11 +48601,10 @@
 	                    null,
 	                    session.title
 	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'speakers' },
-	                    session.speakers
-	                ),
+	                _react2.default.createElement('div', {
+	                    className: 'speakers',
+	                    dangerouslySetInnerHTML: { __html: session.speakers }
+	                }),
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'metadata' },
@@ -48764,11 +48763,10 @@
 	                        { className: 'title' },
 	                        session.title
 	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'speakers' },
-	                        session.speakers
-	                    ),
+	                    _react2.default.createElement('div', {
+	                        className: 'speakers',
+	                        dangerouslySetInnerHTML: { __html: session.speakers }
+	                    }),
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'period' },
@@ -48789,11 +48787,19 @@
 	    }, {
 	        key: '_onClick',
 	        value: function _onClick(e) {
+	            var room = this._room(this.props.rooms, this.props.session.room);
+	
 	            e.preventDefault();
+	
+	            if (room === null) {
+	                return;
+	            }
+	
+	            console.log(room);
 	
 	            this.props.onClick({
 	                session: this.props.session,
-	                room: this._room(this.props.rooms, this.props.session.room)
+	                room: room
 	            });
 	        }
 	    }, {
@@ -49058,8 +49064,8 @@
 				"date": "2016-11-13",
 				"entries": [
 					{
-						"start_time": "08:00:00",
-						"end_time": "09:00:00",
+						"start_time": "09:00:00",
+						"end_time": "10:00:00",
 						"title": "Breakfast"
 					},
 					{

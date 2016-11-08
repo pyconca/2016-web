@@ -66,7 +66,10 @@ export default class Session extends React.Component {
                 <div className="inner">
                     <div className="room">{ roomName }</div>
                     <div className="title">{ session.title }</div>
-                    <div className="speakers">{ session.speakers }</div>
+                    <div
+                        className               = "speakers"
+                        dangerouslySetInnerHTML = { { __html: session.speakers } }
+                    />
                     <div className="period">
                         <span className="start">{ session.mStartTime.format(visualConfig.timeFormat) }</span>
                         <span className="end">{ session.mEndTime.format(visualConfig.timeFormat) }</span>
@@ -77,11 +80,19 @@ export default class Session extends React.Component {
     }
 
     _onClick(e) {
+        let room = this._room(this.props.rooms, this.props.session.room);
+
         e.preventDefault();
+
+        if (room === null) {
+            return;
+        }
+
+        console.log(room);
 
         this.props.onClick({
             session : this.props.session,
-            room    : this._room(this.props.rooms, this.props.session.room),
+            room    : room,
         });
     }
 
