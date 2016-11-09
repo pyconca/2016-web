@@ -214,6 +214,7 @@
       description: |-
         Microsoft is proud to support the Python community through sponsored development of Python Tools for Visual Studio, Jupyter, CPython, and Azure Machine Learning and organizations such as the PSF and NumFocus.
   - logo: images/sponsors/lightsonsoftware.svg
+    logo_dark: images/sponsors/lightsonsoftware_dark.svg
     fr:
       name: Lights On Software
       url: http://lightsonsoftware.com
@@ -257,7 +258,7 @@
       url: https://www.td.com
       description: |-
         Headquartered in Toronto, Canada, with more than 80,000 employees in offices around the world, The Toronto-Dominion Bank and its subsidiaries are collectively known as TD Bank Group (TD). TD offers a full range of financial products and services to approximately 25 million customers worldwide through three key business lines:
- 
+
         * Canadian Retail including TD Canada Trust, Business Banking, TD Auto Finance (Canada), TD Wealth (Canada),TD Direct Investing and TD Insurance
         * U.S. Retail including TD Bank, America’s Most Convenient Bank, TD Auto Finance (U.S.), TD Wealth (U.S.) and TD’s investment in TD Ameritrade
         * Wholesale Banking including TD Securities
@@ -266,7 +267,7 @@
       url: https://www.td.com
       description: |-
         Headquartered in Toronto, Canada, with more than 80,000 employees in offices around the world, The Toronto-Dominion Bank and its subsidiaries are collectively known as TD Bank Group (TD). TD offers a full range of financial products and services to approximately 25 million customers worldwide through three key business lines:
- 
+
         * Canadian Retail including TD Canada Trust, Business Banking, TD Auto Finance (Canada), TD Wealth (Canada),TD Direct Investing and TD Insurance
         * U.S. Retail including TD Bank, America’s Most Convenient Bank, TD Auto Finance (U.S.), TD Wealth (U.S.) and TD’s investment in TD Ameritrade
         * Wholesale Banking including TD Securities
