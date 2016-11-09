@@ -68,7 +68,7 @@ msgstr ""
 #: web/templates/pages/schedule/index.html:3
 #: web/templates/pages/schedule/index.html:10
 msgid "Schedule"
-msgstr ""
+msgstr "Horaire"
 
 #: web/templates/pages/about.html:10
 msgid "PyCon Canada is an initiative to strengthen the Canadian Python community."
@@ -220,4 +220,3 @@ msgstr ""
 
 #~ msgid "Apply for Financial Aid"
 #~ msgstr "Appliquez pour l'aide financière"
-
