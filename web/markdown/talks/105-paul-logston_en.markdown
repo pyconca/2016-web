@@ -10,7 +10,6 @@ rooms: TRS 1-067
 twitter: PaulLogston
 github: logston
 photo: paul-logston.jpg
-youtube: v4dXM35OWWE
 ---
 
 This will be  glorified lightning talk on PyVideo.org and what it needs from the community.
