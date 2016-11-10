@@ -84,14 +84,14 @@
            #{&}__sponsor-logo {
     max-height: 4em;
     vertical-align: middle;
-    width: 5.5em;
+    width: 7em;
   }
 
   @at-root #{&}__sponsor-logo {
     @include filter(none);
 
     cursor: pointer;
-    padding: .5em .25em;
+    padding: .25em .125em;
     vertical-align: center;
     // height: 2.5rem;
 
