@@ -252,6 +252,23 @@
         Launched in November 2015, PageCloud is a magical SaaS-based website creator and hosting service based in Ottawa, Ontario. With over 15,000 customers in more than 130 countries worldwide, PageCloud is on a serious mission to fix the web. As the world’s most innovative website creator, working with the best and most brilliant individuals is what we’re all about. No voice is too small. No idea is too big. And no job is too complicated.
 
         We brought the experience of desktop publishing to website creation for the first time to democratize the web, because everyone should be empowered to create a website, without restrictions.
+  - logo: images/sponsors/advisorstream.svg
+    fr:
+      name: AdvisorStream
+      url: https://www.advisorstream.com
+      twitter: advisorstream
+      description: |-
+        AdvisorStream is the only end-to-end solution providing Investment Advisors with premium, subscription-based news for their client communications and digital platforms, as well as proprietary lead capture services. Advisors can now legally co-brand themselves with the most credible content through exclusive licensing agreements with the world’s leading publishers and organically drive revenue.
+
+        Learn how you can transform your client communications into a revenue-generating centre and distinguish yourself from your competition. Engage your clients. Increase wallet share. Capture high-quality leads, and convert prospects into valued clients like never before.
+    en:
+      name: AdvisorStream
+      url: https://www.advisorstream.com
+      twitter: advisorstream
+      description: |-
+        AdvisorStream is the only end-to-end solution providing Investment Advisors with premium, subscription-based news for their client communications and digital platforms, as well as proprietary lead capture services. Advisors can now legally co-brand themselves with the most credible content through exclusive licensing agreements with the world’s leading publishers and organically drive revenue.
+
+        Learn how you can transform your client communications into a revenue-generating centre and distinguish yourself from your competition. Engage your clients. Increase wallet share. Capture high-quality leads, and convert prospects into valued clients like never before.
   - logo: images/sponsors/td.svg
     fr:
       name: TD Bank Group
