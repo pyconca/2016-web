@@ -6,7 +6,7 @@ speakers: CapitalOne
 date: 2016-11-13
 start_time: 13:55:00
 end_time: 15:10:00
-rowspan: 2
+rowspan: 4
 rooms: Tutorial
 ---
 
