@@ -16,6 +16,6 @@ The most common understanding of databases stop at persistence and retrieval whi
 
 ## Wesley George Bio
 
-Wesley George is Software Engineer operating out of Toronto, San Francisco and Thunder Bay. After spending some time on a path towards a PhD in theoretical computer science, finding an increasing amount of his time, attention and enjoyment being captured by software projects, Wes left academia for industry. A specialist in computer security and cryptography, Wes was an early member at Toronto's Nymi before recently moving to another Toronto tech startup, the financial tech company Clearbanc.
+Wesley George is Software Engineer operating out of Toronto, San Francisco and Thunder Bay. A specialist in computer security and cryptography, Wes was an early member at Toronto's Nymi before recently moving to another Toronto tech startup, the financial tech company Clearbanc.
 
-Wes gets excited by challenging problems, clean solutions, power tools, ultimate frisbee, opportunities to teach and mentor, and Python conferences.
+Wes gets excited by challenging problems, clean solutions, power tools, ultimate frisbee, and Python conferences.
