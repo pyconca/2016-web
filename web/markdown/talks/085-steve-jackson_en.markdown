@@ -7,6 +7,7 @@ date: 2016-11-13
 start_time: 13:55:00
 end_time: 14:05:00
 rooms: TRS 3-176
+photo: steve-jackson.jpg
 ---
 
 The 30-year computing crisis rages on because it is too hard to do a good job! Here we present a new and improved DevOps paradigm, which makes it easy to build simple and reliable systems. This is a Software Silver Bullet!
