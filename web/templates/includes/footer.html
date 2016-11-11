@@ -3,25 +3,21 @@
         <div class="footer__links">
             <ul class="footer__list">
                 <li class="footer__item"><a class="footer__link" href="{{ url_for('pages.index') }}">{{ _('Home') }}</a></li>
-    
+
                 <li class="footer__item"><a class="footer__link {% if request.url_rule.endpoint == 'pages.about' %}footer__link--active{% endif %}" href="{{ url_for('pages.about') }}">{{ _('About') }}</a></li>
-    
+
                 <li class="footer__item"><a class="footer__link {% if request.url_rule.endpoint == 'pages.venue' %}footer__link--active{% endif %}" href="{{ url_for('pages.venue') }}">{{ _('Venue') }}</a></li>
-            
+
                 <li class="footer__item"><a class="footer__link {% if request.url_rule.endpoint == 'pages.sponsors' %}footer__link--active{% endif %}" href="{{ url_for('pages.sponsors') }}">{{ _('Sponsors') }}</a></li>
-            
+
                 {# <li class="footer__item"><a class="footer__link {% if request.url_rule.endpoint == 'schedule.index' %}footer__link--active{% endif %}" href="{{ url_for('schedule.index') }}">{{ _('Schedule') }}</a></li> #}
             </ul>
         </div>
 
         <div class="footer__buttons">
-            <a href="http://www.eventbrite.com/e/pycon-canada-2016-tickets-27545680873?aff=web" class="footer__button button button--primary">
-                {{ _('Buy a ticket') }}
-            </a>
-        
-            <a href="http://eepurl.com/bs9mG9" class="footer__button button button--secondary">
-                {{ _('Join our mailing list') }}
-            </a>
+            <a href="{{ url_for('schedule.index') }}" class="footer__button button button--primary">{{ _('View the schedule') }}</a>
+
+            <a href="http://eepurl.com/bs9mG9" class="footer__button button button--secondary">{{ _('Join our mailing list') }}</a>
         </div>
 
         <div class="footer__links">
@@ -30,20 +26,20 @@
                     <a href="https://twitter.com/pyconca" class="footer__link footer__link--icon">
                         {% include "includes/icon-social-twitter.svg" %}
                     </a>
-                
+
                     <a href="https://www.youtube.com/c/pyconca" class="footer__link footer__link--icon footer__link--icon-youtube">
                         {% include "includes/icon-social-youtube.svg" %}
                     </a>
-                
+
                     <a href="https://www.facebook.com/pyconca" class="footer__link footer__link--icon footer__link--icon-facebook">
                         {% include "includes/icon-social-facebook.svg" %}
                     </a>
                 </li>
-            
+
                 <li class="footer__item">
                     <a href="{{ url_for('pages.code_of_conduct') }}" class="footer__link {% if request.url_rule.endpoint == 'pages.code_of_conduct' %}footer__link--active{% endif %}">{{ _('Code of Conduct') }}</a>
                 </li>
-            
+
                 <li class="footer__item"><a class="footer__link {% if request.url_rule.endpoint == 'pages.volunteer' %}footer__link--active{% endif %}" href="{{ url_for('pages.volunteer') }}">{{ _('Volunteer') }}</a></li>
             </ul>
         </div>

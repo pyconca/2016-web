@@ -31,9 +31,9 @@
             -->
 
             <p class="homepage__button">
-                <a href="http://www.eventbrite.com/e/pycon-canada-2016-tickets-27545680873?aff=web" class="button button--red button--big">
-                    {{ _('Buy a ticket') }}
-                </a>
+                <a href="{{ url_for('schedule.index') }}" class="button button--primary">{{ _('View the schedule') }}</a>
+
+                <a href="http://eepurl.com/bs9mG9" class="button button--secondary">{{ _('Join our mailing list') }}</a>
             </p>
         </div>
 
