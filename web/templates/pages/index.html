@@ -50,7 +50,15 @@
         {% endif %}
 
         <div class="homepage__footer">
-            <p>{% if g.lang_code=='fr' %}<a href="{{ url_for(request.url_rule.endpoint, lang_code='en') }}" hreflang="en">English</a>{% else %}<a href="{{ url_for(request.url_rule.endpoint, lang_code='fr') }}" hreflang="fr">Fran&ccedil;ais</a>{% endif %}</p>
+            <p>
+                {% if g.lang_code=='fr' %}
+                <a href="{{ url_for(request.url_rule.endpoint, lang_code='en') }}" hreflang="en">English</a>
+                {% else %}
+                <a href="{{ url_for(request.url_rule.endpoint, lang_code='fr') }}" hreflang="fr">Fran&ccedil;ais</a>
+                {% endif %}
+                &bull;
+                <a href="{{ url_for('pages.code_of_conduct') }}">{{ _('Code of Conduct') }}</a>
+            </p>
         </div>
     </div>
 </div>
