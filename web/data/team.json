@@ -3,7 +3,7 @@
         {
             "name": "Myles Braithwaite", 
             "link": "https://mylesb.ca/"
-        },
+        }, 
         {
             "name": "Francis Deslauriers", 
             "link": "https://twitter.com/francisDeslaur"
@@ -11,6 +11,10 @@
         {
             "name": "Julia Duimovich", 
             "link": "https://twitter.com/jduims"
+        }, 
+        {
+            "name": "Mike Fridman", 
+            "link": "http://www.mfridman.com/"
         }, 
         {
             "name": "David Hoffman", 
@@ -29,8 +33,16 @@
             "link": "http://aarose.red"
         }, 
         {
+            "name": "Daniel Quattrociocchi", 
+            "link": "https://github.com/quaspas"
+        }, 
+        {
             "name": "Brandon Sandrowicz", 
             "link": "https://github.com/bsandrow"
+        }, 
+        {
+            "name": "Martin Sitar", 
+            "link": "http://martinsitar.com/"
         }, 
         {
             "name": "Ke Sun", 
@@ -41,28 +53,16 @@
             "link": "https://www.linkedin.com/in/anna-vassilovski-84829725"
         }, 
         {
+            "name": "Ryan Wilson-Perkin", 
+            "link": "https://twitter.com/rwilsonperkin"
+        }, 
+        {
             "name": "Elaine Wong", 
             "link": "https://twitter.com/elthenerd"
         }, 
         {
             "name": "Terry Yanchynskyy", 
             "link": "https://github.com/onebit0fme"
-        },
-        {
-            "name": "Daniel Quattrociocchi",
-            "link": "https://github.com/quaspas"
-        },
-        {
-            "name": "Martin Sitar",
-            "link": "http://martinsitar.com/"
-        },
-        {
-            "name": "Mike Fridman",
-            "link": "http://www.mfridman.com/"
-        },
-        {
-            "name": "Ryan Wilson-Perkin",
-            "link": "https://twitter.com/rwilsonperkin"
         }
     ], 
     "volunteers": []
