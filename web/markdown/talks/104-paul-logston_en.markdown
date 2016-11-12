@@ -12,8 +12,13 @@ github: logston
 photo: paul-logston.jpg
 ---
 
-I wanna talk about all the cool things you can do with the dunder methods. 
+This talk will cover some common uses of dunder methods and some not so common.
+It will also lightly cover the process of editing the C Python source in order
+to add your own operator/dunder method combo to the C Python interpreter.
 
 ## Paul Logston Bio
 
-Will Complete Later.
+Paul Logston is a New York City based developer. He helps organize and run the
+NYC Python, Learn Python NYC, and PyGotham events that take place in NYC.
+He works at 15Five and teaches at Columbia.
+
