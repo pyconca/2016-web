@@ -36,9 +36,9 @@ If you are being harassed, notice that someone else is being harassed, or have a
 
 If the matter is especially urgent, please call/contact any of these individuals:
 
-* Peter McCormick: [peter@pycon.ca](mailto:peter@pycon.ca)
-* Francis Deslauriers: [francis@pycon.ca](mailto:francis@pycon.ca)
-* Julia Duimovich: [julia@pycon.ca](mailto:julia@pycon.ca)
+* Peter McCormick: +1 (416) 834-5960
+* Francis Deslauriers: +1 (514) 974-0018
+* Julia Duimovich: +1 (613) 929-0173
 
 Conference staff will be happy to help participants contact venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.
 

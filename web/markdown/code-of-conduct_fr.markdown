@@ -34,9 +34,9 @@ Si un participant s'engage dans un comportement qui viole ce code de conduite, l
 
 Si vous êtes victime d'harcèlement, témoin d'un harcèlement ou avez tout autre souci, veuillez contacter un membre du comité d'administration:
 
-* Peter McCormick: [peter@pycon.ca](mailto:peter@pycon.ca)
-* Francis Deslauriers: [francis@pycon.ca](mailto:francis@pycon.ca)
-* Julia Duimovich: [julia@pycon.ca](mailto:julia@pycon.ca)
+* Peter McCormick: +1 (416) 834-5960
+* Francis Deslauriers: +1 (514) 974-0018
+* Julia Duimovich: +1 (613) 929-0173
 
 Le personnel de la conférence se fera un plaisir d'aider les participants à contacter la service de sécurité des lieux ou les répresantants locaux de la loi, à escorter, ou assister en toute autre manière ceux étant la cible d'harcèlement afin qu'ils se sentent en sécurité pendant la conférence. Nous apprécions votre présence.
 
