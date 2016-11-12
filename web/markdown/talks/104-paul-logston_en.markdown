@@ -5,7 +5,7 @@ kind: talk
 speakers: Paul Logston
 date: 2016-11-13
 start_time: 14:40:00
-end_time: 15:10:00
+end_time: 15:15:00
 rooms: TRS 2-166
 twitter: PaulLogston
 github: logston
@@ -21,4 +21,3 @@ to add your own operator/dunder method combo to the C Python interpreter.
 Paul Logston is a New York City based developer. He helps organize and run the
 NYC Python, Learn Python NYC, and PyGotham events that take place in NYC.
 He works at 15Five and teaches at Columbia.
-

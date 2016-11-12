@@ -227,8 +227,8 @@
         },
 
         {
-          "start_time": "14:40:00",
-          "end_time": "15:10:00",
+          "start_time": "14:45:00",
+          "end_time": "15:15:00",
           "talks": {
             "1-067": "502-sarah-wells",
             "2-166": "104-paul-logston",
@@ -236,7 +236,7 @@
           }
         },
         {
-          "start_time": "15:10:00",
+          "start_time": "15:15:00",
           "end_time": "15:40:00",
           "title": "Break"
         },

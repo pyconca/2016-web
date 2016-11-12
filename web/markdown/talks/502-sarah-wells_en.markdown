@@ -5,7 +5,7 @@ kind: talk
 speakers: Sarah Wells
 date: 2016-11-13
 start_time: 14:40:00
-end_time: 15:10:00
+end_time: 15:15:00
 rooms: TRS 1-067
 twitter: SarahWells400mh
 photo: sarah-wells.jpg
