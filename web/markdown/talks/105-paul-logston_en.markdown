@@ -12,8 +12,13 @@ github: logston
 photo: paul-logston.jpg
 ---
 
-This will be  glorified lightning talk on PyVideo.org and what it needs from the community.
+PyVideo.org has undergone significant changes over the past year. It's changed
+teams, infrastructure, and looks. Come hear about the progress the PyVideo
+team is making and the direction in which PyVideo is headed.
 
 ## Paul Logston Bio
 
-Will Complete Later.
+Paul Logston is a New York City based developer. He helps organize and run the
+NYC Python, Learn Python NYC, and PyGotham events that take place in NYC.
+He works at 15Five and teaches at Columbia.
+
