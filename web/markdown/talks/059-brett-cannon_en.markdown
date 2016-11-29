@@ -9,6 +9,7 @@ end_time: 16:30:00
 rooms: TRS 1-067
 twitter: brettsky
 github: brettcannon
+youtube: hk85RUtQsBI
 ---
 
 Scheduled for release in mid-December following the conference, Python 3.6 is shaping up to be a feature-packed release! This talk will cover all the new features of note that will be making their debut in Python 3.6, with consideration to explain things so that those still on legacy Python 2 can follow along.
