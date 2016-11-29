@@ -10,6 +10,7 @@ rooms: TRS 3-176
 photo: stephen-childs.jpg
 twitter: sechilds
 github: sechilds
+youtube: ovvU41ve1FQ
 ---
 
 The scientific Python ecosystem has made a Python a great language for data analysis, encouraging readable and expressive code, but data analysts struggle with applying Python test frameworks to their data transformation and analysis code. This talk will give a good starting point: how to compare different versions of tabular data and turn that into automated tests.
