@@ -10,6 +10,7 @@ rooms: TRS 1-067
 photo: ben-sapiro.jpg
 twitter: ironfog
 github: bsapiro
+youtube: Vx-owGdnEGU
 ---
 
 Security professionals don't have great tools for managing their governance programs (audit, risk, system descriptions, etc.) and typically need to buy very expensive tools or resort to using Excel spreadsheets. G.Tool is an opensource python based framework that uses pyparsing to implement a user DSL and file ORM for building your security governance tools without writing code. 
