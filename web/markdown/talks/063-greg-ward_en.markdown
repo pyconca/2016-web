@@ -10,6 +10,7 @@ rooms: TRS 1-067
 photo: greg-ward.jpg
 twitter: gergdotca
 github: gward
+youtube: 7ProkEKjtL4
 ---
 
 Nowadays, everybody uses version control. But until you learn to *misuse* your version control system, you're missing out on ways to minimize developer productivity and pessimize your workflow. I'll show you 12 time-tested worst practices that will set you down the wrong path from Day One.
