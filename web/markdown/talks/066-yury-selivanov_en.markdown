@@ -9,6 +9,7 @@ end_time: 11:40:00
 rooms: TRS 1-067
 twitter: 1st1
 github: 1st1
+youtube: WSq0S7UvI8E
 ---
 
 * Overview of async/await.
