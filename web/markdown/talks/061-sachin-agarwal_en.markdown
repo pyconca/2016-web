@@ -9,6 +9,7 @@ end_time: 11:40:00
 rooms: TRS 2-166
 twitter: sachinkagarwal
 github: sachinkagarwal
+youtube: 3GNnVSTtl-o
 ---
 
 Designing a HTTP-RESTful-API-based infrastructure provisioning system is challenging. Concurrent users, race conditions, erroneous OS responses, quota mechanisms etc. need to be wrapped up under a consistent and responsive CRUD interface. The talk is about a few design patterns and about the "lessons learnt" in building/operating/iterating a large scale API-driven infra-provisioning system.
