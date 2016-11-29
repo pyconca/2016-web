@@ -10,6 +10,7 @@ rooms: TRS 2-166
 photo: jay-parlar.jpg
 twitter: parlar
 github: parlarjb
+youtube: lI3ipk6j3-k
 ---
 
 Github's Deployments API allows Github itself to sit in the middle of your deployment pipeline, acting as the glue needed to pull together loosely-coupled deployment tooling. This talk will discuss how the author used Github's Deployments API to connect a chatbot to a custom CI server, allowing for chat-based deploys to a custom Docker-based infrastructure.
