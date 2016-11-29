@@ -1,8 +1,20 @@
-.video {
-  margin: 1em;
+.page__header--talk .page__header-content {
+  max-width: 40em;
+}
 
-  iframe {
-    width: 100%;
-    height: 350px;
+.talk {
+  @at-root #{&}__video-wrapper {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: percentage(9 / 16);
+    position: relative;
+  }
+
+  @at-root #{&}__video-embed {
+    @include position(absolute, 0 null null 0);
+    @include size(100%);
+
+    border: 0;
   }
 }
