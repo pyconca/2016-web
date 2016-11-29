@@ -10,6 +10,7 @@ rooms: TRS 2-166
 photo: piero-ferrante.jpg
 twitter: the_real_pdf
 github: the-real-pdf
+youtube: 9Vz7oFjwXOA
 ---
 
 Lending involves risk and in order to be a successful lender at scale that risk needs to be mitigated. We'll be discussing how C2FO has built a suite of risk management tools for underwriting and portfolio management using the PyData ecosystem, rpy2 (for integrating R), and Spyre (for building a simple web application).
