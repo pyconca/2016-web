@@ -9,6 +9,7 @@ end_time: 15:30:00
 rooms: TRS 3-176
 twitter: ElissaBeth
 photo: elissa-schevinsky.jpg
+youtube: DEat8aOk0rA
 ---
 
 Whether it's to serve a diverse customer base or to cultivate a more inclusive office environment, companies are ramping up efforts to hire (and retain) diverse technical candidates. This talk covers best practices for all steps in this process - recruiting, hiring and retaining diverse Python engineers (and their teammates) as well as keeping team dynamics harmonious. 
