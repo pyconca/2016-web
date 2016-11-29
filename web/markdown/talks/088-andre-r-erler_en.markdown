@@ -9,6 +9,7 @@ end_time: 13:45:00
 rooms: TRS 3-176
 photo: andre-r-erler.jpg
 github: aerler
+youtube: JzAjjo_E6iY
 ---
 
 In many scientific applications it is necessary to run a large number of similar experiments (i.e. ensembles). Using examples from my own research, I will show how an Ensemble container class can be constructed in Python to simplify many of the tedious aspects of performing large sets of numerical experiments or simulations and to easily parallelize batch execution.
