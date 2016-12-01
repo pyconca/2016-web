@@ -8,6 +8,7 @@ start_time: 14:10:00
 end_time: 14:20:00
 rooms: TRS 3-176
 twitter: joshweisbock
+youtube: yvvUaeovTBU
 ---
 
 Python is used across various industries to help solve various problems. Sports Analytics, the systematic analysis of information in the context of various sports is one field where Python is a major contributor in competition with R. In this discussion I outline the most common uses of Python in my work in the National Hockey League to help improve management's decision making.
