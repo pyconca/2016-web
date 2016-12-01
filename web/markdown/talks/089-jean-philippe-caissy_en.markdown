@@ -10,6 +10,7 @@ rooms: TRS 3-176
 photo: jean-philippe-caissy.jpg
 twitter: jpcaissy
 github: jpcaissy
+youtube: JM-ce-cS0_E
 ---
 
 Shopify strives to be an ever moving company. With a strong force of hundreds in the R&D team, the challenges to keep delivering and shipping scaled accordingly.
