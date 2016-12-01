@@ -7,6 +7,7 @@ date: 2016-11-13
 start_time: 15:40:00
 end_time: 16:10:00
 rooms: TRS 3-176
+youtube: emOXFEeL3ec
 ---
 
 A high level presentation which will cover working with the popular public blockchains: Bitcoin, Ethereum and Stellar with python.
