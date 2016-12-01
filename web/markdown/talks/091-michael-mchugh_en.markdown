@@ -8,6 +8,7 @@ start_time: 16:40:00
 end_time: 17:10:00
 rooms: TRS 2-166
 github: mmchugh
+youtube: O33YV4ooHSo
 ---
 
 We will explore how seemingly simple functions can be layered together to create complex and feature rich topological maps. Watch as each extra layer introduces more interesting, diverse worlds which can be used as images, in games, or as a playground for the curious.
