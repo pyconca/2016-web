@@ -10,6 +10,7 @@ rooms: TRS 2-166
 photo: nick-anderegg.jpg
 twitter: nickanderegg
 github: NickAnderegg
+youtube: hHOvXPhgZoY
 ---
 
 This talk details how a distributed application was used to algorithmically compare pairs of Chinese characters for use in psycholinguistic research. By programmatically representing the structure of Chinese characters, it is possible to quantify the similarity of two characters in the same way it is possible to quantify the similarity of two English words by comparing their constituent letters.
