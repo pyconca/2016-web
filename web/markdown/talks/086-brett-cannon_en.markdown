@@ -9,6 +9,7 @@ end_time: 14:20:00
 rooms: TRS 1-067
 twitter: brettsky
 github: brettcannon
+youtube: cVwDGEhk6ck
 ---
 
 Jupyter Notebooks provide a way to do "literate computing" where documents contain their own live code and visualizations. And while getting started with notebooks is easy, using cloud-based hosting like Azure Notebooks makes it even easier to get started and share your results. This talk will explain what notebooks are and talk about benefits (and drawbacks) of hosting them in the cloud.
