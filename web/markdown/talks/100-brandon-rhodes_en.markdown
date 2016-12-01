@@ -8,6 +8,7 @@ start_time: 15:40:00
 end_time: 16:10:00
 rooms: TRS 2-166
 twitter: brandon_rhodes
+youtube: z1aUuqKg_gA
 ---
 
 How can Python use Selenium to take command of a web browser and step it through thousands of tests that have to run hundreds of times per day? What anti-patterns emerge when an organization has been maintaining a Selenium test suite for multiple years? At Dropbox, I and my co-workers use Python to deliver test results to hundreds of other engineers. Come learn the lessons we have learned so far!
