@@ -8,6 +8,7 @@ start_time: 14:25:00
 end_time: 14:35:00
 rooms: TRS 1-067
 github: mcgraw-bb25
+youtube: 0neAl4mylrE
 ---
 
 Working with Python in a Windows environment can present some unorthodox challenges.  In one such challenge we'll explore one solution for cases when you want to communicate with a SQL Server database and cannot use pyodbc.  The solution demonstrates how to create a small library in Iron Python which can take advantage of the .NET CLR that is responsible for communicating with SQL Server.
