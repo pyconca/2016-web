@@ -74,7 +74,7 @@ def deploy():
     # rsync the website to the server.
     rsync_project(remote_dir=api.env.html_dir,
                   local_dir=api.env.local_build_dir,
-                  delete=True,
+                  delete=False,
                   exclude=['static/scss/',
                            'static/bower/',
                            'static/.webassets-cache/'])
