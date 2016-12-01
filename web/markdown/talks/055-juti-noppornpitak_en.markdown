@@ -9,6 +9,7 @@ end_time: 15:30:00
 rooms: TRS 2-166
 twitter: shiroyuki
 github: shiroyuki
+youtube: AAY6TvD9FH4
 ---
 
 While most people know test-driven development, in reality, not many developers have a luxury of time to implement tests before product delivery due to non-negotiable deadline or competitive business opportunity. This talk will explore how to approach the problem, technical considerations, and some useful design patterns which allows developers to implement maintainable code before writing tests.
