@@ -8,6 +8,7 @@ start_time: 14:20:00
 end_time: 14:50:00
 rooms: TRS 1-067
 twitter: en_zyme
+youtube: eYTfgbr7b0U
 ---
 
 Exponentiation is the gotcha of math operators. Be it square or square root, exp, log, tanh, or the complex roots of unity, \*\* has it's work cut out. Ints, floats, fractions, and zero don't play nice with \*\*. Precision, accuracy, and performance aspects of Python can be revealed by following \*\* thru the interpreter down to the metal.  SciPy, SymPy, and Machine Learners care, shouldn't you?
