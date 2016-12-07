@@ -9,6 +9,7 @@ end_time: 16:50:00
 rooms: TRS 3-176
 photo: elissa-schevinsky.jpg
 twitter: ElissaBeth
+youtube: maploUbsLn4
 ---
 
 If your company is storing customer information, then it's a safe bet that hackers will try to steal it. What are the best practices for securing your customer data? Covering topics such as encryption, deletion and hiring a CISO, this talk is for developers and entrepreneurs seeking to learn more about best practices for information security.
