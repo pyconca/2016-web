@@ -10,6 +10,7 @@ rooms: TRS 3-176
 photo: ryan-easterbrook.jpg
 twitter: rjeasterbrook
 github: rjeaster
+youtube: 5i5omk3tYxc
 ---
 
 In this talk we will explore taking the core concepts of microservices and building them into the architecture of a monolith in an attempt to get the best of both worlds. This approach establishes a pragmatic baseline architecture that can cleanly evolve to distributed microservices when needed.
