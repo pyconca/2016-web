@@ -10,6 +10,7 @@ rooms: TRS 1-067
 photo: greg-wilson.jpg
 twitter: gvwilson
 github: gvwilson
+youtube: SRy6P0_FA7I
 ---
 
 There are hundreds of books about compilers, but only three about writing debuggers. Spreadsheets are used more than any other statistical tool, but version control still can't handle them.  Everyone thinks we should teach kids to program, but courses on computing education are almost nonexistent.  This talk explores why these gaps exist and what they tell us about computing today and in future.
