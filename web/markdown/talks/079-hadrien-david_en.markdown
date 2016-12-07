@@ -9,6 +9,7 @@ end_time: 16:50:00
 rooms: TRS 1-067
 twitter: hadr
 github: hadrien
+youtube: GMWwiOXHEMg
 ---
 
 For the last 2 years, serverless architecture has become a huge trend. Amazon Lambdas is one of the first function as a service solution which I have used since its early beginning. This talk covers the pain it can be to set up a REST API operating AWS API Gateway & Lambdas, the solutions and practices to overcome it.
