@@ -10,6 +10,7 @@ rooms: TRS 2-166
 twitter: PaulLogston
 github: logston
 photo: paul-logston.jpg
+youtube: 6WY4xtA5PcA
 ---
 
 This talk will cover some common uses of dunder methods and some not so common.
