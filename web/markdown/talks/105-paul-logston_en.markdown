@@ -10,6 +10,7 @@ rooms: TRS 1-067
 twitter: PaulLogston
 github: logston
 photo: paul-logston.jpg
+youtube: DefBuK4jXuM
 ---
 
 PyVideo.org has undergone significant changes over the past year. It's changed
