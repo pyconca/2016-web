@@ -10,6 +10,7 @@ rooms: TRS 2-166
 twitter: wxalistair
 github: wxgeorge
 photo: wesley-george.jpg
+youtube: v8ryA-s5eZM
 ---
 
 The most common understanding of databases stop at persistence and retrieval which leaves the power of the relational database as a compute engine under-appreciated and under-utilized. This talk is an exploration of that computational power, the relationship of this compute engine and the ORM, and how to leverage this power in your applications.
